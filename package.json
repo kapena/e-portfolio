@@ -1,20 +1,11 @@
 {
   "name": "e-portfolio",
   "version": "1.0.0",
-  "description": "portfolio",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts":{
+    "postinstall":"gulp install"
   },
-  "repository": {
-    "type": "git",
-    "url": "e-portfolio"
-  },
-  "author": "brentwhite",
-  "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.9.1",
-    "fs": "0.0.2",
     "gulp": "^3.9.0",
     "gulp-bower": "0.0.10",
     "gulp-concat": "^2.6.0",

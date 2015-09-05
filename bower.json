@@ -1,0 +1,9 @@
+{
+  "name": "e-portfolio",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize-scss": "~3.0.3",
+    "modular-scale": "~2.1.1"
+  }
+}
