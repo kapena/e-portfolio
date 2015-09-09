@@ -69,7 +69,7 @@ gulp.task('scripts',function(){
     return gulp.src(paths.source.js)
     .pipe(plumber({
         // plumber finds errors in stream and
-        // notifys me in the brower
+        // notifys me in the browser console
         errorHandeler:function(error){
             streamError = error;
             this.emit('end');
@@ -77,8 +77,8 @@ gulp.task('scripts',function(){
     }))
     .pipe(concat('site.js')) // concating js files to main.js
     .pipe(gulp.dest(paths.destination.js)) // save in dest
-    .pipe(uglify()) // minify
-    .pipe(rename({ // rename with .min
+    .pipe(uglify()) // minify js
+    .pipe(rename({ // rename with file with .min
         suffix:'.min'
     }))
     .pipe(gulp.dest(paths.destination.js)) // dest
@@ -120,7 +120,7 @@ gulp.task('styles', function(){
         .pipe(sass()) // compile sass
         .pipe(rename('site.css')) // rename css file
         .pipe(gulp.dest(paths.destination.styles))
-        // if the streamError is NOT false reload brower
+        // if the streamError is NOT false reload browser
         .pipe(gulpif(!streamError,browserSync.reload({stream:true})))
         .pipe(cssmin()) // min css
         .pipe(rename({ // rename file to site.min.css
@@ -133,7 +133,11 @@ gulp.task('styles', function(){
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
         .pipe(sourcemaps.write('.'))
+<<<<<<< HEAD
         .pipe(gulp.dest(paths.destination.styles));
+=======
+        .pipe(gulp.dest(paths.destination.styles))
+>>>>>>> 79694c9958a661c2614071b5669356ff8652f9a5
 });
 
 // default task
