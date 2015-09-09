@@ -133,8 +133,7 @@ gulp.task('styles', function(){
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.destination.styles))
-        //destination
+        .pipe(gulp.dest(paths.destination.styles));
 });
 
 // default task

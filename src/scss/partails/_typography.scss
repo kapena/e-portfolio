@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,700italic);
+/* Lato Variables */
+$lato:'Lato', sans-serif;
+$lato-norm:400;
+$lato-italic:italic;
+$lato-bold:700;
+
+h1, h2, h3, h4 ,h5 ,h6, body{
+    font-family:$lato;
+}

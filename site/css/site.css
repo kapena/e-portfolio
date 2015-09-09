@@ -1,5 +1,17 @@
 /* Pages */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,700italic);
+.intro {
+  text-align: center;
+  position: relative;
+  font-size: 2.5em;
+  margin-bottom: 1.25em;
+  margin-top: 2em; }
+
 /* Partails */
+/* Lato Variables */
+h1, h2, h3, h4, h5, h6, body {
+  font-family: "Lato", sans-serif; }
+
 /* Libs */
 /* ==========================================================================
    Normalize.scss settings
@@ -369,7 +381,3 @@ table {
 td,
 th {
   padding: 0; }
-
-h1 {
-  display: inline-flex;
-  color: green; }

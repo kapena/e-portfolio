@@ -7,13 +7,9 @@
 /* Partails */
 @import "partails/gridmixins";
 @import "partails/mixins";
-@import "partails/variables";
+@import "partails/colors";
+@import "partails/typography";
 
 /* Libs */
 @import "bower_components/modular-scale/stylesheets/modular-scale";
 @import "bower_components/normalize-scss/normalize";
-
-h1{
-    display:inline-flex;
-    color:green;
-}
