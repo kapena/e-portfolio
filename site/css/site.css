@@ -1,18 +1,38 @@
-/* Pages */
+/* Partails */
+/* Home */
+/*  Home-Page Module Mixins and Extends */
+/* Here I import all my modules into the home-module */
+/* Padding mixin for links inside paragraph*/
+/* Gobal Variables */
+/* Modular Scale */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,700italic);
 .intro {
   text-align: center;
   position: relative;
-  font-size: 2.5em;
+  font-size: 3.375em;
   margin-bottom: 1.25em;
   margin-top: 2em; }
 
-/* Partails */
+.intro-msg {
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  text-align: center;
+  font-size: 1.5em; }
+
+/*  mixins, extends and colors inside home_module */
+/* Here I import all my modules into the home-module */
+/* Padding mixin for links inside paragraph*/
+/* ----- */
+/* Projects  */
+/* ----- */
+/* Typeography */
 /* Lato Variables */
+/* Base Size */
 h1, h2, h3, h4, h5, h6, body {
   font-family: "Lato", sans-serif; }
 
-/* Libs */
+/* Normalize */
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */

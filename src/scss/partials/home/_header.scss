@@ -1,0 +1,17 @@
+/*  Home-Page Module Mixins and Extends */
+@import "modules/home-page/home-module";
+/* Gobal Variables */
+@import "partials/variables";
+.intro{
+    text-align: center;
+    position: relative;
+    font-size: ms(3);
+    margin-bottom: 1.25em;
+    margin-top:2em;
+}
+.intro-msg{
+    // padding for left right and bottom links
+    @include left-right-bottom-links;
+    text-align: center;
+    font-size: ms(1);
+}

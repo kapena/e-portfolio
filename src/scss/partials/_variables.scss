@@ -1,0 +1,7 @@
+/* Modular Scale */
+@import "vendor/mod-scale";
+// Modular Scale Variables
+// 1em = 16px
+$ms-base:1em;
+// multiplyed by base to create a scale of numbers
+$ms-ratio:1.5;

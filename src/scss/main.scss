@@ -1,15 +1,23 @@
-/* Pages */
-@import"pages/about";
-@import"pages/contact";
-@import"pages/home";
-@import"pages/projects";
-
 /* Partails */
-@import "partails/gridmixins";
-@import "partails/mixins";
-@import "partails/colors";
-@import "partails/typography";
 
-/* Libs */
-@import "bower_components/modular-scale/stylesheets/modular-scale";
-@import "bower_components/normalize-scss/normalize";
+/* Home */
+// - Header
+@import "partials/home/header";
+// - Nav
+@import "partials/home/nav";
+/* ----- */
+
+/* Projects  */
+// - Layout
+@import "partials/projects/layout";
+// - Boxes
+@import "partials/projects/boxes";
+// - Hover
+@import "partials/projects/hover";
+/* ----- */
+
+/* Typeography */
+@import"partials/typography";
+
+/* Normalize */
+@import "vendor/normalize"; // normalize

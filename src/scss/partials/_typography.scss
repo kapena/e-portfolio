@@ -5,6 +5,9 @@ $lato-norm:400;
 $lato-italic:italic;
 $lato-bold:700;
 
-h1, h2, h3, h4 ,h5 ,h6, body{
+/* Base Size */
+$base:0.5em;
+
+h1, h2, h3, h4 ,h5 ,h6, body {
     font-family:$lato;
 }
