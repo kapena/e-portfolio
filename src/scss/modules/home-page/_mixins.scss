@@ -4,3 +4,9 @@
     padding-right: $left-right;
     padding-bottom:$bottom;
 }
+
+/* Pushing intro-msg margins in closer */
+@mixin left-right-margin($margins:10%){
+    margin-left:$margins;
+    margin-right:$margins;
+}

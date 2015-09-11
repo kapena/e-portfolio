@@ -3,8 +3,10 @@
 /*  Home-Page Module Mixins and Extends */
 /* Here I import all my modules into the home-module */
 /* Padding mixin for links inside paragraph*/
+/* Pushing intro-msg margins in closer */
 /* Gobal Variables */
 /* Modular Scale */
+/* Colors */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,700italic);
 .intro {
   text-align: center;
@@ -17,12 +19,35 @@
   padding-left: 2px;
   padding-right: 2px;
   padding-bottom: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: center;
   font-size: 1.5em; }
+
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 2px;
+  margin: 0 -2px;
+  border-bottom: 2px solid cyan; }
+
+p a:hover,
+p a:focus {
+  color: black; }
+
+header a {
+  border: none;
+  background: linear-gradient(cyan, magenta) no-repeat left;
+  background-size: 2px 100%;
+  transition: 0.2s, color 0.1s 0.1s; }
+
+header a:hover {
+  background-size: 100% 100%; }
 
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */
 /* Padding mixin for links inside paragraph*/
+/* Pushing intro-msg margins in closer */
 /* ----- */
 /* Projects  */
 /* ----- */

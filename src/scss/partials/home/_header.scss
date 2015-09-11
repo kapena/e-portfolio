@@ -12,6 +12,37 @@
 .intro-msg{
     // padding for left right and bottom links
     @include left-right-bottom-links;
+    // left might margins pushed in closer
+    @include left-right-margin;
     text-align: center;
     font-size: ms(1);
+}
+
+header a{
+    text-decoration:none;
+    color:$text;
+    padding: 2px;
+    margin: 0 -2px;
+    border-bottom: 2px solid cyan;
+}
+
+p a:hover,
+p a:focus {
+    color:black;
+}
+
+header a{
+    border:none;
+    // cyan rect appear over link
+    background:linear-gradient(cyan,magenta) no-repeat left;
+    // size
+    background-size: 2px 100%;
+    // transition when hovered on
+    transition: .2s,color .1s .1s;
+}
+
+header a:hover{
+   // text from black to white
+   //color:grey;
+   background-size:100% 100%;
 }
