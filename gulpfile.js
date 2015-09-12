@@ -11,6 +11,10 @@ var gulp = require('gulp'),
  runSequence = require('run-sequence'), // runs gulp tasks in order
  sass = require('gulp-sass'), // css preprocessor
  uglify = require('gulp-uglify'); // minify js
+ postcss = require('gulp-postcss'),
+ sourcemaps = require('gulp-sourcemaps'),
+ autoprefixer = require('autoprefixer');
+
 
 // Accessing config.json to get paths to files
 function setVars () {
@@ -96,14 +100,17 @@ gulp.task('scripts',function(){
     });
 });
 
+gulp.task('autoprefixer',function () {
+    return gulp.src('./site/css/*.css')
+        .pipe(sourcemaps.init())
+        .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./site/css'));
+});
+
+
 // Styles Task
 gulp.task('styles', function(){
-
-    // to use autoprefixer I need postcss
-    var postcss = require('gulp-postcss');
-    var sourcemaps = require('gulp-sourcemaps');
-    var autoprefixer = require('autoprefixer');
-
     // streamError is set to false
     var streamError = false;
     return gulp.src(paths.source.styles)
@@ -117,8 +124,10 @@ gulp.task('styles', function(){
                 this.emit('end');
             }
         }))
-        .pipe(sass()) // compile sass
-        .pipe(rename('site.css')) // rename css file
+        .pipe(sass())
+
+         // compile sass
+        //.pipe(rename('site.css')) // rename css file
         .pipe(gulp.dest(paths.destination.styles))
         // if the streamError is NOT false reload browser
         .pipe(gulpif(!streamError,browserSync.reload({stream:true})))
@@ -128,17 +137,12 @@ gulp.task('styles', function(){
         }))
         .pipe(gulp.dest(paths.destination.styles))
         // if streamError is not `false` reload browser
-        .pipe(gulpif(!streamError,browserSync.reload({stream:true})))
-        // autoprefixer and source maps
-        .pipe(sourcemaps.init())
-        .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.destination.styles));
+        .pipe(gulpif(!streamError,browserSync.reload({stream:true})));
 });
 
 // default task
 gulp.task('default',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('scripts', 'styles' ,'sync');
+    runSequence('scripts', 'styles' ,'sync','autoprefixer' );
 });

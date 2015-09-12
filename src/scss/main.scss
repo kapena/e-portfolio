@@ -1,23 +1,23 @@
 /* Partails */
 
 /* Home */
-// - Header
+
 @import "partials/home/header";
-// - Nav
+
 @import "partials/home/nav";
-/* ----- */
+
 
 /* Projects  */
-// - Layout
+
 @import "partials/projects/layout";
-// - Boxes
+
 @import "partials/projects/boxes";
-// - Hover
+
 @import "partials/projects/hover";
-/* ----- */
+
 
 /* Typeography */
 @import"partials/typography";
 
 /* Normalize */
-@import "vendor/normalize"; // normalize
+@import "vendor/normalize";

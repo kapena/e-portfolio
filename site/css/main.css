@@ -44,13 +44,15 @@ header a {
 header a:hover {
   background-size: 100% 100%; }
 
+h4 {
+  background: linear-gradient(cyan, magenta) no-repeat left;
+  display: flex; }
+
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */
 /* Padding mixin for links inside paragraph*/
 /* Pushing intro-msg margins in closer */
-/* ----- */
 /* Projects  */
-/* ----- */
 /* Typeography */
 /* Lato Variables */
 /* Base Size */
