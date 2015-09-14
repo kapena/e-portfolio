@@ -22,14 +22,14 @@
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
+  line-height: 1.5em;
   font-size: 1.5em; }
 
 header a {
   text-decoration: none;
   color: black;
   padding: 2px;
-  margin: 0 -2px;
-  border-bottom: 2px solid cyan; }
+  margin: 0 -2px; }
 
 p a:hover,
 p a:focus {
@@ -37,16 +37,14 @@ p a:focus {
 
 header a {
   border: none;
-  background: linear-gradient(cyan, magenta) no-repeat left;
-  background-size: 2px 100%;
+  border-bottom: 2px solid blue;
+  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background-size: 100% 1px;
   transition: 0.2s, color 0.1s 0.1s; }
 
 header a:hover {
+  color: blue;
   background-size: 100% 100%; }
-
-h4 {
-  background: linear-gradient(cyan, magenta) no-repeat left;
-  display: flex; }
 
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */

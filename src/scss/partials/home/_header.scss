@@ -15,6 +15,7 @@
     // left might margins pushed in closer
     @include left-right-margin;
     text-align: center;
+    line-height:ms(1);
     font-size: ms(1);
 }
 
@@ -23,7 +24,6 @@ header a{
     color:$text;
     padding: 2px;
     margin: 0 -2px;
-    border-bottom: 2px solid cyan;
 }
 
 p a:hover,
@@ -33,21 +33,18 @@ p a:focus {
 
 header a{
     border:none;
+    border-bottom: 2px solid blue;
     // cyan rect appear over link
-    background:linear-gradient(cyan,magenta) no-repeat left;
+    background:linear-gradient(cyan,cyan) no-repeat bottom;
     // size
-    background-size: 2px 100%;
+    background-size:100% 1px;
     // transition when hovered on
     transition: .2s,color .1s .1s;
 }
 
 header a:hover{
    // text from black to white
-   //color:grey;
+   //text-decoration: underline;
+   color:blue;
    background-size:100% 100%;
-}
-
-h4{
-    background:linear-gradient(cyan,magenta) no-repeat left;
-    display: flex;
 }
