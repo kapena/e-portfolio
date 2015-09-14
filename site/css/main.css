@@ -8,6 +8,12 @@
 /* Modular Scale */
 /* Colors */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,700italic);
+/* Lato Variables */
+/* Base Size */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,700italic);
+h1, h2, h3, h4, h5, h6, p, body {
+  font-family: "Lato", sans-serif; }
+
 .intro {
   text-align: center;
   position: relative;
@@ -25,25 +31,25 @@
   line-height: 1.5em;
   font-size: 1.5em; }
 
-header a {
-  text-decoration: none;
+header #projects:hover,
+header #chat:hover, header #bio:hover, header #projects:focus, header #chat:focus, header #bio:focus {
+  color: blue; }
+
+header #projects, header #chat, header #bio {
   color: black;
+  font-style: italic;
   padding: 2px;
   margin: 0 -2px; }
 
-p a:hover,
-p a:focus {
-  color: black; }
-
-header a {
+header #projects, header #chat, header #bio {
   border: none;
   border-bottom: 2px solid blue;
   background: linear-gradient(cyan, cyan) no-repeat bottom;
   background-size: 100% 1px;
-  transition: 0.2s, color 0.1s 0.1s; }
+  transition: 0.2s, color 0.1s 0.1s;
+  text-decoration: none; }
 
-header a:hover {
-  color: blue;
+header #projects:hover, header #chat:hover, header #bio:hover {
   background-size: 100% 100%; }
 
 /*  mixins, extends and colors inside home_module */
@@ -54,7 +60,7 @@ header a:hover {
 /* Typeography */
 /* Lato Variables */
 /* Base Size */
-h1, h2, h3, h4, h5, h6, body {
+h1, h2, h3, h4, h5, h6, p, body {
   font-family: "Lato", sans-serif; }
 
 /* Normalize */

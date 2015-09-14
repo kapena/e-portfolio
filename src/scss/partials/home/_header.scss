@@ -2,6 +2,7 @@
 @import "modules/home-page/home-module";
 /* Gobal Variables */
 @import "partials/variables";
+@import "partials/typography";
 .intro{
     text-align: center;
     position: relative;
@@ -19,32 +20,29 @@
     font-size: ms(1);
 }
 
-header a{
-    text-decoration:none;
-    color:$text;
+header #projects:hover,
+header #projects:focus {
+   color:blue;
+}
+
+header #projects {
+    color:black;
+    font-style:italic;
     padding: 2px;
     margin: 0 -2px;
 }
 
-p a:hover,
-p a:focus {
-    color:black;
-}
-
-header a{
+header #projects{
     border:none;
     border-bottom: 2px solid blue;
     // cyan rect appear over link
     background:linear-gradient(cyan,cyan) no-repeat bottom;
-    // size
     background-size:100% 1px;
     // transition when hovered on
     transition: .2s,color .1s .1s;
+    text-decoration:none;
 }
 
-header a:hover{
-   // text from black to white
-   //text-decoration: underline;
-   color:blue;
+header #projects:hover{
    background-size:100% 100%;
 }
