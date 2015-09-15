@@ -52,6 +52,15 @@ header #projects, header #chat, header #bio {
 header #projects:hover, header #chat:hover, header #bio:hover {
   background-size: 100% 100%; }
 
+.multiply {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  height: 32em; }
+
+.multiply circle {
+  mix-blend-mode: multiply; }
+
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */
 /* Padding mixin for links inside paragraph*/
