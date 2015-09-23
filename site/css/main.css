@@ -11,15 +11,75 @@
 /* Lato Variables */
 /* Base Size */
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,700italic);
-h1, h2, h3, h4, h5, h6, p, body {
+h4, h5, h6 {
   font-family: "Lato", sans-serif; }
+
+p, body {
+  font-family: "Lato", sans-serif; }
+
+h1, h2, h3 {
+  font: "Lato", sans-serif;
+  font-weight: 900; }
 
 .intro {
   text-align: center;
   position: relative;
-  font-size: 3.375em;
+  font-size: 5.0625em;
   margin-bottom: 1.25em;
   margin-top: 2em; }
+
+.char1, .char2, .char5, .char6 {
+  padding-right: 15px; }
+
+.char3 {
+  opacity: 0;
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 50px;
+  left: 5px;
+  margin-right: -20px;
+  top: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-image: url("https://s3-us-west-2.amazonaws.com/designdiagrams/curveAst_O.png");
+  -webkit-animation: spin 4s 1;
+          animation: spin 4s 1; }
+
+.char4 {
+  color: black;
+  position: relative;
+  right: 20px;
+  opacity: 0; }
+
+@-webkit-keyframes spin {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s; }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(920deg);
+            transform: rotate(920deg);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s; } }
+
+@keyframes spin {
+  0% {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s; }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(920deg);
+            transform: rotate(920deg);
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s; } }
 
 .intro-msg {
   padding-left: 2px;
@@ -44,22 +104,67 @@ header #projects, header #chat, header #bio {
 header #projects, header #chat, header #bio {
   border: none;
   border-bottom: 2px solid blue;
+  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
   background: linear-gradient(cyan, cyan) no-repeat bottom;
   background-size: 100% 1px;
-  transition: 0.2s, color 0.1s 0.1s;
+  -webkit-transition: 0.2s, color 0.1s 0.1s;
+          transition: 0.2s, color 0.1s 0.1s;
   text-decoration: none; }
 
 header #projects:hover, header #chat:hover, header #bio:hover {
   background-size: 100% 100%; }
+
+circle {
+  mix-blend-mode: multiply;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+          transition: opacity 1s;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation: circlespin 15s -5s infinite linear;
+          animation: circlespin 15s -5s infinite linear; }
+
+@-webkit-keyframes circlespin {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg); }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg); } }
+
+@keyframes circlespin {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg); }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg); } }
 
 .multiply {
   display: block;
   margin: 1em auto;
   width: 100%;
   height: 32em; }
-
-.multiply circle {
-  mix-blend-mode: multiply; }
 
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */
@@ -69,8 +174,15 @@ header #projects:hover, header #chat:hover, header #bio:hover {
 /* Typeography */
 /* Lato Variables */
 /* Base Size */
-h1, h2, h3, h4, h5, h6, p, body {
+h4, h5, h6 {
   font-family: "Lato", sans-serif; }
+
+p, body {
+  font-family: "Lato", sans-serif; }
+
+h1, h2, h3 {
+  font: "Lato", sans-serif;
+  font-weight: 900; }
 
 /* Normalize */
 /* ==========================================================================
@@ -441,3 +553,5 @@ table {
 td,
 th {
   padding: 0; }
+
+/*# sourceMappingURL=main.css.map */

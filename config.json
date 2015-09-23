@@ -4,6 +4,7 @@
             "styles":"src/scss/main.scss",
             "js":[
                 "bower_components/jquery/dist/jquery.js",
+                "bower_components/letteringjs/jquery.lettering.js",
                 "src/js/pages/*.js",
                 "src/js/main.js"
             ]

@@ -3,11 +3,20 @@
 $lato:'Lato', sans-serif;
 $lato-norm:400;
 $lato-italic:italic;
-$lato-bold:700;
+$lato-bold:900;
 
 /* Base Size */
 $base:0.5em;
 
-h1, h2, h3, h4 ,h5 ,h6, p, body {
+h4 ,h5 ,h6 {
     font-family:$lato;
+}
+
+p, body{
+    font-family: $lato;
+}
+
+h1, h2, h3{
+    font: $lato;
+    font-weight: $lato-bold
 }

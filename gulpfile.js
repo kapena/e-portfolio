@@ -10,10 +10,7 @@ var gulp = require('gulp'),
  rename = require('gulp-rename'), // rename file
  runSequence = require('run-sequence'), // runs gulp tasks in order
  sass = require('gulp-sass'), // css preprocessor
- uglify = require('gulp-uglify'), // minify js
- postcss = require('gulp-postcss'),
- sourcemaps = require('gulp-sourcemaps'),
- autoprefixer = require('autoprefixer');
+ uglify = require('gulp-uglify'); // minify js
 
 
 // Accessing config.json to get paths to files
@@ -100,7 +97,16 @@ gulp.task('scripts',function(){
     });
 });
 
+// autoprefixer watching main.css file for changes 
+
+gulp.watch('./site/css/main.css',['autoprefixer']);
+
 gulp.task('autoprefixer',function () {
+
+    postcss = require('gulp-postcss');
+    sourcemaps = require('gulp-sourcemaps');
+    autoprefixer = require('autoprefixer');
+
     return gulp.src('./site/css/*.css')
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
@@ -144,5 +150,5 @@ gulp.task('styles', function(){
 gulp.task('default',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('scripts', 'styles' ,'sync','autoprefixer' );
+    runSequence('scripts', 'styles' ,'sync');
 });

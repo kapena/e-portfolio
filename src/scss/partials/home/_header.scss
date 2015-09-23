@@ -3,13 +3,57 @@
 /* Gobal Variables */
 @import "partials/variables";
 @import "partials/typography";
+
 .intro{
     text-align: center;
     position: relative;
-    font-size: ms(3);
+    font-size: ms(4);
     margin-bottom: 1.25em;
     margin-top:2em;
 }
+
+.char1, .char2, .char5, .char6{
+    padding-right:15px;
+}
+
+.char3{
+    opacity:0;
+    position: relative;
+    display: inline-block;
+    width:45px;
+    height:50px;
+    left:5px;
+    margin-right:-20px;
+    top:5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-image:url('https://s3-us-west-2.amazonaws.com/designdiagrams/curveAst_O.png');
+    animation: spin 4s 1;
+}
+
+.char4{
+    color:black;
+    position: relative;
+    right:20px;
+    opacity:0;
+}
+
+
+@keyframes spin {
+    0%{
+        opacity:1;
+        transform: rotate(0deg);
+        animation-duration:2s;
+    }
+
+    100% {
+        opacity:0;
+        transform: rotate(920deg);
+        animation-duration:3s;
+    }
+}
+
 .intro-msg{
     // padding for left right and bottom links
     @include left-right-bottom-links;
@@ -47,13 +91,38 @@ header #projects:hover{
    background-size:100% 100%;
 }
 
+circle {
+  mix-blend-mode: multiply;
+  opacity: 0;
+  transition: opacity 1s;
+  animation-delay: -5s;
+  animation: circlespin 15s -5s infinite linear;
+}
+
+
+@keyframes circlespin {
+      0% {
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+      50% {
+    opacity: 0.5;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg); }
+      50% {
+    opacity: 0.8;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); }
+      100%{
+          opacity: 0;
+          transform:rotate(720deg);
+      }
+
+    }
+
 .multiply{
     display: block;
     margin:1em auto;
     width:100%;
     height:32em;
-}
-
-.multiply circle {
-    mix-blend-mode:multiply;
 }
