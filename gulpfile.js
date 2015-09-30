@@ -51,6 +51,19 @@ gulp.task('sync',function(){
     });
 });
 
+var notify = require('gulp-notify');
+var beep = require('beepbeep');
+
+// error handeler function
+var onError = function(err){
+    notify.onError({
+        title:    "Task Error",
+        message:  "<%= error.message %>",
+        sound:    "Sosumi"
+    })(err);
+    this.emit('end');
+};
+
 // watch js files
 gulp.watch(paths.watch.js,['scripts']);
 // watch css files
@@ -65,48 +78,30 @@ gulp.task('reload', function(){
 
 // Scripts Task
 gulp.task('scripts',function(){
-    // stream error
-    var streamError = false;
     return gulp.src(paths.source.js)
-    .pipe(plumber({
+    .pipe(plumber({errorHandler: onError}))
+
         // plumber finds errors in stream and
-        // notifys me in the browser console
-        errorHandeler:function(error){
-            streamError = error;
-            this.emit('end');
-        }
-    }))
+        // notifys me in terminal
+        // errorHandler: onError }))
     .pipe(concat('site.js')) // concating js files to main.js
     .pipe(gulp.dest(paths.destination.js)) // save in dest
     .pipe(uglify()) // minify js
     .pipe(rename({ // rename with file with .min
         suffix:'.min'
     }))
-    .pipe(gulp.dest(paths.destination.js)) // dest
-    .on('end',function(){
-        // if there is a streamError then log to console
-        if(streamError){
-            console.log(streamError.message);
-            // browserSync notify's browser
-            // when errors occur
-            browserSync.notify(streamError.message,errorTimeout);
-        }else{
-            // reload browser
-            browserSync.reload();
-        }
-    });
+    .pipe(gulp.dest(paths.destination.js)),
+    browserSync.reload();
 });
 
-// autoprefixer watching main.css file for changes 
+// autoprefixer watching main.css file for changes
 
 gulp.watch('./site/css/main.css',['autoprefixer']);
 
 gulp.task('autoprefixer',function () {
-
     postcss = require('gulp-postcss');
     sourcemaps = require('gulp-sourcemaps');
     autoprefixer = require('autoprefixer');
-
     return gulp.src('./site/css/*.css')
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
@@ -117,33 +112,20 @@ gulp.task('autoprefixer',function () {
 
 // Styles Task
 gulp.task('styles', function(){
-    // streamError is set to false
-    var streamError = false;
     return gulp.src(paths.source.styles)
         .pipe(plumber({
             // plumber finds errors in stream
-            errorHandeler:function(error){
-                streamError = error;
-                // plumber logs errors to console
-                console.log(streamError.message);
-                browserSync.notify(streamError.message,errorTimeout);
-                this.emit('end');
-            }
-        }))
+            errorHandler: onError}))
         .pipe(sass())
-
-         // compile sass
-        //.pipe(rename('site.css')) // rename css file
         .pipe(gulp.dest(paths.destination.styles))
-        // if the streamError is NOT false reload browser
-        .pipe(gulpif(!streamError,browserSync.reload({stream:true})))
         .pipe(cssmin()) // min css
         .pipe(rename({ // rename file to site.min.css
             suffix:'.min'
         }))
         .pipe(gulp.dest(paths.destination.styles))
-        // if streamError is not `false` reload browser
-        .pipe(gulpif(!streamError,browserSync.reload({stream:true})));
+        .pipe(notify({ message: 'Styles task complete' }))
+        .pipe(browserSync.stream());
+
 });
 
 // default task

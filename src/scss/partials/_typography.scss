@@ -1,9 +1,29 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,700italic);
+@font-face {
+    font-family: 'avertablack';
+    src: url('/css/fontkit/averta-black-webfont.eot');
+    src: url('/css/fontkit/averta-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fontkit/averta-black-webfont.woff2') format('woff2'),
+         url('/css/fontkit/averta-black-webfont.woff') format('woff'),
+         url('/css/fontkit/averta-black-webfont.ttf') format('truetype'),
+         url('/css/fontkit/averta-black-webfont.svg#avertablack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+$averta:'avertablack', sans-serif;
+
+// Google fonts
+// Lato
+@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 /* Lato Variables */
 $lato:'Lato', sans-serif;
 $lato-norm:400;
 $lato-italic:italic;
 $lato-bold:900;
+
+// Lora
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+$lora:'Lora',serif;
+
 
 /* Base Size */
 $base:0.5em;
@@ -13,10 +33,9 @@ h4 ,h5 ,h6 {
 }
 
 p, body{
-    font-family: $lato;
+    font-family: $lora;
 }
 
 h1, h2, h3{
-    font: $lato;
-    font-weight: $lato-bold
+    font-family:'avertablack';
 }

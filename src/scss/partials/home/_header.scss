@@ -7,9 +7,9 @@
 .intro{
     text-align: center;
     position: relative;
-    font-size: ms(4);
-    margin-bottom: 1.25em;
-    margin-top:2em;
+    font-size: ms(5);
+    margin-bottom: 1em;
+    margin-top:1em;
 }
 
 .char1, .char2, .char5, .char6{
@@ -20,16 +20,16 @@
     opacity:0;
     position: relative;
     display: inline-block;
-    width:45px;
-    height:50px;
-    left:5px;
-    margin-right:-20px;
-    top:5px;
+    width:50px;
+    height:55px;
+    left:20px;
+    margin-right:-21px;
+    bottom:2.5px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70px;
+    background-size:95px;
     background-image:url('https://s3-us-west-2.amazonaws.com/designdiagrams/curveAst_O.png');
-    animation: spin 4s 1;
+    animation: spin 4s 1 ease;
 }
 
 .char4{
@@ -71,8 +71,8 @@ header #projects:focus {
 
 header #projects {
     color:black;
-    font-style:italic;
     padding: 2px;
+    font-weight: 900;
     margin: 0 -2px;
 }
 
@@ -93,29 +93,39 @@ header #projects:hover{
 
 circle {
   mix-blend-mode: multiply;
-  opacity: 0;
-  transition: opacity 1s;
+  opacity:1;
+  //transition: opacity 1s;
   animation-delay: -5s;
   animation: circlespin 15s -5s infinite linear;
+  transform: rotate(90deg);
 }
 
 
 @keyframes circlespin {
       0% {
-    opacity: 0;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-      50% {
-    opacity: 0.5;
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg); }
-      50% {
-    opacity: 0.8;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); }
+        opacity:0.1;
+        transform: rotate(0deg);
+     }
+
+     20%{
+         opacity:0.2;
+     }
+
+     40%{
+         opacity: 0.4;
+     }
+
+     60%{
+        opacity:0.6;
+     }
+
+     80%{
+         opacity:0.8;
+     }
+
       100%{
-          opacity: 0;
-          transform:rotate(720deg);
+          opacity:1;
+          transform:rotate(360deg);
       }
 
     }
