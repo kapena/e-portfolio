@@ -13,21 +13,18 @@
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 @font-face {
   font-family: 'avertablack';
-  src: url("./css/fontkit/averta-black-webfont.eot");
-  src: url("./css/fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./css/fontkit/averta-black-webfont.woff2") format("woff2"), url("/css/fontkit/averta-black-webfont.woff") format("woff"), url("./css/fontkit/averta-black-webfont.ttf") format("truetype"), url("./css/fontkit/averta-black-webfont.svg#avertablack") format("svg");
+  src: url("../css/fontkit/averta-black-webfont.eot");
+  src: url("../css/fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fontkit/averta-black-webfont.woff2") format("woff2"), url("../css/fontkit/averta-black-webfont.woff") format("woff"), url("../css/fontkit/averta-black-webfont.ttf") format("truetype"), url("../css/fontkit/averta-black-webfont.svg#avertablack") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 /* Lato Variables */
 /* Base Size */
-h4, h5, h6 {
-  font-family: "Lato", sans-serif; }
-
-p, body {
+p {
   font-family: "Lora", serif; }
 
-h1, h2, h3 {
-  font-family: 'avertablack'; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'avertablack', Arial; }
 
 .intro {
   text-align: center;
@@ -183,21 +180,18 @@ circle {
 /* Typeography */
 @font-face {
   font-family: 'avertablack';
-  src: url("./css/fontkit/averta-black-webfont.eot");
-  src: url("./css/fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./css/fontkit/averta-black-webfont.woff2") format("woff2"), url("/css/fontkit/averta-black-webfont.woff") format("woff"), url("./css/fontkit/averta-black-webfont.ttf") format("truetype"), url("./css/fontkit/averta-black-webfont.svg#avertablack") format("svg");
+  src: url("../css/fontkit/averta-black-webfont.eot");
+  src: url("../css/fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("../css/fontkit/averta-black-webfont.woff2") format("woff2"), url("../css/fontkit/averta-black-webfont.woff") format("woff"), url("../css/fontkit/averta-black-webfont.ttf") format("truetype"), url("../css/fontkit/averta-black-webfont.svg#avertablack") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 /* Lato Variables */
 /* Base Size */
-h4, h5, h6 {
-  font-family: "Lato", sans-serif; }
-
-p, body {
+p {
   font-family: "Lora", serif; }
 
-h1, h2, h3 {
-  font-family: 'avertablack'; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'avertablack', Arial; }
 
 /* Normalize */
 /* ==========================================================================
