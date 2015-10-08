@@ -1,9 +1,8 @@
 $(window).load(function(){
     // change opacity of char4 when page loads.
-    $('.char4').delay(100).animate({
+    $('.char4').delay( 600 ).animate({
         opacity:1
-    }, 4000, function(){
+    }, 6000, function(){
     });
 });
-
-console.log('hello');
+var s = Snap('.multiply');

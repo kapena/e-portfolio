@@ -80,10 +80,8 @@ gulp.task('reload', function(){
 gulp.task('scripts',function(){
     return gulp.src(paths.source.js)
     .pipe(plumber({errorHandler: onError}))
-
         // plumber finds errors in stream and
         // notifys me in terminal
-        // errorHandler: onError }))
     .pipe(concat('site.js')) // concating js files to main.js
     .pipe(gulp.dest(paths.destination.js)) // save in dest
     .pipe(uglify()) // minify js
@@ -95,7 +93,6 @@ gulp.task('scripts',function(){
 });
 
 // autoprefixer watching main.css file for changes
-
 gulp.watch('./site/css/main.css',['autoprefixer']);
 
 gulp.task('autoprefixer',function () {
@@ -108,7 +105,6 @@ gulp.task('autoprefixer',function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./site/css'));
 });
-
 
 // Styles Task
 gulp.task('styles', function(){

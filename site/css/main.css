@@ -31,13 +31,16 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   font-size: 7.59375em;
   margin-bottom: 1em;
-  margin-top: 1em; }
+  margin-top: 0.5em; }
 
 .char1, .char2, .char5, .char6 {
   padding-right: 15px; }
 
 .char3 {
   opacity: 0;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
   position: relative;
   display: inline-block;
   width: 50px;
@@ -59,32 +62,32 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0; }
 
 @-webkit-keyframes spin {
-  0% {
+  from {
     opacity: 1;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     -webkit-animation-duration: 2s;
             animation-duration: 2s; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: rotate(920deg);
             transform: rotate(920deg);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s; } }
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s; } }
 
 @keyframes spin {
-  0% {
+  from {
     opacity: 1;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     -webkit-animation-duration: 2s;
             animation-duration: 2s; }
-  100% {
+  to {
     opacity: 0;
     -webkit-transform: rotate(920deg);
             transform: rotate(920deg);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s; } }
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s; } }
 
 .intro-msg {
   padding-left: 2px;
