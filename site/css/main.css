@@ -26,6 +26,11 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'avertablack', Arial; }
 
+#mixer {
+  background-color: grey;
+  display: block;
+  margin: auto; }
+
 .intro {
   text-align: center;
   position: relative;
@@ -124,7 +129,6 @@ header #projects:hover, header #chat:hover, header #bio:hover {
 
 circle {
   mix-blend-mode: multiply;
-  opacity: 1;
   -webkit-animation-delay: -5s;
           animation-delay: -5s;
   -webkit-animation: circlespin 15s -5s infinite linear;
@@ -132,42 +136,6 @@ circle {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg); }
-
-@-webkit-keyframes circlespin {
-  0% {
-    opacity: 0.1;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  20% {
-    opacity: 0.2; }
-  40% {
-    opacity: 0.4; }
-  60% {
-    opacity: 0.6; }
-  80% {
-    opacity: 0.8; }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
-
-@keyframes circlespin {
-  0% {
-    opacity: 0.1;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  20% {
-    opacity: 0.2; }
-  40% {
-    opacity: 0.4; }
-  60% {
-    opacity: 0.6; }
-  80% {
-    opacity: 0.8; }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
 
 .multiply {
   display: block;

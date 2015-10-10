@@ -4,6 +4,13 @@
 @import "partials/variables";
 @import "partials/typography";
 
+
+#mixer{
+    background-color: grey;
+    display: block;
+    margin: auto;
+}
+
 .intro{
     text-align: center;
     position: relative;
@@ -95,42 +102,11 @@ header #projects:hover{
 
 circle {
   mix-blend-mode: multiply;
-  opacity:1;
-  //transition: opacity 1s;
+// opacity:1;
   animation-delay: -5s;
   animation: circlespin 15s -5s infinite linear;
   transform: rotate(90deg);
 }
-
-
-@keyframes circlespin {
-      0% {
-        opacity:0.1;
-        transform: rotate(0deg);
-     }
-
-     20%{
-         opacity:0.2;
-     }
-
-     40%{
-         opacity: 0.4;
-     }
-
-     60%{
-        opacity:0.6;
-     }
-
-     80%{
-         opacity:0.8;
-     }
-
-      100%{
-          opacity:1;
-          transform:rotate(360deg);
-      }
-
-    }
 
 .multiply{
     display: block;
