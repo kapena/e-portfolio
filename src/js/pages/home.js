@@ -1,9 +1,9 @@
 // DOM ready function
 $(window).load(function(){
     // change opacity of char4 when page loads.
-    $('.char4').delay(600).animate({
+    $('.char4').delay(800).animate({
         opacity:1
-    }, 4000, function(){
+    }, 5000, function(){
     });
 // Drawing surface
 var paper = Snap(500,400);
@@ -16,15 +16,18 @@ var paper = Snap(500,400);
 // circles
 var circle1 = paper.circle(210,120,70);
     circle1.attr({
+        id:"cir1",
         fill:"cyan"
     });
 var circle2 = paper.circle(260,200,70);
     circle2.attr({
+        id:"cir2",
         fill:"yellow"
     });
 
 var circle3 = paper.circle(160,200,70);
     circle3.attr({
+        id:"cir3",
         fill:"magenta"
     });
 

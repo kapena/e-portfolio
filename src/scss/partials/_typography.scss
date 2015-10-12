@@ -27,10 +27,10 @@ $lora:'Lora',serif;
 
 /* Base Size */
 $base:0.5em;
-//
-// h4 ,h5 ,h6 {
-//     font-family:$lato;
-// }
+// Responsive Scales
+$ms-range:
+1.1 15em,
+1.333 60em;
 
 p{
     font-family: $lora;

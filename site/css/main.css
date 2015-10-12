@@ -28,13 +28,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #mixer {
   display: block;
-  margin: auto; }
+  margin: 1em auto; }
 
 .intro {
   text-align: center;
   position: relative;
   font-size: 7.59375em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   margin-top: 0.5em; }
 
 .char1, .char2, .char5, .char6 {
@@ -99,9 +99,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1px;
   margin-left: 10%;
   margin-right: 10%;
+  font-size: 1.1em;
   text-align: center;
   line-height: 1.5em;
   font-size: 1.5em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .intro-msg {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 ) ); } }
+  @media (min-width: 60em) {
+    .intro-msg {
+      font-size: 1.333em; } }
 
 header #projects:hover,
 header #chat:hover, header #bio:hover, header #projects:focus, header #chat:focus, header #bio:focus {
@@ -128,6 +135,28 @@ header #projects:hover, header #chat:hover, header #bio:hover {
 
 circle {
   mix-blend-mode: multiply; }
+
+@media screen and (max-width: 640px) {
+  .intro {
+    font-size: 5.0625em; } }
+
+@media screen and (max-width: 440px) {
+  .intro {
+    letter-spacing: 1px;
+    font-size: 3.375em; } }
+
+@media screen and (max-width: 547px) {
+  #cir1 {
+    r: 60;
+    cx: 130; }
+  #cir2 {
+    r: 60;
+    cx: 165; }
+  #cir3 {
+    r: 60;
+    cx: 90; }
+  #mixer {
+    width: 300px; } }
 
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */
