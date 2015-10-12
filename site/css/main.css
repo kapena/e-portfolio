@@ -27,7 +27,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'avertablack', Arial; }
 
 #mixer {
-  background-color: grey;
   display: block;
   margin: auto; }
 
@@ -39,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.5em; }
 
 .char1, .char2, .char5, .char6 {
-  padding-right: 15px; }
+  letter-spacing: 10px; }
 
 .char3 {
   opacity: 0;
@@ -50,12 +49,12 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   width: 50px;
   height: 55px;
-  left: 20px;
-  margin-right: -21px;
-  bottom: 2.5px;
+  left: 10px;
+  margin-right: -40px;
+  bottom: 3px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 95px;
+  background-size: 80px;
   background-image: url("https://s3-us-west-2.amazonaws.com/designdiagrams/curveAst_O.png");
   -webkit-animation: spin 4s 1 ease;
           animation: spin 4s 1 ease; }
@@ -63,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 .char4 {
   color: black;
   position: relative;
-  right: 20px;
+  right: 10px;
   opacity: 0; }
 
 @-webkit-keyframes spin {
@@ -128,20 +127,7 @@ header #projects:hover, header #chat:hover, header #bio:hover {
   background-size: 100% 100%; }
 
 circle {
-  mix-blend-mode: multiply;
-  -webkit-animation-delay: -5s;
-          animation-delay: -5s;
-  -webkit-animation: circlespin 15s -5s infinite linear;
-          animation: circlespin 15s -5s infinite linear;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg); }
-
-.multiply {
-  display: block;
-  margin: 1em auto;
-  width: 100%;
-  height: 32em; }
+  mix-blend-mode: multiply; }
 
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */

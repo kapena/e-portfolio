@@ -1,35 +1,57 @@
 // DOM ready function
 $(window).load(function(){
     // change opacity of char4 when page loads.
-    $('.char4').delay( 600 ).animate({
+    $('.char4').delay(600).animate({
         opacity:1
-    }, 6000, function(){
+    }, 4000, function(){
     });
-    // var s = Snap(".multiply");
-    // // select circle group and apply attribute of opacity 0
-    // var circles = s.select("#cir").attr({
-    //     opacity:0
-    // });
-    // create circle drawing surface
-    var paper = Snap(500,400);
+// Drawing surface
+var paper = Snap(500,400);
     // viewbox of svg
     paper.attr({
-        viewbox:"0 -200 1 500"
+        id:"mixer",
+        viewbox:"0 -150 1 500"
     });
-    // id of svg
-    paper.node.id = 'mixer';
-    // circles
-    var circle1 = paper.circle(100,-250,70);
+
+// circles
+var circle1 = paper.circle(210,120,70);
     circle1.attr({
         fill:"cyan"
     });
-    var circle2 = paper.circle(200,-200, 70);
+var circle2 = paper.circle(260,200,70);
     circle2.attr({
         fill:"yellow"
     });
 
-    var circle3 = paper.circle(200, -300, 70);
+var circle3 = paper.circle(160,200,70);
     circle3.attr({
         fill:"magenta"
     });
+
+    // grouped circles
+var circleGroup = paper.g(circle1,circle2,circle3).attr({
+    opacity:0,
+    id:"cir"
+});
+
+// select cir id
+var circles = paper.select('#cir');
+
+// animate opacity of circles to 0.5 at 3000 milloseconds
+setTimeout (function(){
+        circles.animate({
+            opacity:0.5
+        },1000);
+    }, 3000);
+
+// setTimeout to rotate circles 360 deg
+setTimeout (function (){
+    // animation function
+    animation();
+    function animation () {
+        circles.stop().animate({
+        // rotate circles 360 deg
+        transform:'r360, t20, t20' }, 10000);
+        }
+    }, 4000);
 });
