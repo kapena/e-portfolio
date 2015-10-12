@@ -26,15 +26,19 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'avertablack', Arial; }
 
+#mixer {
+  display: block;
+  margin: 1em auto; }
+
 .intro {
   text-align: center;
   position: relative;
   font-size: 7.59375em;
-  margin-bottom: 1em;
-  margin-top: 1em; }
+  margin-bottom: 0.5em;
+  margin-top: 0.5em; }
 
 .char1, .char2, .char5, .char6 {
-  padding-right: 15px; }
+  letter-spacing: 10px; }
 
 .char3 {
   opacity: 0;
@@ -45,12 +49,12 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   width: 50px;
   height: 55px;
-  left: 20px;
-  margin-right: -21px;
-  bottom: 2.5px;
+  left: 10px;
+  margin-right: -40px;
+  bottom: 3px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 95px;
+  background-size: 80px;
   background-image: url("https://s3-us-west-2.amazonaws.com/designdiagrams/curveAst_O.png");
   -webkit-animation: spin 4s 1 ease;
           animation: spin 4s 1 ease; }
@@ -58,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 .char4 {
   color: black;
   position: relative;
-  right: 20px;
+  right: 10px;
   opacity: 0; }
 
 @-webkit-keyframes spin {
@@ -95,9 +99,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 1px;
   margin-left: 10%;
   margin-right: 10%;
+  font-size: 1.1em;
   text-align: center;
   line-height: 1.5em;
   font-size: 1.5em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .intro-msg {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 ) ); } }
+  @media (min-width: 60em) {
+    .intro-msg {
+      font-size: 1.333em; } }
 
 header #projects:hover,
 header #chat:hover, header #bio:hover, header #projects:focus, header #chat:focus, header #bio:focus {
@@ -123,57 +134,29 @@ header #projects:hover, header #chat:hover, header #bio:hover {
   background-size: 100% 100%; }
 
 circle {
-  mix-blend-mode: multiply;
-  opacity: 1;
-  -webkit-animation-delay: -5s;
-          animation-delay: -5s;
-  -webkit-animation: circlespin 15s -5s infinite linear;
-          animation: circlespin 15s -5s infinite linear;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg); }
+  mix-blend-mode: multiply; }
 
-@-webkit-keyframes circlespin {
-  0% {
-    opacity: 0.1;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  20% {
-    opacity: 0.2; }
-  40% {
-    opacity: 0.4; }
-  60% {
-    opacity: 0.6; }
-  80% {
-    opacity: 0.8; }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+@media screen and (max-width: 640px) {
+  .intro {
+    font-size: 5.0625em; } }
 
-@keyframes circlespin {
-  0% {
-    opacity: 0.1;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
-  20% {
-    opacity: 0.2; }
-  40% {
-    opacity: 0.4; }
-  60% {
-    opacity: 0.6; }
-  80% {
-    opacity: 0.8; }
-  100% {
-    opacity: 1;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+@media screen and (max-width: 440px) {
+  .intro {
+    letter-spacing: 1px;
+    font-size: 3.375em; } }
 
-.multiply {
-  display: block;
-  margin: 1em auto;
-  width: 100%;
-  height: 32em; }
+@media screen and (max-width: 547px) {
+  #cir1 {
+    r: 60;
+    cx: 130; }
+  #cir2 {
+    r: 60;
+    cx: 165; }
+  #cir3 {
+    r: 60;
+    cx: 90; }
+  #mixer {
+    width: 300px; } }
 
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */
@@ -566,5 +549,4 @@ td,
 th {
   padding: 0; }
 
-/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
