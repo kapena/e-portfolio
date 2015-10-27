@@ -10,3 +10,21 @@
     margin-left:$margins;
     margin-right:$margins;
 }
+
+
+$phoneHome:400px;
+// 440 px
+$tabletHome:630px;
+
+// Home page tablet layout
+@mixin tablet {
+    @media (max-width: #{$tabletHome}){
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (max-width:#{$phoneHome}){
+        @content;
+    }
+}

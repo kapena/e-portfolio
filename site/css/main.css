@@ -1,5 +1,5 @@
 /* Partails */
-/* Home */
+/* Home  Pg*/
 /*  Home-Page Module Mixins and Extends */
 /* Here I import all my modules into the home-module */
 /* Padding mixin for links inside paragraph*/
@@ -7,6 +7,8 @@
 /* Gobal Variables */
 /* Modular Scale */
 /* Colors */
+@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
@@ -26,6 +28,12 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'avertablack', Arial; }
 
+body {
+  background-color: rgba(227, 227, 203, 0.89); }
+
+header {
+  padding-top: 30px; }
+
 #mixer {
   display: block;
   margin: 1em auto; }
@@ -35,7 +43,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   font-size: 7.59375em;
   margin-bottom: 0.5em;
-  margin-top: 0.5em; }
+  margin-top: 0.5em;
+  color: #002b36; }
 
 .char1, .char2, .char5, .char6 {
   letter-spacing: 10px; }
@@ -60,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
           animation: spin 4s 1 ease; }
 
 .char4 {
-  color: black;
+  color: #002b36;
   position: relative;
   right: 10px;
   opacity: 0; }
@@ -136,13 +145,12 @@ header #projects:hover, header #chat:hover, header #bio:hover {
 circle {
   mix-blend-mode: multiply; }
 
-@media screen and (max-width: 640px) {
+@media (max-width: 630px) {
   .intro {
     font-size: 5.0625em; } }
 
-@media screen and (max-width: 440px) {
+@media (max-width: 400px) {
   .intro {
-    letter-spacing: 1px;
     font-size: 3.375em; } }
 
 @media screen and (max-width: 547px) {
@@ -162,7 +170,77 @@ circle {
 /* Here I import all my modules into the home-module */
 /* Padding mixin for links inside paragraph*/
 /* Pushing intro-msg margins in closer */
-/* Projects  */
+/* Modular Scale */
+/* Colors */
+@font-face {
+  font-family: 'avertablack';
+  src: url("./fontkit/averta-black-webfont.eot");
+  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Lato Variables */
+/* Base Size */
+p {
+  font-family: "Lora", serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'avertablack', Arial; }
+
+.slide-nav-trigger {
+  position: fixed;
+  z-index: 3;
+  left: 5%;
+  top: 20px;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background-color: #373D45; }
+
+#one, #two, #three {
+  mix-blend-mode: screen; }
+
+/* Main Components Most Styling*/
+/* Nest 1
+two top level divs in the HTML
+1 slide-nav
+2 slide-navigation-wrapper
+*/
+.slide-nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: visibility 0s 0.7s;
+  transition: visibility 0s 0.7s; }
+  .slide-nav .slide-navigation-wrapper {
+    height: 100%;
+    overflow-y: auto;
+    overflow-scrolling: touch;
+    padding: 40px 5% 40px calc(5% + 80px);
+    -webkit-transition: translateZ(0);
+    transition: translateZ(0);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.7s;
+    transition: transform 0.7s;
+    -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+    transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78); }
+  .navigation-is-on .slide-nav {
+    visibility: visible;
+    -webkit-transition: visibility 0s 0s;
+    transition: visibility 0s 0s; }
+    .navigation-is-on .slide-nav .slide-navigation-wrapper {
+      -webkit-transition: translateX(0);
+      transition: translateX(0);
+      -webkit-transition: -webkit-transform 0.5s;
+      transition: transform 0.5s;
+      -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+      transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78); }
+
+/* Projects  Pg */
 /* Typeography */
 @font-face {
   font-family: 'avertablack';
@@ -179,7 +257,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'avertablack', Arial; }
 
-/* Normalize */
+/* Vendors */
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */

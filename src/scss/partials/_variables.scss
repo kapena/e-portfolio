@@ -10,7 +10,19 @@ $ms-ratio:1.5;
 $projects:cyan;
 $bio:yellow;
 $chat:lime;
-$text:black;
+$text:#002b36; // charcoal
+$circleNav:#373D45; // circle nav button
+$sand:rgba(227, 227, 203, 0.89); // page color
+$color-1: #243040; // Ebony Clay
+$color-2: #9cb3a8; // Pewter
+$color-3: #ffffff; // White
+$color-4:#D7E1DC;; // OffCyan
+
+// Radius of Circles on smaller screens
+$r:60;
+
+// animation of sliding nav
+$animation-dur:0.7s;
 
 // kerning on aloha text
 $padding-aloha:10px;

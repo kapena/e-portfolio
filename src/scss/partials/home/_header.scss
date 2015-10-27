@@ -4,11 +4,17 @@
 @import "partials/variables";
 @import "partials/typography";
 
+body{
+     background-color: $sand;
+}
+
+header{
+    padding-top: 30px;
+}
 
 #mixer{
     display: block;
     margin: 1em auto;
-    //background-color: grey;
 }
 
 .intro{
@@ -17,6 +23,7 @@
     font-size: ms(5);
     margin-bottom: 0.5em;
     margin-top:0.5em;
+    color:$text;
 }
 
 .char1, .char2, .char5, .char6{
@@ -41,7 +48,7 @@
 }
 
 .char4{
-    color:black;
+    color:$text;
     position: relative;
     right:10px;
     opacity:0;
@@ -90,10 +97,10 @@ header #projects {
 header #projects{
     border:none;
     border-bottom: 2px solid blue;
-    // cyan rect appear over link
-    background:linear-gradient(cyan,cyan) no-repeat bottom;
+    background:-webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+    background:-o-linear-gradient(cyan, cyan) no-repeat bottom;
+    background:linear-gradient(cyan, cyan) no-repeat bottom;
     background-size:100% 1px;
-    // transition when hovered on
     transition: .2s,color .1s .1s;
     text-decoration:none;
 }
@@ -106,19 +113,19 @@ circle {
   mix-blend-mode: multiply;
 }
 
-@media screen and (max-width:640px) {
+// Media Q mixin for tablets
+@include tablet {
     .intro{
-        font-size:ms(4);
-    }
-}
-@media screen and (max-width:440px) {
-    .intro{
-        letter-spacing:1px;
-        font-size:ms(3);
+        font-size: ms(4);
     }
 }
 
-$r:60;
+// Media Q mixin for phone
+@include phone {
+    .intro{
+        font-size: ms(3);
+    }
+}
 
 @media screen and (max-width:547px) {
 

@@ -1,13 +1,13 @@
 /* Partails */
 
-/* Home */
+/* Home  Pg*/
 
 @import "partials/home/header";
 
 @import "partials/home/nav";
 
 
-/* Projects  */
+/* Projects  Pg */
 
 @import "partials/projects/layout";
 
@@ -15,9 +15,10 @@
 
 @import "partials/projects/hover";
 
-
 /* Typeography */
 @import"partials/typography";
 
-/* Normalize */
-@import "vendor/normalize";
+/* Vendors */
+
+@import "vendor/normalize"; // normalize
+@import "vendor/bourbon"; // bourbon mixins

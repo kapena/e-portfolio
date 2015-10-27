@@ -1,2 +1,77 @@
 /*  mixins, extends and colors inside home_module */
 @import "modules/home-page/home-module";
+@import "partials/variables";
+@import "partials/typography";
+@import "vendor/bourbon";
+
+
+// Nav button
+.slide-nav-trigger{
+    position: fixed;
+    z-index: 3;
+    left:5%;
+    top:20px;
+    height:64px;
+    width:64px;
+    border-radius: 50%;
+    background-color:$circleNav;
+}
+#one, #two, #three{
+    mix-blend-mode:screen;
+}
+
+/* Main Components Most Styling*/
+
+/* Nest 1
+two top level divs in the HTML
+1 slide-nav
+2 slide-navigation-wrapper
+*/
+
+.slide-nav{
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    //background-color:$circleNav;
+    //visibility: hidden;
+    @include transition(visibility 0s $animation-dur);
+
+    .slide-navigation-wrapper{
+        // main navigation content here
+        height:100%;
+        overflow-y: auto;
+        overflow-scrolling:touch;
+        // padds links over to the left
+        padding:40px 5% 40px calc(5% + 80px);
+        // Force Hard W acceleration webkit
+        @include transition(translateZ(0));
+        //-webkit-backface-visibility:hidden;
+        backface-visibility:hidden;
+        // transform links on X axis -50% hidden off screen!
+        //@include transform(translateX(-50%));
+        // transition the transformation
+        @include transition(transform $animation-dur);
+        // transition timing function makes the animation smooth
+        @include transition-timing-function(cubic-bezier(.86,.01,.77,.78));
+    }
+    // adding navigation-is-open class and assigning our parent selector `slide-nav`
+
+    // when slide-nav-trigger button is clicked on I toggle navigation-is-on to body of html
+
+    .navigation-is-on &{
+        visibility: visible;
+        // transition visibility
+        @include transition(visibility 0s 0s);
+        // slide-navigation-wrapper slides out when navigation-is-on is toggled to body
+        .slide-navigation-wrapper{
+            // transition translate on the X axis `0`
+            @include transition(translateX(0));
+            // transition transform animation duration - 0.2s
+            @include transition(transform $animation-dur - 0.2s);
+            @include transition-timing-function(cubic-bezier(.82,.01,.77,.78));
+        }
+    }
+}

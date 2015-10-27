@@ -6,7 +6,7 @@
     "normalize-scss": "~3.0.3",
     "modular-scale": "~2.1.1",
     "letteringjs": "~0.7.0",
-    "Snap.svg": "~0.4.1"
+    "Snap.svg": "~0.4.1",
+    "bourbon":"~4.2.6"
   }
-
 }

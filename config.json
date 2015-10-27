@@ -1,7 +1,8 @@
 {
     "paths": {
         "source":{
-            "styles":"src/scss/main.scss",
+            "styles":
+                "src/scss/main.scss",
             "js":[
                 "bower_components/jquery/dist/jquery.min.js",
                 "bower_components/letteringjs/jquery.lettering.js",
