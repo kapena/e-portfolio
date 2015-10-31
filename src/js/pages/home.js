@@ -45,7 +45,7 @@ setTimeout (function(){
         circles.animate({
             opacity:0.5
         },1000);
-    }, 3000);
+    }, 10000);
 
 // setTimeout to rotate circles 360 deg
 setTimeout (function (){
@@ -56,5 +56,5 @@ setTimeout (function (){
         // rotate circles 360 deg
         transform:'r360, t20, t20' }, 10000);
         }
-    }, 4000);
+    }, 9000);
 });

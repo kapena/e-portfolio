@@ -14,7 +14,7 @@ header{
 
 #mixer{
     display: block;
-    margin: 1em auto;
+    margin: -1em auto;
 }
 
 .intro{
@@ -31,6 +31,7 @@ header{
 }
 
 .char3{
+
     opacity:0;
     transform:rotate(0deg);
     position: relative;

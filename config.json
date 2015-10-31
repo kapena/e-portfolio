@@ -8,7 +8,7 @@
                 "bower_components/letteringjs/jquery.lettering.js",
                 "bower_components/Snap.svg/dist/snap.svg-min.js",
                 "src/js/pages/*.js",
-                "src/js/main.js"
+                "src/js/slidenav.js"
             ]
         },
         "destination":{

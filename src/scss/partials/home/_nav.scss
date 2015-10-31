@@ -14,18 +14,44 @@
     height:64px;
     width:64px;
     border-radius: 50%;
-    background-color:$circleNav;
+    background-color:$circleNav3;
 }
 #one, #two, #three{
     mix-blend-mode:screen;
 }
 
-/* Main Components Most Styling*/
+main{
+    position: relative;
+    z-index: 2;
+
+    // OS Bug fix
+    //height: 100vh;
+    overflow-y: auto;
+    backface-visibility: hidden;
+
+    // Force Hard W Acceleration
+    @include transition(translateZ(0));
+    backface-visibility:hidden;
+
+    //padding:200px 5%;
+    //background-color:$color-4;
+    @include transition(transform $animation-dur);
+    @include transition-timing-function(cubic-bezier(.91,.01,.6,.99));
+
+    // assign .navigation-is-open to .main
+    // transform the page to move 100% left
+    // when user clicks slide-nav-trigger
+
+    .navigation-is-open &{
+        @include transform(translateX(100%));
+    }
+}
+
+/* Main Components Most of Styling*/
 
 /* Nest 1
-two top level divs in the HTML
-1 slide-nav
-2 slide-navigation-wrapper
+slide-nav
+slide-navigation-wrapper
 */
 
 .slide-nav{
@@ -35,8 +61,10 @@ two top level divs in the HTML
     left:0;
     height:100%;
     width:100%;
-    //background-color:$circleNav;
-    //visibility: hidden;
+    opacity: 0;
+    display: block;
+    background-color:#51585A;
+    visibility: hidden;
     @include transition(visibility 0s $animation-dur);
 
     .slide-navigation-wrapper{
@@ -48,10 +76,9 @@ two top level divs in the HTML
         padding:40px 5% 40px calc(5% + 80px);
         // Force Hard W acceleration webkit
         @include transition(translateZ(0));
-        //-webkit-backface-visibility:hidden;
         backface-visibility:hidden;
         // transform links on X axis -50% hidden off screen!
-        //@include transform(translateX(-50%));
+        @include transform(translateX(-50%));
         // transition the transformation
         @include transition(transform $animation-dur);
         // transition timing function makes the animation smooth
@@ -61,17 +88,65 @@ two top level divs in the HTML
 
     // when slide-nav-trigger button is clicked on I toggle navigation-is-on to body of html
 
-    .navigation-is-on &{
+    .navigation-is-open & {
         visibility: visible;
         // transition visibility
         @include transition(visibility 0s 0s);
         // slide-navigation-wrapper slides out when navigation-is-on is toggled to body
         .slide-navigation-wrapper{
             // transition translate on the X axis `0`
-            @include transition(translateX(0));
+            @include transform(translateX(0));
             // transition transform animation duration - 0.2s
             @include transition(transform $animation-dur - 0.2s);
             @include transition-timing-function(cubic-bezier(.82,.01,.77,.78));
+        }
+    }
+}
+
+/* Nest 2
+#title <h2>
+slide-nav <div>
+*/
+
+// style title
+#navTitle{
+    position: relative;
+    font-size:ms(1);
+    margin-top: 2.7em;
+    padding-left: 20px;
+    margin-top: 0em;
+
+    .slide-nav::after{
+        position: absolute;
+        left:0;
+        bottom: -20px;
+        height:1px;
+    }
+}
+
+/* Nest 3
+ slide-primary-nav <ul>
+ links  <a>
+*/
+
+.slide-nav .slide-primary-nav{
+    margin-top:5em;
+
+    li{
+        margin: 1.6em 0;
+    }
+
+    a{
+        font-size:ms(1);
+        color:rgba($color-3, .5);
+        display: inline-block;
+        &.selected{
+            color:$color-3;
+        }
+        // add class `no-touch` (modernizr), select slide-nav,
+        // select slide-primary-nav with & selector and apply hover state
+        &:hover{
+            color:$circleNav2;
         }
     }
 }

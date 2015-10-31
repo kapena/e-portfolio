@@ -36,7 +36,7 @@ header {
 
 #mixer {
   display: block;
-  margin: 1em auto; }
+  margin: -1em auto; }
 
 .intro {
   text-align: center;
@@ -195,16 +195,34 @@ h1, h2, h3, h4, h5, h6 {
   height: 64px;
   width: 64px;
   border-radius: 50%;
-  background-color: #373D45; }
+  background-color: #51585A; }
 
 #one, #two, #three {
   mix-blend-mode: screen; }
 
-/* Main Components Most Styling*/
+main {
+  position: relative;
+  z-index: 2;
+  overflow-y: auto;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: translateZ(0);
+  transition: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99); }
+  .navigation-is-open main {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%); }
+
+/* Main Components Most of Styling*/
 /* Nest 1
-two top level divs in the HTML
-1 slide-nav
-2 slide-navigation-wrapper
+slide-nav
+slide-navigation-wrapper
 */
 .slide-nav {
   position: fixed;
@@ -213,6 +231,10 @@ two top level divs in the HTML
   left: 0;
   height: 100%;
   width: 100%;
+  opacity: 0;
+  display: block;
+  background-color: #51585A;
+  visibility: hidden;
   -webkit-transition: visibility 0s 0.7s;
   transition: visibility 0s 0.7s; }
   .slide-nav .slide-navigation-wrapper {
@@ -224,21 +246,58 @@ two top level divs in the HTML
     transition: translateZ(0);
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     -webkit-transition: -webkit-transform 0.7s;
     transition: transform 0.7s;
     -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
     transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78); }
-  .navigation-is-on .slide-nav {
+  .navigation-is-open .slide-nav {
     visibility: visible;
     -webkit-transition: visibility 0s 0s;
     transition: visibility 0s 0s; }
-    .navigation-is-on .slide-nav .slide-navigation-wrapper {
-      -webkit-transition: translateX(0);
-      transition: translateX(0);
+    .navigation-is-open .slide-nav .slide-navigation-wrapper {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
       -webkit-transition: -webkit-transform 0.5s;
       transition: transform 0.5s;
       -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
       transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78); }
+
+/* Nest 2
+#title <h2>
+slide-nav <div>
+*/
+#navTitle {
+  position: relative;
+  font-size: 1.5em;
+  margin-top: 2.7em;
+  padding-left: 20px;
+  margin-top: 0em; }
+  #navTitle .slide-nav::after {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    height: 1px; }
+
+/* Nest 3
+ slide-primary-nav <ul>
+ links  <a>
+*/
+.slide-nav .slide-primary-nav {
+  margin-top: 5em; }
+  .slide-nav .slide-primary-nav li {
+    margin: 1.6em 0; }
+  .slide-nav .slide-primary-nav a {
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block; }
+    .slide-nav .slide-primary-nav a.selected {
+      color: #ffffff; }
+    .slide-nav .slide-primary-nav a:hover {
+      color: #37535A; }
 
 /* Projects  Pg */
 /* Typeography */
