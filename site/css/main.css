@@ -7,10 +7,13 @@
 /* Gobal Variables */
 /* Modular Scale */
 /* Colors */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 @font-face {
@@ -25,61 +28,69 @@
 p {
   font-family: "Lora", serif; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'avertablack', Arial; }
-
 body {
+  height: 2000px;
   background-color: rgba(227, 227, 203, 0.89); }
 
 header {
   padding-top: 30px; }
 
 #mixer {
-  display: block;
-  margin: -1em auto; }
+  height: 450px;
+  width: 100%; }
 
-.intro {
-  text-align: center;
-  position: relative;
-  font-size: 7.59375em;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  color: #002b36; }
+.aloha {
+  fill: url("#tropics");
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; }
 
-.char1, .char2, .char5, .char6 {
-  letter-spacing: 10px; }
+.titleName {
+  text-align: center; }
 
-.char3 {
-  opacity: 0;
-  transform: rotate(0deg);
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 55px;
-  left: 10px;
-  margin-right: -40px;
-  bottom: 3px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 80px;
-  background-image: url("https://s3-us-west-2.amazonaws.com/designdiagrams/curveAst_O.png");
-  animation: spin 4s 1 ease; }
-
-.char4 {
+.name, .title {
   color: #002b36;
-  position: relative;
-  right: 10px;
-  opacity: 0; }
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.21em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .name, .title {
+      font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .name, .title {
+      font-size: 1.77689em; } }
+
+.title {
+  padding-top: -25px;
+  padding-bottom: 25px;
+  margin-top: -25px; }
+
+@-webkit-keyframes spin {
+  from {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s; }
+  to {
+    opacity: 0;
+    -webkit-transform: rotate(920deg);
+            transform: rotate(920deg);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s; } }
 
 @keyframes spin {
   from {
     opacity: 1;
-    transform: rotate(0deg);
-    animation-duration: 2s; }
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s; }
   to {
     opacity: 0;
-    transform: rotate(920deg);
-    animation-duration: 1s; } }
+    -webkit-transform: rotate(920deg);
+            transform: rotate(920deg);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s; } }
 
 .intro-msg {
   padding-left: 2px;
@@ -98,6 +109,21 @@ header {
     .intro-msg {
       font-size: 1.333em; } }
 
+.built {
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-size: 1em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .built {
+      font-size: calc( 1em + 0 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .built {
+      font-size: 1em; } }
+
 header #projects:hover, header #chat:hover, header #bio:hover,
 header #projects:focus, header #chat:focus, header #bio:focus {
   color: blue; }
@@ -112,9 +138,9 @@ header #projects, header #chat, header #bio {
   border: none;
   border-bottom: 2px solid blue;
   background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
-  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
   background: linear-gradient(cyan, cyan) no-repeat bottom;
   background-size: 100% 1px;
+  -webkit-transition: .2s,color .1s .1s;
   transition: .2s,color .1s .1s;
   text-decoration: none; }
 
@@ -123,27 +149,6 @@ header #projects:hover, header #chat:hover, header #bio:hover {
 
 circle {
   mix-blend-mode: multiply; }
-
-@media (max-width: 630px) {
-  .intro {
-    font-size: 5.0625em; } }
-
-@media (max-width: 400px) {
-  .intro {
-    font-size: 3.375em; } }
-
-@media screen and (max-width: 547px) {
-  #cir1 {
-    r: 60;
-    cx: 130; }
-  #cir2 {
-    r: 60;
-    cx: 165; }
-  #cir3 {
-    r: 60;
-    cx: 90; }
-  #mixer {
-    width: 300px; } }
 
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */
@@ -163,9 +168,6 @@ circle {
 p {
   font-family: "Lora", serif; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'avertablack', Arial; }
-
 .slide-nav-trigger {
   position: fixed;
   z-index: 3;
@@ -174,7 +176,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 64px;
   width: 64px;
   border-radius: 50%;
-  background-color: #51585A; }
+  background-color: #51585A;
+  opacity: 0;
+  visibility: hidden; }
+
+.show {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; }
 
 #one, #two, #three {
   mix-blend-mode: screen; }
@@ -183,22 +192,21 @@ main {
   position: relative;
   z-index: 2;
   overflow-y: auto;
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   -webkit-transition: translateZ(0);
-  -moz-transition: translateZ(0);
   transition: translateZ(0);
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   -webkit-transition: -webkit-transform;
-  -moz-transition: -moz-transform;
+  transition: -webkit-transform;
   transition: transform;
+  transition: transform, -webkit-transform;
   -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
-  -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
   transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99); }
   .navigation-is-open main {
     -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
     transform: translateX(100%); }
 
 /* Main Components Most of Styling*/
@@ -218,7 +226,6 @@ slide-navigation-wrapper
   background-color: #51585A;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.7s;
-  -moz-transition: visibility 0s 0.7s;
   transition: visibility 0s 0.7s; }
   .slide-nav .slide-navigation-wrapper {
     height: 100%;
@@ -226,36 +233,31 @@ slide-navigation-wrapper
     overflow-scrolling: touch;
     padding: 40px 5% 40px calc(5% + 80px);
     -webkit-transition: translateZ(0);
-    -moz-transition: translateZ(0);
     transition: translateZ(0);
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
     -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
     transform: translateX(-50%);
     -webkit-transition: -webkit-transform;
-    -moz-transition: -moz-transform;
+    transition: -webkit-transform;
     transition: transform;
+    transition: transform, -webkit-transform;
     -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
-    -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
     transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78); }
   .navigation-is-open .slide-nav {
     visibility: visible;
     -webkit-transition: visibility 0s 0s;
-    -moz-transition: visibility 0s 0s;
     transition: visibility 0s 0s; }
     .navigation-is-open .slide-nav .slide-navigation-wrapper {
       -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
       -ms-transform: translateX(0);
-      -o-transform: translateX(0);
       transform: translateX(0);
       -webkit-transition: -webkit-transform;
-      -moz-transition: -moz-transform;
+      transition: -webkit-transform;
       transition: transform;
+      transition: transform, -webkit-transform;
       -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
-      -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
       transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78); }
 
 /* Nest 2
@@ -304,9 +306,6 @@ slide-nav <div>
 /* Base Size */
 p {
   font-family: "Lora", serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'avertablack', Arial; }
 
 /* Vendors */
 /* ==========================================================================
@@ -678,3 +677,5 @@ table {
 td,
 th {
   padding: 0; }
+
+/*# sourceMappingURL=main.css.map */

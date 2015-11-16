@@ -9,11 +9,24 @@
     font-weight: normal;
     font-style: normal;
 }
+
+//
+
 $averta:'avertablack', Arial, sans-serif;
 
 // Google fonts
+
+
+// Montserrat
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+
+$monte:'Montserrat',sans-serif;
+
 // Lato
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
+
 /* Lato Variables */
 $lato:'Lato', sans-serif;
 $lato-norm:400;
@@ -36,6 +49,6 @@ p{
     font-family: $lora;
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family:'avertablack', Arial;
-}
+// h1, h2, h3, h4, h5, h6{
+//     font-family:'avertablack', Arial;
+// }

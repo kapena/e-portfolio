@@ -15,7 +15,16 @@
     width:64px;
     border-radius: 50%;
     background-color:$circleNav3;
+    opacity: 0;
+    visibility: hidden;
 }
+
+.show{
+    opacity: 1;
+    @include transition(opacity 1s ease-in-out);
+}
+
+
 #one, #two, #three{
     mix-blend-mode:screen;
 }
