@@ -5,6 +5,7 @@
 @import "partials/typography";
 
 body{
+    height:2000px;
      background-color: $sand;
 }
 
@@ -13,48 +14,34 @@ header{
 }
 
 #mixer{
-    display: block;
-    margin: -1em auto;
+    // display: block;
+    // margin: -1em auto;
+    height:450px;
+    width:100%;
 }
 
-.intro{
+.aloha{
+    fill:url('#tropics');
+    font-family:$monte;
+    font-weight: 700;
+}
+
+.titleName{
     text-align: center;
-    position: relative;
-    font-size: ms(5);
-    margin-bottom: 0.5em;
-    margin-top:0.5em;
+}
+
+.name, .title{
     color:$text;
+    font-weight: 400;
+    font-family: $monte;
+    @include ms-respond(font-size, 2);
 }
 
-.char1, .char2, .char5, .char6{
-    letter-spacing: 10px;
+.title{
+    padding-top:-25px;
+    padding-bottom: 25px;
+    margin-top: -25px;
 }
-
-.char3{
-
-    opacity:0;
-    transform:rotate(0deg);
-    position: relative;
-    display: inline-block;
-    width:50px;
-    height:55px;
-    left:10px;
-    margin-right:-40px;
-    bottom:3px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:80px;
-    background-image:url('https://s3-us-west-2.amazonaws.com/designdiagrams/curveAst_O.png');
-    animation: spin 4s 1 ease;
-}
-
-.char4{
-    color:$text;
-    position: relative;
-    right:10px;
-    opacity:0;
-}
-
 
 @keyframes spin {
 
@@ -83,10 +70,20 @@ header{
     font-size: ms(1);
 }
 
+.built{
+    @include left-right-bottom-links;
+    // left might margins pushed in closer
+    @include left-right-margin;
+    text-align: center;
+    @include ms-respond(font-size, -0);
+}
+
 header #projects:hover,
 header #projects:focus {
    color:blue;
 }
+
+
 
 header #projects {
     color:black;
@@ -112,38 +109,4 @@ header #projects:hover{
 
 circle {
   mix-blend-mode: multiply;
-}
-
-// Media Q mixin for tablets
-@include tablet {
-    .intro{
-        font-size: ms(4);
-    }
-}
-
-// Media Q mixin for phone
-@include phone {
-    .intro{
-        font-size: ms(3);
-    }
-}
-
-@media screen and (max-width:547px) {
-
-    #cir1{
-        r:$r;
-        cx:130;
-    }
-    #cir2{
-        r:$r;
-        cx:165;
-    }
-    #cir3{
-        r:$r;
-        cx:90;
-    }
-
-    #mixer{
-        width:300px;
-    }
 }

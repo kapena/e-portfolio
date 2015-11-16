@@ -1,16 +1,11 @@
 // DOM ready function
 $(window).load(function(){
-    // change opacity of char4 when page loads.
-    $('.char4').delay(800).animate({
-        opacity:1
-    }, 5000, function(){
-    });
 // Drawing surface
-var paper = Snap(500,400);
+var paper = Snap(500,500);
     // viewbox of svg
     paper.attr({
         id:"mixer",
-        viewbox:"0 -150 1 500"
+        viewBox:"0 0 460 400"
     });
 
 // circles

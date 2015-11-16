@@ -7,10 +7,13 @@
 /* Gobal Variables */
 /* Modular Scale */
 /* Colors */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 @font-face {
@@ -25,30 +28,26 @@
 p {
   font-family: "Lora", serif; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'avertablack', Arial; }
-
 body {
+  height: 2000px;
   background-color: rgba(227, 227, 203, 0.89); }
 
 header {
   padding-top: 30px; }
 
 #mixer {
-  display: block;
-  margin: -1em auto; }
+  height: 450px;
+  width: 100%; }
 
-.intro {
-  text-align: center;
-  position: relative;
-  font-size: 7.59375em;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
-  color: #002b36; }
+.aloha {
+  fill: url("#tropics");
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; }
 
-.char1, .char2, .char5, .char6 {
-  letter-spacing: 10px; }
+.titleName {
+  text-align: center; }
 
+<<<<<<< HEAD
 .char3 {
   opacity: 0;
   -webkit-transform: rotate(0deg);
@@ -69,10 +68,38 @@ header {
           animation: spin 4s 1 ease; }
 
 .char4 {
+=======
+.name, .title {
+>>>>>>> build
   color: #002b36;
-  position: relative;
-  right: 10px;
-  opacity: 0; }
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.21em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .name, .title {
+      font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .name, .title {
+      font-size: 1.77689em; } }
+
+.title {
+  padding-top: -25px;
+  padding-bottom: 25px;
+  margin-top: -25px; }
+
+@-webkit-keyframes spin {
+  from {
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s; }
+  to {
+    opacity: 0;
+    -webkit-transform: rotate(920deg);
+            transform: rotate(920deg);
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s; } }
 
 @-webkit-keyframes spin {
   from {
@@ -119,6 +146,21 @@ header {
     .intro-msg {
       font-size: 1.333em; } }
 
+.built {
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-size: 1em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .built {
+      font-size: calc( 1em + 0 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .built {
+      font-size: 1em; } }
+
 header #projects:hover, header #chat:hover, header #bio:hover,
 header #projects:focus, header #chat:focus, header #bio:focus {
   color: blue; }
@@ -145,27 +187,6 @@ header #projects:hover, header #chat:hover, header #bio:hover {
 circle {
   mix-blend-mode: multiply; }
 
-@media (max-width: 630px) {
-  .intro {
-    font-size: 5.0625em; } }
-
-@media (max-width: 400px) {
-  .intro {
-    font-size: 3.375em; } }
-
-@media screen and (max-width: 547px) {
-  #cir1 {
-    r: 60;
-    cx: 130; }
-  #cir2 {
-    r: 60;
-    cx: 165; }
-  #cir3 {
-    r: 60;
-    cx: 90; }
-  #mixer {
-    width: 300px; } }
-
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */
 /* Padding mixin for links inside paragraph*/
@@ -184,9 +205,6 @@ circle {
 p {
   font-family: "Lora", serif; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'avertablack', Arial; }
-
 .slide-nav-trigger {
   position: fixed;
   z-index: 3;
@@ -195,7 +213,14 @@ h1, h2, h3, h4, h5, h6 {
   height: 64px;
   width: 64px;
   border-radius: 50%;
-  background-color: #51585A; }
+  background-color: #51585A;
+  opacity: 0;
+  visibility: hidden; }
+
+.show {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out; }
 
 #one, #two, #three {
   mix-blend-mode: screen; }
@@ -318,9 +343,6 @@ slide-nav <div>
 /* Base Size */
 p {
   font-family: "Lora", serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'avertablack', Arial; }
 
 /* Vendors */
 /* ==========================================================================

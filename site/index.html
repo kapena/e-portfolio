@@ -5,11 +5,11 @@
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/site.min.js" charset="utf-8"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     $(document).ready(function() {
         $(".intro").lettering();
     });
-    </script>
+    </script> -->
     <link rel="stylesheet" href="css/main.min.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
@@ -39,10 +39,39 @@
     </div>
     <main>
         <header>
-            <h3 class="intro">Al oha</h3>
+            <svg class='intro' viewBox='0 0 100 24'>
+                <text>
+                    <tspan class='aloha' x='25' dy='21' fill='black'>Aloha!</tspan>
+                </text>
+
+                <defs>
+                    <linearGradient id="tropics">
+                        <stop stop-color="royalblue" offset='0%' />
+                        <stop stop-color="steelblue" offset='45%' />
+                        <stop stop-color="darkviolet" offset="100%" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+            <div class="titleName">
+                <h3 class="name">Brent White</h3>
+                <h3 class="title">Full Stack Designer</h3>
+            </div>
                 <nav class="main" role="navigation">
-                    <p class="intro-msg">My name is Brent White and I'm a Product Designer. You've reached my digital portfolio which I designed and built using a modern work flow of front-end web based technologies that were self taught. Take a journey through my spectrum of <a id="projects" href="#">projects</a>, read through my short <a id ="bio" href="#">bio</a> and last but not least, share a <a id="chat" href="#">comment</a> with me regarding design, code or anything that sparks interest.</p>
+                    <p class="intro-msg">You've reached my digital portfolio. Take a journey through my spectrum of <a id="projects" href="#">projects</a>, read through my short <a id ="bio" href="#">bio</a> and last but not least, share a <a id="chat" href="#">conversation</a> with me regarding design, code or anything that sparks interest.</p>
                 </nav>
+                    <svg viewBox='0 0 400 20'>
+                        <defs>
+                            <linearGradient id="tropics">
+                                <stop stop-color="royalblue" offset='0%' />
+                                <stop stop-color="steelblue" offset='45%' />
+                                <stop stop-color="darkviolet" offset="100%" />
+                            </linearGradient>
+                        </defs>
+                        <rect x='50' y='10' width='300' height='1' fill='url(#tropics)' />
+                    </svg>
+                <p class="built">
+                 I built this site using a modern workflow of front-end </br> web development tools that are self taught.</p>
         </header>
     </main>
 </body>
