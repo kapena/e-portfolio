@@ -43,21 +43,6 @@ header{
     margin-top: -25px;
 }
 
-@keyframes spin {
-
-    from{
-        opacity:1;
-        transform: rotate(0deg);
-        animation-duration: 2s;
-    }
-
-    to{
-        opacity:0;
-        transform: rotate(920deg);
-        animation-duration: 1s;
-    }
-}
-
 .intro-msg{
     // padding for left right and bottom links
     @include left-right-bottom-links;
@@ -82,7 +67,6 @@ header #projects:hover,
 header #projects:focus {
    color:blue;
 }
-
 
 
 header #projects {

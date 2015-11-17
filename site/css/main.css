@@ -64,34 +64,6 @@ header {
   padding-bottom: 25px;
   margin-top: -25px; }
 
-@-webkit-keyframes spin {
-  from {
-    opacity: 1;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s; }
-  to {
-    opacity: 0;
-    -webkit-transform: rotate(920deg);
-            transform: rotate(920deg);
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s; } }
-
-@keyframes spin {
-  from {
-    opacity: 1;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s; }
-  to {
-    opacity: 0;
-    -webkit-transform: rotate(920deg);
-            transform: rotate(920deg);
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s; } }
-
 .intro-msg {
   padding-left: 2px;
   padding-right: 2px;
@@ -677,7 +649,5 @@ table {
 td,
 th {
   padding: 0; }
-
-/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
