@@ -66,7 +66,7 @@ var onError = function(err){
 
 // watch js files
 gulp.watch(paths.watch.js,['scripts']);
-// watch css files
+// watch scss files
 gulp.watch(paths.watch.styles,['styles']);
 // watch html
 gulp.watch(paths.watch.html,['reload']);
@@ -92,14 +92,16 @@ gulp.task('scripts',function(){
     browserSync.reload();
 });
 
-// autoprefixer watching main.css file for changes
-gulp.watch('./site/css/main.css',['autoprefixer']);
+// prefixer task containing a watch task for autoprefixer
+gulp.task('prefixer',function(){
+    gulp.watch('./site/css/main.css',['autoprefixer']);
+});
 
 gulp.task('autoprefixer',function () {
-    postcss = require('gulp-postcss');
-    sourcemaps = require('gulp-sourcemaps');
-    autoprefixer = require('autoprefixer');
-    return gulp.src('./site/css/*.css')
+    var postcss = require('gulp-postcss');
+    var sourcemaps = require('gulp-sourcemaps');
+    var autoprefixer = require('autoprefixer');
+    return gulp.src('./site/css/main.css')
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
         .pipe(sourcemaps.write('.'))
@@ -107,7 +109,7 @@ gulp.task('autoprefixer',function () {
 });
 
 // Styles Task
-gulp.task('styles', function(){
+gulp.task('styles',function(){
     return gulp.src(paths.source.styles)
         .pipe(plumber({
             // plumber finds errors in stream
@@ -124,9 +126,9 @@ gulp.task('styles', function(){
 
 });
 
-// default task
+//default task
 gulp.task('default',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('scripts', 'styles' ,'sync');
+    runSequence('scripts', 'styles','prefixer','sync');
 });
