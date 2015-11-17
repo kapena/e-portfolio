@@ -47,40 +47,6 @@ header {
 .titleName {
   text-align: center; }
 
-<<<<<<< HEAD
-.char3 {
-  opacity: 0;
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg);
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 55px;
-  left: 10px;
-  margin-right: -40px;
-  bottom: 3px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 80px;
-  background-image: url("https://s3-us-west-2.amazonaws.com/designdiagrams/curveAst_O.png");
-  -webkit-animation: spin 4s 1 ease;
-          animation: spin 4s 1 ease; }
-
-.char4 {
-=======
-.name, .title {
->>>>>>> build
-  color: #002b36;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.21em; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .name, .title {
-      font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .name, .title {
-      font-size: 1.77689em; } }
 
 .title {
   padding-top: -25px;
@@ -714,5 +680,7 @@ table {
 td,
 th {
   padding: 0; }
+
+/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
