@@ -29,10 +29,9 @@
     mix-blend-mode:screen;
 }
 
-main{
+main, section{
     position: relative;
     z-index: 2;
-
     // OS Bug fix
     //height: 100vh;
     overflow-y: auto;
@@ -41,10 +40,7 @@ main{
     // Force Hard W Acceleration
     @include transition(translateZ(0));
     backface-visibility:hidden;
-
-    //padding:200px 5%;
-    //background-color:$color-4;
-    @include transition(transform $animation-dur);
+    transition:transform 0.7s;
     @include transition-timing-function(cubic-bezier(.91,.01,.6,.99));
 
     // assign .navigation-is-open to .main
