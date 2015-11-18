@@ -1,0 +1,32 @@
+// translat halfCircle on the Y axis 400px
+@mixin halfCircle-animation-on-hover {
+    @include transform(translateY(400px));
+    @include transition(transform);
+    @include transition-duration(0.8s);
+}
+
+// translate halfCircle back to original position
+@mixin halfCircle-animation-off-hover {
+    @include transform(translateY(250px));
+    @include transition(transform);
+    @include transition-duration(0.6s);
+}
+
+// fade in halfCircle1
+@mixin fadein-halfCircle1-on-hover {
+    @include transition(visibility 1s, opacity 1s);
+    @include transition-duration(0.8s);
+}
+
+$phone-projects:480px;
+@mixin phonelayout {
+    @media (max-width: #{$phone-projects}){
+        @content;
+    }
+}
+$tablet-projects:640px;
+@mixin tabletLayout {
+    @media (max-width: #{$tablet-projects}){
+        @content;
+    }
+}

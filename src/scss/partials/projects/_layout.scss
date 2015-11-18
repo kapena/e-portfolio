@@ -1,1 +1,76 @@
 @import "modules/projects-page/projects-module";
+@import "partials/variables";
+@import "partials/typography";
+@import "vendor/bourbon";
+
+
+.project-heading{
+    text-align: center;
+    top:440px;
+    position: relative;
+    font-family: $monte;
+    @include ms-respond(font-size,2);
+}
+
+.project-wrapper{
+    margin-left:15px;
+    z-index:1;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.project-wrapper, .projects{
+    width:100%;
+    height:100%;
+    //background-color:grey;
+}
+
+.project-wrapper{
+    position: relative;
+    top:25em;
+}
+
+.halfCircle{
+    opacity: 0.8;
+    z-index: 2;
+    transform:translateY(250px);
+}
+
+.halfCircle1{
+    transform:translateY(250px);
+}
+
+
+.link{
+    font-family: $monte;
+    fill:white;
+    font-size:ms(0);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.viewtext{
+    text-decoration: underline;
+    font-family: $monte;
+    fill:black;
+
+    &:hover {
+        fill:blue;
+    }
+}
+
+.project-wrapper{
+
+    @include tabletLayout {
+        margin-left:25%;
+        width:50%;
+        flex-direction:column;
+    }
+
+
+    @include phonelayout {
+        margin-left:17%;
+        width:70%;
+    }
+}
