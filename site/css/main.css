@@ -32,14 +32,14 @@ p {
   font-family: "Lora", serif; }
 
 body {
-  height: 2000px;
+  height: 2080px;
   background-color: rgba(227, 227, 203, 0.89); }
 
 header {
   padding-top: 30px; }
 
 #mixer {
-  bottom: 130em;
+  bottom: 2100px;
   position: relative;
   height: 450px;
   width: 100%; }
@@ -286,8 +286,8 @@ p {
   font-family: "Lora", serif; }
 
 .project-heading {
+  top: 400px;
   text-align: center;
-  top: 440px;
   position: relative;
   font-family: "Montserrat", sans-serif;
   font-size: 1.21em; }
@@ -298,9 +298,8 @@ p {
     .project-heading {
       font-size: 1.77689em; } }
 
-.project-wrapper {
-  margin-left: 15px;
-  z-index: 1;
+.proj-container {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -310,6 +309,7 @@ p {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
+  top: 25em;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -318,10 +318,6 @@ p {
 .project-wrapper, .projects {
   width: 100%;
   height: 100%; }
-
-.project-wrapper {
-  position: relative;
-  top: 25em; }
 
 .halfCircle {
   opacity: 0.8;
@@ -348,21 +344,6 @@ p {
   fill: black; }
   .viewtext:hover {
     fill: blue; }
-
-@media (max-width: 640px) {
-  .project-wrapper {
-    margin-left: 25%;
-    width: 50%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
-
-@media (max-width: 480px) {
-  .project-wrapper {
-    margin-left: 17%;
-    width: 70%; } }
 
 .projects:hover .halfCircle {
   -webkit-transform: translateY(400px);
