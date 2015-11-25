@@ -3,32 +3,33 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
-
 .project-heading{
-    text-align: center;
     top:440px;
+    text-align: center;
     position: relative;
     font-family: $monte;
-    @include ms-respond(font-size,2);
+    @include ms-respond(font-size,3);
+}
+
+.proj-container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top:25em;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .project-wrapper{
-    margin-left:15px;
-    z-index:1;
-    display: flex;
-    flex-direction:row;
-    justify-content:center;
-}
-
-.project-wrapper, .projects{
     width:100%;
     height:100%;
-    //background-color:grey;
-}
-
-.project-wrapper{
     position: relative;
-    top:25em;
+
+    .projects{
+       width:100%;
+       height:100%;
+       //background-color:grey;
+   }
 }
 
 .halfCircle{
@@ -60,17 +61,15 @@
     }
 }
 
-.project-wrapper{
+.proj-container{
 
     @include tabletLayout {
-        margin-left:25%;
-        width:50%;
+        width:65%;
         flex-direction:column;
     }
 
 
     @include phonelayout {
-        margin-left:17%;
-        width:70%;
+        width:80%;
     }
 }

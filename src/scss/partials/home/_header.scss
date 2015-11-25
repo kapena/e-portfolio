@@ -1,23 +1,30 @@
 /*  Home-Page Module Mixins and Extends */
 @import "modules/home-page/home-module";
+@import "modules/projects-page/mixins";
 /* Gobal Variables */
 @import "partials/variables";
 @import "partials/typography";
 
+html{
+    height:100%;
+}
+
 body{
-    height:2000px;
+    min-height:100%;
      background-color: $sand;
 }
 
 header{
     padding-top: 30px;
+    bottom:100px;
+    top:30px;
 }
 
 #mixer{
-    bottom:130em;
-    position: relative;
-    height:450px;
+    position: absolute;
+    height:430px;
     width:100%;
+    max-width: 100%;
 }
 
 .aloha{
@@ -93,4 +100,26 @@ header #projects:hover{
 
 circle {
   mix-blend-mode: multiply;
+}
+
+// #mixer {
+//     @include circles-tablet-display {
+//         margin-top:6em;
+//         height:350px;
+//     }
+//
+//     @include circles-med-desktop-display {
+//         margin-top: 8em;
+//     }
+//
+//     @include circles-large-desktop-display {
+//         margin-top: 9em;
+//         height:450px;
+//     }
+// }
+#subtractive {
+    @include tabletLayout {
+        x:7em;
+        width:15em;
+    }
 }
