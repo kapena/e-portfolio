@@ -28,3 +28,31 @@ $tabletHome:630px;
         @content;
     }
 }
+
+$circlesTablet:755px;
+@mixin circles-tablet-display {
+    @media screen and (min-width: #{$circlesTablet}){
+        @content;
+    }
+}
+
+$circles-medium-Desktop:835px;
+@mixin circles-med-desktop-display {
+    @media screen and (min-width: #{$circles-medium-Desktop}){
+        @content;
+    }
+}
+
+$circles-large-Desktop:1100px;
+@mixin circles-large-desktop-display {
+    @media screen and (min-width: #{$circles-large-Desktop}){
+        @content;
+    }
+}
+
+$circles-xl-large-Desktop:1530px;
+@mixin circles-xl-desktop-display {
+    @media screen and (min-width: #{$circles-xl-large-Desktop}){
+        @content;
+    }
+}

@@ -24,7 +24,7 @@ $phone-projects:480px;
         @content;
     }
 }
-$tablet-projects:640px;
+$tablet-projects:720px;
 @mixin tabletLayout {
     @media (max-width: #{$tablet-projects}){
         @content;

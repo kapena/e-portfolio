@@ -29,12 +29,12 @@
     mix-blend-mode:screen;
 }
 
-main, section{
+main{
     position: relative;
     z-index: 2;
     // OS Bug fix
     //height: 100vh;
-    overflow-y: auto;
+    //overflow-y: auto;
     backface-visibility: hidden;
 
     // Force Hard W Acceleration

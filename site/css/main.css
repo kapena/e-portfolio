@@ -31,18 +31,23 @@
 p {
   font-family: "Lora", serif; }
 
+html {
+  height: 100%; }
+
 body {
-  height: 2080px;
+  min-height: 100%;
   background-color: rgba(227, 227, 203, 0.89); }
 
 header {
-  padding-top: 30px; }
+  padding-top: 30px;
+  bottom: 100px;
+  top: 30px; }
 
 #mixer {
-  bottom: 2100px;
-  position: relative;
-  height: 450px;
-  width: 100%; }
+  position: absolute;
+  height: 430px;
+  width: 100%;
+  max-width: 100%; }
 
 .aloha {
   fill: url("#tropics");
@@ -127,6 +132,11 @@ header #projects:hover, header #chat:hover, header #bio:hover {
 circle {
   mix-blend-mode: multiply; }
 
+@media (max-width: 720px) {
+  #subtractive {
+    x: 7em;
+    width: 15em; } }
+
 /*  mixins, extends and colors inside home_module */
 /* Here I import all my modules into the home-module */
 /* Padding mixin for links inside paragraph*/
@@ -165,10 +175,9 @@ p {
 #one, #two, #three {
   mix-blend-mode: screen; }
 
-main, section {
+main {
   position: relative;
   z-index: 2;
-  overflow-y: auto;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transition: translateZ(0);
@@ -181,7 +190,7 @@ main, section {
   transition: transform 0.7s, -webkit-transform 0.7s;
   -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
   transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99); }
-  .navigation-is-open main, .navigation-is-open section {
+  .navigation-is-open main {
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%); }
@@ -286,17 +295,17 @@ p {
   font-family: "Lora", serif; }
 
 .project-heading {
-  top: 400px;
+  top: 440px;
   text-align: center;
   position: relative;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.21em; }
+  font-size: 1.331em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .project-heading {
-      font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
+      font-size: calc( 1.331em + 1.03759 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
     .project-heading {
-      font-size: 1.77689em; } }
+      font-size: 2.36859em; } }
 
 .proj-container {
   position: relative;
@@ -313,11 +322,16 @@ p {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin: 0 auto; }
 
-.project-wrapper, .projects {
+.project-wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
+  .project-wrapper .projects {
+    width: 100%;
+    height: 100%; }
 
 .halfCircle {
   opacity: 0.8;
@@ -344,6 +358,19 @@ p {
   fill: black; }
   .viewtext:hover {
     fill: blue; }
+
+@media (max-width: 720px) {
+  .proj-container {
+    width: 65%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media (max-width: 480px) {
+  .proj-container {
+    width: 80%; } }
 
 .projects:hover .halfCircle {
   -webkit-transform: translateY(400px);
@@ -767,9 +794,5 @@ table {
 td,
 th {
   padding: 0; }
-
-/*# sourceMappingURL=main.css.map */
-
-/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */

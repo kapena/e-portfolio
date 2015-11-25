@@ -1,39 +1,48 @@
 // DOM ready function
 $(window).load(function(){
 // Drawing surface
-var paper = Snap(500,500);
+var circleCanvas = Snap('.circle-canvas');
     // viewbox of svg
-    paper.attr({
+    circleCanvas.attr({
         id:"mixer",
-        viewBox:"0 0 460 400"
+        viewBox:"0 0 460 400",
+        width: '450px',
+        height:'400px'
     });
 
 // circles
-var circle1 = paper.circle(210,120,70);
+var circle1 = circleCanvas.circle(210,120,70);
     circle1.attr({
         id:"cir1",
         fill:"cyan"
     });
-var circle2 = paper.circle(260,200,70);
+var circle2 = circleCanvas.circle(260,200,70);
     circle2.attr({
         id:"cir2",
         fill:"yellow"
     });
 
-var circle3 = paper.circle(160,200,70);
+var circle3 = circleCanvas.circle(160,200,70);
     circle3.attr({
         id:"cir3",
         fill:"magenta"
     });
 
     // grouped circles
-var circleGroup = paper.g(circle1,circle2,circle3).attr({
+var circleGroup = circleCanvas.g(circle1,circle2,circle3).attr({
     opacity:0,
     id:"cir"
 });
 
 // select cir id
-var circles = paper.select('#cir');
+var circles = circleCanvas.select('#cir');
+
+var linegradient = ('l(0, 1, 1, 1)#00ffff-#ff00ff-#ffff00');
+var line = circleCanvas.rect(0,355,450,1.8);
+line.attr({
+    id:'subtractive',
+    fill:linegradient
+});
 
 // animate opacity of circles to 0.5 at 3000 milloseconds
 setTimeout (function(){
