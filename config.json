@@ -1,25 +1,51 @@
 {
     "paths": {
         "source":{
-            "styles":
-                "src/scss/main.scss",
-            "js":[
-                "bower_components/jquery/dist/jquery.min.js",
+            "main_page_source":{
+                "styles_main":"./src/scss/main.scss",
+
+                "js_main":["bower_components/jquery/dist/jquery.min.js",
                 "bower_components/letteringjs/jquery.lettering.js",
                 "bower_components/Snap.svg/dist/snap.svg-min.js",
                 "src/js/pages/*.js",
-                "src/js/slidenav.js"
-            ]
-        },
-        "destination":{
-            "styles":"site/css",
-            "js":"site/js",
+                "src/js/slidenav.js"]
+            },
+
+            "project_pgs_src":{
+                "proj_1":{
+                    "styles_proj1":"./src/scss/proj1_main.scss",
+                    "js_proj1":["src/js/pages/*.js",
+                        "bower_components/jquery/dist/jquery.min.js"]
+                    }
+                }
+            },
+
+        "main_dest":{
+            "styles_main":"site/css",
+            "js_main":"site/js",
             "html":"site"
         },
-       "watch":{
-           "styles":"src/scss/**/*.scss",
-           "js":"src/js/**/*.js",
-           "html":"site/**/*.html"
-       }
+
+        "project_pages_dest":{
+            "proj1_dest":{
+                "styles_proj1":"site/indiv_project_pages/proj1/css",
+                "js_proj1":"site/indiv_project_pages/proj1/js",
+                "html":"site/indiv_project_pages/proj1"
+            }
+        },
+
+        "watcher_main":{
+            "styles_main":"src/scss/**/*.scss",
+            "js_main":"src/js/**/*.js",
+            "html":"site/**/*.html"
+        },
+
+        "watcher_projects":{
+            "watcher_proj1":{
+                "styles_proj1":"src/scss/**/*.scss",
+                "js_proj1":"src/js/**/*.js",
+                "html":"site/**/*.html"
+            }
+        }
     }
 }
