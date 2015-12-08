@@ -9,9 +9,13 @@ var gulp = require('gulp'),
  cssmin = require('gulp-minify-css'), // minify css
  rename = require('gulp-rename'), // rename file
  runSequence = require('run-sequence'), // runs gulp tasks in order
- sass = require('gulp-sass'), // css preprocessor
- uglify = require('gulp-uglify'); // minify js
+ sass = require('gulp-sass'), //css preprocesser
+ uglify = require('gulp-uglify'), // minify js
+ requireDir = require('require-dir'); // require another direcory tasks
 
+
+// Using project_pages_tasks to store tasks that I make use to
+requireDir('./project_pages_tasks', {recurese:true});
 
 // Accessing config.json to get paths to files
 function setVars () {
@@ -47,7 +51,7 @@ gulp.task('sync',function(){
     // start browserSync
     browserSync.init({
         // Accessing paths.destination obj in config.json which contains html
-        server: paths.destination.html
+        server: paths.main_dest.html
     });
 });
 
@@ -64,43 +68,47 @@ var onError = function(err){
     this.emit('end');
 };
 
-// watch js files
-gulp.watch(paths.watch.js,['scripts']);
-// watch scss files
-gulp.watch(paths.watch.styles,['styles']);
-// watch html
-gulp.watch(paths.watch.html,['reload']);
+// watch main page js files
+gulp.watch(paths.watcher_main.js_main,['scripts']);
 
-// reload browser
+// watch main page scss file
+gulp.watch(paths.watcher_main.styles_main,['styles_main_task']);
+
+// watch main page html
+gulp.watch(paths.watcher_main.html,['reload']);
+
+// reload browser on html or script adjustment
 gulp.task('reload', function(){
     browserSync.reload();
 });
 
-// Scripts Task
+// Scripts Main Task
 gulp.task('scripts',function(){
-    return gulp.src(paths.source.js)
+    return gulp.src(paths.source.main_page_source.js_main)
     .pipe(plumber({errorHandler: onError}))
         // plumber finds errors in stream and
         // notifys me in terminal
     .pipe(concat('site.js')) // concating js files to main.js
-    .pipe(gulp.dest(paths.destination.js)) // save in dest
+    .pipe(gulp.dest(paths.main_dest.js_main)) // save in dest
     .pipe(uglify()) // minify js
     .pipe(rename({ // rename with file with .min
         suffix:'.min'
     }))
-    .pipe(gulp.dest(paths.destination.js)),
+    .pipe(gulp.dest(paths.main_dest.js_main)),
     browserSync.reload();
 });
 
-// prefixer task containing a watch task for autoprefixer
-gulp.task('prefixer',function(){
-    gulp.watch('./site/css/main.css',['autoprefixer']);
+// prefixer_main task that contains a watch task for autoprefixer
+gulp.task('prefixer_main',function(){
+    gulp.watch('./site/css/main.css',['autoprefixer_main']);
 });
 
-gulp.task('autoprefixer',function () {
+// auto prefix main.css
+gulp.task('autoprefixer_main',function () {
     var postcss = require('gulp-postcss');
     var sourcemaps = require('gulp-sourcemaps');
     var autoprefixer = require('autoprefixer');
+
     return gulp.src('./site/css/main.css')
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
@@ -108,27 +116,26 @@ gulp.task('autoprefixer',function () {
         .pipe(gulp.dest('./site/css'));
 });
 
-// Styles Task
-gulp.task('styles',function(){
-    return gulp.src(paths.source.styles)
+// Styles Main
+gulp.task('styles_main_task',function(){
+    return gulp.src(paths.source.main_page_source.styles_main)
         .pipe(plumber({
             // plumber finds errors in stream
             errorHandler: onError}))
         .pipe(sass())
-        .pipe(gulp.dest(paths.destination.styles))
+        .pipe(gulp.dest(paths.main_dest.styles_main))
         .pipe(cssmin()) // min css
         .pipe(rename({ // rename file to site.min.css
             suffix:'.min'
         }))
-        .pipe(gulp.dest(paths.destination.styles))
-        .pipe(notify({ message: 'Styles task complete' }))
+        .pipe(gulp.dest(paths.main_dest.styles_main))
+        .pipe(notify({ message: 'MAIN STYLES COMPLETE' }))
         .pipe(browserSync.stream());
-
 });
 
 //default task
-gulp.task('default',function(){
+gulp.task('main',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('scripts', 'styles','prefixer','sync');
+    runSequence('scripts', 'styles_main_task','prefixer_main','sync');
 });

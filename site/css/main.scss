@@ -3,12 +3,14 @@
 /* Home  Pg*/
 
 @import "partials/home/header";
+
 @import "partials/home/nav";
 
 
 /* Projects  Pg */
 
 @import "partials/projects/layout";
+
 @import "partials/projects/hover";
 
 /* Typeography */
@@ -17,4 +19,4 @@
 /* Vendors */
 
 @import "vendor/normalize";
-@import "vendor/bourbon";
+@import "vendor/bourbon"; 

@@ -109,9 +109,9 @@ header #projects, header #chat, header #bio {
   border: none;
   border-bottom: 2px solid blue;
   background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
   background: linear-gradient(cyan, cyan) no-repeat bottom;
   background-size: 100% 1px;
-  -webkit-transition: .2s,color .1s .1s;
   transition: .2s,color .1s .1s;
   text-decoration: none; }
 
@@ -159,6 +159,7 @@ p {
 .show {
   opacity: 1;
   -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out; }
 
 #one, #two, #three {
@@ -167,21 +168,20 @@ p {
 main {
   position: relative;
   z-index: 2;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-transition: translateZ(0);
+  -moz-transition: translateZ(0);
   transition: translateZ(0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
+  backface-visibility: hidden;
   transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
   -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
   transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99); }
   .navigation-is-open main {
     -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
     transform: translateX(100%); }
 
 /* Main Components Most of Styling*/
@@ -201,6 +201,7 @@ slide-navigation-wrapper
   background-color: #51585A;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.7s;
+  -moz-transition: visibility 0s 0.7s;
   transition: visibility 0s 0.7s; }
   .slide-nav .slide-navigation-wrapper {
     height: 100%;
@@ -208,31 +209,36 @@ slide-navigation-wrapper
     overflow-scrolling: touch;
     padding: 40px 5% 40px calc(5% + 80px);
     -webkit-transition: translateZ(0);
+    -moz-transition: translateZ(0);
     transition: translateZ(0);
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     transform: translateX(-50%);
     -webkit-transition: -webkit-transform;
-    transition: -webkit-transform;
+    -moz-transition: -moz-transform;
     transition: transform;
-    transition: transform, -webkit-transform;
     -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+    -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
     transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78); }
   .navigation-is-open .slide-nav {
     visibility: visible;
     -webkit-transition: visibility 0s 0s;
+    -moz-transition: visibility 0s 0s;
     transition: visibility 0s 0s; }
     .navigation-is-open .slide-nav .slide-navigation-wrapper {
       -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
       -ms-transform: translateX(0);
+      -o-transform: translateX(0);
       transform: translateX(0);
       -webkit-transition: -webkit-transform;
-      transition: -webkit-transform;
+      -moz-transition: -moz-transform;
       transition: transform;
-      transition: transform, -webkit-transform;
       -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
+      -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
       transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78); }
 
 /* Nest 2
@@ -284,7 +290,7 @@ p {
   font-family: "Lora", serif; }
 
 .project-heading {
-  top: 440px;
+  top: 450px;
   text-align: center;
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -298,20 +304,10 @@ p {
 
 .proj-container {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   top: 25em;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0 auto; }
 
 .project-wrapper {
@@ -325,14 +321,10 @@ p {
 .halfCircle {
   opacity: 0.8;
   z-index: 2;
-  -webkit-transform: translateY(250px);
-      -ms-transform: translateY(250px);
-          transform: translateY(250px); }
+  transform: translateY(250px); }
 
 .halfCircle1 {
-  -webkit-transform: translateY(250px);
-      -ms-transform: translateY(250px);
-          transform: translateY(250px); }
+  transform: translateY(250px); }
 
 .link {
   font-family: "Montserrat", sans-serif;
@@ -351,11 +343,7 @@ p {
 @media (max-width: 720px) {
   .proj-container {
     width: 65%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
+    flex-direction: column; } }
 
 @media (max-width: 480px) {
   .proj-container {
@@ -363,38 +351,45 @@ p {
 
 .projects:hover .halfCircle {
   -webkit-transform: translateY(400px);
+  -moz-transform: translateY(400px);
   -ms-transform: translateY(400px);
+  -o-transform: translateY(400px);
   transform: translateY(400px);
   -webkit-transition: -webkit-transform;
-  transition: -webkit-transform;
+  -moz-transition: -moz-transform;
   transition: transform;
-  transition: transform, -webkit-transform;
   -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
   transition-duration: 0.8s; }
 
 .halfCircle {
   -webkit-transform: translateY(250px);
+  -moz-transform: translateY(250px);
   -ms-transform: translateY(250px);
+  -o-transform: translateY(250px);
   transform: translateY(250px);
   -webkit-transition: -webkit-transform;
-  transition: -webkit-transform;
+  -moz-transition: -moz-transform;
   transition: transform;
-  transition: transform, -webkit-transform;
   -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
   transition-duration: 0.6s; }
 
 .projects:hover .halfCircle1 {
   visibility: visible;
   opacity: 0.8;
   -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
   transition: visibility 1s, opacity 1s;
   -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
   transition-duration: 0.8s; }
 
 .halfCircle1 {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
   transition: visibility 1s, opacity 1s; }
 
 .projects:hover .link {
@@ -783,5 +778,3 @@ table {
 td,
 th {
   padding: 0; }
-
-/*# sourceMappingURL=main.css.map */
