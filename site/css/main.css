@@ -1,4 +1,3 @@
-/* Partails */
 /* Home  Pg*/
 /*  Home-Page Module Mixins and Extends */
 /* Here I import all my modules into the home-module */
@@ -7,16 +6,16 @@
 /* Gobal Variables */
 /* Modular Scale */
 /* Colors */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 @font-face {
@@ -26,8 +25,10 @@
   font-weight: normal;
   font-style: normal; }
 
+/**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
+/**** Responsive Scales ****/
 p {
   font-family: "Lora", serif; }
 
@@ -150,8 +151,10 @@ circle {
   font-weight: normal;
   font-style: normal; }
 
+/**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
+/**** Responsive Scales ****/
 p {
   font-family: "Lora", serif; }
 
@@ -289,8 +292,10 @@ slide-nav <div>
   font-weight: normal;
   font-style: normal; }
 
+/**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
+/**** Responsive Scales ****/
 p {
   font-family: "Lora", serif; }
 
@@ -419,8 +424,10 @@ p {
   font-weight: normal;
   font-style: normal; }
 
+/**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
+/**** Responsive Scales ****/
 p {
   font-family: "Lora", serif; }
 
@@ -794,7 +801,5 @@ table {
 td,
 th {
   padding: 0; }
-
-/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */

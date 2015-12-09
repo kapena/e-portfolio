@@ -8,13 +8,12 @@ var gulp = require('gulp'),
  concat = require('gulp-concat'), // concat files
  cssmin = require('gulp-minify-css'), // minify css
  rename = require('gulp-rename'), // rename file
- runSequence = require('run-sequence'), // runs gulp tasks in order
+ runSequence = require('run-sequence').use(gulp), // runs gulp tasks in order
  sass = require('gulp-sass'), //css preprocesser
  uglify = require('gulp-uglify'), // minify js
- requireDir = require('require-dir'); // require another direcory tasks
+ requireDir = require('require-dir'); // allows me to use another directory for gulp tasks
 
-
-// Using project_pages_tasks to store tasks that I make use to
+// Using project_pages_tasks to store seperate tasks that are apart of my build out
 requireDir('./project_pages_tasks', {recurese:true});
 
 // Accessing config.json to get paths to files
@@ -69,7 +68,7 @@ var onError = function(err){
 };
 
 // watch main page js files
-gulp.watch(paths.watcher_main.js_main,['scripts']);
+gulp.watch(paths.watcher_main.js_main,['js_main_task']);
 
 // watch main page scss file
 gulp.watch(paths.watcher_main.styles_main,['styles_main_task']);
@@ -83,7 +82,7 @@ gulp.task('reload', function(){
 });
 
 // Scripts Main Task
-gulp.task('scripts',function(){
+gulp.task('js_main_task',function(){
     return gulp.src(paths.source.main_page_source.js_main)
     .pipe(plumber({errorHandler: onError}))
         // plumber finds errors in stream and
@@ -94,16 +93,19 @@ gulp.task('scripts',function(){
     .pipe(rename({ // rename with file with .min
         suffix:'.min'
     }))
-    .pipe(gulp.dest(paths.main_dest.js_main)),
+    .pipe(gulp.dest(paths.main_dest.js_main))
+    .pipe(notify({ message: 'js_main task finished'})),
     browserSync.reload();
 });
+
+// Make seperate task files aside from gulpfile.js for autoprefixer on project pages
 
 // prefixer_main task that contains a watch task for autoprefixer
 gulp.task('prefixer_main',function(){
     gulp.watch('./site/css/main.css',['autoprefixer_main']);
 });
 
-// auto prefix main.css
+// autoprefixer main.css
 gulp.task('autoprefixer_main',function () {
     var postcss = require('gulp-postcss');
     var sourcemaps = require('gulp-sourcemaps');
@@ -129,13 +131,13 @@ gulp.task('styles_main_task',function(){
             suffix:'.min'
         }))
         .pipe(gulp.dest(paths.main_dest.styles_main))
-        .pipe(notify({ message: 'MAIN STYLES COMPLETE' }))
+        .pipe(notify({ message: 'styles_main_task finished' }))
         .pipe(browserSync.stream());
 });
 
 //default task
-gulp.task('main',function(){
+gulp.task('default',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('scripts', 'styles_main_task','prefixer_main','sync');
+    runSequence('js_main_task', 'styles_main_task','prefixer_main','sync');
 });

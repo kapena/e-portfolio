@@ -10,18 +10,11 @@
     font-style: normal;
 }
 
-//
-
 $averta:'avertablack', Arial, sans-serif;
 
-// Google fonts
-
-
+/**** Google Fonts ****/
 // Montserrat
-
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 $monte:'Montserrat',sans-serif;
 
 // Lato
@@ -37,10 +30,10 @@ $lato-bold:900;
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 $lora:'Lora',serif;
 
-
 /* Base Size */
 $base:0.5em;
-// Responsive Scales
+
+/**** Responsive Scales ****/
 $ms-range:
 1.1 15em,
 1.333 60em;
