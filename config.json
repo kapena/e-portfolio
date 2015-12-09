@@ -14,7 +14,7 @@
             "project_pgs_src":{
                 "proj_1":{
                     "styles_proj1":"./src/scss/proj1_main.scss",
-                    "js_proj1":["src/js/pages/*.js",
+                    "js_proj1":["src/js/project_pages/project1.js",
                         "bower_components/jquery/dist/jquery.min.js"]
                     }
                 }
@@ -43,7 +43,7 @@
         "watcher_projects":{
             "watcher_proj1":{
                 "styles_proj1":"src/scss/**/*.scss",
-                "js_proj1":"src/js/**/*.js",
+                "js_proj1":"src/js/project_pages/**/*.js",
                 "html":"site/**/*.html"
             }
         }

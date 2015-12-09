@@ -15,6 +15,9 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -368,5 +371,17 @@ td,
 th {
   padding: 0; }
 
+@font-face {
+  font-family: 'avertablack';
+  src: url("./fontkit/averta-black-webfont.eot");
+  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Lato Variables */
+/* Base Size */
+p {
+  font-family: "Lora", serif; }
+
 h1 {
-  font-family: sans-serif; }
+  font-family: serif; }
