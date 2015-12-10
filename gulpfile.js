@@ -10,8 +10,12 @@ var gulp = require('gulp'),
  rename = require('gulp-rename'), // rename file
  runSequence = require('run-sequence').use(gulp), // runs gulp tasks in order
  sass = require('gulp-sass'), //css preprocesser
- uglify = require('gulp-uglify'), // minify js
- requireDir = require('require-dir'); // allows me to use another directory for gulp tasks
+ uglify = require('gulp-uglify'),
+ postcss = require('gulp-postcss'),
+ sourcemaps = require('gulp-sourcemaps'),
+ autoprefixer = require('autoprefixer'), // minify js
+ requireDir = require('require-dir'),// allows me to use another directory for gulp tasks
+ del= require ('del'); // delete
 
 // Using project_pages_tasks to store seperate tasks that are apart of my build out
 requireDir('./project_pages_tasks', {recurese:true});
@@ -98,19 +102,10 @@ gulp.task('js_main_task',function(){
     browserSync.reload();
 });
 
-// Make seperate task files aside from gulpfile.js for autoprefixer on project pages
-
-// prefixer_main task that contains a watch task for autoprefixer
-gulp.task('prefixer_main',function(){
-    gulp.watch('./site/css/main.css',['autoprefixer_main']);
-});
-
-// autoprefixer main.css
-gulp.task('autoprefixer_main',function () {
-    var postcss = require('gulp-postcss');
-    var sourcemaps = require('gulp-sourcemaps');
-    var autoprefixer = require('autoprefixer');
-
+// source map update and prefix 
+// styles_main_task will run before prefixer_main
+gulp.task('autoprefix_main',['styles_main_task'],function () {
+    del(['./site/css/main.css.map']);
     return gulp.src('./site/css/main.css')
         .pipe(sourcemaps.init())
         .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
@@ -124,12 +119,14 @@ gulp.task('styles_main_task',function(){
         .pipe(plumber({
             // plumber finds errors in stream
             errorHandler: onError}))
+        .pipe(sourcemaps.init()) // source maps
         .pipe(sass())
         .pipe(gulp.dest(paths.main_dest.styles_main))
         .pipe(cssmin()) // min css
         .pipe(rename({ // rename file to site.min.css
             suffix:'.min'
         }))
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.main_dest.styles_main))
         .pipe(notify({ message: 'styles_main_task finished' }))
         .pipe(browserSync.stream());
@@ -139,5 +136,5 @@ gulp.task('styles_main_task',function(){
 gulp.task('default',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('js_main_task', 'styles_main_task','prefixer_main','sync');
+    runSequence('js_main_task','styles_main_task','sync');
 });
