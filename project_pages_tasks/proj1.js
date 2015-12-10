@@ -7,7 +7,9 @@ concat = require('gulp-concat'), // concat files
 browserSync = require('browser-sync').create(),
 fs = require('fs'),
 cssmin = require('gulp-minify-css'), // minify css
-runSequence = require('run-sequence').use(gulp);
+runSequence = require('run-sequence').use(gulp),
+notify = require('gulp-notify'),
+beep = require('beepbeep');
 
 // Accessing config.json to get paths to files
 function setVars () {
@@ -17,10 +19,8 @@ function setVars () {
     configJSON = JSON.parse(fs.readFileSync(configFile));
     // Accessing paths object in config.json
     paths = configJSON.paths;
-    // how long error message will pop up
     errorTimeout = 1000;
 }
-// call setVars
 setVars();
 
 // Watch styles_proj1 and js_proj1 for changes
@@ -38,10 +38,7 @@ gulp.task('sync',function(){
     });
 });
 
-var notify = require('gulp-notify');
-var beep = require('beepbeep');
-
-// error handeler function
+// Displays errors in nofitication format
 var onError = function(err){
     notify.onError({
         title:    "Task Error",
@@ -50,7 +47,6 @@ var onError = function(err){
     })(err);
     this.emit('end');
 };
-
 
 // Styles task for proj1
 gulp.task('proj1_styles',function(){
@@ -89,7 +85,6 @@ gulp.task('proj1_js',function(){
     browserSync.reload();
 });
 
-//default task
 gulp.task('project1',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
