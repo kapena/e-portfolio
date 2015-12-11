@@ -15,7 +15,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700,400);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 html {
@@ -378,10 +378,12 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+/**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
+/**** Responsive Scales ****/
 p {
   font-family: "Lora", serif; }
 
 h1 {
-  font-family: serif; }
+  font-family: sans-serif; }
