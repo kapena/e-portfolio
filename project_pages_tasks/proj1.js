@@ -9,6 +9,10 @@ fs = require('fs'),
 cssmin = require('gulp-minify-css'), // minify css
 runSequence = require('run-sequence').use(gulp),
 notify = require('gulp-notify'),
+postcss = require('gulp-postcss'),
+sourcemaps = require('gulp-sourcemaps'),
+autoprefixer = require('autoprefixer'),
+del= require ('del'), // delete
 beep = require('beepbeep');
 
 // Accessing config.json to get paths to files
@@ -48,6 +52,17 @@ var onError = function(err){
     this.emit('end');
 };
 
+// prefixer and sourcemaps
+gulp.task('autoprefix_proj1',['proj1_styles'],function () {
+    del(['./site/css/main.css.map']);
+    return gulp.src('./site/indiv_project_pages/proj1/css/proj1_main.css')
+        .pipe(sourcemaps.init())
+        .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1));
+});
+
+
 // Styles task for proj1
 gulp.task('proj1_styles',function(){
     // source to project 1 scss
@@ -55,6 +70,7 @@ gulp.task('proj1_styles',function(){
     .pipe(plumber({
         // plumber finds errors in stream
         errorHandler: onError}))
+    .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
     .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
     .pipe(cssmin()) // min css
@@ -62,11 +78,11 @@ gulp.task('proj1_styles',function(){
         suffix:'.min'
     }))
     // destination for compiled css for project 1
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
     .pipe(notify({ message: 'proj1_styles task finished' }))
     .pipe(browserSync.stream());
 });
-
 
 // Script task for proj1
 gulp.task('proj1_js',function(){
