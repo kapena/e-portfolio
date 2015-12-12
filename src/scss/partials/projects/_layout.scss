@@ -4,12 +4,13 @@
 @import "vendor/bourbon";
 
 .project-heading{
-    top:450px;
+    top:455px;
     text-align: center;
     position: relative;
     font-family: $monte;
     @include ms-respond(font-size,3);
 }
+
 
 .proj-container{
     position: relative;
@@ -41,7 +42,6 @@
 .halfCircle1{
     transform:translateY(250px);
 }
-
 
 .link{
     font-family: $monte;

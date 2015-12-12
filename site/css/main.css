@@ -306,7 +306,7 @@ p {
   font-family: "Lora", serif; }
 
 .project-heading {
-  top: 450px;
+  top: 455px;
   text-align: center;
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -403,10 +403,28 @@ p {
 
 .halfCircle1 {
   visibility: hidden;
-  opacity: 0;
+  opacity: 0.1;
   -webkit-transition: visibility 1s, opacity 1s;
   -moz-transition: visibility 1s, opacity 1s;
   transition: visibility 1s, opacity 1s; }
+
+.projects:hover #view {
+  -webkit-transition: -webkit-transform;
+  -moz-transition: -moz-transform;
+  transition: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  transform: translateY(-95px); }
+
+#view {
+  -webkit-transition: -webkit-transform;
+  -moz-transition: -moz-transform;
+  transition: transform;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  transform: translateY(100px); }
 
 .projects:hover .link {
   fill: black; }

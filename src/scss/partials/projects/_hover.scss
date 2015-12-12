@@ -20,8 +20,17 @@
 // halfCircle1 fades out
 .halfCircle1{
     visibility: hidden;
-    opacity: 0;
+    opacity: 0.1;
     @include transition(visibility 1s, opacity 1s);
+}
+// hover over projects svg and view now text slides up on y axis
+.projects:hover #view{
+    @include viewNowUp;
+}
+
+// when user hovers off projects view now slides down
+#view{
+    @include viewNowUnder;
 }
 
 .projects:hover .link{
