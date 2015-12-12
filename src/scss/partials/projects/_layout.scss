@@ -46,7 +46,8 @@
 .link{
     font-family: $monte;
     fill:white;
-    font-size:ms(0);
+    //font-size:ms(0);
+    font-size: 1.2em;
     font-weight: 700;
     letter-spacing: 0.02em;
 }
@@ -64,12 +65,14 @@
 .proj-container{
 
     @include tabletLayout {
-        width:65%;
-        flex-direction:column;
+        //width:45%;
+        //flex-direction:column;
+        //flex:2;
+        flex-wrap: wrap;
     }
 
 
     @include phonelayout {
-        width:80%;
+        width:90%;
     }
 }

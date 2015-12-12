@@ -133,7 +133,7 @@ header #projects:hover, header #chat:hover, header #bio:hover {
 circle {
   mix-blend-mode: multiply; }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 1030px) {
   #subtractive {
     x: 7em;
     width: 15em; } }
@@ -345,7 +345,7 @@ p {
 .link {
   font-family: "Montserrat", sans-serif;
   fill: white;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 0.02em; }
 
@@ -356,14 +356,13 @@ p {
   .viewtext:hover {
     fill: blue; }
 
-@media (max-width: 720px) {
+@media screen and (max-width: 1030px) {
   .proj-container {
-    width: 65%;
-    flex-direction: column; } }
+    flex-wrap: wrap; } }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .proj-container {
-    width: 80%; } }
+    width: 90%; } }
 
 .projects:hover .halfCircle {
   -webkit-transform: translateY(400px);
@@ -403,7 +402,7 @@ p {
 
 .halfCircle1 {
   visibility: hidden;
-  opacity: 0.1;
+  opacity: 0;
   -webkit-transition: visibility 1s, opacity 1s;
   -moz-transition: visibility 1s, opacity 1s;
   transition: visibility 1s, opacity 1s; }

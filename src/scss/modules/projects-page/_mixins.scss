@@ -33,13 +33,13 @@
 
 $phone-projects:480px;
 @mixin phonelayout {
-    @media (max-width: #{$phone-projects}){
+    @media screen and (max-width: #{$phone-projects}){
         @content;
     }
 }
-$tablet-projects:720px;
+$tablet-projects:1030px;
 @mixin tabletLayout {
-    @media (max-width: #{$tablet-projects}){
+    @media screen and (max-width: #{$tablet-projects}){
         @content;
     }
 }
