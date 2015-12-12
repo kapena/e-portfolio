@@ -102,17 +102,6 @@ gulp.task('js_main_task',function(){
     browserSync.reload();
 });
 
-// source map update and prefix 
-// styles_main_task will run before prefixer_main
-gulp.task('autoprefix_main',['styles_main_task'],function () {
-    del(['./site/css/main.css.map']);
-    return gulp.src('./site/css/main.css')
-        .pipe(sourcemaps.init())
-        .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('./site/css'));
-});
-
 // Styles Main
 gulp.task('styles_main_task',function(){
     return gulp.src(paths.source.main_page_source.styles_main)
@@ -120,6 +109,7 @@ gulp.task('styles_main_task',function(){
             // plumber finds errors in stream
             errorHandler: onError}))
         .pipe(sourcemaps.init()) // source maps
+        .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
         .pipe(sass())
         .pipe(gulp.dest(paths.main_dest.styles_main))
         .pipe(cssmin()) // min css
@@ -129,11 +119,11 @@ gulp.task('styles_main_task',function(){
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.main_dest.styles_main))
         .pipe(notify({ message: 'styles_main_task finished' }))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.stream({match:'**/*.css'}));
 });
 
 //default task
-gulp.task('default',function(){
+gulp.task('main',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
     runSequence('js_main_task','styles_main_task','sync');
