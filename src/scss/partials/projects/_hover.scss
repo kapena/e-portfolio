@@ -33,6 +33,14 @@
     @include viewNowUnder;
 }
 
+#project-name{
+    @include projectName-slideUp;
+}
+
+.projects:hover #project-name{
+    @include projectName-slideUnder;
+}
+
 .projects:hover .link{
     fill:black;
 }

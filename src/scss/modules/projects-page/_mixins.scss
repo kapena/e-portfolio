@@ -21,7 +21,7 @@
 @mixin viewNowUp {
     @include transition(transform);
     @include transition-duration(0.5s);
-    transform: translateY(-95px);
+    transform: translateY(-140px);
 }
 
 // view now link slides down
@@ -29,6 +29,19 @@
     @include transition(transform);
     @include transition-duration(0.7s);
     transform:translateY(100px);
+}
+
+// Project text translates on y axis when view now slides up
+@mixin projectName-slideUnder {
+    @include transition(transform);
+    @include transition-duration(0.5s);
+    transform: translateY(15px);
+}
+
+@mixin projectName-slideUp {
+    @include transition(transform);
+    @include transition-duration(0.5s);
+    transform: translateY(-1px);
 }
 
 $phone-projects:480px;
@@ -42,4 +55,19 @@ $tablet-projects:1030px;
     @media screen and (max-width: #{$tablet-projects}){
         @content;
     }
+}
+
+$desktop-sm-projects:1260px;
+@mixin desktop_sm_Projects {
+    @media all and (max-width:#{$desktop_sm_projects}){
+        @content;
+    }
+}
+
+$desktop-lrg-projects:1570px;
+@mixin desktop_lrg_Projects {
+    @media all and (min-width:#{$desktop-lrg-projects}){
+        @content;
+    }
+
 }
