@@ -88,21 +88,6 @@
     }
 
 }
-//
-// @media screen and (max-width:1235px) {
-//     figure{
-//         margin:5px;
-//     }
-//
-// }
-//
-//
-// @media screen and (min-width:1280px) {
-//     figure{
-//         margin: 1em 50px;
-//     }
-//
-// }
 
 figure{
     @include desktop_sm_Projects {
