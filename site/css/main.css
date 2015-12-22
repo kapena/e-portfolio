@@ -310,6 +310,7 @@ p {
   text-align: center;
   position: relative;
   font-family: "Montserrat", sans-serif;
+  padding-bottom: 100px;
   font-size: 1.331em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .project-heading {
@@ -318,13 +319,19 @@ p {
     .project-heading {
       font-size: 2.36859em; } }
 
+.project-discript {
+  position: relative;
+  top: 355px;
+  text-align: center; }
+
 .proj-container {
   position: relative;
   display: flex;
   flex-direction: row;
   top: 25em;
   justify-content: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  flex-wrap: wrap; }
 
 .project-wrapper {
   width: 100%;
@@ -342,15 +349,16 @@ p {
 .halfCircle1 {
   transform: translateY(250px); }
 
+#circle-paths {
+  transform: translateY(-25px); }
+
 .link {
   font-family: "Montserrat", sans-serif;
   fill: white;
   font-size: 1.2em;
-  font-weight: 700;
-  letter-spacing: 0.02em; }
+  font-weight: 700; }
 
 .viewtext {
-  text-decoration: underline;
   font-family: "Montserrat", sans-serif;
   fill: black; }
   .viewtext:hover {
@@ -363,6 +371,14 @@ p {
 @media screen and (max-width: 480px) {
   .proj-container {
     width: 90%; } }
+
+@media all and (max-width: 1260px) {
+  figure {
+    margin: 8px; } }
+
+@media all and (min-width: 1570px) {
+  figure {
+    margin: 1em 50px; } }
 
 .projects:hover .halfCircle {
   -webkit-transform: translateY(400px);
@@ -414,7 +430,7 @@ p {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  transform: translateY(-95px); }
+  transform: translateY(-140px); }
 
 #view {
   -webkit-transition: -webkit-transform;
@@ -424,6 +440,24 @@ p {
   -moz-transition-duration: 0.7s;
   transition-duration: 0.7s;
   transform: translateY(100px); }
+
+#project-name {
+  -webkit-transition: -webkit-transform;
+  -moz-transition: -moz-transform;
+  transition: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  transform: translateY(-1px); }
+
+.projects:hover #project-name {
+  -webkit-transition: -webkit-transform;
+  -moz-transition: -moz-transform;
+  transition: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  transform: translateY(15px); }
 
 .projects:hover .link {
   fill: black; }

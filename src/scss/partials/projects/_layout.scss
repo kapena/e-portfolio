@@ -3,14 +3,25 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
+// figure {
+// margin-right:8px;
+// margin-left: 8px;
+// }
+
 .project-heading{
     top:455px;
     text-align: center;
     position: relative;
     font-family: $monte;
+    padding-bottom:100px;
     @include ms-respond(font-size,3);
 }
 
+.project-discript{
+    position: relative;
+    top:355px;
+    text-align: center;
+}
 
 .proj-container{
     position: relative;
@@ -19,6 +30,7 @@
     top:25em;
     justify-content: center;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .project-wrapper{
@@ -43,17 +55,19 @@
     transform:translateY(250px);
 }
 
+#circle-paths{
+    transform:translateY(-25px);
+}
+
 .link{
     font-family: $monte;
     fill:white;
-    //font-size:ms(0);
     font-size: 1.2em;
     font-weight: 700;
-    letter-spacing: 0.02em;
 }
 
 .viewtext{
-    text-decoration: underline;
+    //text-decoration: underline;
     font-family: $monte;
     fill:black;
 
@@ -65,14 +79,37 @@
 .proj-container{
 
     @include tabletLayout {
-        //width:45%;
-        //flex-direction:column;
-        //flex:2;
         flex-wrap: wrap;
     }
 
 
     @include phonelayout {
         width:90%;
+    }
+
+}
+//
+// @media screen and (max-width:1235px) {
+//     figure{
+//         margin:5px;
+//     }
+//
+// }
+//
+//
+// @media screen and (min-width:1280px) {
+//     figure{
+//         margin: 1em 50px;
+//     }
+//
+// }
+
+figure{
+    @include desktop_sm_Projects {
+        margin:8px;
+    }
+
+    @include desktop_lrg_Projects {
+        margin:1em 50px;
     }
 }
