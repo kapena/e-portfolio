@@ -7,6 +7,7 @@
     "modular-scale": "~2.1.1",
     "letteringjs": "~0.7.0",
     "Snap.svg": "~0.4.1",
-    "bourbon":"~4.2.6"
+    "bourbon":"~4.2.6",
+    "hisrc":"~2.0.0"
   }
 }

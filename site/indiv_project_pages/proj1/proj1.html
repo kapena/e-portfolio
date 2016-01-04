@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <title>Project</title>
     <link rel="stylesheet" href="css/proj1_main.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="js/proj1.min.js" charset="utf-8"></script>
 
-    <script src="js/proj1.min.js" charset="utf-8"></script>        
+    <script type="text/javascript" charset="utf-8">
+        // Sick carousel
+        $(document).ready(function(){
+            // initalize slick
+            $('.img-slider').slick({
+                centerMode:true,
+                arrows:true,
+                dots:true,
+                accessibility:true,
+                slidesToShow:1,
+                slideToScroll:1
+            });
+        });
     </script>
 </head>
 <body>
-    <h1 class="proj1">Project 1</h1>
+    <header>
+        <div class="hero-img-wrapper">
+            <img id="hero_proj1" src="http://placehold.it/1024x500.png" alt="">
+        </div>
+        <h1 class="proj1">Project 1</h1>
+    </header>
+    <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<div class="proj-slider">
+    <div class="img-slider">
+        <div>
+            <img id="img1" src="http://placehold.it/800x400.png" alt="">
+        </div>
+        <div>
+            <img id="img2" src="http://placehold.it/800x400.png" alt="">
+        </div>
+        <div>
+            <img id="img3" src="http://placehold.it/800x400.png" alt="">
+        </div>
+    </div>
+</div>
 </body>
 </html>
