@@ -397,3 +397,36 @@ p {
 .proj-slider {
   margin: 60px auto;
   width: 80%; }
+
+.break-wrapper {
+  position: relative;
+  top: 20px;
+  margin: 50px;
+  text-align: center; }
+
+.proj_images {
+  display: flex; }
+
+.images {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .images .disp1, .images .disp2, .images .disp3, .images .disp3, .images .disp4 {
+    margin: 5px; }
+
+.on_1, .on_2 {
+  position: absolute;
+  top: 210px;
+  margin: 5px;
+  width: 450px;
+  height: 140px;
+  background-color: blue; }
+
+.on_3, .on_4 {
+  position: absolute;
+  bottom: 0px;
+  margin: 5px;
+  width: 450px;
+  height: 140px;
+  background-color: blue; }

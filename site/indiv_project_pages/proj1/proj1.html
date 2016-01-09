@@ -20,6 +20,58 @@
                 slidesToShow:1,
                 slideToScroll:1
             });
+
+            var image1 = $('.image1');
+            var image2 = $('.image2');
+            var image3 = $('.image3');
+            var image4 = $('.image4');
+
+            var img1_discript = $('<div class="on_1"></div>' +'<p class="discript1">Hello</p>');
+
+            // when image1 class is hovered on
+            $(image1).hover(function(){
+                // append img1_discript to .image1 container
+                $(image1).append(img1_discript);
+                },
+                function() {
+                    // remove the div that was appened to the DOM
+                    $(image1).find('div:last').remove();
+                    $(image1).find('p:last').remove();
+                }
+            );
+
+
+            $(image2).hover(function(){
+                // append a div with the class of on to `.image1` container
+                $(image2).append('<div class="on_2"></div>');
+                },
+                function() {
+                    // remove the div that was appened to the DOM
+                    $(image2).find('div:last').remove();
+                }
+            );
+
+
+            $(image3).hover(function(){
+                // append a div with the class of on to `.image1` container
+                $(image3).append('<div class="on_3"></div>');
+                },
+                function() {
+                    // remove the div that was appened to the DOM
+                    $(image3).find('div:last').remove();
+                }
+            );
+
+
+            $(image4).hover(function(){
+                // append a div with the class of on to `.image1` container
+                $(image4).append('<div class="on_4"></div>');
+                },
+                function() {
+                    // remove the div that was appened to the DOM
+                    $(image4).find('div:last').remove();
+                }
+            );
         });
     </script>
 </head>
@@ -31,19 +83,52 @@
         <h1 class="proj1">Project 1</h1>
     </header>
     <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<div class="proj-slider">
-    <div class="img-slider">
-        <div>
-            <img id="img1" src="http://placehold.it/800x400.png" alt="">
-        </div>
-        <div>
-            <img id="img2" src="http://placehold.it/800x400.png" alt="">
-        </div>
-        <div>
-            <img id="img3" src="http://placehold.it/800x400.png" alt="">
+<!-- Image Slider  -->
+    <div class="proj-slider">
+        <div class="img-slider">
+            <div>
+                <img id="img1" src="http://placehold.it/800x400.png" alt="">
+            </div>
+            <div>
+                <img id="img2" src="http://placehold.it/800x400.png" alt="">
+            </div>
+            <div>
+                <img id="img3" src="http://placehold.it/800x400.png" alt="">
+            </div>
         </div>
     </div>
-</div>
-</body>
+
+    <div class="break-wrapper">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <svg viewbox="0 0 400 20">
+            <defs>
+                <linearGradient id="tropics">
+                    <stop stop-color="royalblue" offset='0%' />
+                    <stop stop-color="steelblue" offset='45%' />
+                    <stop stop-color="darkviolet" offset="100%" />
+                </linearGradient>
+            </defs>
+            <rect x='50' y='10' width='300' height='0.5' fill='url(#tropics)' />
+        </svg>
+    </div>
+
+    <div class="proj_images">
+        <div class="images">
+            <div class="image1">
+                <img class="disp1" src="http://placehold.it/450x350.png" alt="">
+            </div>
+            <div class="image2">
+                <img class="disp2" src="http://placehold.it/450x350.png" alt="">
+            </div>
+            <div class="image3">
+                <img class="disp3" src="http://placehold.it/450x350.png" alt="">
+            </div>
+            <div class="image4">
+                <img class="disp4" src="http://placehold.it/450x350.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    </body>
 </html>
