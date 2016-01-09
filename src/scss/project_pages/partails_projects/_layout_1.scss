@@ -1,4 +1,5 @@
 @import "modules/projects/pages_module";
+$img-spaceing:5px;
 
 .proj1{
     padding-left: 20px;
@@ -18,4 +19,44 @@
 .proj-slider{
     margin: 60px auto;
     width:80%;
+}
+
+.break-wrapper{
+    position: relative;
+    top:20px;
+    margin: 50px;
+    text-align: center;
+}
+
+.proj_images{
+    display: flex;
+}
+
+.images{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .disp1, .disp2, .disp3, .disp3, .disp4{
+        margin:$img-spaceing;
+    }
+}
+
+.on_1, .on_2{
+    position: absolute;
+    top:210px;
+    margin:$img-spaceing;
+    width:450px;
+    height:140px;
+    background-color: blue;
+}
+
+.on_3, .on_4{
+    position: absolute;
+    bottom:0px;
+    margin:$img-spaceing;
+    width:450px;
+    height:140px;
+    background-color: blue;
 }
