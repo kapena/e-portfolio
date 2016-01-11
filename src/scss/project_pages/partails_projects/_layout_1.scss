@@ -43,20 +43,16 @@ $img-spaceing:5px;
     }
 }
 
-.on_1, .on_2{
-    position: absolute;
-    top:210px;
-    margin:$img-spaceing;
-    width:450px;
-    height:140px;
-    background-color: blue;
+.box_1, .box_2{
+    @include on_box;
+    transition: opacity 0.5s;
 }
 
-.on_3, .on_4{
-    position: absolute;
+.box_3, .box_4{
+    @include on_box;
     bottom:0px;
-    margin:$img-spaceing;
-    width:450px;
-    height:140px;
-    background-color: blue;
+}
+
+.discript1{
+    color:white;
 }

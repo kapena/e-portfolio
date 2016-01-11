@@ -6,74 +6,7 @@
     <link rel="stylesheet" href="css/proj1_main.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <script src="js/proj1.min.js" charset="utf-8"></script>
-
-    <script type="text/javascript" charset="utf-8">
-        // Sick carousel
-        $(document).ready(function(){
-            // initalize slick
-            $('.img-slider').slick({
-                centerMode:true,
-                arrows:true,
-                dots:true,
-                accessibility:true,
-                slidesToShow:1,
-                slideToScroll:1
-            });
-
-            var image1 = $('.image1');
-            var image2 = $('.image2');
-            var image3 = $('.image3');
-            var image4 = $('.image4');
-
-            var img1_discript = $('<div class="on_1"></div>' +'<p class="discript1">Hello</p>');
-
-            // when image1 class is hovered on
-            $(image1).hover(function(){
-                // append img1_discript to .image1 container
-                $(image1).append(img1_discript);
-                },
-                function() {
-                    // remove the div that was appened to the DOM
-                    $(image1).find('div:last').remove();
-                    $(image1).find('p:last').remove();
-                }
-            );
-
-
-            $(image2).hover(function(){
-                // append a div with the class of on to `.image1` container
-                $(image2).append('<div class="on_2"></div>');
-                },
-                function() {
-                    // remove the div that was appened to the DOM
-                    $(image2).find('div:last').remove();
-                }
-            );
-
-
-            $(image3).hover(function(){
-                // append a div with the class of on to `.image1` container
-                $(image3).append('<div class="on_3"></div>');
-                },
-                function() {
-                    // remove the div that was appened to the DOM
-                    $(image3).find('div:last').remove();
-                }
-            );
-
-
-            $(image4).hover(function(){
-                // append a div with the class of on to `.image1` container
-                $(image4).append('<div class="on_4"></div>');
-                },
-                function() {
-                    // remove the div that was appened to the DOM
-                    $(image4).find('div:last').remove();
-                }
-            );
-        });
-    </script>
+    <script src="js/proj1.min.js" charset="utf-8"></script>    
 </head>
 <body>
     <header>

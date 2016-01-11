@@ -14,9 +14,8 @@
             "project_pgs_src":{
                 "proj_1":{
                     "styles_proj1":"./src/scss/proj1_main.scss",
-                    "js_proj1":["src/js/project_pages/project1.js",
-                        "bower_components/jquery/dist/jquery.min.js",
-                    "bower_components/hisrc/hisrc.js","bower_components/slick-carousel/slick/slick.min.js"]
+                    "js_proj1":["bower_components/jquery/dist/jquery.min.js",
+                    "bower_components/hisrc/hisrc.js","bower_components/slick-carousel/slick/slick.min.js","src/js/project_pages/project1.js"]
                     }
                 }
             },

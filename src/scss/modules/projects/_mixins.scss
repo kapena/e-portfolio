@@ -1,0 +1,16 @@
+
+@mixin on_box {
+    position: absolute;
+    top:210px;
+    margin:$img-spaceing;
+    width:450px;
+    height:140px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin paragraph_discript {
+
+}

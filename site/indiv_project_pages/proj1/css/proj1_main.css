@@ -415,18 +415,29 @@ p {
   .images .disp1, .images .disp2, .images .disp3, .images .disp3, .images .disp4 {
     margin: 5px; }
 
-.on_1, .on_2 {
+.box_1, .box_2 {
   position: absolute;
   top: 210px;
   margin: 5px;
   width: 450px;
   height: 140px;
-  background-color: blue; }
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s; }
 
-.on_3, .on_4 {
+.box_3, .box_4 {
   position: absolute;
-  bottom: 0px;
+  top: 210px;
   margin: 5px;
   width: 450px;
   height: 140px;
-  background-color: blue; }
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px; }
+
+.discript1 {
+  color: white; }
