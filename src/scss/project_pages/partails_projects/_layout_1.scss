@@ -1,4 +1,5 @@
 @import "modules/projects/pages_module";
+@import "modules/projects-page/projects-module";
 $img-spaceing:5px;
 
 .proj1{
@@ -43,16 +44,110 @@ $img-spaceing:5px;
     }
 }
 
-.box_1, .box_2{
-    @include on_box;
+.box_1,.box_2{
+    @include on_box_top;
     transition: opacity 0.5s;
 }
 
 .box_3, .box_4{
-    @include on_box;
-    bottom:0px;
+    @include on_box_bottom;
+    transition: opacity 0.8s;
 }
 
-.discript1{
+.discript1,.discript2,.discript3,.discript4{
     color:white;
+}
+
+.project-wrapper{
+    width:100%;
+    height:100%;
+
+    .projects{
+       width:100%;
+       height:100%;
+   }
+}
+
+.proj-container{
+    display: flex;
+    flex-direction: row;
+    top:25em;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.halfCircle{
+    opacity: 0.8;
+    z-index: 2;
+    transform:translateY(250px);
+}
+
+.halfCircle1{
+    transform:translateY(250px);
+}
+
+#circle-paths{
+    transform:translateY(-25px);
+}
+
+.link{
+    font-family: $monte;
+    fill:white;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.viewtext{
+    font-family: $monte;
+    fill:black;
+
+    &:hover {
+        fill:blue;
+    }
+}
+
+// translate halfCircle on y axis 400px when hovered on
+.projects:hover .halfCircle{
+    @include halfCircle-animation-on-hover;
+}
+
+// translate halfCircle on y axis back to 250px
+.halfCircle{
+    @include halfCircle-animation-off-hover;
+}
+
+// halfCircle2 fades in when hoverd on
+.projects:hover .halfCircle1{
+    visibility: visible;
+    opacity: 0.8;
+    @include fadein-halfCircle1-on-hover;
+}
+
+// halfCircle1 fades out
+.halfCircle1{
+    visibility: hidden;
+    opacity: 0;
+    @include transition(visibility 1s, opacity 1s);
+}
+// hover over projects svg and view now text slides up on y axis
+.projects:hover #view{
+    @include viewNowUp;
+}
+
+// when user hovers off projects view now slides down
+#view{
+    @include viewNowUnder;
+}
+
+#project-name{
+    @include projectName-slideUp;
+}
+
+.projects:hover #project-name{
+    @include projectName-slideUnder;
+}
+
+.projects:hover .link{
+    fill:black;
 }

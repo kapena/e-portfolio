@@ -1,5 +1,5 @@
 
-@mixin on_box {
+@mixin on_box_top{
     position: absolute;
     top:210px;
     margin:$img-spaceing;
@@ -11,6 +11,14 @@
     align-items: center;
 }
 
-@mixin paragraph_discript {
-
+@mixin on_box_bottom {
+    position: absolute;
+    bottom: 3px;
+    margin:$img-spaceing;
+    width:450px;
+    height:140px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -429,7 +429,7 @@ p {
 
 .box_3, .box_4 {
   position: absolute;
-  top: 210px;
+  bottom: 3px;
   margin: 5px;
   width: 450px;
   height: 140px;
@@ -437,7 +437,127 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 0px; }
+  transition: opacity 0.8s; }
 
-.discript1 {
+.discript1, .discript2, .discript3, .discript4 {
   color: white; }
+
+.project-wrapper {
+  width: 100%;
+  height: 100%; }
+  .project-wrapper .projects {
+    width: 100%;
+    height: 100%; }
+
+.proj-container {
+  display: flex;
+  flex-direction: row;
+  top: 25em;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap; }
+
+.halfCircle {
+  opacity: 0.8;
+  z-index: 2;
+  transform: translateY(250px); }
+
+.halfCircle1 {
+  transform: translateY(250px); }
+
+#circle-paths {
+  transform: translateY(-25px); }
+
+.link {
+  font-family: "Montserrat", sans-serif;
+  fill: white;
+  font-size: 1.2em;
+  font-weight: 700; }
+
+.viewtext {
+  font-family: "Montserrat", sans-serif;
+  fill: black; }
+  .viewtext:hover {
+    fill: blue; }
+
+.projects:hover .halfCircle {
+  -webkit-transform: translateY(400px);
+  -moz-transform: translateY(400px);
+  -ms-transform: translateY(400px);
+  -o-transform: translateY(400px);
+  transform: translateY(400px);
+  -webkit-transition: -webkit-transform;
+  -moz-transition: -moz-transform;
+  transition: transform;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.halfCircle {
+  -webkit-transform: translateY(250px);
+  -moz-transform: translateY(250px);
+  -ms-transform: translateY(250px);
+  -o-transform: translateY(250px);
+  transform: translateY(250px);
+  -webkit-transition: -webkit-transform;
+  -moz-transition: -moz-transform;
+  transition: transform;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  transition-duration: 0.6s; }
+
+.projects:hover .halfCircle1 {
+  visibility: visible;
+  opacity: 0.8;
+  -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.halfCircle1 {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s; }
+
+.projects:hover #view {
+  -webkit-transition: -webkit-transform;
+  -moz-transition: -moz-transform;
+  transition: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  transform: translateY(-140px); }
+
+#view {
+  -webkit-transition: -webkit-transform;
+  -moz-transition: -moz-transform;
+  transition: transform;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  transform: translateY(100px); }
+
+#project-name {
+  -webkit-transition: -webkit-transform;
+  -moz-transition: -moz-transform;
+  transition: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  transform: translateY(-1px); }
+
+.projects:hover #project-name {
+  -webkit-transition: -webkit-transform;
+  -moz-transition: -moz-transform;
+  transition: transform;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  transform: translateY(15px); }
+
+.projects:hover .link {
+  fill: black; }

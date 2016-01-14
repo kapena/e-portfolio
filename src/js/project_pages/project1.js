@@ -14,60 +14,76 @@ $(document).ready(function(){
     var image2 = $('.image2');
     var image3 = $('.image3');
     var image4 = $('.image4');
+
     // Content
     var img1_discript = $('<div class="box_1"><p class="discript1">Lorem ipsum dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
 
-    var img2_discript = $('<div class="box_2"></div>' +'<p class="discript2"></p>');
+    var img2_discript = $('<div class="box_2"><p class="discript2">Lorem ipsum dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
 
-    // when image1 class is hovered on
+    var img3_discript = $('<div class="box_3"><p class="discript3">Lorem ipsum dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
+
+    var img4_discript = $('<div class="box_4"><p class="discript4">Lorem ipsum dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
+
+    // image1 hover
     $(image1).hover(function(){
-        // append img1_discript to .image1 container
-        $(image1).append(img1_discript);
-        // set opacity property to 0 on box_1 div
-        $(img1_discript).css('opacity','0');
-        // get the opacity style property from the box_1 div
-        $(img1_discript).css('opacity');
-        // set opacity property to 1 on box_1 div
-        $(img1_discript).css('opacity','1','transition:opacity 0.5s');
-    },
+            // append img1_discript to .image1 container
+            $(image1).append(img1_discript);
+            // set opacity property to 0 on box_1 div
+            $(img1_discript).css('opacity','0');
+            // get the opacity style property from the box_1 div
+            $(img1_discript).css('opacity');
+            // set opacity property to 1 on box_1 div
+            $(img1_discript).css('opacity','1');
+        },
         function() {
             // remove the box_1 div that was appened to the DOM
             $(image1).find('div:last').remove();
             $(image1).find('p:last').remove();
         }
     );
-
-// ADJUST LATER
-
-    // $(image2).hover(function(){
-    //     // append a div with the class of on to `.image1` container
-    //     $(image2).append('<div class="on_2"></div>');
-    //     },
-    //     function() {
-    //         // remove the div that was appened to the DOM
-    //         $(image2).find('div:last').remove();
-    //     }
-    // );
-    //
-    //
-    // $(image3).hover(function(){
-    //     // append a div with the class of on to `.image1` container
-    //     $(image3).append('<div class="on_3"></div>');
-    //     },
-    //     function() {
-    //         // remove the div that was appened to the DOM
-    //         $(image3).find('div:last').remove();
-    //     }
-    // );
-    //
-    //
-    // $(image4).hover(function(){
-    //     // append a div with the class of on to `.image1` container
-    //     $(image4).append('<div class="on_4"></div>');
-    //     },
-    //     function() {
-    //         // remove the div that was appened to the DOM
-    //         $(image4).find('div:last').remove();
-    //     }
-    // );
+    // image2 hover
+    $(image2).hover(function(){
+        $(image2).append(img2_discript);
+        // set opacity to 0 on box_2 div
+        $(img2_discript).css('opacity','0');
+        // get opacity from box_2 div
+        $(img2_discript).css('opacity');
+        // set opacity to 1 for box_2 div
+        $(img2_discript).css('opacity','1');
+        },
+        function() {
+            // remove the div that was appened to the DOM
+            $(image2).find('div:last').remove();
+            $(image2).find('p:last').remove();
+        }
+    );
+    // image3 hover
+    $(image3).hover(function(){
+        $(image3).append(img3_discript);
+        // set opacity to 0 on box_3 div
+        $(img3_discript).css('opacity','0');
+        // get opacity property from box_3 div
+        $(img3_discript).css('opacity');
+        // set opacity to 1 on box_3 div
+        $(img3_discript).css('opacity','1');
+        },
+        function() {
+            // remove the div that was appened to the DOM
+            $(image3).find('div:last').remove();
+            $(image3).find('div:last').remove();
+        }
+    );
+    // image4 hover
+    $(image4).hover(function(){
+        $(image4).append(img4_discript);
+        $(img4_discript).css('opacity','0');
+        $(img4_discript).css('opacity');
+        $(img4_discript).css('opacity','1');
+        },
+        function() {
+            // remove the div that was appened to the DOM
+            $(image4).find('div:last').remove();
+            $(image4).find('div:last').remove();
+        }
+    );
 });
