@@ -7,73 +7,6 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <script src="js/proj1.min.js" charset="utf-8"></script>
-
-    <script type="text/javascript" charset="utf-8">
-        // Sick carousel
-        $(document).ready(function(){
-            // initalize slick
-            $('.img-slider').slick({
-                centerMode:true,
-                arrows:true,
-                dots:true,
-                accessibility:true,
-                slidesToShow:1,
-                slideToScroll:1
-            });
-
-            var image1 = $('.image1');
-            var image2 = $('.image2');
-            var image3 = $('.image3');
-            var image4 = $('.image4');
-
-            var img1_discript = $('<div class="on_1"></div>' +'<p class="discript1">Hello</p>');
-
-            // when image1 class is hovered on
-            $(image1).hover(function(){
-                // append img1_discript to .image1 container
-                $(image1).append(img1_discript);
-                },
-                function() {
-                    // remove the div that was appened to the DOM
-                    $(image1).find('div:last').remove();
-                    $(image1).find('p:last').remove();
-                }
-            );
-
-
-            $(image2).hover(function(){
-                // append a div with the class of on to `.image1` container
-                $(image2).append('<div class="on_2"></div>');
-                },
-                function() {
-                    // remove the div that was appened to the DOM
-                    $(image2).find('div:last').remove();
-                }
-            );
-
-
-            $(image3).hover(function(){
-                // append a div with the class of on to `.image1` container
-                $(image3).append('<div class="on_3"></div>');
-                },
-                function() {
-                    // remove the div that was appened to the DOM
-                    $(image3).find('div:last').remove();
-                }
-            );
-
-
-            $(image4).hover(function(){
-                // append a div with the class of on to `.image1` container
-                $(image4).append('<div class="on_4"></div>');
-                },
-                function() {
-                    // remove the div that was appened to the DOM
-                    $(image4).find('div:last').remove();
-                }
-            );
-        });
-    </script>
 </head>
 <body>
     <header>
@@ -83,7 +16,7 @@
         <h1 class="proj1">Project 1</h1>
     </header>
     <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!-- Image Slider  -->
+<!-- Slick Image Slider -->
     <div class="proj-slider">
         <div class="img-slider">
             <div>
@@ -97,10 +30,9 @@
             </div>
         </div>
     </div>
-
+<!-- Slick Image Slider End -->
     <div class="break-wrapper">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
         <svg viewbox="0 0 400 20">
             <defs>
                 <linearGradient id="tropics">
@@ -112,7 +44,7 @@
             <rect x='50' y='10' width='300' height='0.5' fill='url(#tropics)' />
         </svg>
     </div>
-
+    <!-- Indiv Images-->
     <div class="proj_images">
         <div class="images">
             <div class="image1">
@@ -128,7 +60,73 @@
                 <img class="disp4" src="http://placehold.it/450x350.png" alt="">
             </div>
         </div>
+    <!--Indiv images end -->
     </div>
+    <!--Project boxes-->
+    <svg viewBox="0 0 400 20">
+        <defs>
+            <linearGradient id='tropics'>
+                <stop stop-color="royalblue" offset='0%'/>
+                <stop stop-color="steelblue" offset="45%"/>
+                <stop stop-color="darkviolet" offset="100%"/>
+            </linearGradient>
+        </defs>
+        <rect x="50" y='10' width="300" height="0.5" fill="url(#tropics)"/>
+    </svg>
+    <!--Projects-->
+        <section class="project-wrapper">
+            <div class="proj-container">
+            <!--The Secret Of Dreaming-->
+                <figure>
+                <svg class="projects"  viewBox="-11 30 350 305">
+                    <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/dreaming.jpg" x="-11" y='27' height="310px" width="350px"/>
 
+                    <g id='circle-paths'>
+                        <path class='halfCircle' fill="#FF0000" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
+                        z"/>
+
+                        <path class="halfCircle1" fill="#fff100" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
+                        z"/>
+                    </g>
+
+                    <g id="project-name">
+                        <a xlink:href="indiv_project_pages/proj1/proj1.html">
+                            <text class="link" x="65" y="300">Secret Of Dreaming</text>
+                        </a>
+                    </g>
+
+                    <g id='view'>
+                        <a id='viewNow' xlink:href="indiv_project_pages/proj1/proj1.html">
+                            <text class='viewtext' x='120' y='430'>View Now</text>
+                        </a>
+                    </g>
+                </svg>
+                </figure>
+                <!--Point Plumbing-->
+                <figure>
+                <svg class="projects"  viewBox="-11 30 350 305">
+                    <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/point.jpg" x="-11" y='27' height="310px" width="350px"/>
+
+                    <g id='circle-paths'>
+                        <path class='halfCircle' fill="#0000ff" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
+                        z"/>
+
+                        <path class="halfCircle1" fill="cyan" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
+                        z"/>
+                    </g>
+                    <g id="project-name">
+                        <a xlink:href="indiv_project_pages/proj1/proj1.html">
+                            <text class="link" x="90" y="300">Point Plumbing</text>
+                        </a>
+                    </g>
+                    <g id='view'>
+                        <a id='viewNow' xlink:href="indiv_project_pages/proj1/proj1.html">
+                            <text class='viewtext' x='120' y='430'>View Now</text>
+                        </a>
+                    </g>
+                    </svg>
+                </figure>
+            </div>
+        </section>
     </body>
 </html>
