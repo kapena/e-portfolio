@@ -1,4 +1,5 @@
 @import "modules/projects/pages_module";
+@import "vendor/mod-scale";
 @import "modules/projects-page/projects-module";
 $img-spaceing:5px;
 
@@ -66,7 +67,15 @@ $img-spaceing:5px;
        width:100%;
        height:100%;
    }
+
+   .project-heading{
+       text-align: center;
+       position: relative;
+       font-family: $monte;
+       @include ms-respond(font-size,2);
+   }
 }
+
 
 .proj-container{
     display: flex;
