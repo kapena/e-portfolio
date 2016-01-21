@@ -160,3 +160,64 @@ $img-spaceing:5px;
 .projects:hover .link{
     fill:black;
 }
+
+.footer-area{
+    display: flex;
+    width:100%;
+    height:250px;
+    background-color:grey;
+    position: relative;
+}
+
+.footer-nav{
+    position: relative;
+    margin-top: 30px;
+    padding-left:10px;
+    width:18.5em;
+}
+
+.home,.projects,.contact{
+    font-family: $monte;
+    padding-top: 15px;    
+}
+
+$leftside:20px;
+
+.site-by{
+    background-color: lightgrey;
+}
+
+.aloha,.built{
+    fill:url('#tropics');
+    font-family:$monte;
+}
+
+.by{
+    fill:url('#tropics');
+    font-family: $monte;
+    font-size:0.5em;
+}
+
+.social{
+    width:31.25em;
+    background-color: green;
+}
+
+.smedia{
+    position: relative;
+    left:$leftside;
+    top:10px;
+}
+
+.socialize{
+    @include social-links;
+}
+
+.social1-gh,.social2-gle,.social3-in{
+    position: relative;
+    top:25px;
+    left:$leftside;
+}
+.github,.google,.linkedin{
+    @include social-icons;
+}

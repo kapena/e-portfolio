@@ -572,3 +572,60 @@ p {
 
 .projects:hover .link {
   fill: black; }
+
+.footer-area {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  background-color: grey;
+  position: relative; }
+
+.footer-nav {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 10px;
+  width: 18.5em; }
+
+.home, .projects, .contact {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 15px; }
+
+.site-by {
+  background-color: lightgrey; }
+
+.aloha, .built {
+  fill: url("#tropics");
+  font-family: "Montserrat", sans-serif; }
+
+.by {
+  fill: url("#tropics");
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.5em; }
+
+.social {
+  width: 31.25em;
+  background-color: green; }
+
+.smedia {
+  position: relative;
+  left: 20px;
+  top: 10px; }
+
+.socialize {
+  text-align: center;
+  position: relative;
+  display: block;
+  bottom: 30px;
+  margin-right: 150px; }
+
+.social1-gh, .social2-gle, .social3-in {
+  position: relative;
+  top: 25px;
+  left: 20px; }
+
+.github, .google, .linkedin {
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 50px;
+  position: relative; }
