@@ -22,3 +22,28 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin social-icons {
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    width:50px;
+    position: relative;
+}
+
+@mixin social-links {
+    text-align: center;
+    position: relative;
+    display: block;
+    bottom: 30px;
+    margin-right:150px;
+}
+
+$largeDesktop:1380px;
+
+@mixin desktop {
+    @media screen and (min-width:#{largeDesktop}){
+        @content;
+    }
+
+}
