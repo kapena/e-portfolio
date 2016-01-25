@@ -382,6 +382,11 @@ th {
 p {
   font-family: "Lora", serif; }
 
+/* Modular Scale */
+/* Colors */
+body {
+  background-color: seashell; }
+
 .proj1 {
   padding-left: 20px;
   position: relative;
@@ -416,8 +421,8 @@ p {
     margin: 5px; }
 
 .box_1, .box_2 {
-  position: absolute;
   top: 210px;
+  position: absolute;
   margin: 5px;
   width: 450px;
   height: 140px;
@@ -573,59 +578,103 @@ p {
 .projects:hover .link {
   fill: black; }
 
+li {
+  list-style: none; }
+
+#home, #projects, #about, #contact {
+  text-decoration: none; }
+
 .footer-area {
   display: flex;
   width: 100%;
-  height: 250px;
-  background-color: grey;
-  position: relative; }
+  height: 280px;
+  position: relative;
+  top: 50px; }
 
 .footer-nav {
   position: relative;
-  margin-top: 30px;
+  padding-top: 40px;
   padding-left: 10px;
-  width: 18.5em; }
+  width: 18.5em;
+  background-color: skyblue; }
 
-.home, .projects, .contact {
+.home, .projects, .about, .contact, .projects, .about, .contact {
+  color: black;
   font-family: "Montserrat", sans-serif;
-  padding-top: 15px; }
+  text-decoration: none;
+  padding-top: 5px; }
+
+.home:hover, .projects:hover, .about:hover, .contact:hover {
+  color: blue; }
+
+.home, .projects, .about, .contact {
+  color: black;
+  padding-left: 0;
+  font-weight: 900;
+  margin-left: 40px;
+  width: 50px; }
+
+.home, .projects, .about, .contact {
+  border: none;
+  border-bottom: 2px solid blue;
+  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background-size: 100% 1px;
+  -webkit-transition: 0.3s, color 0.2s 0.1s;
+  -moz-transition: 0.3s, color 0.2s 0.1s;
+  transition: 0.3s, color 0.2s 0.1s;
+  text-decoration: none; }
+
+.home:hover, .projects:hover, .about:hover, .contact:hover {
+  background-size: 100% 100%; }
+
+.svg-wrap {
+  top: 50px;
+  position: relative; }
 
 .site-by {
-  background-color: lightgrey; }
+  width: 100%;
+  height: 150px;
+  background-color: seashell; }
+
+.linebr {
+  transform: translateX(-50px); }
 
 .aloha, .built {
+  font-size: 0.44444em;
   fill: url("#tropics");
   font-family: "Montserrat", sans-serif; }
 
 .by {
   fill: url("#tropics");
   font-family: "Montserrat", sans-serif;
-  font-size: 0.5em; }
+  font-size: 0.44444em; }
 
 .social {
-  width: 31.25em;
-  background-color: green; }
+  background-color: gainsboro;
+  width: 80%; }
 
 .smedia {
+  font-family: "Montserrat", sans-serif;
   position: relative;
   left: 20px;
-  top: 10px; }
+  top: 30px; }
 
 .socialize {
   text-align: center;
   position: relative;
-  display: block;
+  display: inline-block;
   bottom: 30px;
-  margin-right: 150px; }
+  margin-left: 70px; }
 
 .social1-gh, .social2-gle, .social3-in {
+  font-family: "Montserrat", sans-serif;
   position: relative;
-  top: 25px;
-  left: 20px; }
+  top: 50px;
+  padding-left: 40px; }
 
 .github, .google, .linkedin {
   display: block;
   overflow: hidden;
   border-radius: 50%;
-  width: 50px;
+  width: 40px;
   position: relative; }

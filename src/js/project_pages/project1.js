@@ -41,6 +41,7 @@ $(document).ready(function(){
             $(image1).find('p:last').remove();
         }
     );
+
     // image2 hover
     $(image2).hover(function(){
         $(image2).append(img2_discript);
@@ -50,6 +51,10 @@ $(document).ready(function(){
         $(img2_discript).css('opacity');
         // set opacity to 1 for box_2 div
         $(img2_discript).css('opacity','1');
+        // reposition repostion box_2 when viewport is less than 1160px
+        if ($(window).width() < 1160) {
+            $(img2_discript).css('top','573px');
+        }
         },
         function() {
             // remove the div that was appened to the DOM
@@ -66,6 +71,9 @@ $(document).ready(function(){
         $(img3_discript).css('opacity');
         // set opacity to 1 on box_3 div
         $(img3_discript).css('opacity','1');
+        if ($(window).width() < 1160){
+            $(img3_discript).css('bottom','368px');
+        }
         },
         function() {
             // remove the div that was appened to the DOM

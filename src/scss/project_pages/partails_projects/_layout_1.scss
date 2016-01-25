@@ -1,8 +1,13 @@
 @import "modules/projects/pages_module";
 @import "vendor/mod-scale";
+@import "partials/variables";
 @import "modules/projects-page/projects-module";
+
 $img-spaceing:5px;
 
+body{
+    background-color: seashell;
+}
 .proj1{
     padding-left: 20px;
     position: relative;
@@ -46,6 +51,7 @@ $img-spaceing:5px;
 }
 
 .box_1,.box_2{
+    top:210px;
     @include on_box_top;
     transition: opacity 0.5s;
 }
@@ -161,33 +167,76 @@ $img-spaceing:5px;
     fill:black;
 }
 
+li{
+    list-style: none;
+}
+
+#home,#projects,#about,#contact{
+    text-decoration: none;
+}
+
 .footer-area{
     display: flex;
     width:100%;
-    height:250px;
-    background-color:grey;
+    height:280px;
     position: relative;
+    top:50px;
 }
 
 .footer-nav{
     position: relative;
-    margin-top: 30px;
+    padding-top: 40px;
     padding-left:10px;
     width:18.5em;
+    background-color:$footer-nav;
 }
 
-.home,.projects,.contact{
+.home,.projects,.about,.contact{
+    color:black;
     font-family: $monte;
-    padding-top: 15px;    
+    text-decoration: none;
+    padding-top:5px;
+}
+
+.home:hover{
+    color:blue;
+}
+
+.home{
+    color:black;
+    padding-left:0;
+    font-weight: 900;
+    margin-left: 40px;
+    width:50px;
+}
+
+.home{
+    @include link-hover-footer;
+}
+
+.home:hover{
+    background-size: 100% 100%;
 }
 
 $leftside:20px;
 
+.svg-wrap{
+    top:50px;
+    position: relative;
+}
+
 .site-by{
-    background-color: lightgrey;
+    width:100%;
+    height:150px;
+    background-color: $aloha_goodbye;
+}
+
+.linebr{
+    transform: translateX(-50px);
 }
 
 .aloha,.built{
+    font-size: ms(-2);
     fill:url('#tropics');
     font-family:$monte;
 }
@@ -195,28 +244,27 @@ $leftside:20px;
 .by{
     fill:url('#tropics');
     font-family: $monte;
-    font-size:0.5em;
+    font-size:ms(-2);
 }
 
 .social{
-    width:31.25em;
-    background-color: green;
+    background-color:$footer_social;
+    width:80%;
 }
-
 .smedia{
+    font-family: $monte;
     position: relative;
     left:$leftside;
-    top:10px;
+    top:30px;
 }
-
 .socialize{
     @include social-links;
 }
-
 .social1-gh,.social2-gle,.social3-in{
+    font-family: $monte;
     position: relative;
-    top:25px;
-    left:$leftside;
+    top:50px;
+    padding-left: 40px;
 }
 .github,.google,.linkedin{
     @include social-icons;

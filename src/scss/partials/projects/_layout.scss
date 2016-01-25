@@ -3,11 +3,6 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
-// figure {
-// margin-right:8px;
-// margin-left: 8px;
-// }
-
 .project-heading{
     top:455px;
     text-align: center;
@@ -67,7 +62,6 @@
 }
 
 .viewtext{
-    //text-decoration: underline;
     font-family: $monte;
     fill:black;
 
