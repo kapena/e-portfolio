@@ -1,0 +1,13 @@
+.projects {
+    @extend .home;
+}
+.about {
+    @extend .home;
+}
+.contact {
+    @extend .home;
+}
+
+.disp2,.disp3,.disp4{
+    @extend .disp1;
+}

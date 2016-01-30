@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/proj1_main.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <script src="js/proj1.min.js" charset="utf-8"></script>
+    <script src="js/modernizr.js" charset="utf-8"></script>
 </head>
 <body>
     <header>
@@ -48,7 +50,7 @@
     <div class="proj_images">
         <div class="images">
             <div class="image1">
-                <img class="disp1" src="http://placehold.it/450x350.png" alt="">
+                <img class="disp1" src="https://s3-us-west-2.amazonaws.com/efolio/bottom4/barra.jpg" alt="">
             </div>
             <div class="image2">
                 <img class="disp2" src="http://placehold.it/450x350.png" alt="">
@@ -79,7 +81,7 @@
             <div class="proj-container">
             <!--The Secret Of Dreaming-->
                 <figure>
-                <svg class="projects"  viewBox="-11 30 350 305">
+                <svg class="other-projects"  viewBox="-11 30 350 305">
                     <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/dreaming.jpg" x="-11" y='27' height="310px" width="350px"/>
 
                     <g id='circle-paths'>
@@ -105,7 +107,7 @@
                 </figure>
                 <!--Point Plumbing-->
                 <figure>
-                <svg class="projects"  viewBox="-11 30 350 305">
+                <svg class="other-projects"  viewBox="-11 30 350 305">
                     <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/point.jpg" x="-11" y='27' height="310px" width="350px"/>
 
                     <g id='circle-paths'>
@@ -133,40 +135,28 @@
             <div class="footer-area">
                 <nav class="footer-nav">
                     <li>
-                        <a href="#">
-                            <ul class="home">Contact</ul>
+                        <a id="home" href="#">
+                            <ul class="home">Home</ul>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a id="projects" href="#">
                             <ul class="projects">Projects</ul>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <ul class="contact">Home</ul>
+                        <a id="about" href="#">
+                            <ul class="about">About</ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="contact" href="#">
+                            <ul class="contact">Contact</ul>
                         </a>
                     </li>
                 </nav>
-                    <svg class="site-by" width="500px" height="250px" viewBox='0 0 120 5'>
-
-                        <text>
-                            <tspan class="built" x='25' dy='-10' fill='black'>< > with</tspan>
-                            <tspan class='aloha' x='33' dy='23' fill='black'> Aloha</tspan>
-                            <tspan class="by" x='28' dy='17' fill="black"> By Brent White</tspan>
-
-                        </text>
-                        <defs>
-                            <linearGradient id="tropics">
-                                <stop stop-color="royalblue" offset='0%' />
-                                <stop stop-color="steelblue" offset='45%' />
-                                <stop stop-color="darkviolet" offset="100%" />
-                            </linearGradient>
-                        </defs>
-
-                    </svg>
                 <div class="social">
-                    <span class="smedia">Socialize with me here.</span>
+                    <span class="smedia">Network with me on</span>
                     <div class="social1-gh">
                         <a href="#" class="github-link">
                             <img class="github" src="https://s3-us-west-2.amazonaws.com/efolio/footer/github.svg" alt=""></>
@@ -189,6 +179,24 @@
                     </div>
                 </div>
             </div>
+            <div class="svg-wrap">
+                <svg class="site-by" width="450px" height="250px" viewBox='0 0 120 5'>
+
+                    <line class="linebr" x1='50' y1='41' x2='50' y2='-25' stroke='darkorchid' stroke-width='1'></line>
+
+                    <text>
+                        <tspan class="built" x='8' dy='5' fill='black'>< > with Aloha by Brent White</tspan>
+                    </text>
+                    <defs>
+                        <linearGradient id="tropics">
+                            <stop stop-color="royalblue" offset='0%' />
+                            <stop stop-color="steelblue" offset='45%' />
+                            <stop stop-color="darkviolet" offset="100%" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
         </footer>
     </body>
 </html>

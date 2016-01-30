@@ -1,9 +1,15 @@
 @import "modules/projects/pages_module";
 @import "vendor/mod-scale";
+@import "partials/variables";
 @import "modules/projects-page/projects-module";
+
 $img-spaceing:5px;
 
+body{
+    background-color: seashell;
+}
 .proj1{
+    color:pink;
     padding-left: 20px;
     position: relative;
     font-family:sans-serif;
@@ -40,22 +46,30 @@ $img-spaceing:5px;
     flex-wrap: wrap;
     justify-content: center;
 
-    .disp1, .disp2, .disp3, .disp3, .disp4{
+    .disp1{
         margin:$img-spaceing;
+        padding-left:10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
     }
 }
 
 .box_1,.box_2{
-    @include on_box_top;
+    @include display_box;
     transition: opacity 0.5s;
+    top:224px;
+    box-shadow: 0px 7px 0 rgb(255, 108, 18);
 }
 
 .box_3, .box_4{
-    @include on_box_bottom;
+    @include display_box;
+    box-shadow: 0px 7px 0 rgb(255, 108, 18);
+    bottom: 21px;
     transition: opacity 0.8s;
 }
 
 .discript1,.discript2,.discript3,.discript4{
+    opacity: 1;
     color:white;
 }
 
@@ -63,7 +77,7 @@ $img-spaceing:5px;
     width:100%;
     height:100%;
 
-    .projects{
+    .other-projects{
        width:100%;
        height:100%;
    }
@@ -117,7 +131,7 @@ $img-spaceing:5px;
 }
 
 // translate halfCircle on y axis 400px when hovered on
-.projects:hover .halfCircle{
+.other-projects:hover .halfCircle{
     @include halfCircle-animation-on-hover;
 }
 
@@ -127,7 +141,7 @@ $img-spaceing:5px;
 }
 
 // halfCircle2 fades in when hoverd on
-.projects:hover .halfCircle1{
+.other-projects:hover .halfCircle1{
     visibility: visible;
     opacity: 0.8;
     @include fadein-halfCircle1-on-hover;
@@ -140,7 +154,7 @@ $img-spaceing:5px;
     @include transition(visibility 1s, opacity 1s);
 }
 // hover over projects svg and view now text slides up on y axis
-.projects:hover #view{
+.other-projects:hover #view{
     @include viewNowUp;
 }
 
@@ -153,41 +167,87 @@ $img-spaceing:5px;
     @include projectName-slideUp;
 }
 
-.projects:hover #project-name{
+.other-projects:hover #project-name{
     @include projectName-slideUnder;
 }
 
-.projects:hover .link{
+.other-projects:hover .link{
     fill:black;
+}
+
+li{
+    list-style: none;
+}
+
+#home,#projects,#about,#contact{
+    text-decoration: none;
 }
 
 .footer-area{
     display: flex;
     width:100%;
-    height:250px;
-    background-color:grey;
+    height:280px;
     position: relative;
+    top:50px;
 }
 
 .footer-nav{
     position: relative;
-    margin-top: 30px;
+    padding-top: 40px;
     padding-left:10px;
     width:18.5em;
+    background-color:$footer-nav;
 }
 
-.home,.projects,.contact{
+.home,.projects,.about,.contact{
     font-family: $monte;
-    padding-top: 15px;    
+    text-decoration: none;
+    padding-top:5px;
+}
+
+.home:hover{
+    color:blue;
+}
+
+.home{
+    color:black;
+    padding-left:0;
+    font-weight: 900;
+    margin-left: 40px;
+    width:50px;
+}
+
+.projects,.contact{
+    width:70px;
+}
+
+.home{
+    @include link-hover-footer;
+}
+
+.home:hover{
+    background-size: 100% 100%;
 }
 
 $leftside:20px;
 
+.svg-wrap{
+    top:50px;
+    position: relative;
+}
+
 .site-by{
-    background-color: lightgrey;
+    width:100%;
+    height:150px;
+    background-color: $aloha_goodbye;
+}
+
+.linebr{
+    transform: translateX(-50px);
 }
 
 .aloha,.built{
+    font-size: ms(-2);
     fill:url('#tropics');
     font-family:$monte;
 }
@@ -195,28 +255,27 @@ $leftside:20px;
 .by{
     fill:url('#tropics');
     font-family: $monte;
-    font-size:0.5em;
+    font-size:ms(-2);
 }
 
 .social{
-    width:31.25em;
-    background-color: green;
+    background-color:$footer_social;
+    width:80%;
 }
-
 .smedia{
+    font-family: $monte;
     position: relative;
     left:$leftside;
-    top:10px;
+    top:30px;
 }
-
 .socialize{
     @include social-links;
 }
-
 .social1-gh,.social2-gle,.social3-in{
+    font-family: $monte;
     position: relative;
-    top:25px;
-    left:$leftside;
+    top:50px;
+    padding-left: 40px;
 }
 .github,.google,.linkedin{
     @include social-icons;

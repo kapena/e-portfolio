@@ -11,7 +11,7 @@ html{
 
 body{
     min-height:100%;
-     background-color: $sand;
+    background-color: seashell;
 }
 
 header{
@@ -84,14 +84,7 @@ header #projects {
 }
 
 header #projects{
-    border:none;
-    border-bottom: 2px solid blue;
-    background:-webkit-linear-gradient(cyan, cyan) no-repeat bottom;
-    background:-o-linear-gradient(cyan, cyan) no-repeat bottom;
-    background:linear-gradient(cyan, cyan) no-repeat bottom;
-    background-size:100% 1px;
-    transition: .2s,color .1s .1s;
-    text-decoration:none;
+    @include hover-links;
 }
 
 header #projects:hover{
@@ -102,21 +95,6 @@ circle {
   mix-blend-mode: multiply;
 }
 
-// #mixer {
-//     @include circles-tablet-display {
-//         margin-top:6em;
-//         height:350px;
-//     }
-//
-//     @include circles-med-desktop-display {
-//         margin-top: 8em;
-//     }
-//
-//     @include circles-large-desktop-display {
-//         margin-top: 9em;
-//         height:450px;
-//     }
-// }
 #subtractive {
     @include tabletLayout {
         x:7em;

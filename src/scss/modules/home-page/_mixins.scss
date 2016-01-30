@@ -11,48 +11,13 @@
     margin-right:$margins;
 }
 
-
-$phoneHome:400px;
-// 440 px
-$tabletHome:630px;
-
-// Home page tablet layout
-@mixin tablet {
-    @media (max-width: #{$tabletHome}){
-        @content;
-    }
-}
-
-@mixin phone {
-    @media (max-width:#{$phoneHome}){
-        @content;
-    }
-}
-
-$circlesTablet:755px;
-@mixin circles-tablet-display {
-    @media screen and (min-width: #{$circlesTablet}){
-        @content;
-    }
-}
-
-$circles-medium-Desktop:835px;
-@mixin circles-med-desktop-display {
-    @media screen and (min-width: #{$circles-medium-Desktop}){
-        @content;
-    }
-}
-
-$circles-large-Desktop:1100px;
-@mixin circles-large-desktop-display {
-    @media screen and (min-width: #{$circles-large-Desktop}){
-        @content;
-    }
-}
-
-$circles-xl-large-Desktop:1530px;
-@mixin circles-xl-desktop-display {
-    @media screen and (min-width: #{$circles-xl-large-Desktop}){
-        @content;
-    }
+@mixin hover-links {
+    border:none;
+    border-bottom: 2px solid blue;
+    background:-webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+    background:-o-linear-gradient(cyan, cyan) no-repeat bottom;
+    background:linear-gradient(cyan, cyan) no-repeat bottom;
+    background-size:100% 1px;
+    transition: .2s,color .1s .1s;
+    text-decoration:none;
 }

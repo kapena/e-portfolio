@@ -1,22 +1,10 @@
 
-@mixin on_box_top{
+@mixin display_box{
     position: absolute;
-    top:210px;
     margin:$img-spaceing;
+    margin-left: 15px;
     width:450px;
-    height:140px;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin on_box_bottom {
-    position: absolute;
-    bottom: 3px;
-    margin:$img-spaceing;
-    width:450px;
-    height:140px;
+    height:120px;
     background-color: blue;
     display: flex;
     justify-content: center;
@@ -27,23 +15,23 @@
     display: block;
     overflow: hidden;
     border-radius: 50%;
-    width:50px;
+    width:40px;
     position: relative;
 }
 
 @mixin social-links {
     text-align: center;
     position: relative;
-    display: block;
+    display: inline-block;
     bottom: 30px;
-    margin-right:150px;
+    margin-left: 70px;
 }
 
-$largeDesktop:1380px;
-
-@mixin desktop {
-    @media screen and (min-width:#{largeDesktop}){
-        @content;
-    }
-
+@mixin link-hover-footer {
+    border:none;
+    border-bottom: 2px solid blue;
+    background:linear-gradient(cyan, cyan) no-repeat bottom;
+    background-size: 100% 1px;
+    @include transition(.3s,color .2s .1s);
+    text-decoration: none;
 }
