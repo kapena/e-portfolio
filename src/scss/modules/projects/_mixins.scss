@@ -1,21 +1,10 @@
 
-@mixin on_box_top{
+@mixin display_box{
     position: absolute;
     margin:$img-spaceing;
+    margin-left: 15px;
     width:450px;
-    height:140px;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin on_box_bottom {
-    position: absolute;
-    bottom: 3px;
-    margin:$img-spaceing;
-    width:450px;
-    height:140px;
+    height:120px;
     background-color: blue;
     display: flex;
     justify-content: center;

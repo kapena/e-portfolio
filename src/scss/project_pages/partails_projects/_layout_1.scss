@@ -9,6 +9,7 @@ body{
     background-color: seashell;
 }
 .proj1{
+    color:pink;
     padding-left: 20px;
     position: relative;
     font-family:sans-serif;
@@ -45,23 +46,30 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 
-    .disp1, .disp2, .disp3, .disp3, .disp4{
+    .disp1{
         margin:$img-spaceing;
+        padding-left:10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
     }
 }
 
 .box_1,.box_2{
-    top:210px;
-    @include on_box_top;
+    @include display_box;
     transition: opacity 0.5s;
+    top:224px;
+    box-shadow: 0px 7px 0 rgb(255, 108, 18);
 }
 
 .box_3, .box_4{
-    @include on_box_bottom;
+    @include display_box;
+    box-shadow: 0px 7px 0 rgb(255, 108, 18);
+    bottom: 21px;
     transition: opacity 0.8s;
 }
 
 .discript1,.discript2,.discript3,.discript4{
+    opacity: 1;
     color:white;
 }
 
@@ -69,7 +77,7 @@ body{
     width:100%;
     height:100%;
 
-    .projects{
+    .other-projects{
        width:100%;
        height:100%;
    }
@@ -123,7 +131,7 @@ body{
 }
 
 // translate halfCircle on y axis 400px when hovered on
-.projects:hover .halfCircle{
+.other-projects:hover .halfCircle{
     @include halfCircle-animation-on-hover;
 }
 
@@ -133,7 +141,7 @@ body{
 }
 
 // halfCircle2 fades in when hoverd on
-.projects:hover .halfCircle1{
+.other-projects:hover .halfCircle1{
     visibility: visible;
     opacity: 0.8;
     @include fadein-halfCircle1-on-hover;
@@ -146,7 +154,7 @@ body{
     @include transition(visibility 1s, opacity 1s);
 }
 // hover over projects svg and view now text slides up on y axis
-.projects:hover #view{
+.other-projects:hover #view{
     @include viewNowUp;
 }
 
@@ -159,11 +167,11 @@ body{
     @include projectName-slideUp;
 }
 
-.projects:hover #project-name{
+.other-projects:hover #project-name{
     @include projectName-slideUnder;
 }
 
-.projects:hover .link{
+.other-projects:hover .link{
     fill:black;
 }
 
@@ -192,7 +200,6 @@ li{
 }
 
 .home,.projects,.about,.contact{
-    color:black;
     font-family: $monte;
     text-decoration: none;
     padding-top:5px;
@@ -208,6 +215,10 @@ li{
     font-weight: 900;
     margin-left: 40px;
     width:50px;
+}
+
+.projects,.contact{
+    width:70px;
 }
 
 .home{
