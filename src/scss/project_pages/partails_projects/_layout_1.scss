@@ -9,10 +9,24 @@ body{
     background-color: seashell;
 }
 .proj1{
-    color:pink;
     padding-left: 20px;
     position: relative;
     font-family:sans-serif;
+}
+
+.hero-video-wrapper{
+    padding-top: 25px;
+    padding-bottom: 56.25%;
+    position: relative;
+    height:0;
+
+    iframe{
+        height:100%;
+        width: 100%;
+        top:0;
+        bottom:0;
+        position: absolute;
+    }
 }
 
 #hero_proj1{
@@ -49,6 +63,8 @@ body{
     .disp1{
         margin:$img-spaceing;
         padding-left:10px;
+        width: 100%;
+        max-width: 450px;
         padding-right: 10px;
         padding-bottom: 10px;
     }

@@ -58,8 +58,9 @@ $(document).ready(function(){
             $(image2).find('p:last').remove();
         }
     );
-    // img2_discript media query
-    $(window).resize(function(){
+
+    // throttling back the window resize event
+    function reposition_img2_onResize(){
         // Modernizr.mq allows me to programmatically check if the current browser window state matches a media query.
         var top_img2_discript = Modernizr.mq('only screen and (max-width:960px)');
         // if top_img2_discript is true
@@ -70,8 +71,11 @@ $(document).ready(function(){
         } else{
             // larger screen
             $(img2_discript).css('top','224px');
+        }
     }
-    }).resize();
+    // calling the resize event and throttling it back 350 milliseconds
+    // an inital call of the resize event is nessassry for multiple resizes
+    $(window).resize($.throttle(350,reposition_img2_onResize)).resize();
 
     // image3 hover
     $(image3).hover(function(){
@@ -89,8 +93,8 @@ $(document).ready(function(){
              $(image3).find('div:last').remove();
         }
     );
-    // img3_discript media query
-    $(window).resize(function(){
+
+    function reposition_img3_onResize (){
         var sm_box3_img3_discript = Modernizr.mq('only screen and (max-width:960px)');
 
         // if browser window is larger than 960px
@@ -99,8 +103,11 @@ $(document).ready(function(){
         } else {
             $(img3_discript).css('bottom','21px');
         }
+    }
 
-    }).resize();
+    // throttle back reposition_img3_onResize 350 milliseconds
+    $(window).resize($.throttle(350,reposition_img3_onResize)).resize();
+
 
     // image4 hover
     $(image4).hover(function(){
