@@ -8,6 +8,14 @@
     @extend .home;
 }
 
-.disp2,.disp3,.disp4{
+.blog{
+    @extend.home;
+}
+
+.discript2, .discript3, .discript4, .discript5, .discript6{
+    @extend .discript1;
+}
+
+.disp2,.disp3,.disp4,.disp5,.disp6{
     @extend .disp1;
 }

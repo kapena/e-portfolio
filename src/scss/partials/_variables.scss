@@ -6,10 +6,16 @@ $ms-base:1em;
 // multiplyed by base to create a scale of numbers
 $ms-ratio:1.5;
 
+// site-by svg height adjustment for mobile
+$mobile:820px;
+$desktop:900px;
+
 /* Colors */
 $projects:cyan;
 $bio:yellow;
 $chat:lime;
+$hawaiian-blue:#1010EC;
+$hawaiian-red:#FF2A2A;
 $text:#002b36; // charcoal
 $circleNav:#373D45; // circle nav button
 $circleNav2:#37535A;
@@ -22,7 +28,9 @@ $color-4:#D7E1DC;; // OffCyan
 $footer_social:gainsboro;
 $footer_nav:skyblue;
 $aloha_goodbye:seashell;
-
+$discription_boxes_secret:rgba(255, 4, 0, 0.58);
+$discription_boxes_secret1:#D70A07;
+$bottom_line:0 7px 0 rgb(252, 242, 73);
 // Radius of Circles on smaller screens
 $r:60;
 

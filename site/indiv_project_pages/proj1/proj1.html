@@ -5,8 +5,6 @@
     <title>Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/proj1_main.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
     <script src="js/proj1.min.js" charset="utf-8"></script>
     <script src="js/modernizr.min.js" charset="utf-8"></script>
     <script src="js/jquery-throttle-debounce.min.js" charset="utf-8"></script>
@@ -14,54 +12,55 @@
 <body>
     <header>
         <div class="hero-video-wrapper">
-                <iframe src="https://player.vimeo.com/video/56847488" width="1024" height="575" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <!-- <img id="hero_proj1" src="https://s3-us-west-2.amazonaws.com/efolio/secret/header.jpg" alt=""> -->
-            </div>
-        <h1 class="proj1">The Secret of Dreaming</h1>
-    </header>
-    <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!-- Slick Image Slider -->
-    <div class="proj-slider">
-        <div class="img-slider">
-            <div>
-                <img id="img1" src="http://placehold.it/800x400.png" alt="">
-            </div>
-            <div>
-                <img id="img2" src="http://placehold.it/800x400.png" alt="">
-            </div>
-            <div>
-                <img id="img3" src="http://placehold.it/800x400.png" alt="">
-            </div>
+                <iframe src="https://player.vimeo.com/video/56847488" width="1024" height="575" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                </iframe>
         </div>
-    </div>
-<!-- Slick Image Slider End -->
-    <div class="break-wrapper">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <svg viewbox="0 0 400 20">
+        <div class="project-introduction">
+            <h1 class="proj1">Secret of Dreaming</h1>
+                <span class='media'>Digital Animation</span>
+                <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <svg class="line-1" viewbox="0 10 400 20">
             <defs>
-                <linearGradient id="tropics">
-                    <stop stop-color="royalblue" offset='0%' />
-                    <stop stop-color="steelblue" offset='45%' />
-                    <stop stop-color="darkviolet" offset="100%" />
+                <linearGradient id="australia">
+                    <stop stop-color="darkorange" offset='0%' />
+                    <stop stop-color="red" offset='45%' />
+                    <stop stop-color="crimson" offset="100%" />
                 </linearGradient>
             </defs>
-            <rect x='50' y='10' width='300' height='0.5' fill='url(#tropics)' />
+            <rect id="line1" x='50' y='10' width='300' height='0.5'/>
+        </svg>
+    </header>
+<!-- Main Image-->
+    <div class="main-image">
+        <img class="story-seq" src="https://s3-us-west-2.amazonaws.com/efolio/secret/seq/sequance.jpg" alt="">
+    </div>
+    <div class="break-wrapper">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <svg id="line-2" viewbox="0 0 400 20">
+            <rect id="line2" x='50' y='15' width='300' height='0.5'/>
         </svg>
     </div>
     <!-- Indiv Images-->
     <div class="proj_images">
         <div class="images">
             <div class="image1">
-                <img class="disp1" src="https://s3-us-west-2.amazonaws.com/efolio/secret/bottom4/barramundi.jpg" alt="">
+                <img class="disp1" src="https://s3-us-west-2.amazonaws.com/efolio/secret/bottom_6/spirit.jpg" alt="">
             </div>
             <div class="image2">
-                <img class="disp2" src="https://s3-us-west-2.amazonaws.com/efolio/secret/bottom4/bunjil.jpg" alt="">
+                <img class="disp2" src="https://s3-us-west-2.amazonaws.com/efolio/secret/bottom_6/dreaming.jpg" alt="">
             </div>
             <div class="image3">
-                <img class="disp3" src="https://s3-us-west-2.amazonaws.com/efolio/secret/bottom4/dream.jpg" alt="">
+                <img class="disp3" src="https://s3-us-west-2.amazonaws.com/efolio/secret/bottom_6/barramundi.jpg" alt="">
             </div>
             <div class="image4">
-                <img class="disp4" src="https://s3-us-west-2.amazonaws.com/efolio/secret/bottom4/man.jpg" alt="">
+                <img class="disp4" src="https://s3-us-west-2.amazonaws.com/efolio/secret/bottom_6/currikee.jpg" alt="">
+            </div>
+            <div class="image5">
+                <img class="disp5" src="https://s3-us-west-2.amazonaws.com/efolio/secret/bottom_6/bunjil.jpg" alt="">
+            </div>
+            <div class="image6">
+                <img class="disp6" src="https://s3-us-west-2.amazonaws.com/efolio/secret/bottom_6/man.jpg" alt="">
             </div>
         </div>
     <!--Indiv images end -->
@@ -156,6 +155,11 @@
                             <ul class="contact">Contact</ul>
                         </a>
                     </li>
+                    <li>
+                        <a id="blog" href="#">
+                            <ul class="blog">Blog</ul>
+                        </a>
+                    </li>
                 </nav>
                 <div class="social">
                     <span class="smedia">Network with me on</span>
@@ -179,26 +183,35 @@
                         </a>
                         <span class="socialize">Linkedin</span>
                     </div>
+
+                    <div class="social4-twitter">
+                        <a href="#" class="tweet">
+                            <img class="twitter" src="https://s3-us-west-2.amazonaws.com/efolio/footer/twitter.svg" alt=""></>
+                        </a>
+                        <span class="socialize">Twitter</span>
+                    </div>
+
                 </div>
             </div>
-            <div class="svg-wrap">
-                <svg class="site-by" width="450px" height="250px" viewBox='0 0 120 5'>
-
-                    <line class="linebr" x1='50' y1='41' x2='50' y2='-25' stroke='darkorchid' stroke-width='1'></line>
-
-                    <text>
-                        <tspan class="built" x='8' dy='5' fill='black'>< > with Aloha by Brent White</tspan>
-                    </text>
-                    <defs>
-                        <linearGradient id="tropics">
-                            <stop stop-color="royalblue" offset='0%' />
-                            <stop stop-color="steelblue" offset='45%' />
-                            <stop stop-color="darkviolet" offset="100%" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
-
         </footer>
+        <div class="svg-wrap">
+            <svg class="site-by" width="450px" viewBox='0 0 120 5'>
+
+                    <g id="built-tag" transform="translate(5 -2)">
+                        <path d="M0.1,5.1V3.9L4.3,2v1L1.2,4.4v0.1L4.3,6v1L0.1,5.1z"/>
+                        <path d="M9,0.9h0.9L6.1,9H5.2L9,0.9z"/>
+                        <path d="M14.9,3.9v1.1L10.7,7V6l3.1-1.4V4.4L10.7,3V2L14.9,3.9z"/>
+                    </g>
+                </g>
+
+            <g id="built-text" transform="translate(2 0)">
+                <text class="text-g">
+                        <tspan class="with" x="20" dy="5">with</tspan>
+                        <tspan class="aloha" x="38" dy="0">Aloha</tspan>
+                        <tspan class="brent" x="60" dy="0">by Brent White</tspan>
+                </text>
+            </g>
+            </svg>
+        </div>
     </body>
 </html>

@@ -1,19 +1,12 @@
 // Sick carousel
 $(document).ready(function(){
-    // initalize slick
-    $('.img-slider').slick({
-        centerMode:true,
-        arrows:true,
-        dots:true,
-        accessibility:true,
-        slidesToShow:1,
-        slideToScroll:1
-    });
     // Containers
     var image1 = $('.image1');
     var image2 = $('.image2');
     var image3 = $('.image3');
     var image4 = $('.image4');
+    var image5 = $('.image5');
+    var image6 = $('.image6');
 
     // Content
     var img1_discript = $('<div class="box_1"><p class="discript1">BOX1 dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
@@ -23,6 +16,10 @@ $(document).ready(function(){
     var img3_discript = $('<div class="box_3"><p class="discript3">BOX3 dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
 
     var img4_discript = $('<div class="box_4"><p class="discript4">BOX4 dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
+
+    var img5_discript = $('<div class="box_5"><p class="discript5">BOX5 dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
+
+    var img6_discript = $('<div class="box_6"><p class="discript6">BOX6 dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
 
     // image1 hover
     $(image1).hover(function(){
@@ -38,7 +35,6 @@ $(document).ready(function(){
         function() {
             // remove the box_1 div that was appened to the DOM
             $(image1).find('div:last').remove();
-            $(image1).find('p:last').remove();
         }
     );
 
@@ -55,7 +51,6 @@ $(document).ready(function(){
         function() {
             // remove the div that was appened to the DOM
             $(image2).find('div:last').remove();
-            $(image2).find('p:last').remove();
         }
     );
 
@@ -70,7 +65,7 @@ $(document).ready(function(){
         // if top_img2_discript is false
         } else{
             // larger screen
-            $(img2_discript).css('top','224px');
+            $(img2_discript).css('top','234px');
         }
     }
     // calling the resize event and throttling it back 350 milliseconds
@@ -89,8 +84,7 @@ $(document).ready(function(){
         },
         function() {
             // remove the div that was appened to the DOM
-             $(image3).find('div:last').remove();
-             $(image3).find('div:last').remove();
+            $(image3).find('div:last').remove();
         }
     );
 
@@ -99,15 +93,14 @@ $(document).ready(function(){
 
         // if browser window is larger than 960px
         if (sm_box3_img3_discript){
-            $(img3_discript).css('bottom','394px');
+            $(img3_discript).css('bottom','1136px');
         } else {
-            $(img3_discript).css('bottom','21px');
+            $(img3_discript).css('bottom','395px');
         }
     }
 
     // throttle back reposition_img3_onResize 350 milliseconds
     $(window).resize($.throttle(350,reposition_img3_onResize)).resize();
-
 
     // image4 hover
     $(image4).hover(function(){
@@ -119,7 +112,55 @@ $(document).ready(function(){
         function() {
             // remove the div that was appened to the DOM
             $(image4).find('div:last').remove();
-            $(image4).find('div:last').remove();
         }
     );
+
+    function reposition_img4_onResize (){
+        var sm_box_img4_discript = Modernizr.mq(('only screen and (max-width:960px)'));
+
+        if(sm_box_img4_discript){
+            $(img4_discript).css('bottom','763px');
+        } else {
+            $(img4_discript).css('bottom','395px');
+        }
+    }
+
+    $(window).resize($.throttle(350,reposition_img4_onResize)).resize();
+
+    $(image5).hover(function(){
+        $(image5).append(img5_discript);
+        $(img5_discript).css('opacity','0');
+        $(img5_discript).css('opacity');
+        $(img5_discript).css('opacity','0.8');
+        },
+        function () {
+            $(image5).find('div:last').remove();
+        }
+    );
+    function reposition_img5_onResize (){
+        var sm_box_img5_discript = Modernizr.mq(('only screen and (max-width:960px)'));
+
+        if(sm_box_img5_discript){
+            $(img5_discript).css('bottom','395px');
+        } else {
+            $(img5_discript).css('bottom','20px');
+        }
+    }
+
+    $(window).resize($.throttle(350,reposition_img5_onResize)).resize();
+
+    $(image6).hover(function(){
+        // append img6_discript
+        $(image6).append(img6_discript);
+        // set opacity to 0 on image6_discript
+        $(img6_discript).css('opacity','0');
+        // set opacity on image6_discript
+        $(img6_discript).css('opacity');
+        // set opacity to 0.8
+        $(img6_discript).css('opacity','0.8');
+    },
+    function (){
+        // find the last div and remove in image6 container
+        $(image6).find('div:last').remove();
+    });
 });

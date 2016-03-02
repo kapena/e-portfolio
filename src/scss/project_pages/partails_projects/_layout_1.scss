@@ -11,7 +11,8 @@ body{
 .proj1{
     padding-left: 20px;
     position: relative;
-    font-family:sans-serif;
+    bottom: 15px;
+    font-family:$lora;
 }
 
 .hero-video-wrapper{
@@ -29,23 +30,48 @@ body{
     }
 }
 
+.project-introduction{
+    padding: 100px;
+    padding-bottom: 50px;
+}
+
 #hero_proj1{
     min-height: 100%;
     width:100%;
 }
 
-.project-desc{
-    padding-left: 20px;
+.project-desc, .media{
+    margin-left: 20px;
+    margin-top: 25px;
+    position: relative ;
+    bottom:20px;
 }
 
-.proj-slider{
-    margin: 60px auto;
-    width:80%;
+.media{
+    font-style: italic;
+    padding-bottom: 5px;
+    border-bottom: 1px solid red;
+}
+
+.main-image{
+    width:100%;
+
+    .story-seq{
+        width: 100%;
+        margin:auto;
+        display:block;
+        max-width:1000px;
+    }
+}
+
+#line1,#line2{
+    fill:url('#australia');
 }
 
 .break-wrapper{
+    padding-bottom: 10px;
+    padding-top: 10px;
     position: relative;
-    top:20px;
     margin: 50px;
     text-align: center;
 }
@@ -73,18 +99,25 @@ body{
 .box_1,.box_2{
     @include display_box;
     transition: opacity 0.5s;
-    top:224px;
-    box-shadow: 0px 7px 0 rgb(255, 108, 18);
+    top:234px;
+    box-shadow:$bottom_line;
 }
 
-.box_3, .box_4{
+.box_3,.box_4{
     @include display_box;
-    box-shadow: 0px 7px 0 rgb(255, 108, 18);
-    bottom: 21px;
+    box-shadow: $bottom_line;
+    bottom:395px;
     transition: opacity 0.8s;
 }
 
-.discript1,.discript2,.discript3,.discript4{
+.box_5, .box_6{
+    @include display_box;
+    box-shadow:$bottom_line;
+    bottom:20px;
+    transition: opacity 0.8s;
+}
+
+.discript1{
     opacity: 1;
     color:white;
 }
@@ -195,14 +228,14 @@ li{
     list-style: none;
 }
 
-#home,#projects,#about,#contact{
+#home,#projects,#about,#contact,#blog{
     text-decoration: none;
 }
 
 .footer-area{
     display: flex;
     width:100%;
-    height:280px;
+    height:320px;
     position: relative;
     top:50px;
 }
@@ -215,7 +248,7 @@ li{
     background-color:$footer-nav;
 }
 
-.home,.projects,.about,.contact{
+.home,.projects,.about,.contact,.blog{
     font-family: $monte;
     text-decoration: none;
     padding-top:5px;
@@ -256,22 +289,30 @@ $leftside:20px;
     width:100%;
     height:150px;
     background-color: $aloha_goodbye;
+
+    // @include mobile_built-by {
+    //     height:120px;
+    // }
+}
+
+#built-tag{
+    fill:$hawaiian-red;
 }
 
 .linebr{
     transform: translateX(-50px);
 }
 
-.aloha,.built{
-    font-size: ms(-2);
-    fill:url('#tropics');
-    font-family:$monte;
-}
-
-.by{
-    fill:url('#tropics');
+.with,.brent{
+    fill:$hawaiian-red;
     font-family: $monte;
     font-size:ms(-2);
+}
+
+.aloha{
+    font-size: ms(-2);
+    fill:$hawaiian-blue;
+    font-family:$monte;
 }
 
 .social{
@@ -287,12 +328,12 @@ $leftside:20px;
 .socialize{
     @include social-links;
 }
-.social1-gh,.social2-gle,.social3-in{
+.social1-gh,.social2-gle,.social3-in,.social4-twitter{
     font-family: $monte;
     position: relative;
     top:50px;
     padding-left: 40px;
 }
-.github,.google,.linkedin{
+.github,.google,.linkedin,.twitter{
     @include social-icons;
 }
