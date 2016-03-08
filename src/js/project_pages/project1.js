@@ -24,49 +24,44 @@ $(document).ready(function(){
     var img6_discript = $('<div class="box_6"><p class="discript6">BOX6 dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
 
     // Mobile paragraphs
-    var img1_discript_device = $('<p class="mobile-discript1">dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod</p>');
+    var img_discript_device = $('<p class="mobile-discript">dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod</p>');
 
-    var img2_discript_device = $('<p class="mobile-discript2">dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod </p>');
-
-    // image1 paragraph
-    // append_p_device function which is throttled back
-    function append_p_image1 (){
-        // modernizr media q
-        var append_p_device = Modernizr.mq('only screen and (max-width:960px)');
+    // captionDisplay changes the css properties of the selected caption classes on device mq
+    function captionDisplay (){
+         // selecting caption classes
+         var captions = '.caption1,.caption2,.caption3,.caption4,.caption5,.caption6';
+         // modernizr media q
+         var device = Modernizr.mq('only screen and (max-width:960px)');
             //  screen is smaller than 960px
-            if (append_p_device){
-                // append paragraph
-                $(image1).append(img1_discript_device);
+            if (device){
+            // make caption1 visible and add margin-bottom of 15px
+                $(captions).css({"visibility":"visible","margin-bottom": "40px"});
             }
-            // screen is larger than 950px
+            // screen is larger than 960px
             else{
-                // remove paragraph
-                $(img1_discript_device).remove();
+                $(captions).css({"visibility":"hidden", "margin-bottom": "-80px"});
             }
         }
-        // append a paragraph to image1 when screen is smaller than 960px
-        // $(image1).append(img1_discript_device);
-        // throttle resize event
+    // throttle resize event on captionDisplay function
+    $(window).resize($.throttle(350,captionDisplay)).resize();
 
-    $(window).resize($.throttle(350,append_p_image1)).resize();
-
-    // resize function for image1
-    // changes visibility on the resize of img discriptions
-    function visibility_img1_onResize () {
+    // changes the visibility property of img discriptions when page is 960px
+    function visibility_onResize () {
         // mq
         var mobile_device = Modernizr.mq('only screen and (max-width:960px)');
         // if smaller
             if (mobile_device) {
-                // hidden
-                $(img1_discript).css('visibility','hidden');
+                // visibility hidden
+                $(img1_discript).add(img2_discript).add(img3_discript).add(img4_discript).add(img5_discript).add(img6_discript).css('visibility','hidden');
             }
             // if bigger
             else{
-                // visible
-                $(img1_discript).css('visibility','visible');
+                // visibility visible
+                $(img1_discript).add(img2_discript).add(img3_discript).add(img4_discript).add(img5_discript).add(img6_discript).css('visibility','visible');
             }
         }
-    $(window).resize($.throttle(350,visibility_img1_onResize)).resize();
+    // throttle back resize event
+    $(window).resize($.throttle(350,visibility_onResize)).resize();
 
     // image1 hover desktop
     $(image1).hover(function(){
@@ -97,30 +92,9 @@ $(document).ready(function(){
         },
         function() {
             // remove the div that was appened to the DOM
-            // $(image2).find('div:last').remove();
+            $(image2).find('div:last').remove();
         }
     );
-
-    // changes visibility on the resize of img2_discript
-    function visibility_img2_onResize(){
-        // Modernizr.mq allows me to programmatically check if the current browser window state matches a media query.
-        var top_img2_discript = Modernizr.mq('only screen and (max-width:960px)');
-
-        // if top_img2_discript is true
-        if (top_img2_discript) {
-            // smaller screen
-            $(img2_discript).css('visibility','hidden');
-        // if top_img2_discript is false
-        }
-         else{
-            // larger screen
-            $(img2_discript).css('visibility','visible');
-        }
-    }
-    // calling the resize event and throttling it back 350 milliseconds
-    // an inital call of the resize event for multiple resizes
-    $(window).resize($.throttle(350,visibility_img2_onResize)).resize();
-
     // image3 hover
     $(image3).hover(function(){
         $(image3).append(img3_discript);

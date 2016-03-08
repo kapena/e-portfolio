@@ -9,8 +9,9 @@ body{
     background-color: seashell;
 }
 .proj1{
-    padding-left: 20px;
-    position: relative;
+    // padding-left: 20px;
+    // position: relative;
+    text-align: center;
     bottom: 15px;
     font-family:$lora;
 }
@@ -40,17 +41,20 @@ body{
     width:100%;
 }
 
-.project-desc, .media{
-    margin-left: 20px;
-    margin-top: 25px;
-    position: relative ;
-    bottom:20px;
-}
-
 .media{
+    display: block;
     font-style: italic;
     padding-bottom: 5px;
     border-bottom: 1px solid red;
+    font-family: $lora;
+    bottom:15px;
+}
+
+.project-desc{
+    position: relative ;
+    width: 75%;
+    margin: auto;
+    text-align: center;
 }
 
 .main-image{
@@ -62,6 +66,10 @@ body{
         display:block;
         max-width:1000px;
     }
+}
+
+.line-1{
+    transform: translateY(-40px);
 }
 
 #line1,#line2{
@@ -101,6 +109,17 @@ body{
             padding-left: 0px;
         }
     }
+}
+.caption1{
+    font-size: ms(0);
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    top: 10px;
 }
 
 .box_1,.box_2{

@@ -1,3 +1,8 @@
+
+.media{
+    @extend .project-desc;
+}
+
 .projects {
     @extend .home;
 }
@@ -18,4 +23,8 @@
 
 .disp2,.disp3,.disp4,.disp5,.disp6{
     @extend .disp1;
+}
+
+.caption2,.caption3,.caption4,.caption5,.caption6{
+    @extend .caption1;
 }
