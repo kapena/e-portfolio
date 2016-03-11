@@ -4,13 +4,16 @@
 // 1em = 16px
 $ms-base:1em;
 // multiplyed by base to create a scale of numbers
-$ms-ratio:1.5;
-
+$ms-ratio:$golden;
+$ms-range: 1.1 20em, 1.222 30em;
 
 // site-by svg height adjustment for mobile
-$mobile:550px;
+$mobile:465px;
+$tablet:780px;
+$tablet-2:1030px;
 $desktop:900px;
-
+$desktop-lrg:1300px;
+$desktop-xl:1430px;
 /* Colors */
 $projects:cyan;
 $bio:yellow;

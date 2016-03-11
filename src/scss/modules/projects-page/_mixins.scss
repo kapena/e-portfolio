@@ -44,30 +44,32 @@
     transform: translateY(-1px);
 }
 
-$phone-projects:480px;
-@mixin phonelayout {
-    @media screen and (max-width: #{$phone-projects}){
-        @content;
-    }
-}
-$tablet-projects:1030px;
-@mixin tabletLayout {
-    @media screen and (max-width: #{$tablet-projects}){
+@mixin phone {
+    @media only screen and (max-width:#{$mobile}){
         @content;
     }
 }
 
-$desktop-sm-projects:1260px;
-@mixin desktop_sm_Projects {
-    @media all and (max-width:#{$desktop_sm_projects}){
+@mixin tablet {
+    @media only screen and (max-width:#{$tablet-2}){
         @content;
     }
 }
 
-$desktop-lrg-projects:1570px;
-@mixin desktop_lrg_Projects {
-    @media all and (min-width:#{$desktop-lrg-projects}){
+@mixin desktop {
+    @media only screen and (min-width:#{$desktop}){
         @content;
     }
+}
 
+@mixin lrg-desktop {
+    @media only screen and (min-width:#{$desktop-lrg}){
+        @content;
+    }
+}
+
+@mixin xl-desktop {
+    @media only screen and (min-width:#{$desktop-xl}){
+        @content;
+    }
 }

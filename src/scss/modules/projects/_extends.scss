@@ -1,22 +1,9 @@
-
 .media{
     @extend .project-desc;
 }
-
-.projects {
+.projects,.about,.contact,.blog {
     @extend .home;
 }
-.about {
-    @extend .home;
-}
-.contact {
-    @extend .home;
-}
-
-.blog{
-    @extend.home;
-}
-
 .discript2, .discript3, .discript4, .discript5, .discript6{
     @extend .discript1;
 }
@@ -27,4 +14,12 @@
 
 .caption2,.caption3,.caption4,.caption5,.caption6{
     @extend .caption1;
+}
+
+.social2-gle,.social3-in,.social4-twitter{
+    @extend .social1-gh;
+}
+
+.google,.linkedin,.twitter{
+    @extend .github;
 }

@@ -14,8 +14,6 @@ $(document).ready(function(){
     var image6 = $('.image6');
 
     // Content
-
-    //  Desktop Hover
     var img1_discript = $('<div class="box_1"><p class="discript1">BOX1 dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
 
     var img2_discript = $('<div class="box_2"><p class="discript2">BOX2 dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
@@ -28,9 +26,6 @@ $(document).ready(function(){
 
     var img6_discript = $('<div class="box_6"><p class="discript6">BOX6 dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod tempor.</p></div>');
 
-    // Mobile paragraphs
-    var img_discript_device = $('<p class="mobile-discript">dolor sit amet,</br>consectetur adipisicing elit, sed do eiusmod</p>');
-
     // captionDisplay changes the css properties of the selected caption classes on device mq
     function captionDisplay (){
          // selecting caption classes
@@ -40,11 +35,11 @@ $(document).ready(function(){
             //  screen is smaller than 960px
             if (device){
             // make caption1 visible and add margin-bottom of 15px
-                $(captions).css({"visibility":"visible","margin-bottom": "40px"});
+                $(captions).css({"visibility":"visible","margin-bottom": "25px"});
             }
             // screen is larger than 960px
             else{
-                $(captions).css({"visibility":"hidden", "margin-bottom": "-80px"});
+                $(captions).css({"visibility":"hidden", "margin-bottom": "-110px"});
             }
         }
     // throttle resize event on captionDisplay function

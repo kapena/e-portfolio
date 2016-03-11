@@ -35,14 +35,14 @@
     text-decoration: none;
 }
 
-@mixin mobile_bottom_imgs {
-    @media only screen and (max-width:#{$mobile}){
+@mixin tablet_device {
+    @media only screen and (max-width:#{$tablet}){
         @content;
     }
 }
 
-@mixin desktop_bottom_imgs {
-    @media only screen and (min-width:#{$desktop}){
+@mixin mobile_device {
+    @media only screen and (max-width:#{$mobile}){
         @content;
     }
 }
