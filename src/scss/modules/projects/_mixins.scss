@@ -1,11 +1,10 @@
-
 @mixin display_box{
     position: absolute;
     margin:$img-spaceing;
     margin-left: 15px;
     width:450px;
-    height:120px;
-    background-color: blue;
+    height:110px;
+    background-color:$discription_boxes_secret1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,4 +33,16 @@
     background-size: 100% 1px;
     @include transition(.3s,color .2s .1s);
     text-decoration: none;
+}
+
+@mixin tablet_device {
+    @media only screen and (max-width:#{$tablet}){
+        @content;
+    }
+}
+
+@mixin mobile_device {
+    @media only screen and (max-width:#{$mobile}){
+        @content;
+    }
 }

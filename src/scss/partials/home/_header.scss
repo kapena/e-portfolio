@@ -12,6 +12,7 @@ html{
 body{
     min-height:100%;
     background-color: seashell;
+    // background-color:white;
 }
 
 header{
@@ -25,10 +26,11 @@ header{
     height:430px;
     width:100%;
     max-width: 100%;
+    mix-blend-mode:darken;
 }
 
 .aloha{
-    fill:url('#tropics');
+    fill:url('/#tropics');
     font-family:$monte;
     font-weight: 700;
 }
@@ -96,7 +98,7 @@ circle {
 }
 
 #subtractive {
-    @include tabletLayout {
+    @include tablet {
         x:7em;
         width:15em;
     }

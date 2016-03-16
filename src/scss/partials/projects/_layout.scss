@@ -1,3 +1,4 @@
+@import "modules/home-page/home-module";
 @import "modules/projects-page/projects-module";
 @import "partials/variables";
 @import "partials/typography";
@@ -7,7 +8,7 @@
     top:455px;
     text-align: center;
     position: relative;
-    font-family: $monte;
+    font-family: $lora;
     padding-bottom:100px;
     @include ms-respond(font-size,3);
 }
@@ -30,13 +31,16 @@
 
 .project-wrapper{
     width:100%;
-    height:100%;
+    height: 263px;
     position: relative;
 
     .projects{
        width:100%;
-       height:100%;
-       //background-color:grey;
+       height: 263px;
+
+      @include phone {
+          height:200px;
+      }
    }
 }
 
@@ -71,24 +75,23 @@
 }
 
 .proj-container{
-
-    @include tabletLayout {
+    @include tablet {
         flex-wrap: wrap;
     }
-
-
-    @include phonelayout {
-        width:90%;
-    }
-
 }
 
-figure{
-    @include desktop_sm_Projects {
-        margin:8px;
+figure {
+    @include tablet {
+        margin:15px;
     }
-
-    @include desktop_lrg_Projects {
-        margin:1em 50px;
+    @include desktop {
+        margin:15px;
+    }
+    @include lrg-desktop {
+        margin:30px;
+    }
+    @include xl-desktop {
+        margin: 50px;
+        margin-top: 15px;
     }
 }
