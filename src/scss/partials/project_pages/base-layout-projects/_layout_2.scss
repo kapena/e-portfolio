@@ -1,0 +1,130 @@
+@import "modules/projects/pages_module";
+@import "vendor/mod-scale";
+@import "partials/variables";
+@import "modules/global-mqs/mqs";
+@import "modules/projects-page/projects-module";
+
+body{
+    background-color: seashell;
+}
+
+.proj1{
+    text-align: center;
+    bottom: 15px;
+    margin-bottom: 30px;
+    font-family:$lora;
+}
+
+.project-introduction{
+    padding: 90px 100px 90px;
+
+    @include mobile_device {
+        padding-right:75px;
+        padding-left: 75px;
+    }
+}
+.media{
+    display: block;
+    font-style: italic;
+    padding-bottom: 5px;
+    border-bottom: $urban;
+    font-family: $lora;
+    bottom:15px;
+}
+.project-desc{
+    @include ms-respond(font-size,1);
+    border-bottom:$urban;
+    position: relative ;
+    width:95%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    bottom: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#project-desc{
+    border-top:$urban;
+    margin-top: 55px;
+}
+
+.point-p-link{
+    @include display(flex);
+    @include justify-content(center);
+}
+.point:hover{
+    color:blue;
+}
+.point{
+    padding: 5px;
+    font-family: $monte;
+    text-decoration: none;
+    margin-bottom: 120px;
+    font-size: ms(1);
+    @include link-hover-footer;
+
+    &:hover{
+        background-size:100% 100%;
+    }
+}
+
+.project-wrapper{
+    height:100%;
+
+    .other-projects{
+       width:300px;
+   }
+
+   .project-heading{
+       text-align: center;
+       position: relative;
+       font-family: $lora;
+       @include ms-respond(font-size,2);
+   }
+}
+
+
+.proj-container{
+    @include display(flex);
+    justify-content: center;
+
+    @include tablet_device {
+        // media q for f-w
+        @include flex-wrap(wrap);
+    }
+}
+
+.line-divider{
+    width: 100%;
+    height: 100%;
+}
+
+.halfCircle{
+    opacity: 0.8;
+    z-index: 2;
+    transform:translateY(250px);
+}
+
+.halfCircle1{
+    transform:translateY(250px);
+}
+
+#circle-paths{
+    transform:translateY(-25px);
+}
+
+.link{
+    font-family: $monte;
+    fill:white;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.viewtext{
+    font-family: $monte;
+    fill:black;
+
+    &:hover {
+        fill:blue;
+    }
+}

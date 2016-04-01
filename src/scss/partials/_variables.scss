@@ -6,6 +6,8 @@ $ms-base:1em;
 // multiplyed by base to create a scale of numbers
 $ms-ratio:$golden;
 $ms-range: 1.1 20em, 1.222 30em;
+$leftside:20px;
+$img-spaceing:5px;
 
 // site-by svg height adjustment for mobile
 $mobile:465px;
@@ -16,8 +18,16 @@ $desktop-lrg:1300px;
 $desktop-xl:1430px;
 /* Colors */
 $projects:cyan;
+$secret:1px solid red;
+$urban_capt_border:0 7px 0 #0DC3CE;
+$urban_capt_box:#006F97;
+$radiate_capt_border:1px solid limegreen;
+$urban:2px solid cornflowerblue;
+$radiate:2px solid limegreen;
 $bio:yellow;
+$cfblue:cornflowerblue;
 $chat:lime;
+$lime-green:limegreen;
 $hawaiian-blue:#1010EC;
 $hawaiian-red:#FF2A2A;
 $text:#002b36; // charcoal

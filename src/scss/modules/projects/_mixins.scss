@@ -1,12 +1,13 @@
-@mixin display_box{
+@mixin display_box {
     position: absolute;
     margin:$img-spaceing;
     margin-left: 15px;
     width:450px;
     height:110px;
-    background-color:$discription_boxes_secret1;
-    display: flex;
+    background-color:red;
+    @include display(flex);
     justify-content: center;
+    box-shadow: $discription_boxes_secret;
     align-items: center;
 }
 

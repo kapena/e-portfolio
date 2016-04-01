@@ -4,6 +4,8 @@
 /* Gobal Variables */
 @import "partials/variables";
 @import "partials/typography";
+// Media Q
+@import "modules/global-mqs/mqs";
 
 html{
     height:100%;
