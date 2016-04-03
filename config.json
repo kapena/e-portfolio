@@ -1,3 +1,4 @@
+
 {
     "paths": {
         "source":{
@@ -15,6 +16,15 @@
                 "proj_1":{
                     "styles_proj1":"./src/scss/proj1_main.scss",
                     "js_proj1":["bower_components/jquery/dist/jquery.min.js","src/js/project_pages/project1.js"]
+                },
+                "proj_2":{
+                    "styles_proj2":"./src/scss/proj2_main.scss",
+                    "js_proj2":["bower_components/jquery/dist/jquery.min.js","src/js/project_pages/project2.js"]
+                },
+
+                "proj_3":{
+                    "styles_proj3":"./src/scss/proj3_main.scss",
+                    "js_proj3":["bower_components/jquery/dist/jquery.min.js","src/js/project_pages/project3.js"]
                     }
                 }
             },
@@ -30,6 +40,17 @@
                 "styles_proj1":"site/indiv_project_pages/proj1/css",
                 "js_proj1":"site/indiv_project_pages/proj1/js",
                 "html":"site/indiv_project_pages/proj1"
+            },
+            "proj2_dest":{
+                "styles_proj2":"site/indiv_project_pages/proj2/css",
+                "js_proj2":"site/indiv_project_pages/proj2/js",
+                "html":"site/indiv_project_pages/proj2"
+            },
+
+            "proj3_dest":{
+                "styles_proj3":"site/indiv_project_pages/proj3/css",
+                "js_proj3":"site/indiv_project_pages/proj3/js",
+                "html":"site/indiv_project_pages/proj3"
             }
         },
 
@@ -44,6 +65,18 @@
                 "styles_proj1":"src/scss/**/*.scss",
                 "js_proj1":"src/js/project_pages/**/*.js",
                 "html":"site/**/*.html"
+            },
+            "watcher_proj2":{
+                "styles_proj2":"src/scss/**/*.scss",
+                "js_proj2":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
+            },
+
+            "watcher_proj3":{
+                "styles_proj3":"src/scss/**/*.scss",
+                "js_proj3":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
+
             }
         }
     }

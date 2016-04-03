@@ -1,4 +1,3 @@
-// Sick carousel
 $(document).ready(function(){
     // Containers
     var image1 = $('.image1');
