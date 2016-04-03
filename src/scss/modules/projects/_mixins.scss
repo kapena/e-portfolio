@@ -7,9 +7,26 @@
     background-color:red;
     @include display(flex);
     justify-content: center;
-    box-shadow: $discription_boxes_secret;
     align-items: center;
 }
+
+@mixin boxCapt_secret {
+    background-color: red;
+    box-shadow:$secret_border_bottom;
+}
+
+@mixin boxCapt_radiate {
+    background-color:limegreen;
+    box-shadow:$radiate_border_bottom;
+}
+
+@mixin boxCapt_urban {
+    background-color:$urban_capt_box;
+    box-shadow:$urban_capt_border;
+}
+
+// @mixin boxCapt_print{}
+// @mixin boxCap_royal{}
 
 @mixin social-icons {
     display: block;

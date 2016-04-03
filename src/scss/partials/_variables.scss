@@ -16,40 +16,56 @@ $tablet-2:1030px;
 $desktop:900px;
 $desktop-lrg:1300px;
 $desktop-xl:1430px;
+
 /* Colors */
 $projects:cyan;
-$secret:1px solid red;
+// The Secret of Dreaming
+$secret_border_bottom:rgba(255, 4, 0, 0.58);
+$secret_border:1px solid red;
+
+// Radiate
+$radiate_capt_box:lime;
+$radiate_border_bottom:0 7px 0 grey;
+$radiate_capt_border:1px solid limegreen;
+$radiate_border:2px solid limegreen;
+
+// Urban
 $urban_capt_border:0 7px 0 #0DC3CE;
 $urban_capt_box:#006F97;
-$radiate_capt_border:1px solid limegreen;
-$urban:2px solid cornflowerblue;
-$radiate:2px solid limegreen;
+$urban_border:2px solid cornflowerblue;
+
+// Main Page
 $bio:yellow;
 $cfblue:cornflowerblue;
 $chat:lime;
 $lime-green:limegreen;
 $hawaiian-blue:#1010EC;
 $hawaiian-red:#FF2A2A;
-$text:#002b36; // charcoal
-$circleNav:#373D45; // circle nav button
-$circleNav2:#37535A;
-$circleNav3:#51585A;
-$sand:rgba(227, 227, 203, 0.89); // page color
-$color-1: #243040; // Ebony Clay
-$color-2: #9cb3a8; // Pewter
-$color-3: #ffffff; // White
-$color-4:#D7E1DC;; // OffCyan
-$footer_social:gainsboro;
-$footer_nav:skyblue;
-$aloha_goodbye:seashell;
-$discription_boxes_secret:rgba(255, 4, 0, 0.58);
-$discription_boxes_secret1:#D70A07;
-$bottom_line:0 7px 0 rgb(252, 242, 73);
-// Radius of Circles on smaller screens
-$r:60;
-
 // animation of sliding nav
 $animation-dur:0.7s;
 
 // kerning on aloha text
 $padding-aloha:10px;
+
+
+// Nav
+$text:#002b36; // charcoal
+$circleNav:#373D45; // circle nav button
+$circleNav2:#37535A;
+$circleNav3:#51585A;
+
+// Other colors
+$sand:rgba(227, 227, 203, 0.89); // page color
+$color-1: #243040; // Ebony Clay
+$color-2: #9cb3a8; // Pewter
+$color-3: #ffffff; // White
+$color-4:#D7E1DC;; // OffCyan
+
+// Footer
+$footer_social:gainsboro;
+$footer_nav:skyblue;
+$aloha_goodbye:seashell;
+
+$bottom_line:0 7px 0 rgb(252, 242, 73);
+// Radius of Circles on smaller screens
+// $r:60;

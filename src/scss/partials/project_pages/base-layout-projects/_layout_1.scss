@@ -56,7 +56,7 @@ body{
 
 .project-desc{
     @include ms-respond(font-size,1);
-    border-bottom: 1px solid red;
+    border-bottom:$secret_border;
     position: relative ;
     width:100%;
     margin: auto;

@@ -8,7 +8,7 @@ body{
     background-color: seashell;
 }
 
-.proj1{
+.proj3{
     text-align: center;
     bottom: 15px;
     margin-bottom: 30px;
@@ -130,6 +130,7 @@ body{
 
 .box_1,.box_2{
     @include display_box;
+    @include boxCapt_urban;
     @include transition(opacity 0.5s);
     top:234px;
 }

@@ -8,7 +8,7 @@ body{
     background-color: seashell;
 }
 
-.proj1{
+.proj3{
     text-align: center;
     bottom: 15px;
     margin-bottom: 30px;
@@ -21,7 +21,7 @@ body{
 }
 
 .project-introduction{
-    padding: 60px 100px;
+    padding: 50px 100px;
 
     @include mobile_device {
         padding-right:75px;
@@ -38,14 +38,14 @@ body{
     display: block;
     font-style: italic;
     padding-bottom: 5px;
-    border-bottom:$radiate;
+    border-bottom:$radiate_border;
     font-family: $lora;
     bottom:15px;
 }
 
 .project-desc{
     @include ms-respond(font-size,1);
-    border-bottom:$radiate;
+    border-bottom:$radiate_border;
     position: relative ;
     width:95%;
     margin: auto;
@@ -56,7 +56,7 @@ body{
     padding-top: 15px;
 }
 #project-desc{
-    border-top:$radiate;
+    border-top:$radiate_border;
     margin-top: 55px;
 }
 .main-image{
@@ -122,6 +122,7 @@ body{
 
 .box_1,.box_2{
     @include display_box;
+    @include boxCapt_radiate;
     @include transition(opacity 0.5s);
     top:234px;
 }
