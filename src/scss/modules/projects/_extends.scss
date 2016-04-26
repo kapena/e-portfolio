@@ -4,7 +4,12 @@
 .projects,.about,.contact,.blog {
     @extend .home;
 }
-.discript2, .discript3, .discript4, .discript5, .discript6{
+
+.image2-container,.image3-container,.image4-container{
+    @extend .image1-container;
+}
+
+.discript2,.discript3,.discript4,.discript5,.discript6{
     @extend .discript1;
 }
 

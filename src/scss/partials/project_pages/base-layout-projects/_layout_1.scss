@@ -9,7 +9,7 @@ $img-spaceing:5px;
 body{
     background-color: seashell;
 }
-.proj1{
+.proj{
     text-align: center;
     bottom: 15px;
     margin-bottom: 30px;
@@ -32,43 +32,28 @@ body{
 }
 
 .project-introduction{
-    padding: 90px 100px 90px;
+    padding: $proj-intro-padding;
 
     @include mobile_device {
-        padding-right:75px;
-        padding-left: 75px;
+        @include padding-left-right;
     }
 }
 
-#hero_proj1{
-    min-height: 100%;
-    width:100%;
-}
-
 .media{
-    display: block;
-    font-style: italic;
-    padding-bottom: 5px;
-    border-bottom: 1px solid red;
+    @include media;
+    border-bottom: $secret_border;
     font-family: $lora;
-    bottom:15px;
 }
 
 .project-desc{
     @include ms-respond(font-size,1);
+    @include projDscript;
     border-bottom:$secret_border;
-    position: relative ;
-    width:100%;
-    margin: auto;
-    text-align: center;
-    margin-top: 5px;
-    bottom: 30px;
-    padding-bottom: 15px;
-    padding-top: 15px;
 }
+
 #project-desc{
-    border-top: 1px solid red;
-    margin-top: 55px;
+    border-top:$secret_border;
+    margin-top:55px;
 }
 .main-image{
     width:100%;
@@ -102,58 +87,51 @@ body{
 }
 
 .images{
-    display: flex;
+    @include display(flex);
     position: relative;
     @include flex-wrap(wrap);
     @include justify-content(center);
+    margin-bottom:$m-b-under-imgs;
 
     .disp1{
         margin:$img-spaceing;
-        padding-left:10px;
+        @include padding-left-right-bottom;
         width: 100%;
         max-width: 450px;
-        padding-right: 10px;
-        padding-bottom: 10px;
 
         @include mobile_device {
-            margin: 0;
+            margin:0;
             padding-right:0;
             padding-left: 0;
         }
     }
 }
 .caption1{
+    @include caption;
+    border-top: $secret_border;
+    border-bottom: $secret_border;
     font-size: ms(0);
-    text-align: center;
-    width: 300px;
-    margin: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid red;
-    border-top: 1px solid red;
-    top: 10px;
-    margin-top: 20px;
 }
 
 .box_1,.box_2{
     @include display_box;
-    @include transition(opacity 0.5s);
-    top:234px;
-    box-shadow:$bottom_line;
+    @include boxColor_secret;
+    @include transition(opacity 0.8s);
+    top:$six_row_one;
 }
 
 .box_3,.box_4{
     @include display_box;
-    box-shadow: $bottom_line;
-    bottom:395px;
+    @include boxColor_secret;
     @include transition(opacity 0.8s);
+    bottom:$six_row_two;
 }
 
-.box_5, .box_6{
+.box_5,.box_6{
     @include display_box;
-    box-shadow:$bottom_line;
-    bottom:20px;
+    @include boxColor_secret;
     @include transition(opacity 0.8s);
+    bottom:22px;
 }
 
 .discript1{
@@ -183,13 +161,12 @@ body{
 
     @include tablet_device {
         // media q for f-w
-        flex-wrap: wrap;
+        @include flex-wrap(wrap);
     }
 }
 
 .line-divider{
-    width: 100%;
-    height: 100%;
+    @include width-height-100percent;
 }
 
 .halfCircle{
@@ -222,165 +199,6 @@ body{
     }
 }
 
-// translate halfCircle on y axis 400px when hovered on
-.other-projects:hover .halfCircle{
-    @include halfCircle-animation-on-hover;
-}
-
-// translate halfCircle on y axis back to 250px
-.halfCircle{
-    @include halfCircle-animation-off-hover;
-}
-
-// halfCircle2 fades in when hoverd on
-.other-projects:hover .halfCircle1{
-    visibility: visible;
-    opacity: 0.8;
-    @include fadein-halfCircle1-on-hover;
-}
-
-// halfCircle1 fades out
-.halfCircle1{
-    visibility: hidden;
-    opacity: 0;
-    @include transition(visibility 1s, opacity 1s);
-}
-// hover over projects svg and view now text slides up on y axis
-.other-projects:hover #view{
-    @include viewNowUp;
-}
-
-// when user hovers off projects view now slides down
-#view{
-    @include viewNowUnder;
-}
-
-#project-name{
-    @include projectName-slideUp;
-}
-
-.other-projects:hover #project-name{
-    @include projectName-slideUnder;
-}
-
-.other-projects:hover .link{
-    fill:black;
-}
-
 li{
     list-style: none;
-}
-
-#home,#projects,#about,#contact,#blog{
-    text-decoration: none;
-}
-
-.footer-area{
-    @include display(flex);
-    width:100%;
-    height:320px;
-    position: relative;
-    top:50px;
-}
-
-.footer-nav{
-    position: relative;
-    padding-top: 40px;
-    padding-left:10px;
-    width:18.5em;
-    background-color:$footer-nav;
-
-    @include mobile_device {
-        width: 11.5em;
-        padding-left: 0px;
-
-    }
-}
-
-.home,.projects,.about,.contact,.blog{
-    font-family: $monte;
-    text-decoration: none;
-    padding-top:5px;
-}
-
-.home:hover{
-    color:blue;
-}
-
-.home{
-    color:black;
-    padding-left:0;
-    font-weight: 900;
-    margin-left: 40px;
-    width:50px;
-}
-
-.projects,.contact{
-    width:70px;
-}
-
-.home{
-    @include link-hover-footer;
-}
-
-.home:hover{
-    background-size: 100% 100%;
-}
-
-.svg-wrap{
-    top:50px;
-    position: relative;
-}
-
-.site-by{
-    width:100%;
-    height:150px;
-    background-color: $aloha_goodbye;
-}
-
-#built-tag{
-    fill:$hawaiian-red;
-}
-
-.linebr{
-    transform: translateX(-50px);
-}
-
-.with,.brent{
-    fill:$hawaiian-red;
-    font-family: $monte;
-    font-size:ms(-2);
-}
-
-.aloha{
-    font-size: ms(-2);
-    fill:$hawaiian-blue;
-    font-family:$monte;
-}
-
-.social{
-    background-color:$footer_social;
-    width:80%;
-}
-.smedia{
-    font-family: $monte;
-    position: relative;
-    left:$leftside;
-    top:30px;
-}
-.socialize{
-    @include social-links;
-}
-.social1-gh{
-    font-family: $monte;
-    position: relative;
-    top:50px;
-    padding-left: 40px;
-
-    @include mobile_device {
-        padding-left: 20px;
-    }
-}
-.github{
-    @include social-icons;
 }

@@ -15,20 +15,29 @@
             "project_pgs_src":{
                 "proj_1":{
                     "styles_proj1":"./src/scss/proj1_main.scss",
-                    "js_proj1":["bower_components/jquery/dist/jquery.min.js","src/js/project_pages/project1.js"]
+                    "js_proj1":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/project1.js"]
                 },
                 "proj_2":{
-                    "styles_proj2":"./src/scss/proj2_main.scss",
-                    "js_proj2":["bower_components/jquery/dist/jquery.min.js","src/js/project_pages/project2.js"]
+                    "styles_proj2":"./src/scss/proj2_main.scss"
                 },
-
                 "proj_3":{
                     "styles_proj3":"./src/scss/proj3_main.scss",
-                    "js_proj3":["bower_components/jquery/dist/jquery.min.js","src/js/project_pages/project3.js"]
+                    "js_proj3":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/project3.js"]
+                },
+                "proj_4":{
+                    "styles_proj4":"./src/scss/proj4_main.scss",
+                    "js_proj4":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/project4.js"]
+                },
+                "proj_5":{
+                    "styles_proj5":"./src/scss/proj5_main.scss",
+                    "js_proj5":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/project5.js"]
+                },
+                "proj_6":{
+                    "styles_proj6":"./src/scss/proj6_main.scss",
+                    "js_proj6":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/project6.js"]
                     }
                 }
             },
-
         "main_dest":{
             "styles_main":"site/css",
             "js_main":"site/js",
@@ -46,11 +55,25 @@
                 "js_proj2":"site/indiv_project_pages/proj2/js",
                 "html":"site/indiv_project_pages/proj2"
             },
-
             "proj3_dest":{
                 "styles_proj3":"site/indiv_project_pages/proj3/css",
                 "js_proj3":"site/indiv_project_pages/proj3/js",
                 "html":"site/indiv_project_pages/proj3"
+            },
+            "proj4_dest":{
+                "styles_proj4":"site/indiv_project_pages/proj4/css",
+                "js_proj4":"site/indiv_project_pages/proj4/js",
+                "html":"site/indiv_project_pages/proj4"
+            },
+            "proj5_dest":{
+                "styles_proj5":"site/indiv_project_pages/proj5/css",
+                "js_proj5":"site/indiv_project_pages/proj5/js",
+                "html":"site/indiv_project_pages/proj5"
+            },
+            "proj6_dest":{
+                "styles_proj6":"site/indiv_project_pages/proj6/css",
+                "js_proj6":"site/indiv_project_pages/proj6/js",
+                "html":"site/indiv_project_pages/proj6"
             }
         },
 
@@ -71,12 +94,25 @@
                 "js_proj2":"src/js/project_pages/**/*.js",
                 "html":"site/**/*.html"
             },
-
             "watcher_proj3":{
                 "styles_proj3":"src/scss/**/*.scss",
                 "js_proj3":"src/js/project_pages/**/*.js",
                 "html":"site/**/*.html"
-
+            },
+            "watcher_proj4":{
+                "styles_proj4":"src/scss/**/*.scss",
+                "js_proj4":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
+            },
+            "watcher_proj5":{
+                "styles_proj5":"src/scss/**/*.scss",
+                "js_proj5":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
+            },
+            "watcher_proj6":{
+                "styles_proj6":"src/scss/**/*.scss",
+                "js_proj6":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
             }
         }
     }

@@ -117,7 +117,7 @@ $(document).ready(function(){
         if (sm_box3_img3_discript){
             $(img3_discript).css('bottom','1136px');
         } else {
-            $(img3_discript).css('bottom','395px');
+            $(img3_discript).css('bottom','398px');
         }
     }
 
@@ -143,7 +143,7 @@ $(document).ready(function(){
         if(sm_box_img4_discript){
             $(img4_discript).css('bottom','763px');
         } else {
-            $(img4_discript).css('bottom','395px');
+            $(img4_discript).css('bottom','398px');
         }
     }
 
@@ -163,9 +163,9 @@ $(document).ready(function(){
         var sm_box_img5_discript = Modernizr.mq(('only screen and (max-width:960px)'));
 
         if(sm_box_img5_discript){
-            $(img5_discript).css('bottom','395px');
+            $(img5_discript).css('bottom','398px');
         } else {
-            $(img5_discript).css('bottom','20px');
+            $(img5_discript).css('bottom','22px');
         }
     }
 

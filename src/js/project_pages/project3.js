@@ -14,13 +14,13 @@ $(document).ready(function(){
          // selecting caption classes
          var captions = '.caption1,.caption2';
          // modernizr media q
-         var device = Modernizr.mq('only screen and (max-width:960px)');
-            //  screen is smaller than 960px
+         var device = Modernizr.mq('only screen and (max-width:959px)');
+            //  screen is smaller than954px
             if (device){
             // make caption1 visible and add margin-bottom of 15px
                 $(captions).css({"visibility":"visible","margin-bottom": "25px"});
             }
-            // screen is larger than 960px
+            // screen is larger than954px
             else{
                 $(captions).css({"visibility":"hidden", "margin-bottom": "-110px"});
             }
@@ -28,10 +28,10 @@ $(document).ready(function(){
     // throttle resize event on captionDisplay function
     $(window).resize($.throttle(350,captionDisplay)).resize();
 
-    // changes the visibility property of img discriptions when page is 960px
+    // changes the visibility property of img discriptions when page is954px
     function visibility_onResize () {
         // mq
-        var mobile_device = Modernizr.mq('only screen and (max-width:960px)');
+        var mobile_device = Modernizr.mq('only screen and (max-width:959px)');
         // if smaller
             if (mobile_device) {
                 // visibility hidden

@@ -17,23 +17,43 @@ $desktop:900px;
 $desktop-lrg:1300px;
 $desktop-xl:1430px;
 
+// Project discription box rows
+// 6 boxes 3 rows
+$six_row_one:234px;
+$six_row_two:390px;
+$six_row_three:23px;
+// 4 boxes 2 rows
+$four-row1:234px;
+$four-row2:23px;
+
+// proj intro div padding
+$proj-intro-padding:50px 100px 90px;
+
+// margin-bottom .images
+$m-b-under-imgs:75px;
 /* Colors */
 $projects:cyan;
 // The Secret of Dreaming
 $secret_border_bottom:rgba(255, 4, 0, 0.58);
-$secret_border:1px solid red;
-
+$secret_border:2px solid red;
+$secret_capt_box-shadow:0 7px 0 yellow;
 // Radiate
 $radiate_capt_box:lime;
-$radiate_border_bottom:0 7px 0 grey;
+$radiate_capt_box-shadow:0 7px 0 grey;
 $radiate_capt_border:1px solid limegreen;
 $radiate_border:2px solid limegreen;
-
 // Urban
-$urban_capt_border:0 7px 0 #0DC3CE;
+$urban_capt_box-shadow:0 7px 0 #0DC3CE;
 $urban_capt_box:#006F97;
 $urban_border:2px solid cornflowerblue;
-
+// Print
+$print_capt_box:grey;
+$print_capt_box-shadow:0 7px 0 gold;
+$print_border:2px solid silver;
+// Royal
+$royal_border:2px solid sandybrown;
+$royal_capt_box:lightcoral;
+$royal_capt_box-shadow:0 7px 0 yellow;
 // Main Page
 $bio:yellow;
 $cfblue:cornflowerblue;
