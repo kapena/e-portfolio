@@ -5,6 +5,11 @@
     @extend .home;
 }
 
+
+.box_2,.box_3,.box_4,.box_5,.box_6{
+    @extend .box_1;
+}
+
 .image2-container,.image3-container,.image4-container{
     @extend .image1-container;
 }

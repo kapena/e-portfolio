@@ -113,29 +113,29 @@ body{
     font-size: ms(0);
 }
 
-.box_1,.box_2{
+.box_1{
     @include display_box;
     @include boxColor_secret;
-    @include transition(opacity 0.8s);
-    top:$six_row_one;
+    @include transition(opacity 0.5s);
+    opacity: 0;
+}
+.box_1,.box_2{top:0px;}
+
+:hover.box_1,:hover.box_2,:hover.box_3,:hover.box_4,:hover.box_5{
+    opacity: 0.8;
 }
 
 .box_3,.box_4{
-    @include display_box;
-    @include boxColor_secret;
-    @include transition(opacity 0.8s);
-    bottom:$six_row_two;
+    top:376px;
 }
 
 .box_5,.box_6{
-    @include display_box;
-    @include boxColor_secret;
-    @include transition(opacity 0.8s);
-    bottom:22px;
+    top:752px;
 }
-
 .discript1{
+    font-size: ms(1);
     opacity: 1;
+    margin-top: 250px;
     color:white;
 }
 
