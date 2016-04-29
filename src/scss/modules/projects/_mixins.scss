@@ -1,3 +1,11 @@
+@mixin body-mixin {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+    background-color: seashell;
+}
+
 @mixin padding-left-right ($l-r:75px) {
     padding-right:$l-r;
     padding-left:$l-r;

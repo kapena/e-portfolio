@@ -385,6 +385,11 @@ p {
 /* Modular Scale */
 /* Colors */
 body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
   background-color: seashell; }
 
 .proj {
@@ -549,7 +554,7 @@ body {
 .box_1, .box_2, .box_3, .box_4, .box_5, .box_6, .box_2 {
   top: 0px; }
 
-:hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover, :hover.box_2, :hover.box_3, :hover.box_4, :hover.box_5 {
+:hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover {
   opacity: 0.8; }
 
 .box_3, .box_4 {
@@ -750,6 +755,25 @@ li {
   width: 40px;
   position: relative; }
 
+/* Modular Scale */
+/* Colors */
+.rect_on_device {
+  visibility: hidden; }
+
+@media only screen and (max-width: 1030px) {
+  .halfCircle, .halfCircle1 {
+    display: none; } }
+
+@media only screen and (max-width: 1030px) {
+  .rect_on_device {
+    fill: #6B6C6F;
+    opacity: 0.7;
+    visibility: visible; } }
+
+@media only screen and (max-width: 465px) {
+  .rect-divide {
+    height: 1.5px; } }
+
 .other-projects:hover .halfCircle {
   -webkit-transform: translateY(400px);
   -moz-transform: translateY(400px);
@@ -818,7 +842,8 @@ li {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  transform: translateY(-1px); }
+  transform: translateY(-1px);
+  transform: translateY(-10px); }
 
 .other-projects:hover #project-name {
   -webkit-transition: -webkit-transform;

@@ -1,5 +1,30 @@
 @import "modules/projects-page/projects-module";
+@import "modules/global-mqs/mqs";
+@import "partials/variables";
 
+.rect_on_device{
+    visibility: hidden;
+}
+
+
+.halfCircle,.halfCircle1 {
+    @include tablet {
+        display:none;
+     }
+}
+
+.rect_on_device{
+    @include tablet {
+        fill:#6B6C6F;
+        opacity:0.7;
+        visibility:visible;
+    }
+}
+.rect-divide{
+    @include mobile_device {
+        height:1.5px;
+    }
+}
 // translate halfCircle on y axis 400px when hovered on
 .other-projects:hover .halfCircle{
     @include halfCircle-animation-on-hover;
@@ -23,6 +48,7 @@
     opacity: 0;
     @include transition(visibility 1s, opacity 1s);
 }
+
 // hover over projects svg and view now text slides up on y axis
 .other-projects:hover #view{
     @include viewNowUp;
@@ -35,6 +61,7 @@
 
 #project-name{
     @include projectName-slideUp;
+    transform: translateY(-10px);
 }
 
 .other-projects:hover #project-name{

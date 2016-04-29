@@ -4,11 +4,10 @@
 @import "modules/projects-page/projects-module";
 @import "modules/global-mqs/mqs";
 
-$img-spaceing:5px;
-
 body{
-    background-color: seashell;
+ @include body-mixin;
 }
+
 .proj{
     text-align: center;
     bottom: 15px;
@@ -121,7 +120,7 @@ body{
 }
 .box_1,.box_2{top:0px;}
 
-:hover.box_1,:hover.box_2,:hover.box_3,:hover.box_4,:hover.box_5{
+:hover.box_1{
     opacity: 0.8;
 }
 
@@ -165,8 +164,11 @@ body{
     }
 }
 
+
 .line-divider{
-    @include width-height-100percent;
+    // @include width-height-100percent;
+    width: 100%;
+    height: 100%;
 }
 
 .halfCircle{

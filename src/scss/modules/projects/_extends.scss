@@ -6,6 +6,10 @@
 }
 
 
+:hover.box_2,:hover.box_3,:hover.box_4,:hover.box_5{
+    @extend :hover.box_1;
+}
+
 .box_2,.box_3,.box_4,.box_5,.box_6{
     @extend .box_1;
 }
