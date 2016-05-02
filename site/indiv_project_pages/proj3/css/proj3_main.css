@@ -385,6 +385,11 @@ p {
 /* Modular Scale */
 /* Colors */
 body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
   background-color: seashell; }
 
 .proj {
@@ -392,6 +397,10 @@ body {
   bottom: 15px;
   margin-bottom: 30px;
   font-family: "Lora", serif; }
+
+.header-img {
+  width: 100%;
+  height: 100%; }
 
 .project-introduction {
   padding: 50px 100px 90px; }
@@ -485,12 +494,12 @@ body {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  margin-bottom: 70px; }
+  margin-bottom: 75px; }
   .images .disp1, .images .disp2, .images .disp3, .images .disp4, .images .disp5, .images .disp6 {
+    margin: 5px;
     padding-left: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
-    margin: 5px;
     width: 100%;
     max-width: 450px; }
     @media only screen and (max-width: 465px) {
@@ -511,12 +520,12 @@ body {
   border-bottom: 2px solid limegreen;
   font-size: 1em; }
 
-.box_1, .box_2 {
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
   position: absolute;
   margin: 5px;
   margin-left: 15px;
   width: 450px;
-  height: 110px;
+  height: 350px;
   background-color: red;
   display: -webkit-box;
   display: -moz-box;
@@ -529,13 +538,21 @@ body {
   align-items: center;
   background-color: limegreen;
   box-shadow: 0 7px 0 grey;
-  -webkit-transition: opacity 0.8s;
-  -moz-transition: opacity 0.8s;
-  transition: opacity 0.8s;
-  top: 234px; }
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 0; }
+
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6, .box_2 {
+  top: 0px; }
+
+:hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover {
+  opacity: 0.8; }
 
 .discript1, .discript2, .discript3, .discript4, .discript5, .discript6 {
+  font-size: 1.61803em;
   opacity: 1;
+  margin-top: 250px;
   color: white; }
 
 .project-wrapper {
@@ -719,6 +736,23 @@ li {
   border-radius: 50%;
   width: 40px;
   position: relative; }
+
+.rect_on_device {
+  visibility: hidden; }
+
+@media only screen and (max-width: 1030px) {
+  .halfCircle, .halfCircle1 {
+    display: none; } }
+
+@media only screen and (max-width: 1030px) {
+  .rect_on_device {
+    fill: #808080;
+    opacity: 0.8;
+    visibility: visible; } }
+
+@media only screen and (max-width: 465px) {
+  .rect-divide {
+    height: 1.5px; } }
 
 .other-projects:hover .halfCircle {
   -webkit-transform: translateY(400px);

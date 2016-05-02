@@ -5,7 +5,7 @@
 @import "modules/projects-page/projects-module";
 
 body{
-    background-color: seashell;
+    @include body-mixin;    
 }
 
 html{

@@ -18,57 +18,41 @@
     </header>
 <!-- Main Image-->
     <div class="main-image">
-        <img class="story-seq" src="https://s3-us-west-2.amazonaws.com/efolio/print/seq/seq_print.jpg" alt="">
+        <img class="story-seq" srcset="https://s3-us-west-2.amazonaws.com/efolio/print/seq/seq_print.jpg 1x, https://s3-us-west-2.amazonaws.com/efolio/all-headers_%402x/print-header%402x.jpgg 2x" alt="">
     </div>
     <div class="break-wrapper">
         <p id="project-desc" class="project-desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <!-- Indiv-->
-    <div class="proj_images">
-        <div class="images">
-                    <div class="image1">
-                        <img class="disp1" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/icons.jpg" alt="">
+    <div class="images">
+                <div class="image-container img1" >
+                    <img class="disp1" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/lay1.jpg" alt="">
 
-                        <p class="caption1">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
-                    </div>
-                    <div class="image2">
-                        <img class="disp2" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/info.jpg" alt="">
+                    <p class="caption1">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+                <div class="image-container img2" >
+                    <img class="disp2" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/lay2.jpg" alt="">
 
-                        <p class="caption2">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
-                    </div>
-                    <div class="image3">
-                        <img class="disp3" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/lay1.jpg" alt="">
+                    <p class="caption2">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+                <div class="image-container img3" >
+                    <img class="disp3" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/info.jpg" alt="">
 
-                        <p class="caption3">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
-                    </div>
-                    <div class="image4">
-                        <img class="disp4" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/lay2.jpg" alt="">
+                    <p class="caption3">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+                <div class="image-container img4" >
+                    <img class="disp4" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/icons.jpg" alt="">
 
-                        <p class="caption4">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
-                    </div>
-            </div>
+                    <p class="caption4">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
         </div>
-    <!--Projects-->
+        <!--Projects-->
         <section class="project-wrapper">
             <svg class="line-divider" viewBox="0 0 400 20">
-                <defs>
-                    <linearGradient id='australia'>
-                        <stop stop-color="red" offset='0%'/>
-                        <stop stop-color="orange" offset="45%"/>
-                        <stop stop-color="crimson" offset="100%"/>
-                    </linearGradient>
-                </defs>
                 <rect x="50" y='10' width="300" height="0.5" fill="url(#australia)"/>
             </svg>
             <h2 class="project-heading">More Projects</h2>
             <svg class="line-divider" viewBox="0 0 400 20">
-                <defs>
-                    <linearGradient id='australia'>
-                        <stop stop-color="red" offset='0%'/>
-                        <stop stop-color="orange" offset="45%"/>
-                        <stop stop-color="crimson" offset="100%"/>
-                    </linearGradient>
-                </defs>
                 <rect x="50" y='10' width="300" height="0.5" fill="url(#australia)"/>
             </svg>
             <div class="proj-container">
@@ -76,7 +60,7 @@
                 <figure>
                 <svg class="other-projects"  viewBox="-11 30 350 305">
                     <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/dreaming.jpg" x="-11" y='27' height="310px" width="350px"/>
-
+                    <rect class="rect_on_device" height="100px" width="350px" x="-11" y="235"/>
                     <g id='circle-paths'>
                         <path class='halfCircle' fill="#FF0000" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
                         z"/>
@@ -100,6 +84,7 @@
                 <figure>
                 <svg class="other-projects"  viewBox="-11 30 350 305">
                     <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/point.jpg" x="-11" y='27' height="310px" width="350px"/>
+                    <rect class="rect_on_device" height="100px" width="350px" x="-11" y="235" />
                     <g id='circle-paths'>
                         <path class='halfCircle' fill="#0000ff" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
                         z"/>

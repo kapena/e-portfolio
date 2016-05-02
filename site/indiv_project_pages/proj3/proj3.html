@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <img class="header-img" src="https://s3-us-west-2.amazonaws.com/efolio/radiate/header3.jpg" alt="">
+        <img class="header-img" srcset="https://s3-us-west-2.amazonaws.com/efolio/radiate/header3.jpg 1x, https://s3-us-west-2.amazonaws.com/efolio/all-headers_@2x/radiate-header@2x.jpg 2x" alt="">
         </div>
         <div class="project-introduction">
             <h1 class="proj">Radiate</h1>
@@ -18,28 +18,24 @@
     </header>
 <!-- Main Image-->
     <div class="main-image">
-        <img class="story-seq" src="https://s3-us-west-2.amazonaws.com/efolio/radiate/seq/seq_1_radiate.jpg" alt="">
-
-        <img class="story-seq" src="https://s3-us-west-2.amazonaws.com/efolio/radiate/seq/seq_2_radiate.jpg" alt="">
+        <img class="story-seq" srcset="https://s3-us-west-2.amazonaws.com/efolio/radiate/seq/seq_2_radiate.jpg 1x,https://s3-us-west-2.amazonaws.com/efolio/all-seq_%402x/seq_2_radiate%402x.jpg 2x" alt="">
     </div>
     <div class="break-wrapper">
         <p id="project-desc" class="project-desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
-    <!-- Indiv Images-->
-    <div class="proj_images">
-        <div class="images">
-            <div class="image1">
-                <img class="disp1" src="https://s3-us-west-2.amazonaws.com/efolio/radiate/bottom_4/cover.jpg" alt="">
+    <!-- Indiv images-->
+            <div class="images">
+                <div class="image-container img1">
+                    <img class="disp1" src="https://s3-us-west-2.amazonaws.com/efolio/radiate/bottom_4/front_2.jpg" alt="">
 
-                <p class="caption1">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
-            </div>
-            <div class="image2">
-                <img class="disp2" src="https://s3-us-west-2.amazonaws.com/efolio/radiate/bottom_4/front_2.jpg" alt="">
+                    <p class="caption1">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+                <div class="image-container img2">
+                    <img class="disp2" src="https://s3-us-west-2.amazonaws.com/efolio/radiate/bottom_4/cover.jpg" alt="">
 
-                <p class="caption2">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
+                    <p class="caption2">bolor sit amet,consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
             </div>
-        </div>
-    </div>
     <!--Projects-->
         <section class="project-wrapper">
             <svg class="line-divider" viewBox="0 0 400 20">
@@ -64,21 +60,23 @@
                 <rect x="50" y='10' width="300" height="0.5" fill="url(#australia)"/>
             </svg>
             <div class="proj-container">
-            <!--The Secret Of Dreaming-->
+            <!--Royal Thread-->
                 <figure>
                 <svg class="other-projects"  viewBox="-11 30 350 305">
-                    <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/dreaming.jpg" x="-11" y='27' height="310px" width="350px"/>
+                    <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/royal.jpg" x="-11" y='27' height="310px" width="350px"/>
+
+                    <rect class="rect_on_device" height="100px" width="350px" x="-11" y="235" />
 
                     <g id='circle-paths'>
-                        <path class='halfCircle' fill="#FF0000" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
+                        <path class='halfCircle' fill="goldenrod" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
                         z"/>
 
-                        <path class="halfCircle1" fill="#fff100" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
+                        <path class="halfCircle1" fill="magenta" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
                         z"/>
                     </g>
                     <g id="project-name">
                         <a xlink:href="indiv_project_pages/proj1/proj1.html">
-                            <text class="link" x="65" y="300">Secret Of Dreaming</text>
+                            <text class="link" x="100" y="300">Royal Thread</text>
                         </a>
                     </g>
                     <g id='view'>
@@ -88,19 +86,22 @@
                     </g>
                 </svg>
                 </figure>
-                <!--Point Plumbing-->
+                <!--Print-->
                 <figure>
                 <svg class="other-projects"  viewBox="-11 30 350 305">
-                    <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/point.jpg" x="-11" y='27' height="310px" width="350px"/>
+                    <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/print.jpg" x="-11" y='27' height="310px" width="350px"/>
+
+                    <rect class="rect_on_device" height="100px" width="350px" x="-11" y="235" />
+
                     <g id='circle-paths'>
-                        <path class='halfCircle' fill="#0000ff" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
+                        <path class='halfCircle' fill="darkcyan" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
                         z"/>
-                        <path class="halfCircle1" fill="cyan" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
+                        <path class="halfCircle1" fill="yellow" d="M329.4,128.9c0,0-83.1-0.3-165.2-0.3c-82.1,0-164.2,0-164.2,0C0,58,73.5,0,164.2,0S329.4,58.2,329.4,128.9
                         z"/>
                     </g>
                     <g id="project-name">
                         <a xlink:href="indiv_project_pages/proj1/proj1.html">
-                            <text class="link" x="90" y="300">Point Plumbing</text>
+                            <text class="link" x="100" y="300">Print Is Dead</text>
                         </a>
                     </g>
                     <g id='view'>

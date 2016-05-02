@@ -5,7 +5,12 @@
 @import "modules/projects-page/projects-module";
 
 body{
-    background-color: seashell;
+    @include body-mixin;
+}
+
+html{
+    width: 100%;
+    height:100%;
 }
 
 .proj{
@@ -29,7 +34,6 @@ body{
 
 .media{
     @include media;
-    border-bottom: $print_border;
     font-family: $lora;
 }
 
@@ -41,9 +45,9 @@ body{
 
 #project-desc{
     border-top:$print_border;
-    border-bottom:$print_border;
-    margin-top:55px;
+    margin-top: 55px;
 }
+
 .main-image{
     width:100%;
 
@@ -71,10 +75,6 @@ body{
     text-align: center;
 }
 
-.proj_images{
-    @include display(flex);
-}
-
 .images{
     @include display(flex);
     @include flex-wrap(wrap);
@@ -87,6 +87,8 @@ body{
         @include padding-left-right-bottom;
         width: 100%;
         max-width: 450px;
+        -webkit-filter: blur(0px);
+        @include transition(blur 0.8s);
 
         @include mobile_device {
             margin:0;
@@ -95,6 +97,19 @@ body{
         }
     }
 }
+
+.box_1,.box_2,.box_3,.box_4{
+    @include display_box;
+    @include boxColor_print;
+    @include transition(opacity 0.5s);
+    opacity: 0;
+}
+.box_1,.box_2{top:0px;}
+
+:hover.box_1,:hover.box_2,:hover.box_3,:hover.box_4{
+    opacity: 0.9;
+}
+
 .caption1{
     @include caption;
     border-bottom:$print_border;
@@ -102,22 +117,15 @@ body{
     font-size: ms(0);
 }
 
-.box_1,.box_2{
-    @include display_box;
-    @include boxColor_print;
-    @include transition(opacity 0.5s);
-    top:$four-row1;
-}
-
 .box_3,.box_4{
-    @include display_box;
-    @include boxColor_print;
-    @include transition(opacity 0.8s);
-    bottom:$four-row2;
+    // opacity: 1;
+    top:376px;
 }
 
 .discript1{
+    font-size: ms(1);
     opacity: 1;
+    margin-top: 250px;
     color:white;
 }
 

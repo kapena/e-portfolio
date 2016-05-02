@@ -304,6 +304,11 @@ p {
 /* Colors */
 
 body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
   background-color: seashell;
 }
 
@@ -453,6 +458,9 @@ html {
 .box_1,
 .box_2,
 .box_3,
+.box_4,
+.box_2,
+.box_3,
 .box_4 {
   position: absolute;
   margin: 5px;
@@ -478,11 +486,17 @@ html {
 }
 
 .box_1,
+.box_2,
+.box_3,
+.box_4,
 .box_2 {
   top: 0px;
 }
 
 :hover.box_1,
+.box_2:hover,
+.box_3:hover,
+.box_4:hover,
 :hover.box_2,
 :hover.box_3,
 :hover.box_4 {
@@ -780,6 +794,25 @@ html {
   border-radius: 50%;
   width: 40px;
   position: relative;
+}
+
+.rect_on_device {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1030px) {
+  .halfCircle,
+  .halfCircle1 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .rect_on_device {
+    fill: #0984CB;
+    opacity: 0.8;
+    visibility: visible;
+  }
 }
 
 .other-projects:hover .halfCircle {
