@@ -1,13 +1,91 @@
-@mixin display_box{
+@mixin body-mixin {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+    background-color: seashell;
+}
+
+@mixin padding-left-right ($l-r:75px) {
+    padding-right:$l-r;
+    padding-left:$l-r;
+}
+
+@mixin padding-left-right-bottom ($l-r-b:10px) {
+    padding-left: $l-r-b;
+    padding-bottom: $l-r-b;
+    padding-right: $l-r-b;
+}
+
+@mixin width-height-100percent {
+    width:100%;
+    height:100%;
+}
+// interactive, web etc..
+@mixin media {
+    display: block;
+    font-style: italic;
+    padding-bottom: 5px;
+    bottom:15px;
+}
+// project discription
+@mixin projDscript {
+    position: relative ;
+    width:95%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+    bottom: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+// rectangular boxes that contain discriptions
+@mixin display_box {
     position: absolute;
     margin:$img-spaceing;
     margin-left: 15px;
     width:450px;
-    height:110px;
-    background-color:$discription_boxes_secret1;
-    display: flex;
+    height:350px;
+    background-color:red;
+    @include display(flex);
     justify-content: center;
     align-items: center;
+}
+// colors of rect boxes
+@mixin boxColor_secret {
+    background-color:red;
+    box-shadow:$secret_capt_box-shadow;
+}
+
+@mixin boxColor_radiate {
+    background-color:limegreen;
+    box-shadow:$radiate_capt_box-shadow;
+}
+
+@mixin boxColor_urban {
+    background-color:$urban_capt_box;
+    box-shadow:$urban_capt_box-shadow;
+}
+
+ @mixin boxColor_print{
+     background-color:$print_capt_box;
+     box-shadow:$print_capt_box-shadow;
+ }
+
+@mixin boxColor_royal{
+    background-color:$royal_capt_box;
+    box-shadow:$royal_capt_box-shadow;
+}
+
+// paragraph captions
+@mixin caption ($capt-width:300px, $padding-top-bottom:25px){
+    margin: auto;
+    padding-top: $padding-top-bottom;
+    padding-bottom: $padding-top-bottom;
+    width: 300px;
+    top: 10px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 @mixin social-icons {

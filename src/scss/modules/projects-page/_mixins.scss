@@ -43,33 +43,3 @@
     @include transition-duration(0.5s);
     transform: translateY(-1px);
 }
-
-@mixin phone {
-    @media only screen and (max-width:#{$mobile}){
-        @content;
-    }
-}
-
-@mixin tablet {
-    @media only screen and (max-width:#{$tablet-2}){
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media only screen and (min-width:#{$desktop}){
-        @content;
-    }
-}
-
-@mixin lrg-desktop {
-    @media only screen and (min-width:#{$desktop-lrg}){
-        @content;
-    }
-}
-
-@mixin xl-desktop {
-    @media only screen and (min-width:#{$desktop-xl}){
-        @content;
-    }
-}

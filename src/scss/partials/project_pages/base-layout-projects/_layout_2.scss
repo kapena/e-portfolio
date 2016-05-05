@@ -1,0 +1,214 @@
+@import "modules/projects/pages_module";
+@import "vendor/mod-scale";
+@import "partials/variables";
+@import "modules/projects-page/projects-module";
+@import "modules/global-mqs/mqs";
+
+body{
+ @include body-mixin;
+}
+
+.proj{
+    text-align: center;
+    bottom: 15px;
+    margin-bottom: 30px;
+    font-family:$lora;
+}
+
+.header-img{
+    @include width-height-100percent;
+}
+
+.project-introduction{
+    padding: $proj-intro-padding;
+
+    @include mobile_device {
+        @include padding-left-right;
+    }
+}
+
+.media{
+    @include media;
+    border-bottom: $urban_border;
+    font-family: $lora;
+}
+
+.project-desc{
+    @include ms-respond(font-size,1);
+    @include projDscript;
+    border-bottom:$urban_border;
+}
+
+#project-desc{
+    border-top:$urban_border;
+    margin-top:55px;
+}
+.main-image{
+    width:100%;
+
+    .story-seq{
+        width: 100%;
+        margin:auto;
+        display:block;
+        max-width:1000px;
+    }
+}
+
+.line-1{
+    transform: translateY(-40px);
+}
+
+#line1,#line2{
+    fill:url('#australia');
+}
+
+.break-wrapper{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+    margin: 50px;
+    text-align: center;
+}
+
+.proj_images{
+    @include display(flex);
+}
+
+.images{
+    @include display(flex);
+    position: relative;
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    margin-bottom:$m-b-under-imgs;
+
+    .disp1{
+        margin:$img-spaceing;
+        @include padding-left-right-bottom;
+        width: 100%;
+        max-width: 450px;
+
+        @include mobile_device {
+            margin:0;
+            padding-right:0;
+            padding-left: 0;
+        }
+    }
+}
+.caption1{
+    @include caption;
+    border-top: $urban_border;
+    border-bottom: $urban_border;
+    font-size: ms(0);
+}
+
+.box_1{
+    @include display_box;
+    @include boxColor_urban;
+    @include transition(opacity 0.5s);
+    opacity: 0;
+}
+.box_1,.box_2{top:0px;}
+
+:hover.box_1{
+    opacity: 0.8;
+}
+
+.box_3,.box_4{
+    top:376px;
+}
+
+.box_5,.box_6{
+    top:752px;
+}
+.discript1{
+    font-size: ms(1);
+    opacity: 1;
+    margin-top: 250px;
+    color:white;
+}
+
+.project-wrapper{
+    height:100%;
+
+    .other-projects{
+       width:300px;
+   }
+
+   .project-heading{
+       text-align: center;
+       position: relative;
+       font-family: $lora;
+       @include ms-respond(font-size,2);
+   }
+}
+
+.point-p-link{
+    @include display(flex);
+    @include justify-content(center);
+}
+.point:hover{
+    color:blue;
+}
+.point{
+    padding: 5px;
+    font-family: $monte;
+    text-decoration: none;
+    margin-bottom: 120px;
+    font-size: ms(1);
+    @include link-hover-footer;
+
+    &:hover{
+        background-size:100% 100%;
+    }
+}
+
+.proj-container{
+    @include display(flex);
+    justify-content: center;
+
+    @include tablet_device {
+        // media q for f-w
+        @include flex-wrap(wrap);
+    }
+}
+
+
+.line-divider{
+    // @include width-height-100percent;
+    width: 100%;
+    height: 100%;
+}
+
+.halfCircle{
+    opacity: 0.8;
+    z-index: 2;
+    transform:translateY(250px);
+}
+
+.halfCircle1{
+    transform:translateY(250px);
+}
+
+#circle-paths{
+    transform:translateY(-25px);
+}
+
+.link{
+    font-family: $monte;
+    fill:white;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.viewtext{
+    font-family: $monte;
+    fill:black;
+
+    &:hover {
+        fill:blue;
+    }
+}
+
+li{
+    list-style: none;
+}
