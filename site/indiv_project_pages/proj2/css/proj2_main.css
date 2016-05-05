@@ -385,16 +385,25 @@ p {
 /* Modular Scale */
 /* Colors */
 body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
   background-color: seashell; }
 
-.proj1 {
+.proj {
   text-align: center;
   bottom: 15px;
   margin-bottom: 30px;
   font-family: "Lora", serif; }
 
+.header-img {
+  width: 100%;
+  height: 100%; }
+
 .project-introduction {
-  padding: 90px 100px 90px; }
+  padding: 50px 100px 90px; }
   @media only screen and (max-width: 465px) {
     .project-introduction {
       padding-right: 75px;
@@ -404,13 +413,12 @@ body {
   display: block;
   font-style: italic;
   padding-bottom: 5px;
+  bottom: 15px;
   border-bottom: 2px solid cornflowerblue;
-  font-family: "Lora", serif;
-  bottom: 15px; }
+  font-family: "Lora", serif; }
 
 .project-desc, .media {
   font-size: 1.1em;
-  border-bottom: 2px solid cornflowerblue;
   position: relative;
   width: 95%;
   margin: auto;
@@ -418,7 +426,8 @@ body {
   margin-top: 5px;
   bottom: 30px;
   padding-bottom: 15px;
-  padding-top: 15px; }
+  padding-top: 15px;
+  border-bottom: 2px solid cornflowerblue; }
   @media (min-width: 20em) and (max-width: 30em) {
     .project-desc, .media {
       font-size: calc( 1.1em + 0.122 * ( ( 100vw - 20em) / 10 )); } }
@@ -429,6 +438,144 @@ body {
 #project-desc {
   border-top: 2px solid cornflowerblue;
   margin-top: 55px; }
+
+.main-image {
+  width: 100%; }
+  .main-image .story-seq {
+    width: 100%;
+    margin: auto;
+    display: block;
+    max-width: 1000px; }
+
+.line-1 {
+  transform: translateY(-40px); }
+
+#line1, #line2 {
+  fill: url("#australia"); }
+
+.break-wrapper {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+  margin: 50px;
+  text-align: center; }
+
+.proj_images {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.images {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  margin-bottom: 75px; }
+  .images .disp1, .images .disp2, .images .disp3, .images .disp4, .images .disp5, .images .disp6 {
+    margin: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    width: 100%;
+    max-width: 450px; }
+    @media only screen and (max-width: 465px) {
+      .images .disp1, .images .disp2, .images .disp3, .images .disp4, .images .disp5, .images .disp6 {
+        margin: 0;
+        padding-right: 0;
+        padding-left: 0; } }
+
+.caption1, .caption2, .caption3, .caption4, .caption5, .caption6 {
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 300px;
+  top: 10px;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 2px solid cornflowerblue;
+  border-bottom: 2px solid cornflowerblue;
+  font-size: 1em; }
+
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
+  position: absolute;
+  margin: 5px;
+  margin-left: 15px;
+  width: 450px;
+  height: 350px;
+  background-color: red;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #006F97;
+  box-shadow: 0 7px 0 #0DC3CE;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 0; }
+
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6, .box_2 {
+  top: 0px; }
+
+:hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover {
+  opacity: 0.8; }
+
+.box_3, .box_4 {
+  top: 376px; }
+
+.box_5, .box_6 {
+  top: 752px; }
+
+.discript1, .discript2, .discript3, .discript4, .discript5, .discript6 {
+  font-size: 1.61803em;
+  opacity: 1;
+  margin-top: 250px;
+  color: white; }
+
+.project-wrapper {
+  height: 100%; }
+  .project-wrapper .other-projects {
+    width: 300px; }
+  .project-wrapper .project-heading {
+    text-align: center;
+    position: relative;
+    font-family: "Lora", serif;
+    font-size: 1.21em; }
+    @media (min-width: 20em) and (max-width: 30em) {
+      .project-wrapper .project-heading {
+        font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 20em) / 10 )); } }
+    @media (min-width: 30em) {
+      .project-wrapper .project-heading {
+        font-size: 1.49328em; } }
 
 .point-p-link {
   display: -webkit-box;
@@ -467,22 +614,6 @@ body {
   text-decoration: none; }
   .point:hover {
     background-size: 100% 100%; }
-
-.project-wrapper {
-  height: 100%; }
-  .project-wrapper .other-projects {
-    width: 300px; }
-  .project-wrapper .project-heading {
-    text-align: center;
-    position: relative;
-    font-family: "Lora", serif;
-    font-size: 1.21em; }
-    @media (min-width: 20em) and (max-width: 30em) {
-      .project-wrapper .project-heading {
-        font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 20em) / 10 )); } }
-    @media (min-width: 30em) {
-      .project-wrapper .project-heading {
-        font-size: 1.49328em; } }
 
 .proj-container {
   display: -webkit-box;
@@ -529,6 +660,9 @@ body {
   fill: black; }
   .viewtext:hover {
     fill: blue; }
+
+li {
+  list-style: none; }
 
 /* Modular Scale */
 /* Colors */
@@ -646,6 +780,23 @@ body {
   border-radius: 50%;
   width: 40px;
   position: relative; }
+
+.rect_on_device {
+  visibility: hidden; }
+
+@media only screen and (max-width: 1030px) {
+  .halfCircle, .halfCircle1 {
+    display: none; } }
+
+@media only screen and (max-width: 1030px) {
+  .rect_on_device {
+    fill: #0984CB;
+    opacity: 0.8;
+    visibility: visible; } }
+
+@media only screen and (max-width: 465px) {
+  .rect-divide {
+    height: 1.5px; } }
 
 .other-projects:hover .halfCircle {
   -webkit-transform: translateY(400px);

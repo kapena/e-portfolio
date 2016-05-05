@@ -30,7 +30,7 @@ setVars();
 // Watch styles_proj2 and js_proj2 for changes
 gulp.task('watch_proj2',function(){
     gulp.watch(paths.watcher_projects.watcher_proj2.styles_proj2,['proj2_styles']);
-    gulp.watch(paths.watcher_projects.watcher_proj2.js_proj2,['proj2_js']);
+    // gulp.watch(paths.watcher_projects.watcher_proj2.js_proj2,['proj2_js']);
 });
 
 // browserSync
@@ -53,17 +53,6 @@ var onError = function(err){
     this.emit('end');
 };
 
-// prefixer and sourcemaps
-gulp.task('autoprefix_proj1',['proj1_styles'],function () {
-    del(['./site/css/main.css.map']);
-    return gulp.src('./site/indiv_project_pages/proj1/css/proj2_main.css')
-        .pipe(sourcemaps.init())
-        .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.styles_proj2));
-});
-
-
 // Styles task for proj1
 gulp.task('proj2_styles',function(){
     // source to project 2 scss
@@ -85,25 +74,25 @@ gulp.task('proj2_styles',function(){
     .pipe(browserSync.stream());
 });
 
-// Script task for proj2
-gulp.task('proj2_js',function(){
-    return gulp.src(paths.source.project_pgs_src.proj_2.js_proj2)
-    // find errors in stream then nofity me in terminal
-    .pipe(plumber({errorHandler:onError}))
-    .pipe(concat('proj2.js'))
-    // .pipe(concat('site.js'))
-    .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.js_proj2))
-    .pipe(uglify())
-    .pipe(rename({
-        suffix:'.min'
-    }))
-    .pipe(notify({ message: 'proj2_js task finished' }))
-    .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.js_proj2)),
-    browserSync.reload();
-});
-
+// // Script task for proj2
+// gulp.task('proj2_js',function(){
+//     return gulp.src(paths.source.project_pgs_src.proj_2.js_proj2)
+//     // find errors in stream then nofity me in terminal
+//     .pipe(plumber({errorHandler:onError}))
+//     .pipe(concat('proj2.js'))
+//     // .pipe(concat('site.js'))
+//     .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.js_proj2))
+//     .pipe(uglify())
+//     .pipe(rename({
+//         suffix:'.min'
+//     }))
+//     .pipe(notify({ message: 'proj2_js task finished' }))
+//     .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.js_proj2)),
+//     browserSync.reload();
+// });
+//
 gulp.task('project2',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('proj2_styles','proj2_js','sync');
+    runSequence('proj2_styles','sync');
 });
