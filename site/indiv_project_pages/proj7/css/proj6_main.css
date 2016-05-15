@@ -596,7 +596,6 @@ html {
   height: 100%; }
 
 .halfCircle {
-  fill: #FFA900;
   opacity: 0.8;
   z-index: 2;
   transform: translateY(250px); }
@@ -606,13 +605,6 @@ html {
 
 #circle-paths {
   transform: translateY(-25px); }
-
-.rect_on_device {
-  fill: #f08080; }
-
-.rect_on_device2 {
-  fill: gold;
-  opacity: 0.5; }
 
 .link {
   font-family: "Montserrat", sans-serif;
@@ -743,7 +735,7 @@ html {
   width: 40px;
   position: relative; }
 
-.rect_on_device, .rect_on_device2 {
+.rect_on_device {
   visibility: hidden; }
 
 @media only screen and (max-width: 1030px) {
@@ -751,7 +743,8 @@ html {
     display: none; } }
 
 @media only screen and (max-width: 1030px) {
-  .rect_on_device, .rect_on_device2 {
+  .rect_on_device {
+    fill: #f08080;
     opacity: 0.8;
     visibility: visible; } }
 

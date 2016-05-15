@@ -131,6 +131,19 @@ body{
 .box_5,.box_6{
     top:752px;
 }
+
+.box_3{
+    @include xl-desktop {
+        top:0px;
+    }
+}
+
+.box_4,.box_5,.box_6{
+    @include xl-desktop {
+        top:376px;
+    }
+}
+
 .discript1{
     font-size: ms(1);
     opacity: 1;
@@ -172,6 +185,7 @@ body{
 }
 
 .halfCircle{
+    fill:$secret-rect;
     opacity: 0.8;
     z-index: 2;
     transform:translateY(250px);
@@ -180,6 +194,22 @@ body{
 .halfCircle1{
     transform:translateY(250px);
 }
+
+#circle-paths{
+    transform:translateY(-25px);
+}
+
+.rect_on_device{
+    fill:$secret-halfc;
+    opacity: 0.6;
+}
+
+
+.rect_on_device2{
+    fill:$secret-sm-rect;
+    opacity: 0.7;
+}
+
 
 #circle-paths{
     transform:translateY(-25px);

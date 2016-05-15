@@ -595,6 +595,7 @@ body {
   height: 100%; }
 
 .halfCircle {
+  fill: #02A502;
   opacity: 0.8;
   z-index: 2;
   transform: translateY(250px); }
@@ -737,7 +738,7 @@ li {
   width: 40px;
   position: relative; }
 
-.rect_on_device {
+.rect_on_device, .rect_on_device2 {
   visibility: hidden; }
 
 @media only screen and (max-width: 1030px) {
@@ -745,8 +746,7 @@ li {
     display: none; } }
 
 @media only screen and (max-width: 1030px) {
-  .rect_on_device {
-    fill: #808080;
+  .rect_on_device, .rect_on_device2 {
     opacity: 0.8;
     visibility: visible; } }
 

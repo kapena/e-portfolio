@@ -160,6 +160,7 @@ html{
 }
 
 .halfCircle{
+    fill:#FFA900;
     opacity: 0.8;
     z-index: 2;
     transform:translateY(250px);
@@ -171,6 +172,15 @@ html{
 
 #circle-paths{
     transform:translateY(-25px);
+}
+
+.rect_on_device{
+    fill:$royal-rect;
+}
+
+.rect_on_device2{
+    fill:$royal-sm-rect;
+    opacity: 0.5;
 }
 
 .link{

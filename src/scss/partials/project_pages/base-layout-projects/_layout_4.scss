@@ -5,7 +5,7 @@
 @import "modules/projects-page/projects-module";
 
 body{
-    @include body-mixin;    
+    @include body-mixin;
 }
 
 html{
@@ -160,6 +160,7 @@ html{
 }
 
 .halfCircle{
+    fill:$urban-halfc;
     opacity: 0.8;
     z-index: 2;
     transform:translateY(250px);

@@ -52,7 +52,6 @@ header {
   mix-blend-mode: darken; }
 
 .aloha {
-  fill: url("/#tropics");
   font-family: "Montserrat", sans-serif;
   font-weight: 700; }
 
@@ -385,9 +384,9 @@ p {
 
 @media only screen and (min-width: 1300px) {
   figure {
-    margin: 30px; } }
+    margin: 20px; } }
 
-@media only screen and (min-width: 1430px) {
+@media only screen and (min-width: 1455px) {
   figure {
     margin: 50px;
     margin-top: 15px; } }

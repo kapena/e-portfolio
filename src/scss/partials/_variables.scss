@@ -15,7 +15,7 @@ $tablet:780px;
 $tablet-2:1030px;
 $desktop:900px;
 $desktop-lrg:1300px;
-$desktop-xl:1430px;
+$desktop-xl:1455px;
 $img-spaceing:5px;
 // Project discription box rows
 // 6 boxes 3 rows
@@ -33,17 +33,55 @@ $proj-intro-padding:50px 100px 90px;
 $m-b-under-imgs:75px;
 /* Colors */
 
+// halfCircle colors for desktops
+// Secret
+$secret-circle1:#FF0000;
+$secret-circle2:#fff100;
+// Point
+$point-circle1:#0000ff;
+$point-circle2:cyan;
+// Radiate
+$radiate-circle1:limegreen;
+$radiate-circle2:darkgrey;
+// Urban
+$urban-circle1:steelblue;
+$urban-circle2:cyan;
+// Print
+$print-circle1:darkcyan;
+$print-circle2:yellow;
+// Royal
+$royal-circle1:goldenrod;
+$royal-circle2:magenta;
+
+// halfCircle path color indiv project pages
+// Secret D
+$secret-halfc:#FF1919;
+// Urban
+$urban-halfc:#0D6DCA;
+// Radiate
+$radiate-halfc:#02A502;
+// Print
+$print-halfc:#828282;
+// Point
+$point-halfc:#0DC3CE;
+// Royal
+$royal-halfc:#4DB5BE;
 // Rectangle colors for devices
 // Secret
-$secret-rect:#FF1919;
+$secret-rect:#FF3838;
+$secret-sm-rect:gold;
 // Urban
 $urban-rect:#0984CB;
+$urban-sm-rect:#0DC3CE;
 // Radiate
-$radiate-rect:rgb(50, 205, 50);
+$radiate-rect:#5B5B5B;
+$radiate-sm-rect:limegreen;
 // Print
 $print-rect:#898989;
+$print-sm-rect:gold;
 // Royal
 $royal-rect:#f08080;
+$royal-sm-rect:gold;
 
 $other-projects:#6B6C6F;
 $projects:cyan;

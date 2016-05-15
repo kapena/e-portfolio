@@ -15,26 +15,34 @@
             "project_pgs_src":{
                 "proj_1":{
                     "styles_proj1":"./src/scss/proj1_main.scss",
-                    "js_proj1":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/project1.js"]
+                    "js_proj1":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project1.js"]
                 },
                 "proj_2":{
                     "styles_proj2":"./src/scss/proj2_main.scss"
                 },
                 "proj_3":{
                     "styles_proj3":"./src/scss/proj3_main.scss",
-                    "js_proj3":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/project3.js"]
+                    "js_proj3":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project3.js"]
                 },
                 "proj_4":{
                     "styles_proj4":"./src/scss/proj4_main.scss",
-                    "js_proj4":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/project4.js"]
+                    "js_proj4":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project4.js"]
                 },
                 "proj_5":{
                     "styles_proj5":"./src/scss/proj5_main.scss",
-                    "js_proj5":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/project5.js"]
+                    "js_proj5":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project5.js"]
                 },
                 "proj_6":{
                     "styles_proj6":"./src/scss/proj6_main.scss",
-                    "js_proj6":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/project6.js"]
+                    "js_proj6":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project6.js"]
+                },
+                "proj_7":{
+                    "styles_proj7":"./src/scss/proj6_main.scss",
+                    "js_proj7":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project7.js"]
+                },
+                "proj_8":{
+                    "styles_proj8":"./src/scss/proj6_main.scss",
+                    "js_proj8":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project8.js"]
                     }
                 }
             },
@@ -74,6 +82,16 @@
                 "styles_proj6":"site/indiv_project_pages/proj6/css",
                 "js_proj6":"site/indiv_project_pages/proj6/js",
                 "html":"site/indiv_project_pages/proj6"
+            },
+            "proj7_dest":{
+                "styles_proj7":"site/indiv_project_pages/proj7/css",
+                "js_proj7":"site/indiv_project_pages/proj7/js",
+                "html":"site/indiv_project_pages/proj7"
+            },
+            "proj8_dest":{
+                "styles_proj8":"site/indiv_project_pages/proj8/css",
+                "js_proj8":"site/indiv_project_pages/proj8/js",
+                "html":"site/indiv_project_pages/proj8"
             }
         },
 
@@ -112,6 +130,16 @@
             "watcher_proj6":{
                 "styles_proj6":"src/scss/**/*.scss",
                 "js_proj6":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
+            },
+            "watcher_proj7":{
+                "styles_proj7":"src/scss/**/*.scss",
+                "js_proj7":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
+            },
+            "watcher_proj8":{
+                "styles_proj8":"src/scss/**/*.scss",
+                "js_proj8":"src/js/project_pages/**/*.js",
                 "html":"site/**/*.html"
             }
         }

@@ -1,6 +1,5 @@
 @import "modules/projects-page/projects-module";
-
-.rect_on_device{
+.rect_on_device,.rect_on_device2{
     visibility: hidden;
 }
 
@@ -11,11 +10,10 @@
      }
 }
 
-.rect_on_device{
+.rect_on_device, .rect_on_device2{
     @include tablet {
-        fill:$royal-rect;
         opacity:0.8;
-        visibility:visible;
+        visibility:visible;;
     }
 }
 .rect-divide{
@@ -23,6 +21,7 @@
         height:1.5px;
     }
 }
+
 // Interactive
 // translate halfCircle on y axis 400px when hovered on
 .other-projects:hover .halfCircle{
