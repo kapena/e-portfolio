@@ -9,7 +9,13 @@
 </head>
 <body>
     <header>
-        <img class="header-img" srcset="https://s3-us-west-2.amazonaws.com/efolio/urban/header2.jpg 1x, https://s3-us-west-2.amazonaws.com/efolio/all-headers_@2x/urban-header@2x.jpg 2x" alt="Headers">
+
+        <picture>
+            <!-- header_urban2 served for small devices. 425 px wide 2x for ret-->
+            <source srcset="https://s3-us-west-2.amazonaws.com/efolio/all-headers_%402x/sm-header_urban.jpg" media="(max-width:450px)">
+
+            <img class="header-img" srcset="https://s3-us-west-2.amazonaws.com/efolio/urban/header2.jpg 1x, https://s3-us-west-2.amazonaws.com/efolio/all-headers_%402x/urban-header%402x.jpg 2x" alt="Headers">
+        </picture>
         </div>
         <div class="project-introduction">
             <h1 class="proj">Urban Revelation</h1>
@@ -54,7 +60,7 @@
                 <rect id="rect" class="rect-divide" x="50" y='10' width="300" height="0.5" fill="url(#australia)"/>
             </svg>
         <div class="proj-container">
-            <!-- eerie 8 -->
+            <!-- Tension -->
             <figure>
                 <svg class="other-projects"  viewBox="-11 30 350 305">
                     <image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/tension.jpg" x="-11" y='27' height="310px" width="350px"/>
@@ -73,7 +79,7 @@
                     </g>
                     <g id="project-name">
                         <a xlink:href="/indiv_project_pages/proj8/proj8.html">
-                            <text class="link" x="125" y="300">Eerie 8</text>
+                            <text class="link" x="119" y="300">Tension</text>
                         </a>
                     </g>
                     <g id='view'>
