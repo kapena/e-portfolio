@@ -40,11 +40,11 @@ html{
 .project-desc{
     @include ms-respond(font-size,1);
     @include projDscript;
-    border-bottom:$print_border;
+    border-bottom:$eerie_border;
 }
 
 #project-desc{
-    border-top:$print_border;
+    border-top:$eerie_border;
     margin-top: 55px;
 }
 
@@ -100,7 +100,7 @@ html{
 
 .box_1{
     @include display_box;
-    @include boxColor_print;
+    @include boxColor_eerie;
     @include transition(opacity 0.5s);
     opacity: 0;
 }
@@ -109,23 +109,19 @@ html{
 :hover.box_1{
     opacity: 0.9;
 }
-
+// removing width from boxes at tablet_device size
+// having the width set to its original size of 450px adds a scroll bar on small screens to right of page
 @include tablet_device{
     .box_1{
         width: 0px;
     }
-}
+};
 
 .caption1{
     @include caption;
-    border-bottom:$print_border;
-    border-top:$print_border;
+    border-bottom:$eerie_border;
+    border-top:$eerie_border;
     font-size: ms(0);
-}
-
-.box_3,.box_4{
-    // opacity: 1;
-    top:376px;
 }
 
 .discript1{
@@ -166,7 +162,7 @@ html{
 }
 
 .halfCircle{
-    fill:$print-halfc;
+    fill:$eerie-halfc;
     opacity: 0.8;
     z-index: 2;
     transform:translateY(250px);
@@ -181,11 +177,11 @@ html{
 }
 
 .rect_on_device{
-    fill:$print-halfc;
+    fill:$eerie-rect;
 }
 
 .rect_on_device2{
-    fill:$print-sm-rect;
+    fill:$eerie-sm-rect;
     opacity: 0.5;
 }
 

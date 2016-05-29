@@ -18,13 +18,16 @@
         </div>
         <div class="project-introduction">
             <h1 class="proj">Print Is Dead</h1>
-                <span class='media'>Branding</span>
+                <span class='media'>Abstract Magazine</span>
                 <p class="project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </header>
 <!-- Main Image-->
     <div class="main-image">
-        <img class="story-seq" srcset="https://s3-us-west-2.amazonaws.com/efolio/print/seq/seq_print.jpg 1x, https://s3-us-west-2.amazonaws.com/efolio/all-seq_%402x/seq_print%402x.jpg 2x" alt="">
+        <picture>
+            <source srcset="https://s3-us-west-2.amazonaws.com/efolio/print/seq/seq_print_device.jpg" media="(max-width:450px)">
+            <img class="story-seq" srcset="https://s3-us-west-2.amazonaws.com/efolio/print/seq/seq_print.jpg 1x, https://s3-us-west-2.amazonaws.com/efolio/all-seq_%402x/seq_print%402x.jpg 2x" alt="">
+        </picture>
     </div>
     <div class="break-wrapper">
         <p id="project-desc" class="project-desc"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

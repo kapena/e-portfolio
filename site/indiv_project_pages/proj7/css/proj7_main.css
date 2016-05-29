@@ -430,7 +430,7 @@ html {
   bottom: 30px;
   padding-bottom: 15px;
   padding-top: 15px;
-  border-bottom: 2px solid sandybrown; }
+  border-bottom: 2px solid #039CD8; }
   @media (min-width: 20em) and (max-width: 30em) {
     .project-desc, .media {
       font-size: calc( 1.1em + 0.122 * ( ( 100vw - 20em) / 10 )); } }
@@ -439,7 +439,7 @@ html {
       font-size: 1.222em; } }
 
 #project-desc {
-  border-top: 2px solid sandybrown;
+  border-top: 2px solid #039CD8;
   margin-top: 55px; }
 
 .main-image {
@@ -506,7 +506,7 @@ html {
         padding-right: 0;
         padding-left: 0; } }
 
-.box_1, .box_2, .box_3, .box_4, .box_5, .box_6, .box_2, .box_3, .box_4 {
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
   position: absolute;
   margin: 5px;
   margin-left: 15px;
@@ -522,8 +522,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightcoral;
-  box-shadow: 0 7px 0 yellow;
+  background-color: slategrey;
+  box-shadow: 0 7px 0 #039CD8;
   -webkit-transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -532,8 +532,12 @@ html {
 .box_1, .box_2, .box_3, .box_4, .box_5, .box_6, .box_2 {
   top: 0px; }
 
-:hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover, :hover.box_2, :hover.box_3, :hover.box_4 {
+:hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover {
   opacity: 0.9; }
+
+@media only screen and (max-width: 780px) {
+  .box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
+    width: 0px; } }
 
 .caption1, .caption2, .caption3, .caption4, .caption5, .caption6 {
   margin: auto;
@@ -543,12 +547,9 @@ html {
   top: 10px;
   text-align: center;
   margin-top: 20px;
-  border-bottom: 2px solid sandybrown;
-  border-top: 2px solid sandybrown;
+  border-bottom: 2px solid #039CD8;
+  border-top: 2px solid #039CD8;
   font-size: 1em; }
-
-.box_3, .box_4 {
-  top: 376px; }
 
 .discript1, .discript2, .discript3, .discript4, .discript5, .discript6 {
   font-size: 1.61803em;
@@ -596,6 +597,7 @@ html {
   height: 100%; }
 
 .halfCircle {
+  fill: #039CD8;
   opacity: 0.8;
   z-index: 2;
   transform: translateY(250px); }
@@ -605,6 +607,13 @@ html {
 
 #circle-paths {
   transform: translateY(-25px); }
+
+.rect_on_device {
+  fill: slategrey; }
+
+.rect_on_device2 {
+  fill: #039CD8;
+  opacity: 0.5; }
 
 .link {
   font-family: "Montserrat", sans-serif;
@@ -735,7 +744,7 @@ html {
   width: 40px;
   position: relative; }
 
-.rect_on_device {
+.rect_on_device, .rect_on_device2 {
   visibility: hidden; }
 
 @media only screen and (max-width: 1030px) {
@@ -743,8 +752,7 @@ html {
     display: none; } }
 
 @media only screen and (max-width: 1030px) {
-  .rect_on_device {
-    fill: #f08080;
+  .rect_on_device, .rect_on_device2 {
     opacity: 0.8;
     visibility: visible; } }
 

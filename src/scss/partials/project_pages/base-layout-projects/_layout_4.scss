@@ -98,7 +98,7 @@ html{
     }
 }
 
-.box_1,.box_2,.box_3,.box_4{
+.box_1{
     @include display_box;
     @include boxColor_urban;
     @include transition(opacity 0.5s);
@@ -106,8 +106,16 @@ html{
 }
 .box_1,.box_2{top:0px;}
 
-:hover.box_1,:hover.box_2,:hover.box_3,:hover.box_4{
+:hover.box_1{
     opacity: 0.9;
+}
+
+// removing width from boxes at tablet_device size
+// having the width set to its original size of 450px adds a scroll bar on small screens to right of page
+@include tablet_device{
+    .box_1{
+        width: 0px;
+    }
 }
 
 .caption1{

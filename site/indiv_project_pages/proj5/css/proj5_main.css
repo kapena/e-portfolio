@@ -506,7 +506,7 @@ html {
         padding-right: 0;
         padding-left: 0; } }
 
-.box_1, .box_2, .box_3, .box_4, .box_5, .box_6, .box_2, .box_3, .box_4 {
+.box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
   position: absolute;
   margin: 5px;
   margin-left: 15px;
@@ -532,8 +532,12 @@ html {
 .box_1, .box_2, .box_3, .box_4, .box_5, .box_6, .box_2 {
   top: 0px; }
 
-:hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover, :hover.box_2, :hover.box_3, :hover.box_4 {
+:hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover {
   opacity: 0.9; }
+
+@media only screen and (max-width: 780px) {
+  .box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
+    width: 0px; } }
 
 .caption1, .caption2, .caption3, .caption4, .caption5, .caption6 {
   margin: auto;

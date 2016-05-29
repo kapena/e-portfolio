@@ -458,9 +458,6 @@ html {
 .box_1,
 .box_2,
 .box_3,
-.box_4,
-.box_2,
-.box_3,
 .box_4 {
   position: absolute;
   margin: 5px;
@@ -496,11 +493,17 @@ html {
 :hover.box_1,
 .box_2:hover,
 .box_3:hover,
-.box_4:hover,
-:hover.box_2,
-:hover.box_3,
-:hover.box_4 {
+.box_4:hover {
   opacity: 0.9;
+}
+
+@media only screen and (max-width: 780px) {
+  .box_1,
+  .box_2,
+  .box_3,
+  .box_4 {
+    width: 0px;
+  }
 }
 
 .caption1,

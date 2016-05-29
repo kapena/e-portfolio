@@ -77,6 +77,11 @@
     box-shadow:$royal_capt_box-shadow;
 }
 
+@mixin boxColor_eerie{
+    background-color:$eerie_capt_box;
+    box-shadow:$eerie_capt_box-shadow;
+}
+
 // paragraph captions
 @mixin caption ($capt-width:300px, $padding-top-bottom:25px){
     margin: auto;

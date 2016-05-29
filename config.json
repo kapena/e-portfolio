@@ -37,12 +37,13 @@
                     "js_proj6":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project6.js"]
                 },
                 "proj_7":{
-                    "styles_proj7":"./src/scss/proj6_main.scss",
+                    "styles_proj7":"./src/scss/proj7_main.scss",
                     "js_proj7":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project7.js"]
                 },
                 "proj_8":{
-                    "styles_proj8":"./src/scss/proj6_main.scss",
+                    "styles_proj8":"./src/scss/proj8_main.scss",
                     "js_proj8":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project8.js"]
+                    
                     }
                 }
             },

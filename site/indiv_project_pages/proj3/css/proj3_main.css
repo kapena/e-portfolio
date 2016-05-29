@@ -549,6 +549,10 @@ body {
 :hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover {
   opacity: 0.8; }
 
+@media only screen and (max-width: 780px) {
+  .box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
+    width: 0px; } }
+
 .discript1, .discript2, .discript3, .discript4, .discript5, .discript6 {
   font-size: 1.61803em;
   opacity: 1;

@@ -1,0 +1,98 @@
+@import "modules/projects-page/projects-module";
+.rect_on_device,.rect_on_device2{
+    visibility: hidden;
+}
+
+
+.halfCircle,.halfCircle1 {
+    @include tablet {
+        display:none;
+     }
+}
+
+.rect_on_device, .rect_on_device2{
+    @include tablet {
+        opacity:0.8;
+        visibility:visible;;
+    }
+}
+.rect-divide{
+    @include mobile_device {
+        height:1.5px;
+    }
+}
+
+// Interactive
+// translate halfCircle on y axis 400px when hovered on
+.other-projects:hover .halfCircle{
+    @include halfCircle-animation-on-hover;
+}
+
+// translate halfCircle on y axis back to 250px
+.halfCircle{
+    @include halfCircle-animation-off-hover;
+}
+
+// halfCircle2 fades in when hoverd on
+.other-projects:hover .halfCircle1{
+    visibility: visible;
+    opacity: 0.8;
+    @include fadein-halfCircle1-on-hover;
+}
+
+// halfCircle1 fades out
+.halfCircle1{
+    visibility: hidden;
+    opacity: 0;
+    @include transition(visibility 1s, opacity 1s);
+}
+
+// Interactive
+// translate halfCircle on y axis 400px when hovered on
+.other-projects:hover .halfCircle{
+    @include halfCircle-animation-on-hover;
+}
+
+// translate halfCircle on y axis back to 250px
+.halfCircle{
+    @include halfCircle-animation-off-hover;
+}
+
+// halfCircle2 fades in when hoverd on
+.other-projects:hover .halfCircle1{
+    visibility: visible;
+    opacity: 0.8;
+    @include fadein-halfCircle1-on-hover;
+}
+
+// halfCircle1 fades out
+.halfCircle1{
+    visibility: hidden;
+    opacity: 0;
+    @include transition(visibility 1s, opacity 1s);
+}
+// hover over projects svg and view now text slides up on y axis
+.other-projects:hover #view{
+    @include viewNowUp;
+}
+
+// when user hovers off projects view now slides down
+#view{
+    @include viewNowUnder;
+}
+
+#project-name{
+    @include projectName-slideUp;
+}
+
+.other-projects:hover #project-name{
+    @include projectName-slideUnder;
+}
+
+.other-projects:hover .link{
+    fill:black;
+}
+
+li{
+    list-style: none;
+}
