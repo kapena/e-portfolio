@@ -1,0 +1,202 @@
+@import "modules/projects/pages_module";
+@import "vendor/mod-scale";
+@import "partials/variables";
+@import "modules/global-mqs/mqs";
+@import "modules/projects-page/projects-module";
+
+body{
+    @include body-mixin;
+}
+
+html{
+    width: 100%;
+    height:100%;
+}
+
+.proj{
+    text-align: center;
+    bottom: 15px;
+    margin-bottom: 30px;
+    font-family:$lora;
+}
+
+.header-img{
+    @include width-height-100percent;
+}
+
+.project-introduction{
+    padding: $proj-intro-padding;
+
+    @include mobile_device {
+        @include padding-left-right;
+    }
+}
+
+.media{
+    @include media;
+    font-family: $lora;
+}
+
+.project-desc{
+    @include ms-respond(font-size,1);
+    @include projDscript;
+    border-bottom:$tension_border;
+}
+
+#project-desc{
+    border-top:$tension_border;
+    margin-top: 55px;
+}
+
+.main-image{
+    width:100%;
+
+    .story-seq{
+        width: 100%;
+        margin:auto;
+        display:block;
+        max-width:1000px;
+    }
+}
+
+.line-1{
+    transform: translateY(-40px);
+}
+
+#line1,#line2{
+    fill:url('#australia');
+}
+
+.break-wrapper{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+    margin: 50px;
+    text-align: center;
+}
+
+.images{
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    position: relative;
+    margin-bottom:$m-b-under-imgs;
+
+    .disp1{
+        margin:$img-spaceing;
+        @include padding-left-right-bottom;
+        width: 100%;
+        max-width: 450px;
+        -webkit-filter: blur(0px);
+        @include transition(blur 0.8s);
+
+        @include mobile_device {
+            margin:0;
+            padding-right:0;
+            padding-left:0;
+        }
+    }
+}
+
+.box_1{
+    @include display_box;
+    @include boxColor_tension;
+    @include transition(opacity 0.5s);
+    opacity: 0;
+}
+.box_1,.box_2{top:0px;}
+
+:hover.box_1{
+    opacity: 0.9;
+}
+// removing width from boxes at tablet_device size
+// having the width set to its original size of 450px adds a scroll bar on small screens to right of page
+@include tablet_device{
+    .box_1{
+        width: 0px;
+    }
+};
+
+.caption1{
+    @include caption;
+    border-bottom:$tension_border;
+    border-top:$tension_border;
+    font-size: ms(0);
+}
+
+.discript1{
+    font-size: ms(1);
+    opacity: 1;
+    margin-top: 250px;
+    color:white;
+}
+
+.project-wrapper{
+    height:100%;
+
+    .other-projects{
+       width:300px;
+   }
+
+   .project-heading{
+       text-align: center;
+       position: relative;
+       font-family: $lora;
+       @include ms-respond(font-size,2);
+   }
+}
+
+
+.proj-container{
+    @include display(flex);
+    justify-content: center;
+
+    @include tablet_device {
+        // media q for f-w
+        @include flex-wrap(wrap);
+    }
+}
+
+.line-divider{
+    @include width-height-100percent;
+}
+
+.halfCircle{
+    fill:$tension-halfc;
+    opacity: 0.8;
+    z-index: 2;
+    transform:translateY(250px);
+}
+
+.halfCircle1{
+    transform:translateY(250px);
+}
+
+#circle-paths{
+    transform:translateY(-25px);
+}
+
+.rect_on_device{
+    fill:$tension-rect;
+}
+
+.rect_on_device2{
+    fill:$tension-sm-rect;
+    opacity: 0.5;
+}
+
+.link{
+    font-family: $monte;
+    fill:white;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.viewtext{
+    font-family: $monte;
+    fill:black;
+
+    &:hover {
+        fill:blue;
+    }
+}
