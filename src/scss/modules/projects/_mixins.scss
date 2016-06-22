@@ -56,25 +56,33 @@
     background-color:red;
     box-shadow:$secret_capt_box-shadow;
 }
-
 @mixin boxColor_radiate {
     background-color:limegreen;
     box-shadow:$radiate_capt_box-shadow;
 }
-
 @mixin boxColor_urban {
     background-color:$urban_capt_box;
     box-shadow:$urban_capt_box-shadow;
 }
-
  @mixin boxColor_print{
      background-color:$print_capt_box;
      box-shadow:$print_capt_box-shadow;
  }
-
 @mixin boxColor_royal{
     background-color:$royal_capt_box;
     box-shadow:$royal_capt_box-shadow;
+}
+@mixin boxColor_eerie{
+    background-color:$eerie_capt_box;
+    box-shadow:$eerie_capt_box-shadow;
+}
+@mixin boxColor_tension{
+     background-color:$tension_capt_box;
+     box-shadow:$tension_capt_box-shadow;
+}
+@mixin boxColor_vivd{
+     background-color:$vivd_capt_box;
+     box-shadow:$vivd_capt_box-shadow;
 }
 
 // paragraph captions

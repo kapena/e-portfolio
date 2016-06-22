@@ -98,7 +98,7 @@ html{
     }
 }
 
-.box_1,.box_2,.box_3,.box_4{
+.box_1{
     @include display_box;
     @include boxColor_print;
     @include transition(opacity 0.5s);
@@ -106,8 +106,14 @@ html{
 }
 .box_1,.box_2{top:0px;}
 
-:hover.box_1,:hover.box_2,:hover.box_3,:hover.box_4{
+:hover.box_1{
     opacity: 0.9;
+}
+
+@include tablet_device{
+    .box_1{
+        width: 0px;
+    }
 }
 
 .caption1{
@@ -160,6 +166,7 @@ html{
 }
 
 .halfCircle{
+    fill:$print-halfc;
     opacity: 0.8;
     z-index: 2;
     transform:translateY(250px);
@@ -171,6 +178,15 @@ html{
 
 #circle-paths{
     transform:translateY(-25px);
+}
+
+.rect_on_device{
+    fill:$print-halfc;
+}
+
+.rect_on_device2{
+    fill:$print-sm-rect;
+    opacity: 0.5;
 }
 
 .link{

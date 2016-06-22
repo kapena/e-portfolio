@@ -113,6 +113,14 @@ body{
     opacity: 0.8;
 }
 
+// removing width from boxes at tablet_device size
+// having the width set to its original size of 450px adds a scroll bar on small screens to right of page
+@include tablet_device{
+    .box_1{
+        width: 0px;
+    }
+}
+
 .discript1{
     font-size: ms(1);
     opacity: 1;
@@ -154,6 +162,7 @@ body{
 }
 
 .halfCircle{
+    fill:$radiate-halfc;
     opacity: 0.8;
     z-index: 2;
     transform:translateY(250px);

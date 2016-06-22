@@ -563,6 +563,18 @@ body {
 .box_5, .box_6 {
   top: 752px; }
 
+@media only screen and (min-width: 1455px) {
+  .box_3 {
+    top: 0px; } }
+
+@media only screen and (min-width: 1455px) {
+  .box_4, .box_5, .box_6 {
+    top: 376px; } }
+
+@media only screen and (max-width: 780px) {
+  .box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
+    width: 0px; } }
+
 .discript1, .discript2, .discript3, .discript4, .discript5, .discript6 {
   font-size: 1.61803em;
   opacity: 1;
@@ -609,12 +621,24 @@ body {
   height: 100%; }
 
 .halfCircle {
+  fill: #FF3838;
   opacity: 0.8;
   z-index: 2;
   transform: translateY(250px); }
 
 .halfCircle1 {
   transform: translateY(250px); }
+
+#circle-paths {
+  transform: translateY(-25px); }
+
+.rect_on_device {
+  fill: #FF1919;
+  opacity: 0.6; }
+
+.rect_on_device2 {
+  fill: gold;
+  opacity: 0.7; }
 
 #circle-paths {
   transform: translateY(-25px); }
@@ -757,7 +781,7 @@ li {
 
 /* Modular Scale */
 /* Colors */
-.rect_on_device {
+.rect_on_device, .rect_on_device2 {
   visibility: hidden; }
 
 @media only screen and (max-width: 1030px) {
@@ -765,9 +789,7 @@ li {
     display: none; } }
 
 @media only screen and (max-width: 1030px) {
-  .rect_on_device {
-    fill: #FF1919;
-    opacity: 0.7;
+  .rect_on_device, .rect_on_device2 {
     visibility: visible; } }
 
 @media only screen and (max-width: 465px) {

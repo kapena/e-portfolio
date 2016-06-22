@@ -15,7 +15,7 @@ $tablet:780px;
 $tablet-2:1030px;
 $desktop:900px;
 $desktop-lrg:1300px;
-$desktop-xl:1430px;
+$desktop-xl:1455px;
 $img-spaceing:5px;
 // Project discription box rows
 // 6 boxes 3 rows
@@ -31,22 +31,54 @@ $proj-intro-padding:50px 100px 90px;
 
 // margin-bottom .images
 $m-b-under-imgs:75px;
+
 /* Colors */
 
-// Rectangle colors for devices
+/* halfCircle path colors indiv project pages */
+// Secret D
+$secret-halfc:#FF1919;
+// Urban
+$urban-halfc:#0D6DCA;
+// Radiate
+$radiate-halfc:#02A502;
+// Print
+$print-halfc:#828282;
+// Point
+$point-halfc:#0DC3CE;
+// Royal
+$royal-halfc:#4DB5BE;
+// Eerie
+$eerie-halfc:#039CD8;
+// Tension
+$tension-halfc:#5177FF;
+// Vivd
+$vivd-halfc:#FF4669;
+/* Rectangle colors for devices small and large */
 // Secret
-$secret-rect:#FF1919;
+$secret-rect:#FF3838;
+$secret-sm-rect:gold;
 // Urban
 $urban-rect:#0984CB;
+$urban-sm-rect:#0DC3CE;
 // Radiate
-$radiate-rect:rgb(50, 205, 50);
+$radiate-rect:#5B5B5B;
+$radiate-sm-rect:limegreen;
 // Print
 $print-rect:#898989;
+$print-sm-rect:gold;
 // Royal
 $royal-rect:#f08080;
-
-$other-projects:#6B6C6F;
-$projects:cyan;
+$royal-sm-rect:gold;
+// Eerie
+$eerie-rect:slategrey;
+$eerie-sm-rect:#039CD8;
+// Tension
+$tension-rect:#DD76E5;
+$tension-sm-rect:#5177FF;
+// Vivd
+$vivd-rect:#FF446B;
+$vivd-sm-rect:#F6B8C0;
+/* borders */
 // The Secret of Dreaming
 $secret_border_bottom:rgba(255, 4, 0, 0.58);
 $secret_border:2px solid red;
@@ -68,7 +100,22 @@ $print_border:2px solid silver;
 $royal_border:2px solid sandybrown;
 $royal_capt_box:lightcoral;
 $royal_capt_box-shadow:0 7px 0 yellow;
+// Eerie
+$eerie_border:2px solid #039CD8;
+$eerie_capt_box:slategrey;
+$eerie_capt-box-shadow:0 7px 0 #039CD8;
+// Tension
+$tension_border:2px solid #944FE1;
+$tension_capt_box:rgba(222, 118, 229, 0.94);
+$tension_capt-box-shadow:0 7px 0 #5177FF;
+// Vivid
+$vivd_border:2px solid #FF4669;
+$vivd_capt_box:rgba(246, 51, 92, 0.8);
+$vivd_capt_box-shadow:0 7px 0 #F6B8C0;
+
 // Main Page
+$other-projects:#6B6C6F;
+$projects:cyan;
 $bio:yellow;
 $cfblue:cornflowerblue;
 $chat:lime;

@@ -1,6 +1,6 @@
 @import "modules/projects-page/projects-module";
 
-.rect_on_device{
+.rect_on_device,.rect_on_device2{
     visibility: hidden;
 }
 
@@ -11,11 +11,10 @@
      }
 }
 
-.rect_on_device{
+.rect_on_device, .rect_on_device2{
     @include tablet {
-        fill:$urban-rect;
-        opacity:0.8;
-        visibility:visible;
+        opacity:0.7;
+        visibility:visible;;
     }
 }
 .rect-divide{

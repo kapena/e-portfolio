@@ -458,9 +458,6 @@ html {
 .box_1,
 .box_2,
 .box_3,
-.box_4,
-.box_2,
-.box_3,
 .box_4 {
   position: absolute;
   margin: 5px;
@@ -496,11 +493,17 @@ html {
 :hover.box_1,
 .box_2:hover,
 .box_3:hover,
-.box_4:hover,
-:hover.box_2,
-:hover.box_3,
-:hover.box_4 {
+.box_4:hover {
   opacity: 0.9;
+}
+
+@media only screen and (max-width: 780px) {
+  .box_1,
+  .box_2,
+  .box_3,
+  .box_4 {
+    width: 0px;
+  }
 }
 
 .caption1,
@@ -590,6 +593,7 @@ html {
 }
 
 .halfCircle {
+  fill: #0D6DCA;
   opacity: 0.8;
   z-index: 2;
   transform: translateY(250px);
@@ -796,7 +800,8 @@ html {
   position: relative;
 }
 
-.rect_on_device {
+.rect_on_device,
+.rect_on_device2 {
   visibility: hidden;
 }
 
@@ -808,10 +813,16 @@ html {
 }
 
 @media only screen and (max-width: 1030px) {
-  .rect_on_device {
-    fill: #0984CB;
-    opacity: 0.8;
+  .rect_on_device,
+  .rect_on_device2 {
+    opacity: 0.7;
     visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .rect-divide {
+    height: 1.5px;
   }
 }
 
