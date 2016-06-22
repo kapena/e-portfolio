@@ -1,4 +1,3 @@
-
 {
     "paths": {
         "source":{
@@ -43,7 +42,10 @@
                 "proj_8":{
                     "styles_proj8":"./src/scss/proj8_main.scss",
                     "js_proj8":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project8.js"]
-                    
+                },
+                "proj_9":{
+                    "styles_proj9":"./src/scss/proj9_main.scss",
+                    "js_proj9":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/project9.js"]
                     }
                 }
             },
@@ -93,6 +95,11 @@
                 "styles_proj8":"site/indiv_project_pages/proj8/css",
                 "js_proj8":"site/indiv_project_pages/proj8/js",
                 "html":"site/indiv_project_pages/proj8"
+            },
+            "proj9_dest":{
+                "styles_proj9":"site/indiv_project_pages/proj9/css",
+                "js_proj9":"site/indiv_project_pages/proj9/js",
+                "html":"site/indiv_project_pages/proj9"
             }
         },
 
@@ -141,6 +148,11 @@
             "watcher_proj8":{
                 "styles_proj8":"src/scss/**/*.scss",
                 "js_proj8":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
+            },
+            "watcher_proj9":{
+                "styles_proj9":"src/scss/**/*.scss",
+                "js_proj9":"src/js/project_pages/**/*.js",
                 "html":"site/**/*.html"
             }
         }
