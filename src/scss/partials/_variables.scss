@@ -36,11 +36,11 @@ $m-b-under-imgs:75px;
 
 /* halfCircle path colors indiv project pages */
 // Secret D
-$secret-halfc:#FF1919;
+$secret-halfc:#FF3C29;
 // Urban
 $urban-halfc:#0D6DCA;
 // Radiate
-$radiate-halfc:#02A502;
+$radiate-halfc:#00966C;
 // Print
 $print-halfc:#828282;
 // Point
@@ -55,7 +55,7 @@ $tension-halfc:#5177FF;
 $vivd-halfc:#FF4669;
 /* Rectangle colors for devices small and large */
 // Secret
-$secret-rect:#FF3838;
+$secret-rect:#FF0700;
 $secret-sm-rect:gold;
 // Urban
 $urban-rect:#0984CB;
@@ -80,12 +80,13 @@ $vivd-rect:#FF446B;
 $vivd-sm-rect:#F6B8C0;
 /* borders */
 // The Secret of Dreaming
+$secret_capt_box:#F5423D;
 $secret_border_bottom:rgba(255, 4, 0, 0.58);
 $secret_border:2px solid red;
 $secret_capt_box-shadow:0 7px 0 yellow;
 // Radiate
-$radiate_capt_box:lime;
-$radiate_capt_box-shadow:0 7px 0 grey;
+$radiate_capt_box:#00966C;
+$radiate_capt_box-shadow:0 7px 0 #32cd32;
 $radiate_capt_border:1px solid limegreen;
 $radiate_border:2px solid limegreen;
 // Urban

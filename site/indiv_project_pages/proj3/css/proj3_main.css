@@ -384,6 +384,9 @@ p {
 
 /* Modular Scale */
 /* Colors */
+/* halfCircle path colors indiv project pages */
+/* Rectangle colors for devices small and large */
+/* borders */
 body {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -536,8 +539,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: limegreen;
-  box-shadow: 0 7px 0 grey;
+  background-color: #00966C;
+  box-shadow: 0 7px 0 #32cd32;
   -webkit-transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -599,7 +602,7 @@ body {
   height: 100%; }
 
 .halfCircle {
-  fill: #02A502;
+  fill: #00966C;
   opacity: 0.8;
   z-index: 2;
   transform: translateY(250px); }
@@ -627,6 +630,9 @@ li {
 
 /* Modular Scale */
 /* Colors */
+/* halfCircle path colors indiv project pages */
+/* Rectangle colors for devices small and large */
+/* borders */
 #home, #projects, #about, #contact, #blog {
   text-decoration: none; }
 
@@ -772,11 +778,11 @@ li {
   transition-duration: 0.8s; }
 
 .halfCircle {
-  -webkit-transform: translateY(250px);
-  -moz-transform: translateY(250px);
-  -ms-transform: translateY(250px);
-  -o-transform: translateY(250px);
-  transform: translateY(250px);
+  -webkit-transform: translateY(255px);
+  -moz-transform: translateY(255px);
+  -ms-transform: translateY(255px);
+  -o-transform: translateY(255px);
+  transform: translateY(255px);
   -webkit-transition: -webkit-transform;
   -moz-transition: -moz-transform;
   transition: transform;

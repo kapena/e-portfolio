@@ -193,14 +193,13 @@ body{
 }
 
 .halfCircle{
-    fill:$secret-rect;
+    fill:$secret-halfc;
     opacity: 0.8;
     z-index: 2;
-    transform:translateY(250px);
 }
 
 .halfCircle1{
-    transform:translateY(250px);
+    transform:translateY(257px);
 }
 
 #circle-paths{
@@ -208,8 +207,8 @@ body{
 }
 
 .rect_on_device{
-    fill:$secret-halfc;
-    opacity: 0.6;
+    fill:$secret-rect;
+    opacity: 0.7;
 }
 
 

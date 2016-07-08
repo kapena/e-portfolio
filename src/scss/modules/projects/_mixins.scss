@@ -53,11 +53,11 @@
 }
 // colors of rect boxes
 @mixin boxColor_secret {
-    background-color:red;
+    background-color:$secret_capt_box;
     box-shadow:$secret_capt_box-shadow;
 }
 @mixin boxColor_radiate {
-    background-color:limegreen;
+    background-color:$radiate_capt_box;
     box-shadow:$radiate_capt_box-shadow;
 }
 @mixin boxColor_urban {
