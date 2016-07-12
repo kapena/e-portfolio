@@ -357,7 +357,7 @@ p {
         height: 200px; } }
 
 .halfCircle {
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: 2;
   transform: translateY(250px); }
 

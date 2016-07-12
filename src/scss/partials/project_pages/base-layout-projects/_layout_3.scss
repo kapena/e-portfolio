@@ -97,7 +97,7 @@ body{
 .caption1{
     @include caption;
     border-top:$radiate_border;
-    border-bottom: $radiate_border;
+    border-bottom:$radiate_border;
     font-size: ms(0);
 }
 

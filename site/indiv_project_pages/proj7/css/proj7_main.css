@@ -600,8 +600,8 @@ html {
   height: 100%; }
 
 .halfCircle {
-  fill: #039CD8;
-  opacity: 0.8;
+  fill: #0081B3;
+  opacity: 0.9;
   z-index: 2;
   transform: translateY(250px); }
 

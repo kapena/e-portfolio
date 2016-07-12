@@ -303,6 +303,12 @@ p {
 
 /* Colors */
 
+/* halfCircle path colors indiv project pages */
+
+/* Rectangle colors for devices small and large */
+
+/* borders */
+
 body {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -593,8 +599,8 @@ html {
 }
 
 .halfCircle {
-  fill: #0D6DCA;
-  opacity: 0.8;
+  fill: #0082B2;
+  opacity: 0.9;
   z-index: 2;
   transform: translateY(250px);
 }
@@ -626,6 +632,12 @@ html {
 /* Modular Scale */
 
 /* Colors */
+
+/* halfCircle path colors indiv project pages */
+
+/* Rectangle colors for devices small and large */
+
+/* borders */
 
 #home,
 #projects,
@@ -841,11 +853,11 @@ html {
 }
 
 .halfCircle {
-  -webkit-transform: translateY(250px);
-  -moz-transform: translateY(250px);
-  -ms-transform: translateY(250px);
-  -o-transform: translateY(250px);
-  transform: translateY(250px);
+  -webkit-transform: translateY(255px);
+  -moz-transform: translateY(255px);
+  -ms-transform: translateY(255px);
+  -o-transform: translateY(255px);
+  transform: translateY(255px);
   -webkit-transition: -webkit-transform;
   -moz-transition: -moz-transform;
   transition: transform;

@@ -417,7 +417,7 @@ body {
   font-style: italic;
   padding-bottom: 5px;
   bottom: 15px;
-  border-bottom: 2px solid limegreen;
+  border-bottom: 2px solid #00966C;
   font-family: "Lora", serif; }
 
 .project-desc, .media {
@@ -430,7 +430,7 @@ body {
   bottom: 30px;
   padding-bottom: 15px;
   padding-top: 15px;
-  border-bottom: 2px solid limegreen; }
+  border-bottom: 2px solid #00966C; }
   @media (min-width: 20em) and (max-width: 30em) {
     .project-desc, .media {
       font-size: calc( 1.1em + 0.122 * ( ( 100vw - 20em) / 10 )); } }
@@ -439,7 +439,7 @@ body {
       font-size: 1.222em; } }
 
 #project-desc {
-  border-top: 2px solid limegreen;
+  border-top: 2px solid #00966C;
   margin-top: 55px; }
 
 .main-image {
@@ -519,8 +519,8 @@ body {
   top: 10px;
   text-align: center;
   margin-top: 20px;
-  border-top: 2px solid limegreen;
-  border-bottom: 2px solid limegreen;
+  border-top: 2px solid #00966C;
+  border-bottom: 2px solid #00966C;
   font-size: 1em; }
 
 .box_1, .box_2, .box_3, .box_4, .box_5, .box_6 {
