@@ -384,6 +384,9 @@ p {
 
 /* Modular Scale */
 /* Colors */
+/* halfCircle path colors indiv project pages */
+/* Rectangle colors for devices small and large */
+/* borders */
 body {
   overflow-x: hidden;
   overflow-y: scroll;
@@ -430,7 +433,7 @@ html {
   bottom: 30px;
   padding-bottom: 15px;
   padding-top: 15px;
-  border-bottom: 2px solid sandybrown; }
+  border-bottom: 2px solid #EB6A69; }
   @media (min-width: 20em) and (max-width: 30em) {
     .project-desc, .media {
       font-size: calc( 1.1em + 0.122 * ( ( 100vw - 20em) / 10 )); } }
@@ -439,7 +442,7 @@ html {
       font-size: 1.222em; } }
 
 #project-desc {
-  border-top: 2px solid sandybrown;
+  border-top: 2px solid #EB6A69;
   margin-top: 55px; }
 
 .main-image {
@@ -547,8 +550,8 @@ html {
   top: 10px;
   text-align: center;
   margin-top: 20px;
-  border-bottom: 2px solid sandybrown;
-  border-top: 2px solid sandybrown;
+  border-bottom: 2px solid #EB6A69;
+  border-top: 2px solid #EB6A69;
   font-size: 1em; }
 
 .box_3, .box_4 {
@@ -600,8 +603,8 @@ html {
   height: 100%; }
 
 .halfCircle {
-  fill: #FFA900;
-  opacity: 0.8;
+  fill: #EB6A69;
+  opacity: 0.9;
   z-index: 2;
   transform: translateY(250px); }
 
@@ -612,7 +615,7 @@ html {
   transform: translateY(-25px); }
 
 .rect_on_device {
-  fill: #f08080; }
+  fill: #EB6A69; }
 
 .rect_on_device2 {
   fill: gold;
@@ -632,6 +635,9 @@ html {
 
 /* Modular Scale */
 /* Colors */
+/* halfCircle path colors indiv project pages */
+/* Rectangle colors for devices small and large */
+/* borders */
 #home, #projects, #about, #contact, #blog {
   text-decoration: none; }
 
@@ -756,7 +762,7 @@ html {
 
 @media only screen and (max-width: 1030px) {
   .rect_on_device, .rect_on_device2 {
-    opacity: 0.8;
+    opacity: 0.9;
     visibility: visible; } }
 
 @media only screen and (max-width: 465px) {
@@ -777,11 +783,11 @@ html {
   transition-duration: 0.8s; }
 
 .halfCircle {
-  -webkit-transform: translateY(250px);
-  -moz-transform: translateY(250px);
-  -ms-transform: translateY(250px);
-  -o-transform: translateY(250px);
-  transform: translateY(250px);
+  -webkit-transform: translateY(255px);
+  -moz-transform: translateY(255px);
+  -ms-transform: translateY(255px);
+  -o-transform: translateY(255px);
+  transform: translateY(255px);
   -webkit-transition: -webkit-transform;
   -moz-transition: -moz-transform;
   transition: transform;
@@ -820,11 +826,11 @@ html {
   transition-duration: 0.8s; }
 
 .halfCircle {
-  -webkit-transform: translateY(250px);
-  -moz-transform: translateY(250px);
-  -ms-transform: translateY(250px);
-  -o-transform: translateY(250px);
-  transform: translateY(250px);
+  -webkit-transform: translateY(255px);
+  -moz-transform: translateY(255px);
+  -ms-transform: translateY(255px);
+  -o-transform: translateY(255px);
+  transform: translateY(255px);
   -webkit-transition: -webkit-transform;
   -moz-transition: -moz-transform;
   transition: transform;

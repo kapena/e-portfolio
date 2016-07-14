@@ -5,18 +5,26 @@
 @import "vendor/bourbon";
 
 .project-heading{
-    top:455px;
+    top:450px;
     text-align: center;
     position: relative;
     font-family: $lora;
-    padding-bottom:100px;
+    padding-bottom:110px;
     @include ms-respond(font-size,3);
 }
 
 .project-discript{
+    font-family:$monte;
+    @include ms-respond(font-size,1);
     position: relative;
-    top:355px;
+    top:335px;
     text-align: center;
+}
+
+.line_under{
+    width:100%;
+    position: relative;
+    top:375px;
 }
 
 .proj-container{
@@ -45,7 +53,7 @@
 }
 
 .halfCircle{
-    opacity: 0.8;
+    opacity:$halfCircle-opacity;
     z-index: 2;
     transform:translateY(250px);
 }

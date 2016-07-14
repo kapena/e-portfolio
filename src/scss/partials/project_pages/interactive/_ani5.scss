@@ -13,7 +13,7 @@
 
 .rect_on_device, .rect_on_device2{
     @include tablet {
-        opacity:0.8;
+        opacity:$halfCircle-opacity;
         visibility:visible;;
     }
 }

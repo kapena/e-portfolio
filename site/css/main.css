@@ -318,11 +318,11 @@ p {
   font-family: "Lora", serif; }
 
 .project-heading {
-  top: 455px;
+  top: 450px;
   text-align: center;
   position: relative;
   font-family: "Lora", serif;
-  padding-bottom: 100px;
+  padding-bottom: 110px;
   font-size: 1.331em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .project-heading {
@@ -332,9 +332,22 @@ p {
       font-size: 2.36859em; } }
 
 .project-discript {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
   position: relative;
-  top: 355px;
+  top: 335px;
   text-align: center; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .project-discript {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .project-discript {
+      font-size: 1.333em; } }
+
+.line_under {
+  width: 100%;
+  position: relative;
+  top: 375px; }
 
 .proj-container {
   position: relative;
@@ -357,7 +370,7 @@ p {
         height: 200px; } }
 
 .halfCircle {
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: 2;
   transform: translateY(250px); }
 
@@ -414,11 +427,11 @@ p {
   transition-duration: 0.8s; }
 
 .halfCircle {
-  -webkit-transform: translateY(250px);
-  -moz-transform: translateY(250px);
-  -ms-transform: translateY(250px);
-  -o-transform: translateY(250px);
-  transform: translateY(250px);
+  -webkit-transform: translateY(255px);
+  -moz-transform: translateY(255px);
+  -ms-transform: translateY(255px);
+  -o-transform: translateY(255px);
+  transform: translateY(255px);
   -webkit-transition: -webkit-transform;
   -moz-transition: -moz-transform;
   transition: transform;

@@ -601,7 +601,7 @@ html {
 
 .halfCircle {
   fill: #5177FF;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: 2;
   transform: translateY(250px); }
 
@@ -780,11 +780,11 @@ html {
   transition-duration: 0.8s; }
 
 .halfCircle {
-  -webkit-transform: translateY(250px);
-  -moz-transform: translateY(250px);
-  -ms-transform: translateY(250px);
-  -o-transform: translateY(250px);
-  transform: translateY(250px);
+  -webkit-transform: translateY(255px);
+  -moz-transform: translateY(255px);
+  -ms-transform: translateY(255px);
+  -o-transform: translateY(255px);
+  transform: translateY(255px);
   -webkit-transition: -webkit-transform;
   -moz-transition: -moz-transform;
   transition: transform;
@@ -823,11 +823,11 @@ html {
   transition-duration: 0.8s; }
 
 .halfCircle {
-  -webkit-transform: translateY(250px);
-  -moz-transform: translateY(250px);
-  -ms-transform: translateY(250px);
-  -o-transform: translateY(250px);
-  transform: translateY(250px);
+  -webkit-transform: translateY(255px);
+  -moz-transform: translateY(255px);
+  -ms-transform: translateY(255px);
+  -o-transform: translateY(255px);
+  transform: translateY(255px);
   -webkit-transition: -webkit-transform;
   -moz-transition: -moz-transform;
   transition: transform;

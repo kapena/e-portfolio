@@ -7,7 +7,7 @@
 
 // translate halfCircle back to original position
 @mixin halfCircle-animation-off-hover {
-    @include transform(translateY(250px));
+    @include transform(translateY(255px));
     @include transition(transform);
     @include transition-duration(0.6s);
 }
