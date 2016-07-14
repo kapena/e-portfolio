@@ -168,8 +168,8 @@ html{
 }
 
 .halfCircle{
-    fill:#FFA900;
-    opacity: 0.8;
+    fill:$royal-halfc;
+    opacity:$halfCircle-opacity;
     z-index: 2;
     transform:translateY(250px);
 }

@@ -624,8 +624,8 @@ body {
   height: 100%; }
 
 .halfCircle {
-  fill: #FF3C29;
-  opacity: 0.8;
+  fill: #FF503F;
+  opacity: 0.9;
   z-index: 2; }
 
 .halfCircle1 {
@@ -636,11 +636,11 @@ body {
 
 .rect_on_device {
   fill: #FF3838;
-  opacity: 0.7; }
+  opacity: 0.9; }
 
 .rect_on_device2 {
   fill: gold;
-  opacity: 0.7; }
+  opacity: 0.9; }
 
 #circle-paths {
   transform: translateY(-25px); }

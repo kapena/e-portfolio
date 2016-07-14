@@ -35,8 +35,9 @@ $m-b-under-imgs:75px;
 /* Colors */
 
 /* halfCircle path colors indiv project pages */
+$halfCircle-opacity:0.9;
 // Secret D
-$secret-halfc:#FF3C29;
+$secret-halfc:#FF503F;
 // Urban
 $urban-halfc:#0082B2;
 // Radiate
@@ -46,7 +47,7 @@ $print-halfc:#828282;
 // Point
 $point-halfc:#0DC3CE;
 // Royal
-$royal-halfc:#4DB5BE;
+$royal-halfc:#EB6A69;
 // Eerie
 $eerie-halfc:#0081B3;
 // Tension
@@ -67,7 +68,7 @@ $radiate-sm-rect:limegreen;
 $print-rect:#898989;
 $print-sm-rect:gold;
 // Royal
-$royal-rect:#f08080;
+$royal-rect:#EB6A69;
 $royal-sm-rect:gold;
 // Eerie
 $eerie-rect:slategrey;
@@ -98,7 +99,7 @@ $print_capt_box:grey;
 $print_capt_box-shadow:0 7px 0 gold;
 $print_border:2px solid silver;
 // Royal
-$royal_border:2px solid sandybrown;
+$royal_border:2px solid #EB6A69;
 $royal_capt_box:lightcoral;
 $royal_capt_box-shadow:0 7px 0 yellow;
 // Eerie

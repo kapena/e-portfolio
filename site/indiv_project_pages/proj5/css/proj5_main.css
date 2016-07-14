@@ -762,7 +762,7 @@ html {
 
 @media only screen and (max-width: 1030px) {
   .rect_on_device, .rect_on_device2 {
-    opacity: 0.8;
+    opacity: 0.9;
     visibility: visible; } }
 
 @media only screen and (max-width: 465px) {

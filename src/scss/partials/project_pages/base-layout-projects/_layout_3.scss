@@ -163,7 +163,7 @@ body{
 
 .halfCircle{
     fill:$radiate-halfc;
-    opacity: 0.8;
+    opacity:$halfCircle-opacity;
     z-index: 2;
     transform:translateY(250px);
 }

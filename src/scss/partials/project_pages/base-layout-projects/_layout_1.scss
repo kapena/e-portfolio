@@ -194,7 +194,7 @@ body{
 
 .halfCircle{
     fill:$secret-halfc;
-    opacity: 0.8;
+    opacity:$halfCircle-opacity;
     z-index: 2;
 }
 
@@ -208,13 +208,13 @@ body{
 
 .rect_on_device{
     fill:$secret-rect;
-    opacity: 0.7;
+    opacity:$halfCircle-opacity;
 }
 
 
 .rect_on_device2{
     fill:$secret-sm-rect;
-    opacity: 0.7;
+    opacity:$halfCircle-opacity;
 }
 
 
