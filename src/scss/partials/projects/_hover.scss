@@ -1,4 +1,28 @@
-@import "modules/projects-page/projects-module";
+@import "modules/projects-page/projects-module"; // animation
+@import "modules/global-mqs/mqs"; // media q
+@import "partials/variables";
+$allrects:rectangle;
+
+.#{$allrects}.display{
+    visibility: hidden;
+}
+
+.halfCircle,.halfCircle1 {
+    @include tablet {
+        display:none;
+     }
+}
+// btm-rect-dreaming, .top-rect-dreaming
+.#{$allrects}.display{
+    @include tablet {
+        visibility:visible;;
+    }
+}
+.rect-divide{
+    @include mobile_device {
+        height:1.5px;
+    }
+}
 
 // translate halfCircle on y axis 400px when hovered on
 .projects:hover .halfCircle{

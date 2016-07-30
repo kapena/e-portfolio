@@ -1,6 +1,25 @@
 // media queries
-@mixin phone {
+@mixin mobile_device {
     @media only screen and (max-width:#{$mobile}){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width:#{$mobile}){
+        @content;
+    }
+}
+
+// project-page height-tablet 975px
+@mixin proj_imgs-stack-mobile {
+    @media only screen and (max-width:#{$proj-img-stacked-mobile}){
+        @content;
+    }
+}
+
+@mixin bio-border-fullwidth {
+    @media only screen and (max-width:#{$bio-border-1000px}){
         @content;
     }
 }
@@ -11,6 +30,19 @@
     }
 }
 
+// project-page height-tablet 975px
+@mixin proj_imgs-wrap-tablet {
+    @media only screen and (max-width:#{$proj-imgs-2sideByside-tablet}){
+        @content;
+    }
+}
+
+// project-page height sm-desktop
+@mixin proj_img-wrap_sm-deskt {
+    @media only screen and (max-width:#{$proj-imgs-2sideByside-sm-desktop}){
+        @content;
+    }
+}
 @mixin desktop {
     @media only screen and (min-width:#{$desktop}){
         @content;

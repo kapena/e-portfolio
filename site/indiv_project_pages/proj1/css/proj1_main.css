@@ -566,11 +566,11 @@ body {
 .box_5, .box_6 {
   top: 752px; }
 
-@media only screen and (min-width: 1455px) {
+@media only screen and (min-width: 1350px) {
   .box_3 {
     top: 0px; } }
 
-@media only screen and (min-width: 1455px) {
+@media only screen and (min-width: 1350px) {
   .box_4, .box_5, .box_6 {
     top: 376px; } }
 

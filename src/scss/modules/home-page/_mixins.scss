@@ -11,6 +11,29 @@
     margin-right:$margins;
 }
 
+@mixin svg-line-divider {
+    width:100%;
+    position: relative;
+}
+
+@mixin page-headings{
+    text-align: center;
+    position: relative;
+    font-family: $lora;
+    padding-bottom:110px;
+    @include ms-respond(font-size,3);
+}
+
+@mixin bio ($trop-purp:#b871f7){
+    border-bottom: 2px solid $trop-purp;
+    border-top: 2px solid $trop-purp;
+    padding: 25px;
+    position: relative;
+    width:80%;
+    margin: 5px auto auto;
+    text-align: center;
+}
+
 @mixin hover-links {
     border:none;
     border-bottom: 2px solid blue;

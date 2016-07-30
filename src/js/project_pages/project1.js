@@ -3,12 +3,12 @@ $(window).load(function(){
     var imgContainers = $('.image-container');
     var imgs = $('.img1,.img2,.img3,.img4,.img5,.img6');
     // Content
-    var img1_discript = $('<div class="box_1"><p class="discript1">BOX dolor sit amet.</p></div>');
-    var img2_discript = $('<div class="box_2"><p class="discript2">BOX2 dolor sit amet.</p></div>');
-    var img3_discript = $('<div class="box_3"><p class="discript3">BOX3 dolor sit amet.</p></div>');
-    var img4_discript = $('<div class="box_4"><p class="discript4">BOX4 dolor sit amet.</p></div>');
-    var img5_discript = $('<div class="box_5"><p class="discript5">BOX5 dolor sit amet.</p></div>');
-    var img6_discript = $('<div class="box_6"><p class="discript6">BOX6 dolor sit amet.</p></div>');
+    var img1_discript = $('<div class="box_1"><p class="discript1">Pastel & Digital Glow</p></div>');
+    var img2_discript = $('<div class="box_2"><p class="discript2">Digital Drawing & Particles</p></div>');
+    var img3_discript = $('<div class="box_3"><p class="discript3">Pastel & Digital Enhancement</p></div>');
+    var img4_discript = $('<div class="box_4"><p class="discript4">Pastel & Digital Enhancement</p></div>');
+    var img5_discript = $('<div class="box_5"><p class="discript5">Pastel & Digital Enhancement</p></div>');
+    var img6_discript = $('<div class="box_6"><p class="discript6">Digtal Drawing & Animation</div>');
     var all_boxes = $(img1_discript).add(img2_discript).add(img3_discript).add(img4_discript).add(img5_discript).add(img6_discript);
     // indv img classes
     var img1 = $('.img1');
