@@ -37,13 +37,6 @@ var circleGroup = circleCanvas.g(circle1,circle2,circle3).attr({
 // select cir id
 var circles = circleCanvas.select('#cir');
 
-// var linegradient = ('l(0, 1, 1, 1)#00ffff-#ff00ff-#ffff00');
-// var line = circleCanvas.rect(0,355,450,1.8);
-// line.attr({
-//     id:'subtractive',
-//     fill:linegradient
-// });
-
 // animate opacity of circles to 0.5 at 3000 milloseconds
 setTimeout (function(){
         circles.animate({
@@ -69,25 +62,51 @@ setTimeout (function (){
     // store and select skilz-main group
     var main_skilz = Snap.select('#skilz-main');
     // store and select skilz-discrpt group
-    var skilz_disc = Snap.select('#skilz-discrpt');
-
+    var skilz_disc = Snap.select('#skilz-disc');
+    var mobile_thumbTouch = Snap.select('#mobile-thumb-touch');
+    var cyan = Snap.select('#cyan');
+    var yellow  = Snap.select('#yellow');
+    var magenta = Snap.select("#magenta");
+    // var circles_mobile = Snap.select("#circles_mobile");
+    var circles_desktop = Snap.select("circle");
     // user taps .skill-spect svg. animate the opacity of .skilz-discrpt to 1
-    skill_spect_svgNode.touchstart(function() {
-        // animate opacity of skilz-discrpt g
+    mobile_thumbTouch.touchstart(function() {
+        // animate opacity of skilz-discrpt group
         skilz_disc.animate({
             opacity:1
-        },800);
+        },1000);
         main_skilz.animate({
             opacity:0
         },500);
+        // set stroke attr of circles
+        cyan.attr({
+            stroke:'red',
+            "stroke-dasharray":170,
+            "stroke-dashoffset":170
+        });
+        yellow.attr({
+            stroke:'lime',
+            "stroke-dasharray":170,
+            "stroke-dashoffset":170
+        });
+        magenta.attr({
+            stroke:'blue',
+            "stroke-dasharray":170,
+            "stroke-dashoffset":170
+        });
+        // animate fill-opacity
+        // animate dashoffset of circles to get stroke animation
+        cyan.animate({
+            "stroke-dashoffset":0,
+            "fill-opacity":"0.5"
+        },1000);
+        yellow.animate({
+            "stroke-dashoffset":0,
+            "fill-opacity":"0.5"
+        },1000);
+        magenta.animate({
+            "stroke-dashoffset":0,
+            "fill-opacity":"0.5"
+        },1000);
     });
-    // user untaps .skill-spec svg animate opacity of skilz-discrpt back to 0
-//     skill_spect_svgNode.touchend(function(){
-//         skilz_disc.animate({
-//             opacity:0
-//         },500);
-//          main_skilz.animate({
-//              opacity:1
-//          },800);
-//     });
  });

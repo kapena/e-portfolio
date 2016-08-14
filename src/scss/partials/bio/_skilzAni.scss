@@ -1,0 +1,83 @@
+@import "partials/variables";
+@import "modules/bio-page/bio-module";
+@import "partials/typography";
+@import "vendor/bourbon";
+// svg class
+.skill-spect{
+    height:700px;
+    width: 100%;
+}
+
+#circles{
+    opacity: 0.7;
+}
+
+#cyan,#yellow,#magenta{
+    mix-blend-mode:multiply;
+}
+
+#web,#print,#film,#spectrum,#mySkilz{
+    font-family: $monte;
+}
+
+#skilz-disc{
+    @include transition(opacity 0.2s);
+    opacity:0;
+}
+#skilz:hover #skilz-disc{
+    @include transition(opacity 0.5s);
+    opacity:1;
+}
+
+// stroke dash-array animation & circle opacity transition
+#skilz {
+    &:hover #cyan{
+        fill-opacity:0.5;
+        stroke:red;
+        @include stroke-ani-circle-trans;
+    }
+    &:hover #yellow{
+        fill-opacity:0.5;
+        stroke:lime;
+        @include stroke-ani-circle-trans;
+    }
+    &:hover #magenta{
+        fill-opacity:0.5;
+        stroke:blue;
+        @include stroke-ani-circle-trans;
+    }
+}
+
+@keyframes stroke_line {
+    from{
+        stroke-dashoffset:170;
+    }
+    to{
+        stroke-dashoffset:0;
+    }
+}
+
+#skilz-main{
+    @include transition(opacity 0.5s);
+    opacity:1;
+}
+
+#skilz{
+    &:hover #skilz-main{
+        // pointer-events: visible;
+        @include transition(opacity 0.2s);
+        opacity: 0;
+    }
+}
+
+#mobile-thumb-touch {
+    @include display-mobile-thumb {
+    visibility:hidden;
+    }
+}
+
+.skill-spect{
+    @include mobile {
+        height:500px;
+    }
+}

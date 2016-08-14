@@ -1,0 +1,16 @@
+// stroke dash array animation and circle opacity transition
+@mixin stroke-ani-circle-trans{
+    @include transition(fill-opacity 0.2s ease-in);
+    @include animation(stroke_line 1s ease-in-out 1);
+    stroke-dasharray:170;
+}
+// border 4 bio pg
+@mixin bio ($trop-purp:#b871f7){
+    border-bottom: 2px solid $trop-purp;
+    border-top: 2px solid $trop-purp;
+    padding: 25px;
+    position: relative;
+    width:80%;
+    margin: 5px auto auto;
+    text-align: center;
+}
