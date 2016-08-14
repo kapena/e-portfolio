@@ -10,12 +10,17 @@ $leftside:20px;
 $img-spaceing:5px;
 
 // site-by svg height adjustment for mobile
+// media query vals
 $mobile:465px;
 $tablet:780px;
 $tablet-2:1030px;
+$bio-border-1000px:1000px;
 $desktop:900px;
-$desktop-lrg:1300px;
-$desktop-xl:1455px;
+$proj-imgs-2sideByside-tablet:675px;
+$proj-imgs-2sideByside-sm-desktop:975px;
+$proj-img-stacked-mobile:465px;
+$desktop-lrg:1280px;
+$desktop-xl:1350px;
 $img-spaceing:5px;
 // Project discription box rows
 // 6 boxes 3 rows
@@ -32,8 +37,7 @@ $proj-intro-padding:50px 100px 90px;
 // margin-bottom .images
 $m-b-under-imgs:75px;
 
-/* Colors */
-
+/* Colors project pages */
 /* halfCircle path colors indiv project pages */
 $halfCircle-opacity:0.9;
 // Secret D
@@ -47,7 +51,8 @@ $print-halfc:#828282;
 // Point
 $point-halfc:#0DC3CE;
 // Royal
-$royal-halfc:#EB6A69;
+$royal-halfc:#29a2a9;
+// #EB6A69
 // Eerie
 $eerie-halfc:#0081B3;
 // Tension
@@ -58,18 +63,23 @@ $vivd-halfc:#FF4669;
 // Secret
 $secret-rect:#FF3838;
 $secret-sm-rect:gold;
+// Point
+$point-rect:#0A3DD5;
+$point-sm-rect:#0DC3CE;
 // Urban
-$urban-rect:#0984CB;
+$urban-rect:#0984CB; // urban-rect used on proj4
+$urban-rect-main:#6197C9; // urban-rect-main used on index
 $urban-sm-rect:#0DC3CE;
 // Radiate
-$radiate-rect:#5B5B5B;
+$radiate-rect:#00966C;
 $radiate-sm-rect:limegreen;
 // Print
-$print-rect:#898989;
+$print-rect:#7e7e7e;
 $print-sm-rect:gold;
 // Royal
-$royal-rect:#EB6A69;
-$royal-sm-rect:gold;
+$royal-rect:#EB6A69; // royal-rect used on proj4
+$royal-rect-main:#29a2a9; // royal-rect-main used on index
+$royal-sm-rect:#a8f6f3;
 // Eerie
 $eerie-rect:slategrey;
 $eerie-sm-rect:#039CD8;
@@ -126,10 +136,16 @@ $hawaiian-blue:#1010EC;
 $hawaiian-red:#FF2A2A;
 // animation of sliding nav
 $animation-dur:0.7s;
-
 // kerning on aloha text
 $padding-aloha:10px;
+// PAGE HEIGHTS
+$project-pg-height:1389px;
+$about-pg-height:2300px;
+$contact-pg-height:;
 
+// Rect classes on projects
+$bottom-rect:btm--;
+$top-rect:top--;
 
 // Nav
 $text:#002b36; // charcoal

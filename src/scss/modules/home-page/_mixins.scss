@@ -11,6 +11,19 @@
     margin-right:$margins;
 }
 
+@mixin svg-line-divider {
+    width:100%;
+    position: relative;
+}
+
+@mixin page-headings{
+    text-align: center;
+    position: relative;
+    font-family: $lora;
+    padding-bottom:110px;
+    @include ms-respond(font-size,4);
+}
+
 @mixin hover-links {
     border:none;
     border-bottom: 2px solid blue;
