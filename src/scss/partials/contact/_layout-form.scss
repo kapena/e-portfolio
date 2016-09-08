@@ -1,0 +1,166 @@
+@import "modules/contact-page/contact-module";
+@import "partials/variables";
+@import "partials/typography";
+@import "vendor/bourbon";
+
+.contact-page{
+    position: relative;
+    height:$contact-pg-height;
+    top:500px;
+}
+.contact-heading{
+    @include page-headings;
+}
+
+.say-hi{
+    border-top:1px solid #b871f7;
+    position: relative;
+    top:70px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.line_above-contact, .line_under-contact{
+    top:0px
+}
+
+.contact-form{
+    margin-top: 100px;
+    display: flex;
+    max-height: 40em;
+    height:39.5em;
+    justify-content: center;
+    position: relative;
+}
+
+#field-set{
+    border: 1px solid #b871f7;
+    padding-top: 20px;
+}
+
+form input {
+    width: 80%;
+}
+
+.clientName_clientMail{
+    display:inline-flex;
+    position: relative;
+    top:40px;
+    width:100%;
+    justify-content: space-around;
+}
+
+// lable name
+.your-name{
+    bottom:16px;
+    @include lableSpacing;
+}
+// lable email
+.your-email{
+    bottom: 16px;
+    padding-right:5px;
+    @include lableSpacing;
+}
+
+#f-email, #f-name{
+    margin-right: 50px;
+}
+
+// lable email
+.message{
+    top:16px;
+    border-bottom: none;
+    @include lableSpacing;
+}
+// input name
+.your-name-area{
+    @include inputSpacing_name_email;
+}
+// input email
+.your-email-area{
+    @include inputSpacing_name_email;
+}
+
+#space{
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    left:26px;
+}
+
+// input message
+.your-msg{
+    width:100%;
+    padding-top: 15px;
+    top:25px;
+    @include inputSpacing_msg;
+}
+.your-name-area:focus{
+    outline:none;
+    @include transition(border-radius 0.3s ease);
+    border-radius:8px;
+    border:1px solid $trop-purp;
+    box-shadow: 0px 0px 4px $trop-purp;
+}
+
+.clientMsg{
+    margin-right: 50px;
+    position: relative;
+    top: 50px;
+}
+// submit button
+#submit-form{
+    position: relative;
+    top: 80px;
+    left: 20px;
+    width:150px;
+    height:40px;
+}
+
+// Media Q
+
+.contact-form{
+    @include small-tablet{
+        height:800px;
+    }
+}
+
+#field-set{
+    @include small-tablet{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.clientName_clientMail{
+    @include small-tablet {
+        flex-wrap: wrap;
+        justify-content:flex-start;
+    }
+}
+
+.your-name-area, .your-email-area{
+    @include small-tablet {
+        width:85%;
+    }
+}
+
+#f-name, #f-email {
+    @include small-tablet {
+    padding-top:50px;
+    }
+}
+
+.message{
+    @include small-tablet {
+        width: 88px;
+    }
+}
+
+.your-msg{
+    @include small-tablet {
+        width:80%;
+    }
+}

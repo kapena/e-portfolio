@@ -1,0 +1,75 @@
+@mixin inputSpacing_name_email {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    width:100%;
+    height:35px;
+    @include ms-respond(font-size,0);
+    font-family: $monte;
+    position: relative;
+    @include transition(border-radius 0.8s ease);
+    background-color: #fcfcfc;
+    border:1px solid $trop-purp;
+}
+
+@mixin border-top-bottom {
+    border-top: 1px solid $trop-purp;
+    border-bottom: 1px solid $trop-purp;
+}
+
+@mixin textAlignCenter {
+    text-align: center;
+    position: relative;
+}
+
+@mixin padding-l-r-t-b-mesg ($padding-l-r:10em,$padding-t-b:1em) {
+    padding-top:$padding-t-b;
+    padding-bottom: $padding-t-b;
+    padding-left:$padding-l-r;
+    padding-right: $padding-l-r;
+}
+
+@mixin margin-l-r-mesg($margin-l-r:10em){
+    margin-right:$margin-l-r;
+    margin-left: $margin-l-r;
+}
+
+@mixin inputSpacing_msg {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    // width:90%;
+    height:200px;
+    @include ms-respond(font-size,0);
+    font-family: $monte;
+    position: relative;
+    @include transition(border-radius 0.8s ease);
+    background-color: #fcfcfc;
+    border:1px solid $trop-purp;
+}
+
+@mixin lableSpacing {
+    font-family:$monte;
+    @include ms-respond(font-size,1);
+    border-top:1px solid $trop-purp;
+    border-bottom:1px solid $trop-purp;
+    margin-left:20px;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 5px;
+    margin-left: 25px;
+}
+
+// input glow
+@mixin inputGlow {
+    outline:none;
+    @include transition(border-radius 0.8s ease);
+    border-radius:8px;
+    border:1px solid $trop-purp;
+    box-shadow: 0px 0px 4px $trop-purp;
+}
