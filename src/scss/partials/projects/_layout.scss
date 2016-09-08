@@ -3,22 +3,24 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
+
+.proj-headings{
+    position: relative;
+    top:408px;
+}
+
 .project-heading{
-    top:450px;
     @include page-headings;
 }
 
 .project-discript{
-    font-family:$monte;
+    @include page-headings;
     @include ms-respond(font-size,1);
-    position: relative;
-    top:335px;
-    text-align: center;
 }
 
 .line_under,.line_above{
     @include svg-line-divider;
-    top:400px;
+    top:410px;
 }
 
 .project-page{

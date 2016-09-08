@@ -4,6 +4,8 @@
 @import "vendor/bourbon";
 // svg class
 .skill-spect{
+    position: relative;
+    top:50px;
     height:700px;
     width: 100%;
 }
@@ -19,7 +21,7 @@
 #web,#print,#film,#spectrum,#mySkilz{
     font-family: $monte;
 }
-
+// skilz discription text
 #skilz-disc{
     @include transition(opacity 0.2s);
     opacity:0;

@@ -1,3 +1,4 @@
+
 /* Padding mixin for links inside paragraph*/
 @mixin left-right-bottom-links($left-right:2px, $bottom:1px){
     padding-left: $left-right;
@@ -19,8 +20,7 @@
 @mixin page-headings{
     text-align: center;
     position: relative;
-    font-family: $lora;
-    padding-bottom:110px;
+    font-family: $monte;
     @include ms-respond(font-size,4);
 }
 

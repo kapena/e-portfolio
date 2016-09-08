@@ -9,36 +9,43 @@
 }
 
 .about-heading{
-    top:80px;
+    bottom:90px;
     @include page-headings;
 }
 
 .line_above-about,.line_under-about{
+    padding-bottom:80px;
     @include svg-line-divider;
 }
 
-.line_above-about{
-    top:40px;
-}
-
 .line_under-about{
-    top:15px;
+    bottom:100px;
 }
 
 .about-short-disc{
     @include bio;
 }
 
-.one,.two{
-    margin-top: 50px;
+.disc-one{
+    bottom:90px;
+}
+
+.disc-two{
+    top:50px;
 }
 .bio-image{
     width:100%;
-    margin-top:55px;
+    margin-top:25px;
     .my-story-seq{
         width:100%;
         margin: auto;
         display: block;
         max-width: 1000px;
+    }
+}
+
+.about-page{
+    @include small-tablet{
+        height:1350px;
     }
 }

@@ -5,7 +5,7 @@
 $ms-base:1em;
 // multiplyed by base to create a scale of numbers
 $ms-ratio:$golden;
-$ms-range: 1.1 20em, 1.222 30em;
+$ms-range: 1.1 10em, 1.222 20em;
 $leftside:20px;
 $img-spaceing:5px;
 
@@ -134,6 +134,9 @@ $chat:lime;
 $lime-green:limegreen;
 $hawaiian-blue:#1010EC;
 $hawaiian-red:#FF2A2A;
+$trop-purp:#b871f7;
+$border-top-bottom:1px solid $trop-purp;
+
 // animation of sliding nav
 $animation-dur:0.7s;
 // kerning on aloha text
@@ -141,7 +144,7 @@ $padding-aloha:10px;
 // PAGE HEIGHTS
 $project-pg-height:1389px;
 $about-pg-height:2300px;
-$contact-pg-height:;
+$contact-pg-height:1500px;
 
 // Rect classes on projects
 $bottom-rect:btm--;
@@ -154,7 +157,7 @@ $circleNav2:#37535A;
 $circleNav3:#51585A;
 
 // Other colors
-$sand:rgba(227, 227, 203, 0.89); // page color
+$sand:#fff5ee; // page color
 $color-1: #243040; // Ebony Clay
 $color-2: #9cb3a8; // Pewter
 $color-3: #ffffff; // White
