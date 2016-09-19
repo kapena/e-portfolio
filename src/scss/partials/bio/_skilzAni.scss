@@ -2,12 +2,16 @@
 @import "modules/bio-page/bio-module";
 @import "partials/typography";
 @import "vendor/bourbon";
-// svg class
+
+// inline svg scaling hack
+// set the SVG to position: absolute, with height and width of 100%. The absolute positioning is required so that the percentages will be calculated relative to the height of the `skills div` including the padding, and not relative to the zero-height content area.
+// skill-spect `svg` is a child of the skills `div`
 .skill-spect{
-    position: relative;
-    top:50px;
-    height:700px;
+    position: absolute;;
     width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
 }
 
 #circles{
@@ -50,12 +54,41 @@
     }
 }
 
+
+#skilz{
+    #cyan{
+        stroke:red;
+        stroke-dasharray:170;
+        @include animation(stroke_line_reverse 3s ease-in-out 1);
+    }
+    #yellow{
+        stroke:lime;
+        stroke-dasharray:170;
+        @include animation(stroke_line_reverse 3s ease-in-out 1);
+
+    }
+    #magenta{
+        stroke:blue;
+        stroke-dasharray:170;
+        @include animation(stroke_line_reverse 3s ease-in-out 1);
+    }
+}
+
 @keyframes stroke_line {
     from{
         stroke-dashoffset:170;
     }
     to{
         stroke-dashoffset:0;
+    }
+}
+
+@keyframes stroke_line_reverse {
+    from{
+        stroke-dashoffset:0;
+    }
+    to{
+        stroke-dashoffset:340;
     }
 }
 

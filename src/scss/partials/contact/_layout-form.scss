@@ -6,7 +6,7 @@
 .contact-page{
     position: relative;
     height:$contact-pg-height;
-    top:500px;
+    top:200px;
 }
 .contact-heading{
     @include page-headings;
@@ -29,8 +29,8 @@
 .contact-form{
     margin-top: 100px;
     display: flex;
-    max-height: 40em;
-    height:39.5em;
+    height:36em;
+    @include transition (height,0.8s);
     justify-content: center;
     position: relative;
 }
@@ -47,7 +47,7 @@ form input {
 .clientName_clientMail{
     display:inline-flex;
     position: relative;
-    top:40px;
+    top:50px;
     width:100%;
     justify-content: space-around;
 }
@@ -108,13 +108,13 @@ form input {
 .clientMsg{
     margin-right: 50px;
     position: relative;
-    top: 50px;
+    top: 80px;
 }
 // submit button
 #submit-form{
     position: relative;
-    top: 80px;
-    left: 20px;
+    top: 115px;
+    left:20px;
     width:150px;
     height:40px;
 }
@@ -164,3 +164,17 @@ form input {
         width:80%;
     }
 }
+
+// mq for contact page min width 780px top:0px
+// .contact-page top:0px
+.contact-page{
+    @include display-mobile-thumb {
+        top:0px;
+    }
+}
+
+// .contact-form{
+//     @include mobile_device {
+//         height:45em;
+//     }
+// }

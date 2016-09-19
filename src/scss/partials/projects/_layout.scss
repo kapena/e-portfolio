@@ -46,6 +46,12 @@
       }
 }
 
+.border{
+    fill:none;
+    stroke:url("#spect");
+    stroke-width:11px;
+}
+
 .halfCircle{
     opacity:$halfCircle-opacity;
     z-index: 2;
@@ -75,6 +81,18 @@
         fill:blue;
     }
 }
+
+.border{
+    @include tablet {
+        // visibility: hidden;
+        height:310px;
+        width: 356px;
+        x:-14;
+        y:32;
+        stroke-width:6px;
+    }
+}
+
 
 .project-page{
     @include proj_img-wrap_sm-deskt {

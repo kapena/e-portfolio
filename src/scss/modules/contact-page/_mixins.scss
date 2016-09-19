@@ -24,14 +24,14 @@
     position: relative;
 }
 
-@mixin padding-l-r-t-b-mesg ($padding-l-r:10em,$padding-t-b:1em) {
+@mixin padding-l-r-t-b-mesg ($padding-l-r:3em,$padding-t-b:2em) {
     padding-top:$padding-t-b;
     padding-bottom: $padding-t-b;
     padding-left:$padding-l-r;
     padding-right: $padding-l-r;
 }
 
-@mixin margin-l-r-mesg($margin-l-r:10em){
+@mixin margin-l-r-mesg($margin-l-r:15%){
     margin-right:$margin-l-r;
     margin-left: $margin-l-r;
 }
@@ -43,7 +43,8 @@
     margin-bottom: 10px;
     padding-left: 10px;
     // width:90%;
-    height:200px;
+    height:180px;
+    max-height: 200px;
     @include ms-respond(font-size,0);
     font-family: $monte;
     position: relative;

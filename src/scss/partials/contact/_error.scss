@@ -2,3 +2,67 @@
 @import "partials/variables";
 @import "partials/typography";
 @import "vendor/bourbon";
+
+.hidden-fail-div{
+    visibility: visible;;
+    font-family: $monte;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 300px;
+}
+
+.content{
+    width: 100%;
+}
+
+.fail-heading{
+    @include textAlignCenter;
+    @include ms-respond(font-size,4);
+}
+
+.mesg-to-usr{
+    @include padding-l-r-t-b-mesg;
+    @include textAlignCenter;
+    border-top: $border-top-bottom;
+    border-bottom: $border-top-bottom;
+}
+
+#m-icon-fail{
+    stroke:red;
+    stroke-width:4px;
+    opacity: 0.5;
+    stroke-dasharray:100;
+    @include animation(stroke-mail 5s ease infinite);
+
+}
+
+// mail strokes infinite
+@keyframes stroke-mail {
+
+    from{
+        stroke-dashoffset:500;
+    }
+
+    to{
+        stroke-dashoffset:0;
+    }
+}
+
+#thank-you{
+    @include ms-respond(font-size,1);
+    position:relative;
+    bottom: 5px;
+    font-weight: bold;
+}
+
+.fail-safe{
+    position:relative;
+    font-weight: bold;
+    @include ms-respond(font-size,1);
+}
+
+.way{
+     position:relative;
+     top:7px;
+}

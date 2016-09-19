@@ -7,7 +7,13 @@
     visibility: hidden;
     font-family: $monte;
     position: relative;
+    display: flex;
+    justify-content: center;
     top: 100px;
+}
+
+.content{
+    width: 100%;
 }
 
 .sent-heading{
@@ -21,6 +27,7 @@
     @include textAlignCenter;
     border-top: $border-top-bottom;
     border-bottom: $border-top-bottom;
+    // height:6em;
 }
 
 #m-icon{

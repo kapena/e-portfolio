@@ -397,6 +397,11 @@ p {
     .projects {
       height: 200px; } }
 
+.border {
+  fill: none;
+  stroke: url("#spect");
+  stroke-width: 11px; }
+
 .halfCircle {
   opacity: 0.9;
   z-index: 2;
@@ -419,6 +424,14 @@ p {
   fill: black; }
   .viewtext:hover {
     fill: blue; }
+
+@media only screen and (max-width: 1030px) {
+  .border {
+    height: 310px;
+    width: 356px;
+    x: -14;
+    y: 32;
+    stroke-width: 6px; } }
 
 @media only screen and (max-width: 975px) {
   .project-page {
@@ -629,10 +642,11 @@ p {
   font-family: "Lora", serif; }
 
 .skill-spect {
-  position: relative;
-  top: 50px;
-  height: 700px;
-  width: 100%; }
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0; }
 
 #circles {
   opacity: 0.7; }
@@ -688,11 +702,38 @@ p {
   animation: stroke_line 1s ease-in-out 1;
   stroke-dasharray: 170; }
 
+#skilz #cyan {
+  stroke: red;
+  stroke-dasharray: 170;
+  -webkit-animation: stroke_line_reverse 3s ease-in-out 1;
+  -moz-animation: stroke_line_reverse 3s ease-in-out 1;
+  animation: stroke_line_reverse 3s ease-in-out 1; }
+
+#skilz #yellow {
+  stroke: lime;
+  stroke-dasharray: 170;
+  -webkit-animation: stroke_line_reverse 3s ease-in-out 1;
+  -moz-animation: stroke_line_reverse 3s ease-in-out 1;
+  animation: stroke_line_reverse 3s ease-in-out 1; }
+
+#skilz #magenta {
+  stroke: blue;
+  stroke-dasharray: 170;
+  -webkit-animation: stroke_line_reverse 3s ease-in-out 1;
+  -moz-animation: stroke_line_reverse 3s ease-in-out 1;
+  animation: stroke_line_reverse 3s ease-in-out 1; }
+
 @keyframes stroke_line {
   from {
     stroke-dashoffset: 170; }
   to {
     stroke-dashoffset: 0; } }
+
+@keyframes stroke_line_reverse {
+  from {
+    stroke-dashoffset: 0; }
+  to {
+    stroke-dashoffset: 340; } }
 
 #skilz-main {
   -webkit-transition: opacity 0.5s;
@@ -735,7 +776,7 @@ p {
 
 .about-page {
   margin-top: 85px;
-  height: 2300px; }
+  height: 1300px; }
 
 .about-heading {
   bottom: 90px;
@@ -782,9 +823,24 @@ p {
     display: block;
     max-width: 1000px; }
 
-@media only screen and (max-width: 780px) {
-  .about-page {
-    height: 1350px; } }
+.skills {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0 0 74%; }
+
+@media only screen and (max-width: 1030px) {
+  .skills {
+    margin-top: 120px;
+    padding-bottom: 90%; } }
+
+@media only screen and (max-width: 465px) {
+  .skills {
+    margin-top: 80px; } }
+
+@media only screen and (min-width: 900px) {
+  .skills {
+    top: 150px; } }
 
 /* Conract  Pg */
 /* Modular Scale */
@@ -809,7 +865,7 @@ p {
 .contact-page {
   position: relative;
   height: 1500px;
-  top: 500px; }
+  top: 200px; }
 
 .contact-heading {
   text-align: center;
@@ -838,8 +894,10 @@ p {
 .contact-form {
   margin-top: 100px;
   display: flex;
-  max-height: 40em;
-  height: 39.5em;
+  height: 36em;
+  -webkit-transition: height, 0.8s;
+  -moz-transition: height, 0.8s;
+  transition: height, 0.8s;
   justify-content: center;
   position: relative; }
 
@@ -853,7 +911,7 @@ form input {
 .clientName_clientMail {
   display: inline-flex;
   position: relative;
-  top: 40px;
+  top: 50px;
   width: 100%;
   justify-content: space-around; }
 
@@ -980,7 +1038,8 @@ form input {
   margin-right: 20px;
   margin-bottom: 10px;
   padding-left: 10px;
-  height: 200px;
+  height: 180px;
+  max-height: 200px;
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
   position: relative;
@@ -1008,11 +1067,11 @@ form input {
 .clientMsg {
   margin-right: 50px;
   position: relative;
-  top: 50px; }
+  top: 80px; }
 
 #submit-form {
   position: relative;
-  top: 80px;
+  top: 115px;
   left: 20px;
   width: 150px;
   height: 40px; }
@@ -1046,6 +1105,10 @@ form input {
 @media only screen and (max-width: 780px) {
   .your-msg {
     width: 80%; } }
+
+@media only screen and (min-width: 780px) {
+  .contact-page {
+    top: 0px; } }
 
 /* Modular Scale */
 /* Colors project pages */
@@ -1098,6 +1161,9 @@ textarea.parsley-error {
   -o-transition: all .3s ease-in;
   -moz-transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in; }
+
+#parsley-id-7, #parsley-id-5, #parsley-id-9 {
+  margin-bottom: -25px; }
 
 #parsley-id-9 {
   top: 20px; }
@@ -1177,6 +1243,80 @@ p {
 p {
   font-family: "Lora", serif; }
 
+.hidden-fail-div {
+  visibility: visible;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 300px; }
+
+.content {
+  width: 100%; }
+
+.fail-heading {
+  text-align: center;
+  position: relative;
+  font-size: 1.4641em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .fail-heading {
+      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .fail-heading {
+      font-size: 3.15733em; } }
+
+.mesg-to-usr {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid #b871f7;
+  border-bottom: 1px solid #b871f7; }
+
+#m-icon-fail {
+  stroke: red;
+  stroke-width: 4px;
+  opacity: 0.5;
+  stroke-dasharray: 100;
+  -webkit-animation: stroke-mail 5s ease infinite;
+  -moz-animation: stroke-mail 5s ease infinite;
+  animation: stroke-mail 5s ease infinite; }
+
+@keyframes stroke-mail {
+  from {
+    stroke-dashoffset: 500; }
+  to {
+    stroke-dashoffset: 0; } }
+
+#thank-you {
+  font-size: 1.1em;
+  position: relative;
+  bottom: 5px;
+  font-weight: bold; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    #thank-you {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    #thank-you {
+      font-size: 1.333em; } }
+
+.fail-safe {
+  position: relative;
+  font-weight: bold;
+  font-size: 1.1em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .fail-safe {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .fail-safe {
+      font-size: 1.333em; } }
+
+.way {
+  position: relative;
+  top: 7px; }
+
 /* Modular Scale */
 /* Colors project pages */
 /* halfCircle path colors indiv project pages */
@@ -1200,7 +1340,12 @@ p {
   visibility: hidden;
   font-family: "Montserrat", sans-serif;
   position: relative;
+  display: flex;
+  justify-content: center;
   top: 100px; }
+
+.content {
+  width: 100%; }
 
 .sent-heading {
   text-align: center;
@@ -1214,12 +1359,12 @@ p {
       font-size: 3.15733em; } }
 
 .mesg-to-usr {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 10em;
-  padding-right: 10em;
-  margin-right: 10em;
-  margin-left: 10em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-right: 15%;
+  margin-left: 15%;
   text-align: center;
   position: relative;
   border-top: 1px solid #b871f7;

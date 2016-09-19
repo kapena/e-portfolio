@@ -44,8 +44,26 @@
     }
 }
 
-.about-page{
-    @include small-tablet{
-        height:1350px;
+.skills{
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding: 0 0 74%;
+}
+
+// skills div contains skill-spect svg
+// mqs to keep svg somewhat centered at diff screen sizes  
+.skills{
+    @include tablet {
+        margin-top: 120px;
+        padding-bottom: 90%;
+    }
+
+    @include mobile_device {
+        margin-top:80px;
+    }
+
+    @include desktop {
+        top:150px;
     }
 }

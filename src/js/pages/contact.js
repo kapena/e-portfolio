@@ -1,6 +1,27 @@
 $(function(){
     var submitbtn = $('#submit-form');
     var contactForm = $('.contact-form');
+    var textarea =  $('.your-name-area, .your-email-area, .your-msg');
+    var desktop = Modernizr.mq('(min-width:1080px)');
+    var device = Modernizr.mq('(max-width:780px)');
+
+    // trigger click event on form elements to provide parsley-errors-list space
+    textarea.click(function(){
+        // add class when form elements are clicked
+        textarea.addClass('area-clicked');
+        // if textarea has class area-clicked and min-width of 1080px
+        if (textarea.hasClass('area-clicked') & desktop){
+            // adjust the height of contact-form
+            contactForm.css('height','40em');
+            submitbtn.css('top','160px');
+        }
+    });
+    // if device
+    if (device) {
+        // adjustment of height on contact-form
+        contactForm.css('height','48em');
+    }
+
     // Submit event to
     contactForm.submit(function (event){
         // prevent form from submiting thru browser
@@ -24,5 +45,5 @@ $(function(){
         });
     });
     // trigger submit btn on form
-    contactForm.trigger('sumbit');    
+    contactForm.trigger('sumbit');
 });
