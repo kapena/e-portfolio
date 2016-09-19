@@ -36,7 +36,6 @@ $(window).load(function(){
          var captions = $('.caption1,.caption2,.caption3,.caption4,.caption5,.caption6');
          // modernizr media q
          var device = Modernizr.mq('(max-width:972px)');
-
             //  screen is smaller than959px
             if (device){
             // make caption1 visible and add margin-bottom of 15px

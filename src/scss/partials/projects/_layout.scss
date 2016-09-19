@@ -3,22 +3,24 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
+
+.proj-headings{
+    position: relative;
+    top:408px;
+}
+
 .project-heading{
-    top:450px;
     @include page-headings;
 }
 
 .project-discript{
-    font-family:$monte;
+    @include page-headings;
     @include ms-respond(font-size,1);
-    position: relative;
-    top:335px;
-    text-align: center;
 }
 
 .line_under,.line_above{
     @include svg-line-divider;
-    top:400px;
+    top:410px;
 }
 
 .project-page{
@@ -42,6 +44,12 @@
       @include mobile_device {
           height:200px;
       }
+}
+
+.border{
+    fill:none;
+    stroke:url("#spect");
+    stroke-width:11px;
 }
 
 .halfCircle{
@@ -73,6 +81,18 @@
         fill:blue;
     }
 }
+
+.border{
+    @include tablet {
+        // visibility: hidden;
+        height:310px;
+        width: 356px;
+        x:-14;
+        y:32;
+        stroke-width:6px;
+    }
+}
+
 
 .project-page{
     @include proj_img-wrap_sm-deskt {

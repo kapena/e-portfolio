@@ -1,0 +1,32 @@
+@import "modules/contact-page/contact-module";
+@import "partials/variables";
+@import "partials/typography";
+@import "vendor/bourbon";
+
+#submit-form{
+    color:#fcfcfc;
+    border: 2px solid $trop-purp;
+    background-color:$trop-purp;
+    font-family: $monte;
+    @include ms-respond(font-size,1);
+    font-weight: bold;
+    @include transition(background-color,0.4s);
+    // box-shadow: 0px 5px 0 black;
+}
+
+#submit-form:hover {
+    color: #fcfcfc;
+    border: 2px solid magenta;
+    background-color:magenta;
+    // mix-blend-mode:multiply;
+    // @include transition(box-shadow, 0.8s);
+    box-shadow: 0px 5px 0 darkviolet;
+}
+
+#submit-form:active{
+    box-shadow: 0px 0px 0 black;
+    @include transform(translateY(8px));
+}
+#submit-form:focus{
+    outline: 0;
+}

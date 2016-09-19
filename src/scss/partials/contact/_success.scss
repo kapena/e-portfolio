@@ -1,0 +1,59 @@
+@import "modules/contact-page/contact-module";
+@import "partials/variables";
+@import "partials/typography";
+@import "vendor/bourbon";
+
+.hidden-success-div{
+    visibility: hidden;
+    font-family: $monte;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+}
+
+.content{
+    width: 100%;
+}
+
+.sent-heading{
+    @include textAlignCenter;
+    @include ms-respond(font-size,4);
+}
+
+.mesg-to-usr{
+    @include padding-l-r-t-b-mesg;
+    @include margin-l-r-mesg;
+    @include textAlignCenter;
+    border-top: $border-top-bottom;
+    border-bottom: $border-top-bottom;
+    // height:6em;
+}
+
+#m-icon{
+    stroke:url("#mail-icon");
+    fill:none;
+    stroke-width:4px;
+    opacity: 0.9;
+    stroke-dasharray:10;
+    @include animation(stroke-mail 7s ease-in-out infinite);
+
+}
+
+// mail strokes infinite
+@keyframes stroke-mail {
+
+    from{
+        stroke-dashoffset:500;
+    }
+
+    to{
+        stroke-dashoffset:0;
+    }
+}
+
+#thank-you{
+    position:relative;
+    bottom: 5px;
+    font-weight: bold;
+}

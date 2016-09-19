@@ -4,9 +4,9 @@
             "main_page_source":{
                 "styles_main":"./src/scss/main.scss",
 
-                "js_main":["bower_components/jquery/dist/jquery.min.js",
+                "js_main":["bower_components/jquery/dist/jquery.min.js","src/js/modernizr.min.js",
                 "bower_components/Snap.svg/dist/snap.svg-min.js",
-                "bower_components/hisrc/hisrc.js",
+                "bower_components/parsleyjs/dist/parsley.min.js",
                 "src/js/pages/*.js",
                 "src/js/slidenav.js"]
             },
