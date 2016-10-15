@@ -30,13 +30,15 @@
     margin-top: 100px;
     display: flex;
     height:36em;
-    @include transition (height,0.8s);
+    @include transition(height,0.8s);
     justify-content: center;
     position: relative;
 }
 
 #field-set{
     border: 1px solid #b871f7;
+    width:55em;
+    @include transition(width,0.8s);
     padding-top: 20px;
 }
 
@@ -173,8 +175,13 @@ form input {
     }
 }
 
-// .contact-form{
-//     @include mobile_device {
-//         height:45em;
-//     }
-// }
+.contact-form{
+    @include desktop {
+        height: 36em;
+    }
+}
+.contact-form{
+    @include mobile_device {
+        height:48em;
+    }
+}

@@ -3,15 +3,12 @@ $(window).scroll(function(){
     var slideNavtrigger = $('.slide-nav-trigger');
     // if user scrolls past 200px show slide-nav-trigger
     if($(window).scrollTop() > 500){
-
         slideNavtrigger.css('visibility','visible');
         $('.slide-nav-trigger').addClass('show');
     }else if($(window).scrollTop() < 600){
         slideNavtrigger.css('visibility','hidden');
     }
 });
-
-
 
 $(function(){
 // assign click event to slide-nav-trigger
@@ -24,13 +21,11 @@ $('.slide-nav-trigger').click(function(e){
     // if body hasClass of navigation-is-open toggled on
     if ($('body').hasClass('navigation-is-open')){
         // animate opacity on slide-nav from 0 to 1
-        slideNav.animate({
-            opacity:1 }, 2000, function(){});
+        slideNav.addClass('animate-opacity');
         // if navigation-is-open is toggled off
         } else {
             // animate opacity from 1 to 0
-            slideNav.animate({
-                opacity:0 },1000, function(){});
+        slideNav.removeClass('animate-opacity');
         }
     });
 });

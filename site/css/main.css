@@ -42,6 +42,9 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 @font-face {
   font-family: 'avertablack';
   src: url("./fontkit/averta-black-webfont.eot");
@@ -135,13 +138,13 @@ header #projects:hover, header #chat:hover, header #bio:hover,
 header #projects:focus, header #chat:focus, header #bio:focus {
   color: blue; }
 
-header #projects, header #chat, header #bio {
+header #projects, header #chat, header #bio, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
   color: black;
   padding: 2px;
   font-weight: 900;
   margin: 0 -2px; }
 
-header #projects, header #chat, header #bio {
+header #projects, header #chat, header #bio, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
   border: none;
   border-bottom: 2px solid blue;
   background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
@@ -206,25 +209,6 @@ p {
 #one, #two, #three {
   mix-blend-mode: screen; }
 
-main {
-  position: relative;
-  z-index: 2;
-  backface-visibility: hidden;
-  -webkit-transition: translateZ(0);
-  -moz-transition: translateZ(0);
-  transition: translateZ(0);
-  backface-visibility: hidden;
-  transition: transform 0.7s;
-  -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
-  -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
-  transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99); }
-  .navigation-is-open main {
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
-    transform: translateX(100%); }
-
 /* Main Components Most of Styling*/
 /* Nest 1
 slide-nav
@@ -237,18 +221,15 @@ slide-navigation-wrapper
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
   display: block;
-  background-color: #51585A;
-  visibility: hidden;
-  -webkit-transition: visibility 0s 0.7s;
-  -moz-transition: visibility 0s 0.7s;
-  transition: visibility 0s 0.7s; }
+  background: -webkit-linear-gradient(steelblue 10%, darkviolet);
+  background: linear-gradient(to   , darkviolet);
+  visibility: hidden; }
   .slide-nav .slide-navigation-wrapper {
     height: 100%;
     overflow-y: auto;
     overflow-scrolling: touch;
-    padding: 40px 5% 40px calc(5% + 80px);
+    padding: 40px 5% 40px calc(10% + 80px);
     -webkit-transition: translateZ(0);
     -moz-transition: translateZ(0);
     transition: translateZ(0);
@@ -258,29 +239,29 @@ slide-navigation-wrapper
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    -webkit-transition: -webkit-transform;
-    -moz-transition: -moz-transform;
-    transition: transform;
     -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
     -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
     transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78); }
   .navigation-is-open .slide-nav {
-    visibility: visible;
-    -webkit-transition: visibility 0s 0s;
-    -moz-transition: visibility 0s 0s;
-    transition: visibility 0s 0s; }
+    visibility: visible; }
     .navigation-is-open .slide-nav .slide-navigation-wrapper {
       -webkit-transform: translateX(0);
       -moz-transform: translateX(0);
       -ms-transform: translateX(0);
       -o-transform: translateX(0);
       transform: translateX(0);
-      -webkit-transition: -webkit-transform;
-      -moz-transition: -moz-transform;
-      transition: transform;
-      -webkit-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
-      -moz-transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
-      transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78); }
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      transition: 0.5s; }
+
+.slide-nav, .animate-opacity {
+  opacity: 0; }
+
+.animate-opacity {
+  -webkit-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+  opacity: 1; }
 
 /* Nest 2
 #title <h2>
@@ -416,7 +397,7 @@ p {
 .link {
   font-family: "Montserrat", sans-serif;
   fill: white;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 700; }
 
 .viewtext {
@@ -427,11 +408,11 @@ p {
 
 @media only screen and (max-width: 1030px) {
   .border {
-    height: 310px;
-    width: 356px;
-    x: -14;
-    y: 32;
-    stroke-width: 6px; } }
+    visibility: hidden; } }
+
+@media only screen and (max-width: 1030px) {
+  #urban {
+    stroke: #14bdcc; } }
 
 @media only screen and (max-width: 975px) {
   .project-page {
@@ -644,30 +625,42 @@ p {
 .skill-spect {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 95%;
   left: 0;
-  top: 0; }
+  top: -100px; }
 
 #circles {
+  transform: translateX(60px);
   opacity: 0.7; }
 
-#cyan, #yellow, #magenta {
-  mix-blend-mode: multiply; }
+#roygbiv {
+  opacity: 0; }
 
-#web, #print, #film, #spectrum, #mySkilz {
-  font-family: "Montserrat", sans-serif; }
+#roygbiv-txt {
+  transform: translateX(-8px); }
 
-#skilz-disc {
+#roygbiv-circles {
+  display: inline;
+  opacity: 0;
+  transform: translateX(-20px); }
+
+#web-print-film {
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
   opacity: 0; }
 
-#skilz:hover #skilz-disc {
+#cyan, #yellow, #magenta {
+  mix-blend-mode: multiply; }
+
+#skilz:hover #web-print-film {
   -webkit-transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   transition: opacity 0.5s;
   opacity: 1; }
+
+#skilz:hover #icons {
+  opacity: 0; }
 
 #skilz:hover #cyan {
   fill-opacity: 0.5;
@@ -702,38 +695,11 @@ p {
   animation: stroke_line 1s ease-in-out 1;
   stroke-dasharray: 170; }
 
-#skilz #cyan {
-  stroke: red;
-  stroke-dasharray: 170;
-  -webkit-animation: stroke_line_reverse 3s ease-in-out 1;
-  -moz-animation: stroke_line_reverse 3s ease-in-out 1;
-  animation: stroke_line_reverse 3s ease-in-out 1; }
-
-#skilz #yellow {
-  stroke: lime;
-  stroke-dasharray: 170;
-  -webkit-animation: stroke_line_reverse 3s ease-in-out 1;
-  -moz-animation: stroke_line_reverse 3s ease-in-out 1;
-  animation: stroke_line_reverse 3s ease-in-out 1; }
-
-#skilz #magenta {
-  stroke: blue;
-  stroke-dasharray: 170;
-  -webkit-animation: stroke_line_reverse 3s ease-in-out 1;
-  -moz-animation: stroke_line_reverse 3s ease-in-out 1;
-  animation: stroke_line_reverse 3s ease-in-out 1; }
-
 @keyframes stroke_line {
   from {
     stroke-dashoffset: 170; }
   to {
     stroke-dashoffset: 0; } }
-
-@keyframes stroke_line_reverse {
-  from {
-    stroke-dashoffset: 0; }
-  to {
-    stroke-dashoffset: 340; } }
 
 #skilz-main {
   -webkit-transition: opacity 0.5s;
@@ -747,13 +713,23 @@ p {
   transition: opacity 0.2s;
   opacity: 0; }
 
-@media only screen and (min-width: 780px) {
-  #mobile-thumb-touch {
-    visibility: hidden; } }
+@media only screen and (min-width: 900px) {
+  .skill-spect {
+    top: -280px;
+    height: 125%; } }
+
+@media only screen and (max-width: 780px) {
+  .skill-spect {
+    height: 125%;
+    top: -45px; } }
 
 @media only screen and (max-width: 465px) {
   .skill-spect {
     height: 500px; } }
+
+@media only screen and (max-width: 780px) {
+  #cyan, #yellow, #magenta {
+    stroke: none; } }
 
 /* Modular Scale */
 /* Colors project pages */
@@ -829,6 +805,24 @@ p {
   width: 100%;
   padding: 0 0 74%; }
 
+.tap-or-click {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4641em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .tap-or-click {
+      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .tap-or-click {
+      font-size: 3.15733em; } }
+
+@media only screen and (max-width: 780px) {
+  .tap-or-click {
+    top: 50px; } }
+
 @media only screen and (max-width: 1030px) {
   .skills {
     margin-top: 120px;
@@ -903,6 +897,10 @@ p {
 
 #field-set {
   border: 1px solid #b871f7;
+  width: 55em;
+  -webkit-transition: width, 0.8s;
+  -moz-transition: width, 0.8s;
+  transition: width, 0.8s;
   padding-top: 20px; }
 
 form input {
@@ -1110,6 +1108,14 @@ form input {
   .contact-page {
     top: 0px; } }
 
+@media only screen and (min-width: 900px) {
+  .contact-form {
+    height: 36em; } }
+
+@media only screen and (max-width: 465px) {
+  .contact-form {
+    height: 48em; } }
+
 /* Modular Scale */
 /* Colors project pages */
 /* halfCircle path colors indiv project pages */
@@ -1244,12 +1250,12 @@ p {
   font-family: "Lora", serif; }
 
 .hidden-fail-div {
-  visibility: visible;
+  visibility: hidden;
   font-family: "Montserrat", sans-serif;
   position: relative;
   display: flex;
   justify-content: center;
-  top: 300px; }
+  top: -355px; }
 
 .content {
   width: 100%; }
@@ -1371,7 +1377,6 @@ p {
   border-bottom: 1px solid #b871f7; }
 
 #m-icon {
-  stroke: url("#mail-icon");
   fill: none;
   stroke-width: 4px;
   opacity: 0.9;
@@ -1391,6 +1396,83 @@ p {
   bottom: 5px;
   font-weight: bold; }
 
+/* Prefooter  */
+/* Here I import all my modules into the home-module */
+/* Padding mixin for links inside paragraph*/
+/* Pushing intro-msg margins in closer */
+/* Modular Scale */
+/* Colors project pages */
+/* halfCircle path colors indiv project pages */
+/* Rectangle colors for devices small and large */
+/* borders */
+@font-face {
+  font-family: 'avertablack';
+  src: url("./fontkit/averta-black-webfont.eot");
+  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/**** Google Fonts ****/
+/* Lato Variables */
+/* Base Size */
+/**** Responsive Scales ****/
+p {
+  font-family: "Lora", serif; }
+
+.pre-footer {
+  position: relative;
+  bottom: 500px;
+  height: 500px; }
+
+.exit-msg {
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 1.61803em;
+  font-size: 1.61803em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .exit-msg {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .exit-msg {
+      font-size: 1.333em; } }
+
+.pre-footer #projects:hover, .pre-footer #chat:hover, .pre-footer #bio:hover,
+.pre-footer #projects:focus, .pre-footer #chat:focus, .pre-footer #bio:focus {
+  color: blue; }
+
+.pre-footer #projects, .pre-footer #chat, .pre-footer #bio {
+  color: black;
+  padding: 2px;
+  font-weight: 900;
+  margin: 0 -2px; }
+
+.pre-footer #projects, .pre-footer #chat, .pre-footer #bio {
+  border: none;
+  border-bottom: 2px solid blue;
+  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background-size: 100% 1px;
+  transition: .2s,color .1s .1s;
+  text-decoration: none; }
+
+.pre-footer #projects:hover, .pre-footer #chat:hover, .pre-footer #bio:hover {
+  background-size: 100% 100%; }
+
+@media only screen and (max-width: 780px) {
+  #thank-you {
+    bottom: 15px; } }
+
+@media only screen and (max-width: 780px) {
+  .pre-footer {
+    top: 0px; } }
+
+/* Footer */
 /* Typeography */
 @font-face {
   font-family: 'avertablack';

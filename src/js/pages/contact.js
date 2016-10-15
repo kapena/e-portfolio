@@ -4,6 +4,10 @@ $(function(){
     var textarea =  $('.your-name-area, .your-email-area, .your-msg');
     var desktop = Modernizr.mq('(min-width:1080px)');
     var device = Modernizr.mq('(max-width:780px)');
+    var prefooter = $('.pre-footer');
+    var hiddenSuccess = $('.hidden-success-div');
+    var preFooter = $('pre-footer');
+    var fieldset = $('#field-set');
 
     // trigger click event on form elements to provide parsley-errors-list space
     textarea.click(function(){
@@ -13,16 +17,28 @@ $(function(){
         if (textarea.hasClass('area-clicked') & desktop){
             // adjust the height of contact-form
             contactForm.css('height','40em');
+            fieldset.css('width','60em');
             submitbtn.css('top','160px');
         }
     });
-    // if device
-    if (device) {
-        // adjustment of height on contact-form
-        contactForm.css('height','48em');
-    }
 
-    // Submit event to
+
+submitbtn.click(function(){
+    // 85 px desktop
+    // 360 px device
+    if (hiddenSuccess.prop('visibility','visible') & desktop) {
+        prefooter.css('top','85px');
+    } else {
+        prefooter.css('top','360px');
+    }
+});
+
+    // // if device
+    // if (device) {
+    //     // adjustment of height on contact-form
+    //     contactForm.css('height','50em');
+    // }
+
     contactForm.submit(function (event){
         // prevent form from submiting thru browser
         event.preventDefault();
@@ -32,7 +48,7 @@ $(function(){
         $.ajax({
             type:form.attr('method'),
             url:form.attr('action'),
-            dataType:'json',
+            // dataType:'json',
             data:form.serialize()
             // assign done method to data param
         }).done(function (data){
