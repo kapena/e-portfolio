@@ -29,29 +29,6 @@
     mix-blend-mode:screen;
 }
 
-main{
-    position: relative;
-    z-index: 2;
-    // OS Bug fix
-    //height: 100vh;
-    //overflow-y: auto;
-    backface-visibility: hidden;
-
-    // Force Hard W Acceleration
-    @include transition(translateZ(0));
-    backface-visibility:hidden;
-    transition:transform 0.7s;
-    @include transition-timing-function(cubic-bezier(.91,.01,.6,.99));
-
-    // assign .navigation-is-open to .main
-    // transform the page to move 100% left
-    // when user clicks slide-nav-trigger
-
-    .navigation-is-open &{
-        @include transform(translateX(100%));
-    }
-}
-
 /* Main Components Most of Styling*/
 
 /* Nest 1
@@ -66,11 +43,11 @@ slide-navigation-wrapper
     left:0;
     height:100%;
     width:100%;
-    opacity: 0;
     display: block;
-    background-color:#51585A;
+    // background-color:$circleNav;
+    @include background($nav-bg-gradient); 
     visibility: hidden;
-    @include transition(visibility 0s $animation-dur);
+    // @include transition(visibility 0s $animation-dur);
 
     .slide-navigation-wrapper{
         // main navigation content here
@@ -78,34 +55,36 @@ slide-navigation-wrapper
         overflow-y: auto;
         overflow-scrolling:touch;
         // padds links over to the left
-        padding:40px 5% 40px calc(5% + 80px);
+        padding:40px 5% 40px calc(10% + 80px);
         // Force Hard W acceleration webkit
         @include transition(translateZ(0));
         backface-visibility:hidden;
         // transform links on X axis -50% hidden off screen!
         @include transform(translateX(-50%));
-        // transition the transformation
-        @include transition(transform $animation-dur);
         // transition timing function makes the animation smooth
         @include transition-timing-function(cubic-bezier(.86,.01,.77,.78));
     }
-    // adding navigation-is-open class and assigning our parent selector `slide-nav`
-
-    // when slide-nav-trigger button is clicked on I toggle navigation-is-on to body of html
 
     .navigation-is-open & {
         visibility: visible;
-        // transition visibility
-        @include transition(visibility 0s 0s);
-        // slide-navigation-wrapper slides out when navigation-is-on is toggled to body
         .slide-navigation-wrapper{
             // transition translate on the X axis `0`
             @include transform(translateX(0));
-            // transition transform animation duration - 0.2s
-            @include transition(transform $animation-dur - 0.2s);
-            @include transition-timing-function(cubic-bezier(.82,.01,.77,.78));
+            // transition-duration: 0.3s;
+            @include transition(0.5s);
         }
     }
+}
+
+
+.slide-nav, .animate-opacity{
+    opacity:0;
+}
+
+// fade in bg when jQ triggers class animate-opacity
+.animate-opacity{
+    @include transition(opacity 0.8s ease);
+    opacity:1;
 }
 
 /* Nest 2

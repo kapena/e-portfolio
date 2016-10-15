@@ -51,8 +51,20 @@
     padding: 0 0 74%;
 }
 
+.tap-or-click{
+    padding-top: 50px;
+    padding-bottom: 50px;    
+    @include page-headings;
+}
+
+.tap-or-click{
+    @include small-tablet{
+        top:50px;
+    }
+}
+
 // skills div contains skill-spect svg
-// mqs to keep svg somewhat centered at diff screen sizes  
+// mqs to keep svg somewhat centered at diff screen sizes
 .skills{
     @include tablet {
         margin-top: 120px;

@@ -4,12 +4,12 @@
 @import "vendor/bourbon";
 
 .hidden-fail-div{
-    visibility: visible;;
+    visibility:hidden;
     font-family: $monte;
     position: relative;
     display: flex;
     justify-content: center;
-    top: 300px;
+    top:-355px;
 }
 
 .content{

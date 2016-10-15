@@ -14,8 +14,10 @@
 @import "partials/contact/buttons";
 @import "partials/contact/error";
 @import "partials/contact/success";
-
-
+/* Prefooter  */
+@import "partials/pre-footer/prefooter-layout.scss";
+/* Footer */
+@import "partials/footer/f-layout.scss";
 /* Typeography */
 @import"partials/typography";
 /* Vendors */
