@@ -23,6 +23,7 @@
 }
 
 .about-short-disc{
+    @include ms-respond(font-size,1);
     @include bio;
 }
 
@@ -53,7 +54,7 @@
 
 .tap-or-click{
     padding-top: 50px;
-    padding-bottom: 50px;    
+    padding-bottom: 50px;
     @include page-headings;
 }
 

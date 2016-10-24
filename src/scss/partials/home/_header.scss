@@ -4,6 +4,7 @@
 /* Gobal Variables */
 @import "partials/variables";
 @import "partials/typography";
+@import "vendor/bourbon";
 // Media Q
 @import "modules/global-mqs/mqs";
 
@@ -40,7 +41,7 @@ header{
 }
 
 .name, .title{
-    color:$text;
+    color:$typeColor;
     font-weight: 400;
     font-family: $monte;
     @include ms-respond(font-size, 2);
@@ -79,7 +80,7 @@ header #projects:focus {
 
 
 header #projects {
-    color:black;
+    color:$typeColor;
     padding: 2px;
     font-weight: 900;
     margin: 0 -2px;

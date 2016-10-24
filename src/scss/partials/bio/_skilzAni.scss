@@ -19,23 +19,14 @@
     opacity: 0.7;
 }
 
-#roygbiv{
-    opacity:0;
-}
-
-#roygbiv-txt{
-    transform:translateX(-8px);
-}
-
-#roygbiv-circles{
-    display:inline;
-    opacity:0;
-    transform:translateX(-20px);
-}
 // TEXT
 #web-print-film{
     @include transition(opacity 0.2s);
     opacity:0;
+}
+
+#PRINT-TEXT{
+    transform:translateX(-2px);
 }
 
 #cyan,#yellow,#magenta{
@@ -86,6 +77,10 @@
 }
 
 #skilz{
+    @include transform(translateY(-10px));
+}
+
+#skilz{
     &:hover #skilz-main{
         // pointer-events: visible;
         @include transition(opacity 0.2s);
@@ -93,12 +88,38 @@
     }
 }
 
+#roygbiv{
+    opacity:0;
+}
+
+#roygbiv-text{
+    transform:translateY(15px);
+}
+
+#roygbiv-circles{
+    transform:translateY(20px);
+    opacity:0;
+}
+
+#newton{
+    transform-origin:center;
+    transform:translateY(23px);
+}
+
+#newtonwheel{
+    opacity:0;
+    transform:translateY(20px);
+}
+
+
 .skill-spect{
     @include desktop {
         top:-280px;
         height:125%;
     }
 }
+
+// Media Qs
 
 .skill-spect {
     @include small-tablet {
