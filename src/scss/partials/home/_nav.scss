@@ -45,7 +45,7 @@ slide-navigation-wrapper
     width:100%;
     display: block;
     // background-color:$circleNav;
-    @include background($nav-bg-gradient); 
+    @include background($nav-bg-gradient);
     visibility: hidden;
     // @include transition(visibility 0s $animation-dur);
 
@@ -94,6 +94,7 @@ slide-nav <div>
 
 // style title
 #navTitle{
+    font-family: $lato;
     position: relative;
     font-size:ms(1);
     margin-top: 2.7em;
@@ -117,20 +118,24 @@ slide-nav <div>
     margin-top:5em;
 
     li{
+        list-style: none;
         margin: 1.6em 0;
     }
 
     a{
+        @include hover-links;
         font-size:ms(1);
+        margin-left: -20px;
+        font-family: $lato;
         color:rgba($color-3, .5);
         display: inline-block;
         &.selected{
-            color:$color-3;
+            color:cyan;
         }
         // add class `no-touch` (modernizr), select slide-nav,
         // select slide-primary-nav with & selector and apply hover state
         &:hover{
-            color:$circleNav2;
+            color:$sand;
         }
     }
 }

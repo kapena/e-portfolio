@@ -55,17 +55,73 @@ setTimeout (function (){
         }
     }, 9000);
 
-    // initalize snap on skill-spect svg
+// initalize snap on skill-spect svg
 var skillSpect = Snap('.skill-spect');
-var spectCircles = Snap.select('#circles');
-var roygbiv = Snap.selectAll('#roygbiv');
+var skilz3 = Snap(".skilz-3"); // init svg2
 var circleSet = Snap.selectAll("#roygbiv-circles");
-var roygbivCircles = Snap.select("#roygbiv-circles");
+var roygbiv = Snap.selectAll('#roygbiv');
+// select icons
+var icons = Snap.select('#icons');
+// select text
+var text = Snap.select('#web-print-film');
+// newton wheel just colors
+var newton = Snap.select('#newton');
+// newton wheel black lines
+var newtonWheel = Snap.select('#newtonwheel');
+// circles
+var cyan = Snap.select('#cyan');
+var yellow  = Snap.select('#yellow');
+var magenta = Snap.select("#magenta");
+// reveal newton illustration
+newton.mouseover(function(){
+    newtonWheel.animate({
+        opacity:1
+    },800);
+});
+// trigger click event on newton
+newton.click(function(){
+        // animate opacity of icons to 0
+    icons.animate({
+        opacity:0
+    },200);
 
-spectCircles.click(function(event){
-    // animate each hex's opacity
-    circleSet.animate([{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500]);
+    // animate opacity of text to 1]
+    text.animate({
+        opacity:1
+    },300);
+    // set stroke attr to circles
+    // set stroke attr of circles
+    cyan.attr({
+        stroke:'red',
+        "stroke-opacity":0
+    });
+    yellow.attr({
+        "stroke-opacity":0,
+        stroke:'lime'
+    });
+    magenta.attr({
+        "stroke-opacity":0,
+        stroke:'blue'
+    });
+    // animate stroke-opacity
+    // animate fill-opacity
+    // animate dashoffset of circles to get stroke animation
+    cyan.animate({
+        "stroke-opacity":1,
+        "fill-opacity":"0.5"
+    },800);
+    yellow.animate({
+        "stroke-opacity":1,
+        "fill-opacity":"0.5"
+    },800);
+    magenta.animate({
+        "stroke-opacity":1,
+        "fill-opacity":"0.5"
+    },800);
 
-    roygbiv.animate([{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500]);	
+// animate each hex's opacity
+circleSet.animate([{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500]);
+
+roygbiv.animate([{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500]);
     });
 });

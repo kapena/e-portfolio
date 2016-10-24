@@ -33,12 +33,6 @@ submitbtn.click(function(){
     }
 });
 
-    // // if device
-    // if (device) {
-    //     // adjustment of height on contact-form
-    //     contactForm.css('height','50em');
-    // }
-
     contactForm.submit(function (event){
         // prevent form from submiting thru browser
         event.preventDefault();

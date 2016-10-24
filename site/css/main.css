@@ -9,55 +9,50 @@
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:900,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 /* Lato Variables */
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 /* Base Size */
 /**** Responsive Scales ****/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 html {
   height: 100%; }
@@ -86,7 +81,7 @@ header {
   text-align: center; }
 
 .name, .title {
-  color: #002b36;
+  color: #333333;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   font-size: 1.21em; }
@@ -139,7 +134,7 @@ header #projects:focus, header #chat:focus, header #bio:focus {
   color: blue; }
 
 header #projects, header #chat, header #bio, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
-  color: black;
+  color: #333333;
   padding: 2px;
   font-weight: 900;
   margin: 0 -2px; }
@@ -174,19 +169,14 @@ circle {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 .slide-nav-trigger {
   position: fixed;
@@ -268,6 +258,7 @@ slide-navigation-wrapper
 slide-nav <div>
 */
 #navTitle {
+  font-family: "Lato", sans-serif;
   position: relative;
   font-size: 1.61803em;
   margin-top: 2.7em;
@@ -286,15 +277,26 @@ slide-nav <div>
 .slide-nav .slide-primary-nav {
   margin-top: 5em; }
   .slide-nav .slide-primary-nav li {
+    list-style: none;
     margin: 1.6em 0; }
   .slide-nav .slide-primary-nav a {
+    border: none;
+    border-bottom: 2px solid blue;
+    background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+    background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
+    background: linear-gradient(cyan, cyan) no-repeat bottom;
+    background-size: 100% 1px;
+    transition: .2s,color .1s .1s;
+    text-decoration: none;
     font-size: 1.61803em;
+    margin-left: -20px;
+    font-family: "Lato", sans-serif;
     color: rgba(255, 255, 255, 0.5);
     display: inline-block; }
     .slide-nav .slide-primary-nav a.selected {
-      color: #ffffff; }
+      color: cyan; }
     .slide-nav .slide-primary-nav a:hover {
-      color: #37535A; }
+      color: #fff5ee; }
 
 /* Projects  Pg */
 /* Here I import all my modules into the home-module */
@@ -305,19 +307,14 @@ slide-nav <div>
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 .proj-headings {
   position: relative;
@@ -327,6 +324,7 @@ p {
   text-align: center;
   position: relative;
   font-family: "Montserrat", sans-serif;
+  color: #333333;
   font-size: 1.4641em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .project-heading {
@@ -339,6 +337,7 @@ p {
   text-align: center;
   position: relative;
   font-family: "Montserrat", sans-serif;
+  color: #333333;
   font-size: 1.4641em;
   font-size: 1.1em; }
   @media (min-width: 15em) and (max-width: 60em) {
@@ -608,19 +607,14 @@ p {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 .skill-spect {
   position: absolute;
@@ -633,22 +627,14 @@ p {
   transform: translateX(60px);
   opacity: 0.7; }
 
-#roygbiv {
-  opacity: 0; }
-
-#roygbiv-txt {
-  transform: translateX(-8px); }
-
-#roygbiv-circles {
-  display: inline;
-  opacity: 0;
-  transform: translateX(-20px); }
-
 #web-print-film {
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
   opacity: 0; }
+
+#PRINT-TEXT {
+  transform: translateX(-2px); }
 
 #cyan, #yellow, #magenta {
   mix-blend-mode: multiply; }
@@ -707,11 +693,36 @@ p {
   transition: opacity 0.5s;
   opacity: 1; }
 
+#skilz {
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px); }
+
 #skilz:hover #skilz-main {
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
   opacity: 0; }
+
+#roygbiv {
+  opacity: 0; }
+
+#roygbiv-text {
+  transform: translateY(15px); }
+
+#roygbiv-circles {
+  transform: translateY(20px);
+  opacity: 0; }
+
+#newton {
+  transform-origin: center;
+  transform: translateY(23px); }
+
+#newtonwheel {
+  opacity: 0;
+  transform: translateY(20px); }
 
 @media only screen and (min-width: 900px) {
   .skill-spect {
@@ -736,19 +747,14 @@ p {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 .about-page {
   margin-top: 85px;
@@ -759,6 +765,7 @@ p {
   text-align: center;
   position: relative;
   font-family: "Montserrat", sans-serif;
+  color: #333333;
   font-size: 1.4641em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .about-heading {
@@ -776,6 +783,7 @@ p {
   bottom: 100px; }
 
 .about-short-disc {
+  font-size: 1.1em;
   border-bottom: 2px solid #b871f7;
   border-top: 2px solid #b871f7;
   padding: 25px;
@@ -783,6 +791,12 @@ p {
   width: 80%;
   margin: 5px auto auto;
   text-align: center; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .about-short-disc {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .about-short-disc {
+      font-size: 1.333em; } }
 
 .disc-one {
   bottom: 90px; }
@@ -811,6 +825,7 @@ p {
   text-align: center;
   position: relative;
   font-family: "Montserrat", sans-serif;
+  color: #333333;
   font-size: 1.4641em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .tap-or-click {
@@ -842,19 +857,14 @@ p {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 .contact-page {
   position: relative;
@@ -865,6 +875,7 @@ p {
   text-align: center;
   position: relative;
   font-family: "Montserrat", sans-serif;
+  color: #333333;
   font-size: 1.4641em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .contact-heading {
@@ -1121,19 +1132,14 @@ form input {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 input.parsley-success,
 select.parsley-success,
@@ -1182,19 +1188,14 @@ textarea.parsley-error {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 #submit-form {
   color: #fcfcfc;
@@ -1235,19 +1236,14 @@ p {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 .hidden-fail-div {
   visibility: hidden;
@@ -1328,19 +1324,14 @@ p {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 .hidden-success-div {
   visibility: hidden;
@@ -1405,19 +1396,14 @@ p {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 .pre-footer {
   position: relative;
@@ -1474,19 +1460,14 @@ p {
 
 /* Footer */
 /* Typeography */
-@font-face {
-  font-family: 'avertablack';
-  src: url("./fontkit/averta-black-webfont.eot");
-  src: url("./fontkit/averta-black-webfont.eot?#iefix") format("embedded-opentype"), url("./fontkit/averta-black-webfont.woff2") format("woff2"), url("./fontkit/averta-black-webfont.woff") format("woff"), url("./fontkit/averta-black-webfont.ttf") format("truetype"), url("./fontkit/averta-black-webfont.svg#avertablack") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif; }
+  font-family: "Lora", serif;
+  color: #333333;
+  line-height: normal; }
 
 /* Vendors */
 /* ==========================================================================

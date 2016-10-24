@@ -21,8 +21,10 @@
     text-align: center;
     position: relative;
     font-family: $monte;
+    color:$typeColor;
     @include ms-respond(font-size,4);
 }
+
 
 @mixin hover-links {
     border:none;
