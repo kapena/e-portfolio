@@ -52,15 +52,15 @@ var onError = function(err){
     this.emit('end');
 };
 
-// prefixer and sourcemaps
-gulp.task('autoprefix_proj1',['proj1_styles'],function () {
-    del(['./site/css/main.css.map']);
-    return gulp.src('./site/indiv_project_pages/proj1/css/proj1_main.css')
-        .pipe(sourcemaps.init())
-        .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1));
-});
+// // prefixer and sourcemaps
+// gulp.task('autoprefix_proj1',['proj1_styles'],function () {
+//     del(['./site/css/main.css.map']);
+//     return gulp.src('./site/indiv_project_pages/proj1/css/proj1_main.css')
+//         .pipe(sourcemaps.init())
+//         .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
+//         .pipe(sourcemaps.write('.'))
+//         .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1));
+// });
 
 
 // Styles task for proj1

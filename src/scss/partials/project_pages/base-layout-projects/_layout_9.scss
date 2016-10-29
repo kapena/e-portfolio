@@ -75,6 +75,16 @@ html{
     text-align: center;
 }
 
+#personal{
+    text-decoration: none;
+    color:#FF4669;
+}
+
+#personal:hover{
+    @include transition(color 0.5s);
+    color:#333;
+}
+
 .images{
     @include display(flex);
     @include flex-wrap(wrap);

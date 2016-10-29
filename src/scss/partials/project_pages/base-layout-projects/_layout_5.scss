@@ -84,6 +84,7 @@ html{
 
     .disp1{
         margin:$img-spaceing;
+        margin-bottom: 20px;
         @include padding-left-right-bottom;
         width: 100%;
         max-width: 450px;
@@ -96,6 +97,17 @@ html{
             padding-left:0;
         }
     }
+}
+
+#abstract{
+    // text-decoration: none;
+    // color:#919191;
+    color:#808080;
+}
+
+#abstract:hover{
+    @include transition(color 0.5s);
+    color:#333;
 }
 
 .box_1{
@@ -125,7 +137,7 @@ html{
 
 .box_3,.box_4{
     // opacity: 1;
-    top:376px;
+    top:372px;
 }
 
 .discript1{
@@ -151,6 +163,13 @@ html{
 }
 
 
+.images{
+    @include xl-desktop{
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}
+
 .proj-container{
     @include display(flex);
     justify-content: center;
@@ -166,6 +185,7 @@ html{
 }
 
 .halfCircle{
+    // fill:#EB6A69;
     fill:$print-halfc;
     opacity: 0.9;
     z-index: 2;

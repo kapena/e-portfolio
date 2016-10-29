@@ -75,6 +75,16 @@ html{
     text-align: center;
 }
 
+#shillo{
+    text-decoration: none;
+    color:#DD76E5;
+}
+
+#shillo:hover{
+    @include transition(color 0.5s);
+    color:#333;
+}
+
 .images{
     @include display(flex);
     @include flex-wrap(wrap);
@@ -162,7 +172,8 @@ html{
 }
 
 .halfCircle{
-    fill:$tension-halfc;
+    // fill:$tension-halfc;
+    fill:#DD76E5;
     opacity: 0.9;
     z-index: 2;
     transform:translateY(250px);

@@ -24,7 +24,6 @@
     @include transition(opacity 1s ease-in-out);
 }
 
-
 #one, #two, #three{
     mix-blend-mode:screen;
 }
@@ -76,8 +75,7 @@ slide-navigation-wrapper
     }
 }
 
-
-.slide-nav, .animate-opacity{
+.slide-nav, .animate-opacity, .opcy-off{
     opacity:0;
 }
 

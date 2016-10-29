@@ -54,6 +54,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 html {
   height: 100%; }
 
@@ -178,6 +181,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 .slide-nav-trigger {
   position: fixed;
   z-index: 3;
@@ -244,7 +250,7 @@ slide-navigation-wrapper
       -moz-transition: 0.5s;
       transition: 0.5s; }
 
-.slide-nav, .animate-opacity {
+.slide-nav, .animate-opacity, .opcy-off {
   opacity: 0; }
 
 .animate-opacity {
@@ -315,6 +321,9 @@ p {
   font-family: "Lora", serif;
   color: #333333;
   line-height: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
 
 .proj-headings {
   position: relative;
@@ -616,6 +625,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 .skill-spect {
   position: absolute;
   width: 100%;
@@ -756,6 +768,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 .about-page {
   margin-top: 85px;
   height: 1300px; }
@@ -865,6 +880,9 @@ p {
   font-family: "Lora", serif;
   color: #333333;
   line-height: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
 
 .contact-page {
   position: relative;
@@ -1141,6 +1159,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 input.parsley-success,
 select.parsley-success,
 textarea.parsley-success {
@@ -1197,6 +1218,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 #submit-form {
   color: #fcfcfc;
   border: 2px solid #b871f7;
@@ -1244,6 +1268,9 @@ p {
   font-family: "Lora", serif;
   color: #333333;
   line-height: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
 
 .hidden-fail-div {
   visibility: hidden;
@@ -1333,6 +1360,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 .hidden-success-div {
   visibility: hidden;
   font-family: "Montserrat", sans-serif;
@@ -1405,6 +1435,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 .pre-footer {
   position: relative;
   bottom: 500px;
@@ -1468,6 +1501,9 @@ p {
   font-family: "Lora", serif;
   color: #333333;
   line-height: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
 
 /* Vendors */
 /* ==========================================================================
