@@ -42,7 +42,7 @@ setTimeout (function(){
         circles.animate({
             opacity:0.5
         },1000);
-    }, 10000);
+    },10000);
 
 // setTimeout to rotate circles 360 deg
 setTimeout (function (){
@@ -53,7 +53,7 @@ setTimeout (function (){
         // rotate circles 360 deg
         transform:'r360, t20, t20' }, 10000);
         }
-    }, 9000);
+    }, 8000);
 
 // initalize snap on skill-spect svg
 var skillSpect = Snap('.skill-spect');

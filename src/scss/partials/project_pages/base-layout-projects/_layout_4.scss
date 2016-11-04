@@ -67,6 +67,16 @@ html{
     fill:url('#australia');
 }
 
+#shillo{
+    text-decoration: none;
+    color:#6495ed;
+}
+
+#shillo:hover{
+    @include transition(color 0.5s);
+    color:#333;
+}
+
 .break-wrapper{
     padding-bottom: 10px;
     padding-top: 10px;
@@ -86,6 +96,7 @@ html{
         margin:$img-spaceing;
         @include padding-left-right-bottom;
         width: 100%;
+        margin-bottom: 20px;
         max-width: 450px;
         -webkit-filter: blur(0px);
         @include transition(blur 0.8s);
@@ -127,7 +138,7 @@ html{
 
 .box_3,.box_4{
     // opacity: 1;
-    top:376px;
+    top:372px;
 }
 
 .discript1{
@@ -150,6 +161,18 @@ html{
        font-family: $lora;
        @include ms-respond(font-size,2);
    }
+}
+
+.images{
+    @include xl-desktop{
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    @include xxl-desktop{
+        padding-left: 20em;
+        padding-right: 20em;
+    }
 }
 
 

@@ -54,6 +54,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 html {
   height: 100%; }
 
@@ -178,6 +181,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 .slide-nav-trigger {
   position: fixed;
   z-index: 3;
@@ -244,7 +250,7 @@ slide-navigation-wrapper
       -moz-transition: 0.5s;
       transition: 0.5s; }
 
-.slide-nav, .animate-opacity {
+.slide-nav, .animate-opacity, .opcy-off {
   opacity: 0; }
 
 .animate-opacity {
@@ -315,6 +321,9 @@ p {
   font-family: "Lora", serif;
   color: #333333;
   line-height: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
 
 .proj-headings {
   position: relative;
@@ -413,6 +422,16 @@ p {
   #urban {
     stroke: #14bdcc; } }
 
+@media only screen and (min-width: 1350px) {
+  .proj-container {
+    padding-left: 10em;
+    padding-right: 10em; } }
+
+@media only screen and (min-width: 1695px) {
+  .proj-container {
+    padding-left: 20em;
+    padding-right: 20em; } }
+
 @media only screen and (max-width: 975px) {
   .project-page {
     height: 1700px; } }
@@ -440,11 +459,6 @@ p {
 @media only screen and (min-width: 1280px) {
   figure {
     margin: 20px; } }
-
-@media only screen and (min-width: 1350px) {
-  figure {
-    margin: 50px;
-    margin-top: 15px; } }
 
 /* Modular Scale */
 /* Colors project pages */
@@ -616,6 +630,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 .skill-spect {
   position: absolute;
   width: 100%;
@@ -756,6 +773,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 .about-page {
   margin-top: 85px;
   height: 1300px; }
@@ -798,6 +818,18 @@ p {
     .about-short-disc {
       font-size: 1.333em; } }
 
+#aloha {
+  position: relative;
+  bottom: 5px;
+  font-weight: 600;
+  font-size: 1.1em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    #aloha {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    #aloha {
+      font-size: 1.333em; } }
+
 .disc-one {
   bottom: 90px; }
 
@@ -812,6 +844,26 @@ p {
     margin: auto;
     display: block;
     max-width: 1000px; }
+
+#sunset, #shillo, #rmit, #sod, #truemax, #alohameaning {
+  text-decoration: none;
+  color: #7F00FF; }
+
+.verse {
+  position: relative;
+  font-weight: 600;
+  bottom: 5px;
+  border-bottom: 2px solid #b871f7; }
+
+.whatIknow {
+  border-top: 2px solid #b871f7;
+  border-bottom: 2px solid #b871f7; }
+
+#i-know {
+  display: block;
+  position: relative;
+  padding-bottom: 5px;
+  padding-top: 5px; }
 
 .skills {
   position: relative;
@@ -865,6 +917,9 @@ p {
   font-family: "Lora", serif;
   color: #333333;
   line-height: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
 
 .contact-page {
   position: relative;
@@ -1141,6 +1196,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 input.parsley-success,
 select.parsley-success,
 textarea.parsley-success {
@@ -1197,6 +1255,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 #submit-form {
   color: #fcfcfc;
   border: 2px solid #b871f7;
@@ -1244,6 +1305,9 @@ p {
   font-family: "Lora", serif;
   color: #333333;
   line-height: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
 
 .hidden-fail-div {
   visibility: hidden;
@@ -1333,6 +1397,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 .hidden-success-div {
   visibility: hidden;
   font-family: "Montserrat", sans-serif;
@@ -1405,6 +1472,9 @@ p {
   color: #333333;
   line-height: normal; }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
+
 .pre-footer {
   position: relative;
   bottom: 500px;
@@ -1450,6 +1520,9 @@ p {
 .pre-footer #projects:hover, .pre-footer #chat:hover, .pre-footer #bio:hover {
   background-size: 100% 100%; }
 
+#b-w-a {
+  font-weight: 600; }
+
 @media only screen and (max-width: 780px) {
   #thank-you {
     bottom: 15px; } }
@@ -1468,6 +1541,9 @@ p {
   font-family: "Lora", serif;
   color: #333333;
   line-height: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; }
 
 /* Vendors */
 /* ==========================================================================

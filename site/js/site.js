@@ -152,7 +152,7 @@ setTimeout (function(){
         circles.animate({
             opacity:0.5
         },1000);
-    }, 10000);
+    },10000);
 
 // setTimeout to rotate circles 360 deg
 setTimeout (function (){
@@ -163,7 +163,7 @@ setTimeout (function (){
         // rotate circles 360 deg
         transform:'r360, t20, t20' }, 10000);
         }
-    }, 9000);
+    }, 8000);
 
 // initalize snap on skill-spect svg
 var skillSpect = Snap('.skill-spect');
@@ -251,10 +251,12 @@ $(window).scroll(function(){
 
 $(function(){
 // assign click event to slide-nav-trigger
-var slideNav = $('.slide-nav');
+var slideNav = $('#slide-nav');
+var navLinks = $('#roygbiv-spec, #proj-spec, #about-spec, #ctact-spec');
+var allNav = $('#slide-nav, #animate-opacity');
+
 $('.slide-nav-trigger').click(function(e){
     e.preventDefault(); // cancel the default action
-
     // when user clicks slide-nav-trigger toggleClass navigation-is-open to body
     $('body').toggleClass('navigation-is-open');
     // if body hasClass of navigation-is-open toggled on
@@ -266,5 +268,12 @@ $('.slide-nav-trigger').click(function(e){
             // animate opacity from 1 to 0
         slideNav.removeClass('animate-opacity');
         }
+    });
+
+    navLinks.click(function() {
+        // alert('clicked');
+        // remove navigation-is-open class
+        var navIsOpen = $('.navigation-is-open');
+        navIsOpen.removeClass();
     });
 });

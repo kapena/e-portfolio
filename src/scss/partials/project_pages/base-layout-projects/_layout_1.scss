@@ -38,6 +38,16 @@ body{
     }
 }
 
+#RMIT{
+    text-decoration: none;
+     color:red;
+}
+
+#RMIT:hover{
+    @include transition(color 0.5s);
+    color:#333;
+}
+
 .media{
     @include media;
     border-bottom: $secret_border;
@@ -94,6 +104,7 @@ body{
 
     .disp1{
         margin:$img-spaceing;
+        margin-bottom: 20px;
         @include padding-left-right-bottom;
         width: 100%;
         max-width: 450px;
@@ -125,22 +136,23 @@ body{
 }
 
 .box_3,.box_4{
-    top:376px;
+    top:373px;
 }
 
 .box_5,.box_6{
-    top:752px;
+    top:745px;
 }
 
-.box_3{
-    @include xl-desktop {
-        top:0px;
+
+.images{
+    @include xl-desktop{
+        padding-left: 10em;
+        padding-right: 10em;
     }
-}
 
-.box_4,.box_5,.box_6{
-    @include xl-desktop {
-        top:376px;
+    @include xxl-desktop{
+        padding-left: 20em;
+        padding-right: 20em;
     }
 }
 

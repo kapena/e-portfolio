@@ -101,32 +101,6 @@ body{
     font-size: ms(0);
 }
 
-.box_1{
-    @include display_box;
-    @include boxColor_urban;
-    @include transition(opacity 0.5s);
-    opacity: 0;
-}
-.box_1,.box_2{top:0px;}
-
-:hover.box_1{
-    opacity: 0.8;
-}
-
-.box_3,.box_4{
-    top:376px;
-}
-
-.box_5,.box_6{
-    top:752px;
-}
-.discript1{
-    font-size: ms(1);
-    opacity: 1;
-    margin-top: 250px;
-    color:white;
-}
-
 .project-wrapper{
     height:100%;
 
@@ -160,6 +134,25 @@ body{
     &:hover{
         background-size:100% 100%;
     }
+}
+
+
+.go-back{
+    text-align: center;
+    position: relative;
+    font-family: $lora;
+    color:$typeColor;
+    @include ms-respond(font-size,4);
+}
+
+.back-btn{
+    width: 80%;
+    height: 80%;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
 }
 
 .proj-container{

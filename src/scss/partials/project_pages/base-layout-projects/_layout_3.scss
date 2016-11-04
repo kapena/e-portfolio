@@ -70,6 +70,16 @@ body{
     text-align: center;
 }
 
+#shillo{
+    text-decoration: none;
+    color:#00966C;
+}
+
+#shillo:hover{
+    @include transition(color 0.5s);
+    color:#333;
+}
+
 .proj_images{
     @include display(flex);
 }

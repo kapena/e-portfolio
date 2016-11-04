@@ -98,6 +98,16 @@ html{
     }
 }
 
+#abstract{
+    text-decoration: none;
+    color:#039CD8;
+}
+
+#abstract:hover{
+    @include transition(color 0.5s);
+    color:#333;
+}
+
 .box_1{
     @include display_box;
     @include boxColor_eerie;

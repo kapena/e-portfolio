@@ -15,6 +15,8 @@ $lato:'Lato', sans-serif;
 $lato-norm:400;
 $lato-italic:italic;
 $lato-bold:900;
+// typeColor
+$typeColor:#333333;
 
 // Lora
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700);
@@ -34,6 +36,6 @@ p{
     line-height: normal;
 }
 
-// h1, h2, h3, h4, h5, h6{
-//     font-family:'avertablack', Arial;
-// }
+h1, h2, h3, h4, h5, h6{
+    color:$typeColor;
+}

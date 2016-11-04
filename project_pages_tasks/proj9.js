@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 plumber = require('gulp-plumber'), // prevent pipe breaking
 rename = require('gulp-rename'), // rename file
+uncss = require('gulp-uncss'), // uncss
 sass = require('gulp-sass'), //css preprocesser
 uglify = require('gulp-uglify'), // minify js
 concat = require('gulp-concat'), // concat files
@@ -62,6 +63,11 @@ gulp.task('proj9_styles',function(){
         errorHandler: onError}))
     .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
+    .pipe(uncss({
+        html:['site/idiv-proj-pgs/vl/vivid.html'],
+        ignore:['.box_1','.box_2','.discript1','.discript2','.image-container','.img1','.img2']
+    }))
+
     .pipe(gulp.dest(paths.project_pages_dest.proj9_dest.styles_proj9))
     .pipe(cssmin()) // min css
     .pipe(rename({ // rename file to site.min.css
