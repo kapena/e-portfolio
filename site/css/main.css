@@ -1527,6 +1527,11 @@ h1, h2, h3, h4, h5, h6 {
   #thank-you {
     bottom: 15px; } }
 
+#icare {
+  font-weight: 600;
+  position: relative;
+  top: 5px; }
+
 @media only screen and (max-width: 780px) {
   .pre-footer {
     top: 0px; } }

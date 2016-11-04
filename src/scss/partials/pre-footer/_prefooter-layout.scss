@@ -53,6 +53,12 @@
     }
 }
 
+#icare{
+    font-weight: 600;
+    position: relative;
+    top:5px;
+}
+
 .pre-footer{
     @include small-tablet{
         top:0px;
