@@ -2,6 +2,7 @@ var gulp = require('gulp'),
 plumber = require('gulp-plumber'), // prevent pipe breaking
 rename = require('gulp-rename'), // rename file
 sass = require('gulp-sass'), //css preprocesser
+uncss = require('gulp-uncss'), // uncss
 uglify = require('gulp-uglify'), // minify js
 concat = require('gulp-concat'), // concat files
 browserSync = require('browser-sync').create(),
@@ -62,6 +63,9 @@ gulp.task('proj2_styles',function(){
         errorHandler: onError}))
     .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
+    .pipe(uncss({
+        html:['site/idiv-proj-pgs/pp/pointplumbing.html']
+    }))
     .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.styles_proj2))
     .pipe(cssmin()) // min css
     .pipe(rename({ // rename file to site.min.css
@@ -74,23 +78,6 @@ gulp.task('proj2_styles',function(){
     .pipe(browserSync.stream());
 });
 
-// // Script task for proj2
-// gulp.task('proj2_js',function(){
-//     return gulp.src(paths.source.project_pgs_src.proj_2.js_proj2)
-//     // find errors in stream then nofity me in terminal
-//     .pipe(plumber({errorHandler:onError}))
-//     .pipe(concat('proj2.js'))
-//     // .pipe(concat('site.js'))
-//     .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.js_proj2))
-//     .pipe(uglify())
-//     .pipe(rename({
-//         suffix:'.min'
-//     }))
-//     .pipe(notify({ message: 'proj2_js task finished' }))
-//     .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.js_proj2)),
-//     browserSync.reload();
-// });
-//
 gulp.task('project2',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order

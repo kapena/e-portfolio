@@ -149,6 +149,11 @@ body{
         padding-left: 10em;
         padding-right: 10em;
     }
+
+    @include xxl-desktop{
+        padding-left: 20em;
+        padding-right: 20em;
+    }
 }
 
 // removing width from boxes at tablet_device size

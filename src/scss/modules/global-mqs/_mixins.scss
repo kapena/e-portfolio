@@ -74,6 +74,13 @@
     }
 }
 
+@mixin xxl-desktop {
+    @media only screen and (min-width:#{$desktop-xxl}){
+        @content;
+    }
+}
+
+
 // @2x images
 @mixin image-2x ($image,$width,$height) {
     @media (min--moz-device-pixel-ratio: 1.3),

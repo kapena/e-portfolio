@@ -2,6 +2,7 @@ var gulp = require('gulp'),
 plumber = require('gulp-plumber'), // prevent pipe breaking
 rename = require('gulp-rename'), // rename file
 sass = require('gulp-sass'), //css preprocesser
+uncss = require('gulp-uncss'), // uncss
 uglify = require('gulp-uglify'), // minify js
 concat = require('gulp-concat'), // concat files
 browserSync = require('browser-sync').create(),
@@ -62,6 +63,10 @@ gulp.task('proj7_styles',function(){
         errorHandler: onError}))
     .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
+    .pipe(uncss({
+        html:['site/idiv-proj-pgs/e8/eerieeight.html'],
+        ignore:['.box_1','.box_2','.discript1','.discript2','.image-container','.img1','.img2']
+    }))
     .pipe(gulp.dest(paths.project_pages_dest.proj7_dest.styles_proj7))
     .pipe(cssmin()) // min css
     .pipe(rename({ // rename file to site.min.css

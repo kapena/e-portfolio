@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 plumber = require('gulp-plumber'), // prevent pipe breaking
 rename = require('gulp-rename'), // rename file
+uncss = require('gulp-uncss'),
 sass = require('gulp-sass'), //css preprocesser
 uglify = require('gulp-uglify'), // minify js
 concat = require('gulp-concat'), // concat files
@@ -52,16 +53,6 @@ var onError = function(err){
     this.emit('end');
 };
 
-// // prefixer and sourcemaps
-// gulp.task('autoprefix_proj1',['proj1_styles'],function () {
-//     del(['./site/css/main.css.map']);
-//     return gulp.src('./site/indiv_project_pages/proj1/css/proj1_main.css')
-//         .pipe(sourcemaps.init())
-//         .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
-//         .pipe(sourcemaps.write('.'))
-//         .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1));
-// });
-
 
 // Styles task for proj1
 gulp.task('proj1_styles',function(){
@@ -72,6 +63,10 @@ gulp.task('proj1_styles',function(){
         errorHandler: onError}))
     .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
+    .pipe(uncss({
+        html:['site/idiv-proj-pgs/sod/secretofdreaming.html'],
+        ignore:['.box_1','.box_2','.box_3','.box_4','.box_5','.box_6','.discript1','.discript2','.discript3','.discript4','.discript5','.discript6','.image-container','.img1','.img2']
+    }))
     .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
     .pipe(cssmin()) // min css
     .pipe(rename({ // rename file to site.min.css

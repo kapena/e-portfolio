@@ -30,10 +30,10 @@
     @extend .caption1;
 }
 
-.social2-gle,.social3-in,.social4-twitter{
+.social2-gle,.social3-in,.social4-twitter,.social5-behance{
     @extend .social1-gh;
 }
 
-.google,.linkedin,.twitter{
+.google,.linkedin,.twitter,.behance{
     @extend .github;
 }

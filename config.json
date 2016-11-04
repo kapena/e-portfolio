@@ -44,7 +44,7 @@
                     "js_proj8":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/tension.js"]
                 },
                 "proj_9":{
-                    "styles_proj9":"./src/scss/vivd_main.scss",
+                    "styles_proj9":"./src/scss/vivid_main.scss",
                     "js_proj9":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/vivd.js"]
                     }
                 }
@@ -57,49 +57,49 @@
 
         "project_pages_dest":{
             "proj1_dest":{
-                "styles_proj1":"site/indiv_project_pages/sod/css",
-                "js_proj1":"site/indiv_project_pages/sod/js",
-                "html":"site/indiv_project_pages/sod"
+                "styles_proj1":"site/idiv-proj-pgs/sod/css",
+                "js_proj1":"site/idiv-proj-pgs/sod/js",
+                "html":"site/idiv-proj-pgs/sod"
             },
             "proj2_dest":{
-                "styles_proj2":"site/indiv_project_pages/pp/css",
-                "js_proj2":"site/indiv_project_pages/pp/js",
-                "html":"site/indiv_project_pages/pp"
+                "styles_proj2":"site/idiv-proj-pgs/pp/css",
+                "js_proj2":"site/idiv-proj-pgs/pp/js",
+                "html":"site/idiv-proj-pgs/pp"
             },
             "proj3_dest":{
-                "styles_proj3":"site/indiv_project_pages/rad/css",
-                "js_proj3":"site/indiv_project_pages/rad/js",
-                "html":"site/indiv_project_pages/rad"
+                "styles_proj3":"site/idiv-proj-pgs/rad/css",
+                "js_proj3":"site/idiv-proj-pgs/rad/js",
+                "html":"site/idiv-proj-pgs/rad"
             },
             "proj4_dest":{
-                "styles_proj4":"site/indiv_project_pages/urb/css",
-                "js_proj4":"site/indiv_project_pages/urb/js",
-                "html":"site/indiv_project_pages/urb"
+                "styles_proj4":"site/idiv-proj-pgs/urb/css",
+                "js_proj4":"site/idiv-proj-pgs/urb/js",
+                "html":"site/idiv-proj-pgs/urb"
             },
             "proj5_dest":{
-                "styles_proj5":"site/indiv_project_pages/pid/css",
-                "js_proj5":"site/indiv_project_pages/pid/js",
-                "html":"site/indiv_project_pages/pid"
+                "styles_proj5":"site/idiv-proj-pgs/pid/css",
+                "js_proj5":"site/idiv-proj-pgs/pid/js",
+                "html":"site/idiv-proj-pgs/pid"
             },
             "proj6_dest":{
-                "styles_proj6":"site/indiv_project_pages/rt/css",
-                "js_proj6":"site/indiv_project_pages/rt/js",
-                "html":"site/indiv_project_pages/rt"
+                "styles_proj6":"site/idiv-proj-pgs/rt/css",
+                "js_proj6":"site/idiv-proj-pgs/rt/js",
+                "html":"site/idiv-proj-pgs/rt"
             },
             "proj7_dest":{
-                "styles_proj7":"site/indiv_project_pages/e8/css",
-                "js_proj7":"site/indiv_project_pages/e8/js",
-                "html":"site/indiv_project_pages/e8"
+                "styles_proj7":"site/idiv-proj-pgs/e8/css",
+                "js_proj7":"site/idiv-proj-pgs/e8/js",
+                "html":"site/idiv-proj-pgs/e8"
             },
             "proj8_dest":{
-                "styles_proj8":"site/indiv_project_pages/ten/css",
-                "js_proj8":"site/indiv_project_pages/ten/js",
-                "html":"site/indiv_project_pages/ten"
+                "styles_proj8":"site/idiv-proj-pgs/ten/css",
+                "js_proj8":"site/idiv-proj-pgs/ten/js",
+                "html":"site/idiv-proj-pgs/ten"
             },
             "proj9_dest":{
-                "styles_proj9":"site/indiv_project_pages/vl/css",
-                "js_proj9":"site/indiv_project_pages/vl/js",
-                "html":"site/indiv_project_pages/vl"
+                "styles_proj9":"site/idiv-proj-pgs/vl/css",
+                "js_proj9":"site/idiv-proj-pgs/vl/js",
+                "html":"site/idiv-proj-pgs/vl"
             }
         },
 

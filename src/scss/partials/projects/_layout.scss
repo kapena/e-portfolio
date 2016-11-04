@@ -94,6 +94,18 @@
     }
 }
 
+.proj-container{
+    @include xl-desktop{
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+    @include xxl-desktop{
+        padding-left: 20em;
+        padding-right: 20em;
+    }
+
+}
 
 .project-page{
     @include proj_img-wrap_sm-deskt {
@@ -125,8 +137,8 @@ figure {
     @include lrg-desktop {
         margin:20px;
     }
-    @include xl-desktop {
-        margin: 50px;
-        margin-top: 15px;
-    }
+    // @include xl-desktop {
+    //     margin: 50px;
+    //     margin-top: 15px;
+    // }
 }

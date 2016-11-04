@@ -2,6 +2,7 @@ var gulp = require('gulp'),
 plumber = require('gulp-plumber'), // prevent pipe breaking
 rename = require('gulp-rename'), // rename file
 sass = require('gulp-sass'), //css preprocesser
+uncss = require('gulp-uncss'), // uncss
 uglify = require('gulp-uglify'), // minify js
 concat = require('gulp-concat'), // concat files
 browserSync = require('browser-sync').create(),
@@ -72,6 +73,10 @@ gulp.task('proj5_styles',function(){
         errorHandler: onError}))
     .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
+    .pipe(uncss({
+        html:['site/idiv-proj-pgs/pid/printisdead.html'],
+        ignore:['.box_1','.box_2','.box_3','.box_4','.discript1','.discript2','.discript3','.discript4','.image-container','.img1','.img2']
+    }))
     .pipe(gulp.dest(paths.project_pages_dest.proj5_dest.styles_proj5))
     .pipe(cssmin()) // min css
     .pipe(rename({ // rename file to site.min.css

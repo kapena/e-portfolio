@@ -65,7 +65,7 @@ gulp.task('proj4_styles',function(){
     .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
     .pipe(uncss({
-        html:['site/indiv_project_pages/proj4/urbanrevalation.html'],
+        html:['site/idiv-proj-pgs/urb/urbanrevelation.html'],
         ignore:['.box_1','.box_2','.box_3','.box_4','.discript1','.discript2','.discript3','.discript4','.image-container','.img1','.img2']
     }))
     .pipe(gulp.dest(paths.project_pages_dest.proj4_dest.styles_proj4))

@@ -422,6 +422,16 @@ h1, h2, h3, h4, h5, h6 {
   #urban {
     stroke: #14bdcc; } }
 
+@media only screen and (min-width: 1350px) {
+  .proj-container {
+    padding-left: 10em;
+    padding-right: 10em; } }
+
+@media only screen and (min-width: 1695px) {
+  .proj-container {
+    padding-left: 20em;
+    padding-right: 20em; } }
+
 @media only screen and (max-width: 975px) {
   .project-page {
     height: 1700px; } }
@@ -449,11 +459,6 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 1280px) {
   figure {
     margin: 20px; } }
-
-@media only screen and (min-width: 1350px) {
-  figure {
-    margin: 50px;
-    margin-top: 15px; } }
 
 /* Modular Scale */
 /* Colors project pages */
@@ -813,6 +818,18 @@ h1, h2, h3, h4, h5, h6 {
     .about-short-disc {
       font-size: 1.333em; } }
 
+#aloha {
+  position: relative;
+  bottom: 5px;
+  font-weight: 600;
+  font-size: 1.1em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    #aloha {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    #aloha {
+      font-size: 1.333em; } }
+
 .disc-one {
   bottom: 90px; }
 
@@ -827,6 +844,26 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     display: block;
     max-width: 1000px; }
+
+#sunset, #shillo, #rmit, #sod, #truemax, #alohameaning {
+  text-decoration: none;
+  color: #7F00FF; }
+
+.verse {
+  position: relative;
+  font-weight: 600;
+  bottom: 5px;
+  border-bottom: 2px solid #b871f7; }
+
+.whatIknow {
+  border-top: 2px solid #b871f7;
+  border-bottom: 2px solid #b871f7; }
+
+#i-know {
+  display: block;
+  position: relative;
+  padding-bottom: 5px;
+  padding-top: 5px; }
 
 .skills {
   position: relative;
@@ -1482,6 +1519,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .pre-footer #projects:hover, .pre-footer #chat:hover, .pre-footer #bio:hover {
   background-size: 100% 100%; }
+
+#b-w-a {
+  font-weight: 600; }
 
 @media only screen and (max-width: 780px) {
   #thank-you {

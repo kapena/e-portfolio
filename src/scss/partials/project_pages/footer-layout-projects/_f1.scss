@@ -14,7 +14,7 @@ li{
 .footer-area{
     @include display(flex);
     width:100%;
-    height:320px;
+    height:390px;
     position: relative;
     top:50px;
 }
@@ -63,40 +63,9 @@ li{
     background-size: 100% 100%;
 }
 
-.svg-wrap{
-    top:50px;
-    position: relative;
-}
-
-.site-by{
-    width:100%;
-    height:100%;
-    // background-color: $aloha_goodbye;
-}
-
-#built-tag{
-    fill:$hawaiian-red;
-}
-
-.linebr{
-    transform: translateX(-50px);
-}
-
-.with,.brent{
-    fill:$hawaiian-red;
-    font-family: $monte;
-    font-size:ms(-2);
-}
-
-.aloha{
-    font-size: ms(-2);
-    fill:$hawaiian-blue;
-    font-family:$monte;
-}
-
 .social{
     background-color:$footer_social;
-    width:80%;
+    width:100%;
 }
 .smedia{
     font-family: $monte;
@@ -106,6 +75,10 @@ li{
 }
 .socialize{
     @include social-links;
+}
+
+#s-link{
+    color:#00f;
 }
 .social1-gh{
     font-family: $monte;
