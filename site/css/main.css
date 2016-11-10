@@ -724,7 +724,8 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0; }
 
 #roygbiv {
-  opacity: 0; }
+  opacity: 0;
+  -webkit-tap-highlight-color: transparent; }
 
 #roygbiv-text {
   transform: translateY(15px); }
@@ -734,6 +735,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0; }
 
 #newton {
+  -webkit-tap-highlight-color: transparent;
   transform-origin: center;
   transform: translateY(23px); }
 

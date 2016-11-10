@@ -92,31 +92,31 @@ newton.click(function(){
     // set stroke attr to circles
     // set stroke attr of circles
     cyan.attr({
-        stroke:'red',
+        "stroke":'red',
         "stroke-opacity":0
     });
     yellow.attr({
         "stroke-opacity":0,
-        stroke:'lime'
+        "stroke":'lime'
     });
     magenta.attr({
         "stroke-opacity":0,
-        stroke:'blue'
+        "stroke":'blue'
     });
     // animate stroke-opacity
     // animate fill-opacity
     // animate dashoffset of circles to get stroke animation
     cyan.animate({
-        "stroke-opacity":1,
-        "fill-opacity":"0.5"
+        "stroke-opacity":"1",
+        "fill-opacity":"0.8"
     },800);
     yellow.animate({
-        "stroke-opacity":1,
-        "fill-opacity":"0.5"
+        "stroke-opacity":"1",
+        "fill-opacity":"0.8"
     },800);
     magenta.animate({
-        "stroke-opacity":1,
-        "fill-opacity":"0.5"
+        "stroke-opacity":"1",
+        "fill-opacity":"0.8"
     },800);
 
 // animate each hex's opacity
