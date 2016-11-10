@@ -90,6 +90,7 @@
 
 #roygbiv{
     opacity:0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 #roygbiv-text{
@@ -102,6 +103,7 @@
 }
 
 #newton{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
     transform-origin:center;
     transform:translateY(23px);
 }
