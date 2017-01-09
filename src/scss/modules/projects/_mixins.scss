@@ -6,7 +6,7 @@
     background-color: seashell;
 }
 
-@mixin padding-left-right ($l-r:75px) {
+@mixin padding-left-right ($l-r:65px) {
     padding-right:$l-r;
     padding-left:$l-r;
 }
@@ -24,7 +24,6 @@
 // interactive, web etc..
 @mixin media {
     display: block;
-    font-style: italic;
     padding-bottom: 5px;
     bottom:15px;
 }

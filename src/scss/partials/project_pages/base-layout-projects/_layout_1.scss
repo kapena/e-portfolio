@@ -12,7 +12,7 @@ body{
     text-align: center;
     bottom: 15px;
     margin-bottom: 30px;
-    font-family:$lora;
+    // font-family:$lora;
 }
 
 .hero-video-wrapper{
@@ -51,7 +51,7 @@ body{
 .media{
     @include media;
     border-bottom: $secret_border;
-    font-family: $lora;
+    font-family: $monte;
 }
 
 .project-desc{
@@ -136,11 +136,11 @@ body{
 }
 
 .box_3,.box_4{
-    top:373px;
+    top:376px;
 }
 
 .box_5,.box_6{
-    top:745px;
+    top:755px;
 }
 
 
@@ -181,7 +181,7 @@ body{
    .project-heading{
        text-align: center;
        position: relative;
-       font-family: $lora;
+    //    font-family: $lora;
        @include ms-respond(font-size,2);
    }
 }

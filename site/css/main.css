@@ -13,49 +13,62 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 /* Lato Variables */
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 /* Base Size */
 /**** Responsive Scales ****/
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 html {
   height: 100%; }
@@ -177,12 +190,13 @@ circle {
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 .slide-nav-trigger {
   position: fixed;
@@ -264,7 +278,7 @@ slide-navigation-wrapper
 slide-nav <div>
 */
 #navTitle {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "serif";
   position: relative;
   font-size: 1.61803em;
   margin-top: 2.7em;
@@ -296,7 +310,7 @@ slide-nav <div>
     text-decoration: none;
     font-size: 1.61803em;
     margin-left: -20px;
-    font-family: "Lato", sans-serif;
+    font-family: "Lato", "serif";
     color: rgba(255, 255, 255, 0.5);
     display: inline-block; }
     .slide-nav .slide-primary-nav a.selected {
@@ -318,12 +332,13 @@ slide-nav <div>
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 .proj-headings {
   position: relative;
@@ -626,12 +641,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 .skill-spect {
   position: absolute;
@@ -771,12 +787,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 .about-page {
   margin-top: 85px;
@@ -916,12 +933,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 .contact-page {
   position: relative;
@@ -1194,12 +1212,13 @@ form input {
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 input.parsley-success,
 select.parsley-success,
@@ -1253,12 +1272,13 @@ textarea.parsley-error {
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 #submit-form {
   color: #fcfcfc;
@@ -1304,12 +1324,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 .hidden-fail-div {
   visibility: hidden;
@@ -1395,12 +1416,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 .hidden-success-div {
   visibility: hidden;
@@ -1470,12 +1492,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 .pre-footer {
   position: relative;
@@ -1545,12 +1568,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Base Size */
 /**** Responsive Scales ****/
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal; }
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333; }
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
 
 /* Vendors */
 /* ==========================================================================

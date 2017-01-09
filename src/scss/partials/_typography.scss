@@ -1,8 +1,6 @@
 // base font size
 $browser-context:16px;
 
-$averta:'avertablack', Arial, sans-serif;
-
 /**** Google Fonts ****/
 // Montserrat
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -17,10 +15,16 @@ $lato-italic:italic;
 $lato-bold:900;
 // typeColor
 $typeColor:#333333;
+$typeColorB:#423F3F;
 
 // Lora
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700');
 $lora:'Lora',serif;
+
+
+// lato
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+$lato:'Lato','serif';
 
 /* Base Size */
 $base:0.5em;
@@ -31,11 +35,12 @@ $ms-range:
 1.333 60em;
 
 p{
-    font-family: $lora;
-    color:$typeColor;
-    line-height: normal;
+    font-family: $lato;
+    color:$typeColorB;
+    line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6{
-    color:$typeColor;
+    font-family: $monte;
+    color:$typeColorB;
 }
