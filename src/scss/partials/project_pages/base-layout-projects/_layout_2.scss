@@ -12,7 +12,6 @@ body{
     text-align: center;
     bottom: 15px;
     margin-bottom: 30px;
-    font-family:$lora;
 }
 
 .header-img{
@@ -30,7 +29,7 @@ body{
 .media{
     @include media;
     border-bottom: $urban_border;
-    font-family: $lora;
+    font-family: $lato;
 }
 
 .project-desc{
@@ -140,7 +139,7 @@ body{
 .go-back{
     text-align: center;
     position: relative;
-    font-family: $lora;
+    font-family: $lato;
     color:$typeColor;
     @include ms-respond(font-size,4);
 }

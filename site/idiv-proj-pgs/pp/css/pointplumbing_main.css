@@ -23,7 +23,9 @@
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 
-@import url(https://fonts.googleapis.com/css?family=Lora:400,700);
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 
 html {
   font-family: sans-serif;
@@ -52,7 +54,6 @@ body {
  * Correct `block` display not defined for `main` in IE 11.
  */
 
-footer,
 header,
 nav {
   display: block;
@@ -286,13 +287,14 @@ input::-moz-focus-inner {
 /**** Responsive Scales ****/
 
 p {
-  font-family: "Lora", serif;
-  color: #333333;
-  line-height: normal;
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em;
 }
 
 h1 {
-  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F;
 }
 
 /* Modular Scale */
@@ -318,7 +320,6 @@ body {
   text-align: center;
   bottom: 15px;
   margin-bottom: 30px;
-  font-family: "Lora", serif;
 }
 
 .header-img {
@@ -332,18 +333,17 @@ body {
 
 @media only screen and (max-width: 465px) {
   .project-introduction {
-    padding-right: 75px;
-    padding-left: 75px;
+    padding-right: 65px;
+    padding-left: 65px;
   }
 }
 
 .media {
   display: block;
-  font-style: italic;
   padding-bottom: 5px;
   bottom: 15px;
   border-bottom: 2px solid cornflowerblue;
-  font-family: "Lora", serif;
+  font-family: "Lato", "serif";
 }
 
 .project-desc,
@@ -420,7 +420,7 @@ body {
 .go-back {
   text-align: center;
   position: relative;
-  font-family: "Lora", serif;
+  font-family: "Lato", "serif";
   color: #333333;
   font-size: 1.4641em;
 }
@@ -590,7 +590,7 @@ li {
 .social5-behance {
   font-family: "Montserrat", sans-serif;
   position: relative;
-  top: 50px;
+  top: 40px;
   padding-left: 40px;
 }
 
