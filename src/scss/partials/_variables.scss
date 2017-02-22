@@ -139,7 +139,7 @@ $hawaiian-blue:#1010EC;
 $hawaiian-red:#FF2A2A;
 $trop-purp:#b871f7;
 $border-top-bottom:1px solid $trop-purp;
-$nav-bg-gradient:linear-gradient(steelblue 10% ,darkviolet);
+$nav-bg-gradient:linear-gradient(steelblue -5% ,darkviolet);
 
 // animation of sliding nav
 $animation-dur:0.7s;
@@ -159,13 +159,14 @@ $text:#002b36; // charcoal
 $circleNav:#373D45; // circle nav button
 $circleNav2:#37535A;
 $circleNav3:#51585A;
+$nav-link-bgColor:#1bacf1 no-repeat bottom;
 
 // Other colors
 $sand:#fff5ee; // page color
 $color-1: #243040; // Ebony Clay
 $color-2: #9cb3a8; // Pewter
 $color-3: #ffffff; // White
-$color-4:#D7E1DC;; // OffCyan
+$color-4: #D7E1DC; // OffCyan
 
 // Footer
 $footer_social:gainsboro;

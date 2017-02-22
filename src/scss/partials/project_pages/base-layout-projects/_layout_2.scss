@@ -171,36 +171,6 @@ body{
     height: 100%;
 }
 
-.halfCircle{
-    opacity: 0.8;
-    z-index: 2;
-    transform:translateY(250px);
-}
-
-.halfCircle1{
-    transform:translateY(250px);
-}
-
-#circle-paths{
-    transform:translateY(-25px);
-}
-
-.link{
-    font-family: $monte;
-    fill:white;
-    font-size: 1.2em;
-    font-weight: 700;
-}
-
-.viewtext{
-    font-family: $monte;
-    fill:black;
-
-    &:hover {
-        fill:blue;
-    }
-}
-
 li{
     list-style: none;
 }

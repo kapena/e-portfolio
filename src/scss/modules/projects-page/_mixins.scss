@@ -21,7 +21,7 @@
 @mixin viewNowUp {
     @include transition(transform);
     @include transition-duration(0.5s);
-    transform: translateY(-140px);
+    transform: translateY(-135px);
 }
 
 // view now link slides down
@@ -35,7 +35,7 @@
 @mixin projectName-slideUnder {
     @include transition(transform);
     @include transition-duration(0.5s);
-    transform: translateY(15px);
+    transform: translateY(35px);
 }
 
 @mixin projectName-slideUp {

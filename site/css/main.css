@@ -232,7 +232,7 @@ slide-navigation-wrapper
   height: 100%;
   width: 100%;
   display: block;
-  background: -webkit-linear-gradient(steelblue 10%, darkviolet);
+  background: -webkit-linear-gradient(steelblue -5%, darkviolet);
   background: linear-gradient(to   , darkviolet);
   visibility: hidden; }
   .slide-nav .slide-navigation-wrapper {
@@ -279,8 +279,10 @@ slide-nav <div>
 */
 #navTitle {
   font-family: "Lato", "serif";
+  color: #002b36;
   position: relative;
   font-size: 1.61803em;
+  font-weight: bold;
   margin-top: 2.7em;
   padding-left: 20px;
   margin-top: 0em; }
@@ -308,15 +310,20 @@ slide-nav <div>
     background-size: 100% 1px;
     transition: .2s,color .1s .1s;
     text-decoration: none;
+    background: #1bacf1;
+    background: #1bacf1;
+    border-bottom: none;
+    padding: 5px;
+    background-size: 100% 100px;
     font-size: 1.61803em;
     margin-left: -20px;
     font-family: "Lato", "serif";
-    color: rgba(255, 255, 255, 0.5);
+    color: #002b36;
     display: inline-block; }
     .slide-nav .slide-primary-nav a.selected {
       color: cyan; }
     .slide-nav .slide-primary-nav a:hover {
-      color: #fff5ee; }
+      color: #1010EC; }
 
 /* Projects  Pg */
 /* Here I import all my modules into the home-module */
@@ -406,22 +413,14 @@ h1, h2, h3, h4, h5, h6 {
   stroke: url("#spect");
   stroke-width: 11px; }
 
-.halfCircle {
-  opacity: 0.9;
-  z-index: 2;
-  transform: translateY(250px); }
-
-.halfCircle1 {
-  transform: translateY(250px); }
-
-#circle-paths {
-  transform: translateY(-25px); }
-
 .link {
   font-family: "Montserrat", sans-serif;
   fill: white;
   font-size: 1.3em;
   font-weight: 700; }
+
+.s-d, .p-p, .r, .u-r, .p-d {
+  transform: translateY(-12px); }
 
 .viewtext {
   font-family: "Montserrat", sans-serif;
@@ -457,11 +456,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 465px) {
   .project-page {
-    height: 2150px; } }
+    height: 2000px; } }
 
 @media only screen and (max-width: 1030px) {
   .proj-container {
     flex-wrap: wrap; } }
+
+@media only screen and (max-width: 1030px) {
+  #project-name {
+    transform: translateY(-21px); } }
 
 @media only screen and (max-width: 1030px) {
   figure {
@@ -533,11 +536,8 @@ h1, h2, h3, h4, h5, h6 {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-.rectangle.display {
-  visibility: hidden; }
-
 @media only screen and (max-width: 1030px) {
-  .halfCircle, .halfCircle1 {
+  .halfRect.halfRect1 {
     display: none; } }
 
 @media only screen and (max-width: 1030px) {
@@ -548,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
   .rect-divide {
     height: 1.5px; } }
 
-.projects:hover .halfCircle {
+.projects:hover .halfRect {
   -webkit-transform: translateY(400px);
   -moz-transform: translateY(400px);
   -ms-transform: translateY(400px);
@@ -561,7 +561,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition-duration: 0.8s;
   transition-duration: 0.8s; }
 
-.halfCircle {
+.halfRect {
   -webkit-transform: translateY(255px);
   -moz-transform: translateY(255px);
   -ms-transform: translateY(255px);
@@ -574,7 +574,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition-duration: 0.6s;
   transition-duration: 0.6s; }
 
-.projects:hover .halfCircle1 {
+.projects:hover .halfRect1 {
   visibility: visible;
   opacity: 0.8;
   -webkit-transition: visibility 1s, opacity 1s;
@@ -584,7 +584,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition-duration: 0.8s;
   transition-duration: 0.8s; }
 
-.halfCircle1 {
+.halfRect1 {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: visibility 1s, opacity 1s;
@@ -598,7 +598,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  transform: translateY(-140px); }
+  transform: translateY(-135px); }
 
 #view {
   -webkit-transition: -webkit-transform;
@@ -625,7 +625,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  transform: translateY(15px); }
+  transform: translateY(35px); }
 
 .projects:hover .link {
   fill: black; }
@@ -796,11 +796,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #423F3F; }
 
 .about-page {
-  margin-top: 85px;
+  margin-top: 35px;
   height: 1300px; }
 
 .about-heading {
-  bottom: 90px;
+  bottom: 50px;
   text-align: center;
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -814,12 +814,12 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 3.15733em; } }
 
 .line_above-about, .line_under-about {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   width: 100%;
   position: relative; }
 
 .line_under-about {
-  bottom: 100px; }
+  bottom: 50px; }
 
 .about-short-disc {
   font-size: 1.1em;
@@ -837,6 +837,10 @@ h1, h2, h3, h4, h5, h6 {
     .about-short-disc {
       font-size: 1.333em; } }
 
+.workin {
+  display: block;
+  font-weight: bold; }
+
 #aloha {
   position: relative;
   bottom: 5px;
@@ -850,7 +854,7 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1.333em; } }
 
 .disc-one {
-  bottom: 90px; }
+  bottom: 50px; }
 
 .disc-two {
   top: 50px; }
@@ -868,7 +872,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: #7F00FF; }
 
-.verse {
+.list {
   position: relative;
   font-weight: 600;
   bottom: 5px;
@@ -897,13 +901,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   font-family: "Montserrat", sans-serif;
   color: #333333;
-  font-size: 1.4641em; }
+  font-size: 1.4641em;
+  font-size: 1.331em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .tap-or-click {
       font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
     .tap-or-click {
       font-size: 3.15733em; } }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .tap-or-click {
+      font-size: calc( 1.331em + 1.03759 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .tap-or-click {
+      font-size: 2.36859em; } }
+
+.why {
+  text-align: center; }
 
 @media only screen and (max-width: 780px) {
   .tap-or-click {

@@ -4,27 +4,32 @@
 @import "vendor/bourbon";
 
 .about-page{
-    margin-top:85px;
+    margin-top:35px;
     height:$about-pg-height;
 }
 
 .about-heading{
-    bottom:90px;
+    bottom:50px;
     @include page-headings;
 }
 
 .line_above-about,.line_under-about{
-    padding-bottom:80px;
+    padding-bottom:50px;
     @include svg-line-divider;
 }
 
 .line_under-about{
-    bottom:100px;
+    bottom:50px;
 }
 
 .about-short-disc{
     @include ms-respond(font-size,1);
     @include bio;
+}
+
+.workin{
+    display: block;
+    font-weight: bold;
 }
 
 #aloha{
@@ -35,7 +40,7 @@
 }
 
 .disc-one{
-    bottom:90px;
+    bottom:50px;
 }
 
 .disc-two{
@@ -57,7 +62,7 @@
     color:#7F00FF;
 }
 
-.verse{
+.list{
     position:relative;
     font-weight: 600;
     bottom:5px;
@@ -87,6 +92,13 @@
     padding-top: 50px;
     padding-bottom: 50px;
     @include page-headings;
+    @include ms-respond(font-size,3);
+
+}
+
+.why{
+    text-align: center;
+    // @include ;
 }
 
 .tap-or-click{
