@@ -93,8 +93,10 @@ slide-nav <div>
 // style title
 #navTitle{
     font-family: $lato;
+    color:$text;
     position: relative;
     font-size:ms(1);
+    font-weight: bold;
     margin-top: 2.7em;
     padding-left: 20px;
     margin-top: 0em;
@@ -122,10 +124,14 @@ slide-nav <div>
 
     a{
         @include hover-links;
+        @include background($nav-link-bgColor);
+        border-bottom: none;
+        padding: 5px;
+        background-size: 100% 100px;
         font-size:ms(1);
         margin-left: -20px;
         font-family: $lato;
-        color:rgba($color-3, .5);
+        color:$text;
         display: inline-block;
         &.selected{
             color:cyan;
@@ -133,7 +139,7 @@ slide-nav <div>
         // add class `no-touch` (modernizr), select slide-nav,
         // select slide-primary-nav with & selector and apply hover state
         &:hover{
-            color:$sand;
+            color:$hawaiian-blue;
         }
     }
 }

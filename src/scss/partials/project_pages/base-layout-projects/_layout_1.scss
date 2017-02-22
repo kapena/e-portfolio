@@ -1,7 +1,7 @@
 @import "modules/projects/pages_module";
 @import "vendor/mod-scale";
 @import "partials/variables";
-@import "modules/projects-page/projects-module";
+// @import "modules/projects-page/projects-module";
 @import "modules/global-mqs/mqs";
 
 body{
@@ -132,7 +132,7 @@ body{
 .box_1,.box_2{top:0px;}
 
 :hover.box_1{
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .box_3,.box_4{
@@ -166,7 +166,7 @@ body{
 
 .discript1{
     font-size: ms(1);
-    opacity: 1;
+    // opacity: 1;
     margin-top: 250px;
     color:white;
 }
@@ -204,52 +204,18 @@ body{
     height: 100%;
 }
 
-.halfCircle{
-    fill:$secret-halfc;
-    opacity:$halfCircle-opacity;
-    z-index: 2;
-}
-
-.halfCircle1{
-    transform:translateY(257px);
-}
-
-#circle-paths{
-    transform:translateY(-25px);
-}
-
-.rect_on_device{
-    fill:$secret-rect;
-    opacity:$halfCircle-opacity;
-}
-
-
-.rect_on_device2{
-    fill:$secret-sm-rect;
-    opacity:$halfCircle-opacity;
-}
-
-
-#circle-paths{
-    transform:translateY(-25px);
-}
-
 .link{
     font-family: $monte;
     fill:white;
+    @include transition(fill 0.2s);
     font-size: 1.2em;
     font-weight: 700;
 }
 
-.viewtext{
-    font-family: $monte;
-    fill:black;
-
-    &:hover {
-        fill:blue;
-    }
+.projects:hover .link{
+    fill:$typeColorB;
+    @include transition(fill 0.2s);
 }
-
 li{
     list-style: none;
 }

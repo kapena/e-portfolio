@@ -5,3 +5,7 @@ header #chat{
 header #bio{
     @extend #projects;
 }
+
+.p-p, .r, .u-r, .p-d, {
+    @extend .s-d;
+}

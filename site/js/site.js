@@ -152,7 +152,7 @@ setTimeout (function(){
         circles.animate({
             opacity:0.5
         },1000);
-    },10000);
+    },800);
 
 // setTimeout to rotate circles 360 deg
 setTimeout (function (){
@@ -161,8 +161,10 @@ setTimeout (function (){
     function animation () {
         circles.stop().animate({
         // rotate circles 360 deg
-        transform:'r360, t20, t20' }, 10000);
+        transform:'r720, t20, t20',
+        easing:mina.easeinout },15000);
         }
+    // animation();
     }, 8000);
 
 // initalize snap on skill-spect svg
@@ -173,7 +175,7 @@ var roygbiv = Snap.selectAll('#roygbiv');
 // select icons
 var icons = Snap.select('#icons');
 // select text
-var text = Snap.select('#web-print-film');
+// var text = Snap.select('#web-print-film');
 // newton wheel just colors
 var newton = Snap.select('#newton');
 // newton wheel black lines
@@ -195,10 +197,10 @@ newton.click(function(){
         opacity:0
     },200);
 
-    // animate opacity of text to 1]
-    text.animate({
-        opacity:1
-    },300);
+    // // animate opacity of text to 1]
+    // text.animate({
+    //     opacity:1
+    // },300);
     // set stroke attr to circles
     // set stroke attr of circles
     cyan.attr({

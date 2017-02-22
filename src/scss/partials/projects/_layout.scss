@@ -52,25 +52,15 @@
     stroke-width:11px;
 }
 
-.halfCircle{
-    opacity:$halfCircle-opacity;
-    z-index: 2;
-    transform:translateY(250px);
-}
-
-.halfCircle1{
-    transform:translateY(250px);
-}
-
-#circle-paths{
-    transform:translateY(-25px);
-}
-
 .link{
     font-family: $monte;
     fill:white;
     font-size: 1.3em;
     font-weight: 700;
+}
+
+.s-d{
+    transform:translateY(-12px);
 }
 
 .viewtext{
@@ -81,7 +71,6 @@
         fill:blue;
     }
 }
-
 .border{
     @include tablet {
         visibility: hidden;
@@ -117,13 +106,19 @@
     }
 
     @include proj_imgs-stack-mobile {
-        height:2150px;
+        height:2000px;
     }
 }
 
 .proj-container{
     @include tablet {
         flex-wrap: wrap;
+    }
+}
+
+#project-name{
+    @include tablet {
+        transform:translateY(-21px);
     }
 }
 

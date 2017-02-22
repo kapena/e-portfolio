@@ -2,7 +2,7 @@
 @import "vendor/mod-scale";
 @import "partials/variables";
 @import "modules/global-mqs/mqs";
-@import "modules/projects-page/projects-module";
+// @import "modules/projects-page/projects-module";
 
 body{
     @include body-mixin;
@@ -169,44 +169,15 @@ html{
 .line-divider{
     @include width-height-100percent;
 }
-
-.halfCircle{
-    // fill:$tension-halfc;
-    fill:#DD76E5;
-    opacity: 0.9;
-    z-index: 2;
-    transform:translateY(250px);
-}
-
-.halfCircle1{
-    transform:translateY(250px);
-}
-
-#circle-paths{
-    transform:translateY(-25px);
-}
-
-.rect_on_device{
-    fill:$tension-rect;
-}
-
-.rect_on_device2{
-    fill:$tension-sm-rect;
-    opacity: 0.5;
-}
-
 .link{
     font-family: $monte;
     fill:white;
+    @include transition(fill 0.2s);
     font-size: 1.2em;
     font-weight: 700;
 }
 
-.viewtext{
-    font-family: $monte;
-    fill:black;
-
-    &:hover {
-        fill:blue;
-    }
+.projects:hover .link{
+    fill:$typeColorB;
+    @include transition(fill 0.2s);
 }
