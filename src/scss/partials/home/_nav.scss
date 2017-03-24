@@ -14,9 +14,9 @@
     height:64px;
     width:64px;
     border-radius: 50%;
-    background-color:$circleNav3;
+    background-color:$circleNav;
     opacity: 0;
-    visibility: hidden;
+    // visibility: hidden;
 }
 
 .show{
@@ -45,7 +45,7 @@ slide-navigation-wrapper
     display: block;
     // background-color:$circleNav;
     @include background($nav-bg-gradient);
-    visibility: hidden;
+    // visibility: hidden;
     // @include transition(visibility 0s $animation-dur);
 
     .slide-navigation-wrapper{
@@ -75,14 +75,26 @@ slide-navigation-wrapper
     }
 }
 
-.slide-nav, .animate-opacity, .opcy-off{
+.slide-nav{
     opacity:0;
 }
 
 // fade in bg when jQ triggers class animate-opacity
-.animate-opacity{
-    @include transition(opacity 0.8s ease);
+.animate-o-open{
+    transition:opacity 0.8s ease;
     opacity:1;
+}
+
+.animate-o-close{
+    transition:opacity 0.8s ease;
+    opacity:0;
+    // visibility: visible;
+}
+
+.animate-o-close-link{
+    transition:opacity 0.8s ease;
+    opacity:0;
+    // visibility: visible;
 }
 
 /* Nest 2
@@ -142,4 +154,29 @@ slide-nav <div>
             color:$hawaiian-blue;
         }
     }
+}
+
+.animateTop{
+  transition:transform 0.5s;
+  transform:translateY(10px);
+}
+
+.animateBottom{
+  transition:transform 0.5s;
+  transform:translateY(-10px);
+}
+
+.is-closed{
+  transition:transform 0.5s;
+  transform:translateY(0px);
+}
+
+.backup{
+  transition:transform 0.5s;
+  transform:translateY(0px);
+}
+
+.backup-link{
+  transition:transform 0.5s;
+  transform:translateY(0px);
 }

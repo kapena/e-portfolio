@@ -3,7 +3,7 @@
     overflow-y: scroll;
     overflow-y: scroll; /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch;
-    background-color: seashell;
+    background-color: whitesmoke;
 }
 
 @mixin padding-left-right ($l-r:65px) {
@@ -30,13 +30,12 @@
 // project discription
 @mixin projDscript {
     position: relative ;
-    width:95%;
+    width:80%;
     margin: auto;
     text-align: center;
     margin-top: 5px;
     bottom: 30px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding:2rem 0rem 2rem;
 }
 // rectangular boxes that contain discriptions
 @mixin display_box {
@@ -100,23 +99,19 @@
     overflow: hidden;
     border-radius: 50%;
     width:45px;
+    padding:0rem 1rem 0rem;
     position: relative;
 }
 
-@mixin social-links {
-    text-align: center;
-    position: relative;
-    display: inline-block;
-    bottom: 30px;
-    margin-left: 70px;
+@mixin more-proj {
+  text-align: center;
+  margin:0px;
+  padding-bottom:2rem;
+  position: relative;
 }
 
 @mixin link-hover-footer {
-    border:none;
-    border-bottom: 2px solid blue;
-    background:linear-gradient(cyan, cyan) no-repeat bottom;
-    background-size: 100% 1px;
-    @include transition(.3s,color .2s .1s);
+    padding:0rem 1rem 0rem;
     text-decoration: none;
 }
 

@@ -40,7 +40,8 @@ $m-b-under-imgs:75px;
 
 /* Colors project pages */
 /* halfCircle path colors indiv project pages */
-$halfCircle-opacity:0.9;
+$rect-color:silver;
+$halfCircle-opacity:0.96;
 // Secret D
 $secret-halfc:#FF503F;
 // Urban
@@ -129,6 +130,7 @@ $vivd_capt_box-shadow:0 7px 0 #F6B8C0;
 // Main Page
 $typeColor:#333333;
 $typeColorB:#423F3F;
+$headingWeight:500;
 $other-projects:#6B6C6F;
 $projects:cyan;
 $bio:yellow;
@@ -138,7 +140,8 @@ $lime-green:limegreen;
 $hawaiian-blue:#1010EC;
 $hawaiian-red:#FF2A2A;
 $trop-purp:#b871f7;
-$border-top-bottom:1px solid $trop-purp;
+$bluesea:#00f;
+$border-top-bottom:1px solid $bluesea;
 $nav-bg-gradient:linear-gradient(steelblue -5% ,darkviolet);
 
 // animation of sliding nav
@@ -146,7 +149,7 @@ $animation-dur:0.7s;
 // kerning on aloha text
 $padding-aloha:10px;
 // PAGE HEIGHTS
-$project-pg-height:1389px;
+$project-pg-height:65em;
 $about-pg-height:1300px;
 $contact-pg-height:1500px;
 
@@ -169,8 +172,8 @@ $color-3: #ffffff; // White
 $color-4: #D7E1DC; // OffCyan
 
 // Footer
-$footer_social:gainsboro;
-$footer_nav:skyblue;
+$footer_social:#e0e0e0;
+$footer_nav:silver;
 $aloha_goodbye:seashell;
 
 $bottom_line:0 7px 0 rgb(252, 242, 73);

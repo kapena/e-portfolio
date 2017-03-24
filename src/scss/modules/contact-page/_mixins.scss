@@ -11,12 +11,12 @@
     position: relative;
     @include transition(border-radius 0.8s ease);
     background-color: #fcfcfc;
-    border:1px solid $trop-purp;
+    border:1px solid $bluesea;
 }
 
 @mixin border-top-bottom {
-    border-top: 1px solid $trop-purp;
-    border-bottom: 1px solid $trop-purp;
+    border-top: 1px solid $bluesea;
+    border-bottom: 1px solid $bluesea;
 }
 
 @mixin textAlignCenter {
@@ -24,7 +24,7 @@
     position: relative;
 }
 
-@mixin padding-l-r-t-b-mesg ($padding-l-r:3em,$padding-t-b:2em) {
+@mixin padding-l-r-t-b-mesg ($padding-l-r:2rem,$padding-t-b:2rem) {
     padding-top:$padding-t-b;
     padding-bottom: $padding-t-b;
     padding-left:$padding-l-r;
@@ -50,14 +50,14 @@
     position: relative;
     @include transition(border-radius 0.8s ease);
     background-color: #fcfcfc;
-    border:1px solid $trop-purp;
+    border:1px solid $bluesea;
 }
 
 @mixin lableSpacing {
     font-family:$monte;
     @include ms-respond(font-size,1);
-    border-top:1px solid $trop-purp;
-    border-bottom:1px solid $trop-purp;
+    border-top:1px solid $bluesea;
+    border-bottom:1px solid $bluesea;
     margin-left:20px;
     position: relative;
     padding-bottom: 10px;
@@ -71,6 +71,6 @@
     outline:none;
     @include transition(border-radius 0.8s ease);
     border-radius:8px;
-    border:1px solid $trop-purp;
-    box-shadow: 0px 0px 4px $trop-purp;
+    border:1px solid $bluesea;
+    box-shadow: 0px 0px 4px $bluesea;
 }

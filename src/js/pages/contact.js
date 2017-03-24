@@ -4,9 +4,8 @@ $(function(){
     var textarea =  $('.your-name-area, .your-email-area, .your-msg');
     var desktop = Modernizr.mq('(min-width:1080px)');
     var device = Modernizr.mq('(max-width:780px)');
-    var prefooter = $('.pre-footer');
+    var prefooter = $('.text-footer');
     var hiddenSuccess = $('.hidden-success-div');
-    var preFooter = $('pre-footer');
     var fieldset = $('#field-set');
 
     // trigger click event on form elements to provide parsley-errors-list space
@@ -29,7 +28,7 @@ submitbtn.click(function(){
     if (hiddenSuccess.prop('visibility','visible') & desktop) {
         prefooter.css('top','85px');
     } else {
-        prefooter.css('top','360px');
+        prefooter.css('top','21rem');
     }
 });
 

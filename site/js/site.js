@@ -54,9 +54,8 @@ $(function(){
     var textarea =  $('.your-name-area, .your-email-area, .your-msg');
     var desktop = Modernizr.mq('(min-width:1080px)');
     var device = Modernizr.mq('(max-width:780px)');
-    var prefooter = $('.pre-footer');
+    var prefooter = $('.text-footer');
     var hiddenSuccess = $('.hidden-success-div');
-    var preFooter = $('pre-footer');
     var fieldset = $('#field-set');
 
     // trigger click event on form elements to provide parsley-errors-list space
@@ -79,7 +78,7 @@ submitbtn.click(function(){
     if (hiddenSuccess.prop('visibility','visible') & desktop) {
         prefooter.css('top','85px');
     } else {
-        prefooter.css('top','360px');
+        prefooter.css('top','21rem');
     }
 });
 
@@ -108,134 +107,55 @@ submitbtn.click(function(){
     contactForm.trigger('sumbit');
 });
 
-// DOM ready function
-$(window).load(function(){
+
 // Drawing surface
-var circleCanvas = Snap('.circle-canvas');
-    // viewbox of svg
-    circleCanvas.attr({
-        id:"mixer",
-        viewBox:"0 0 460 400",
-        width: '450px',
-        height:'400px'
-    });
-
-// circles
-var circle1 = circleCanvas.circle(210,120,70);
-    circle1.attr({
-        id:"cir1",
-        fill:"cyan"
-    });
-var circle2 = circleCanvas.circle(260,200,70);
-    circle2.attr({
-        id:"cir2",
-        fill:"yellow"
-    });
-
-var circle3 = circleCanvas.circle(160,200,70);
-    circle3.attr({
-        id:"cir3",
-        fill:"magenta"
-    });
-
-    // grouped circles
-var circleGroup = circleCanvas.g(circle1,circle2,circle3).attr({
-    opacity:0,
-    id:"cir"
+var hGraph = Snap('#skills-graphic');
+var skill = Snap.select('.skill');
+// graphic circle
+var gC = Snap.select('.gC');
+// graphic triangle
+var gT = Snap.select('.gT');
+// header footer
+var nav = Snap.select('.wN');
+var footer = Snap.select('.wF');
+// content
+var p1 = Snap.select('.p1');
+var img = Snap.select('.img');
+var p2 = Snap.select('.p2');
+var webD = Snap.select('.webD');
+//digital
+var playbtn = Snap.select('.play');
+var frame = Snap.select('.frame');
+hGraph.mousemove(function(e){
+    skill.addClass('move').removeClass('under');
+    // circle and triangle graphic
+    gC.addClass('playGc').removeClass('gC');
+    gT.addClass('playGt').removeClass('gT');
+    // nav and footer web graphic
+    nav.addClass('playwN').removeClass('wN');
+    footer.addClass('playwF').removeClass('wF');
+    // content web graphic
+    p1.addClass('playP1').removeClass('p1');
+    img.addClass('playImg').removeClass('img');
+    p2.addClass('playP2').removeClass('p2');
+    webD.addClass('move-L').removeClass('webD');
+    // digital graphic
+    playbtn.addClass('movePlay').removeClass('play');
+    frame.addClass('skewFrame').removeClass('frame');
 });
 
-// select cir id
-var circles = circleCanvas.select('#cir');
-
-// animate opacity of circles to 0.5 at 3000 milloseconds
-setTimeout (function(){
-        circles.animate({
-            opacity:0.5
-        },1000);
-    },800);
-
-// setTimeout to rotate circles 360 deg
-setTimeout (function (){
-    // animation function
-    animation();
-    function animation () {
-        circles.stop().animate({
-        // rotate circles 360 deg
-        transform:'r720, t20, t20',
-        easing:mina.easeinout },15000);
-        }
-    // animation();
-    }, 8000);
-
-// initalize snap on skill-spect svg
-var skillSpect = Snap('.skill-spect');
-var skilz3 = Snap(".skilz-3"); // init svg2
-var circleSet = Snap.selectAll("#roygbiv-circles");
-var roygbiv = Snap.selectAll('#roygbiv');
-// select icons
-var icons = Snap.select('#icons');
-// select text
-// var text = Snap.select('#web-print-film');
-// newton wheel just colors
-var newton = Snap.select('#newton');
-// newton wheel black lines
-var newtonWheel = Snap.select('#newtonwheel');
-// circles
-var cyan = Snap.select('#cyan');
-var yellow  = Snap.select('#yellow');
-var magenta = Snap.select("#magenta");
-// reveal newton illustration
-newton.mouseover(function(){
-    newtonWheel.animate({
-        opacity:1
-    },800);
-});
-// trigger click event on newton
-newton.click(function(){
-        // animate opacity of icons to 0
-    icons.animate({
-        opacity:0
-    },200);
-
-    // // animate opacity of text to 1]
-    // text.animate({
-    //     opacity:1
-    // },300);
-    // set stroke attr to circles
-    // set stroke attr of circles
-    cyan.attr({
-        "stroke":'red',
-        "stroke-opacity":0
-    });
-    yellow.attr({
-        "stroke-opacity":0,
-        "stroke":'lime'
-    });
-    magenta.attr({
-        "stroke-opacity":0,
-        "stroke":'blue'
-    });
-    // animate stroke-opacity
-    // animate fill-opacity
-    // animate dashoffset of circles to get stroke animation
-    cyan.animate({
-        "stroke-opacity":"1",
-        "fill-opacity":"0.8"
-    },800);
-    yellow.animate({
-        "stroke-opacity":"1",
-        "fill-opacity":"0.8"
-    },800);
-    magenta.animate({
-        "stroke-opacity":"1",
-        "fill-opacity":"0.8"
-    },800);
-
-// animate each hex's opacity
-circleSet.animate([{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500]);
-
-roygbiv.animate([{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500],[{opacity:1},500]);
-    });
+hGraph.mouseout(function(){
+  skill.addClass('under').removeClass('move');
+  gC.addClass('gC').removeClass('playGc');
+  gT.addClass('gT').removeClass('playGt');
+  nav.addClass('wN').removeClass('playwN');
+  footer.addClass('wF').removeClass('playwF');
+  p1.addClass('p1').removeClass('playP1');
+  img.addClass('img').removeClass('playImg');
+  p2.addClass('p2').removeClass('playP2');
+  webD.addClass('webD').removeClass('move-L');
+  playbtn.addClass('play').removeClass('movePlay');
+  frame.addClass('frame').removeClass('skewFrame');  
 });
 
 $(window).scroll(function(){
@@ -248,33 +168,4 @@ $(window).scroll(function(){
     }else if($(window).scrollTop() < 600){
         slideNavtrigger.css('visibility','hidden');
     }
-});
-
-$(function(){
-// assign click event to slide-nav-trigger
-var slideNav = $('#slide-nav');
-var navLinks = $('#roygbiv-spec, #proj-spec, #about-spec, #ctact-spec');
-var allNav = $('#slide-nav, #animate-opacity');
-
-$('.slide-nav-trigger').click(function(e){
-    e.preventDefault(); // cancel the default action
-    // when user clicks slide-nav-trigger toggleClass navigation-is-open to body
-    $('body').toggleClass('navigation-is-open');
-    // if body hasClass of navigation-is-open toggled on
-    if ($('body').hasClass('navigation-is-open')){
-        // animate opacity on slide-nav from 0 to 1
-        slideNav.addClass('animate-opacity');
-        // if navigation-is-open is toggled off
-        } else {
-            // animate opacity from 1 to 0
-        slideNav.removeClass('animate-opacity');
-        }
-    });
-
-    navLinks.click(function() {
-        // alert('clicked');
-        // remove navigation-is-open class
-        var navIsOpen = $('.navigation-is-open');
-        navIsOpen.removeClass();
-    });
 });
