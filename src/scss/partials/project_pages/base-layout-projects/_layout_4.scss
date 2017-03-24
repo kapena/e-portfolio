@@ -14,9 +14,8 @@ html{
 }
 
 .proj{
-    text-align: center;
-    bottom: 15px;
-    margin-bottom: 30px;
+  text-align: center;
+  @include ms-respond(font-size,4);
 }
 
 .header-img{
@@ -37,7 +36,7 @@ html{
 }
 
 .project-desc{
-    @include ms-respond(font-size,1);
+    @include ms-respond(font-size,2);
     @include projDscript;
     border-bottom:$urban_border;
 }
@@ -140,6 +139,11 @@ html{
     top:372px;
 }
 
+.more-projects{
+  @include ms-respond(font-size,3);
+  @include more-proj;
+}
+
 .discript1{
     font-size: ms(1);
     opacity: 1;
@@ -190,13 +194,13 @@ html{
 }
 .link{
     font-family: $monte;
-    fill:white;
+    fill:$typeColor;
     @include transition(fill 0.2s);
     font-size: 1.2em;
     font-weight: 700;
 }
 
-.projects:hover .link{
-    fill:$typeColorB;
+.other-projects:hover .halfRect1{
+    fill:whitesmoke;
     @include transition(fill 0.2s);
 }

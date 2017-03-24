@@ -1,54 +1,37 @@
 @import "partials/variables";
 @import "modules/bio-page/bio-module";
+@import "modules/home-page/home-module";
 @import "partials/typography";
 @import "vendor/bourbon";
 
-.about-page{
-    margin-top:35px;
-    height:$about-pg-height;
-}
-
-.about-heading{
-    bottom:50px;
-    @include page-headings;
-}
-
-.line_above-about,.line_under-about{
-    padding-bottom:50px;
-    @include svg-line-divider;
-}
-
-.line_under-about{
-    bottom:50px;
-}
-
 .about-short-disc{
-    @include ms-respond(font-size,1);
-    @include bio;
-}
-
-.workin{
-    display: block;
-    font-weight: bold;
-}
-
-#aloha{
-    position:relative;
-    bottom:5px;
-    font-weight: 600;
-    @include ms-respond(font-size,1);
+    @include ms-respond(font-size,2);
+    @include left-right-margin;
+    line-height:ms(1);
+    padding: 2rem;
+    position: relative;
+    text-align: center;
 }
 
 .disc-one{
     bottom:50px;
 }
 
-.disc-two{
-    top:50px;
+#inspires{
+  padding:1rem 0rem 1rem;
+  text-align: center;
+  @include page-headings;
+  font-weight:800;
 }
+
+.list{
+  display: block;
+  margin-bottom:1rem;
+}
+
 .bio-image{
     width:100%;
-    margin-top:25px;
+    // margin-top:2rem;
     .my-story-seq{
         width:100%;
         margin: auto;
@@ -57,69 +40,8 @@
     }
 }
 
-#sunset,#shillo,#rmit, #sod, #truemax, #alohameaning{
-    text-decoration: none;
-    color:#7F00FF;
-}
-
-.list{
-    position:relative;
-    font-weight: 600;
-    bottom:5px;
-    border-bottom: 2px solid $trop-purp;
-}
-
-.whatIknow{
-    border-top: 2px solid $trop-purp;
-    border-bottom: 2px solid $trop-purp;
-}
-
-#i-know{
-    display: block;
-    position: relative;
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-.skills{
-    position: relative;
-    height: 0;
-    width: 100%;
-    padding: 0 0 74%;
-}
-
-.tap-or-click{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    @include page-headings;
-    @include ms-respond(font-size,3);
-
-}
-
-.why{
-    text-align: center;
-    // @include ;
-}
-
-.tap-or-click{
-    @include small-tablet{
-        top:50px;
-    }
-}
-
-// skills div contains skill-spect svg
-// mqs to keep svg somewhat centered at diff screen sizes
-.skills{
-    @include tablet {
-        margin-top: 120px;
-        padding-bottom: 90%;
-    }
-
-    @include mobile_device {
-        margin-top:80px;
-    }
-
-    @include desktop {
-        top:150px;
-    }
+.about-short-disc {
+  @include tablet {
+    margin:10% 0% 10%;
+  }
 }

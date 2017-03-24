@@ -6,6 +6,10 @@ header #bio{
     @extend #projects;
 }
 
+header #getintouch{
+  @extend #projects;
+}
+
 .p-p, .r, .u-r, .p-d, {
     @extend .s-d;
 }

@@ -5,8 +5,8 @@
 
 #submit-form{
     color:#fcfcfc;
-    border: 2px solid $trop-purp;
-    background-color:$trop-purp;
+    border: 2px solid $bluesea;
+    background-color:$bluesea;
     font-family: $monte;
     @include ms-respond(font-size,1);
     font-weight: bold;
@@ -16,11 +16,11 @@
 
 #submit-form:hover {
     color: #fcfcfc;
-    border: 2px solid magenta;
-    background-color:magenta;
+    border: 2px solid royalblue;
+    background-color:royalblue;
     // mix-blend-mode:multiply;
     // @include transition(box-shadow, 0.8s);
-    box-shadow: 0px 5px 0 darkviolet;
+    box-shadow: 0px 5px 0 $bluesea;
 }
 
 #submit-form:active{

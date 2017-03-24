@@ -3,7 +3,6 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
-
 .proj-headings{
     position: relative;
     top:408px;
@@ -23,17 +22,12 @@
     top:410px;
 }
 
-.project-page{
-    height:$project-pg-height;
-}
-
 .proj-container{
+    margin: 4rem 0rem 4rem;
     position: relative;
     display: flex;
     flex-direction: row;
-    top:30em;
     justify-content: center;
-    margin: 0 auto;
     flex-wrap: wrap;
 }
 
@@ -54,7 +48,7 @@
 
 .link{
     font-family: $monte;
-    fill:white;
+    fill:#383838;
     font-size: 1.3em;
     font-weight: 700;
 }
@@ -64,24 +58,36 @@
 }
 
 .viewtext{
+    font-size:1.2em;
     font-family: $monte;
-    fill:black;
-
-    &:hover {
-        fill:blue;
-    }
-}
-.border{
-    @include tablet {
-        visibility: hidden;
-    }
 }
 
-#urban{
-    @include tablet {
-        stroke:#14bdcc;
-    }
+#getintouch:hover,
+#getintouch:focus {
+   color:blue;
 }
+
+
+#getintouch:hover{
+   background-size:100% 100%;
+}
+
+
+#getintouch{
+  font-family: $monte;
+  @include hover-links;
+  @include ms-respond(font-size,1);
+  color:$typeColor;
+  padding: 2px;
+  padding-left: 1rem;
+  position:relative;
+  bottom:2rem;
+}
+
+.skill{
+  @include ms-respond(font-size,-3);
+}
+
 
 .proj-container{
     @include xl-desktop{
@@ -96,22 +102,9 @@
 
 }
 
-.project-page{
-    @include proj_img-wrap_sm-deskt {
-        height:1700px;
-    }
-
-    @include proj_imgs-wrap-tablet {
-        height:2500px;
-    }
-
-    @include proj_imgs-stack-mobile {
-        height:2000px;
-    }
-}
-
 .proj-container{
     @include tablet {
+        margin: 0%;
         flex-wrap: wrap;
     }
 }
@@ -132,8 +125,4 @@ figure {
     @include lrg-desktop {
         margin:20px;
     }
-    // @include xl-desktop {
-    //     margin: 50px;
-    //     margin-top: 15px;
-    // }
 }

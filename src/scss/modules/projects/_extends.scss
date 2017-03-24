@@ -7,19 +7,19 @@
 
 
 :hover.box_2,:hover.box_3,:hover.box_4,:hover.box_5{
-    @extend :hover.box_1;
+    @extend :hover.box_1 !optional;
 }
 
 .box_2,.box_3,.box_4,.box_5,.box_6{
-    @extend .box_1;
+    @extend .box_1 !optional;
 }
 
-.image2-container,.image3-container,.image4-container{
-    @extend .image1-container;
-}
+// .image2-container,.image3-container,.image4-container{
+//     @extend .image1-container;
+// }
 
 .discript2,.discript3,.discript4,.discript5,.discript6{
-    @extend .discript1;
+    @extend .discript1 !optional;
 }
 
 .disp2,.disp3,.disp4,.disp5,.disp6{
@@ -30,10 +30,15 @@
     @extend .caption1;
 }
 
-.social2-gle,.social3-in,.social4-twitter,.social5-behance{
+.social3-in,.social4-twitter,.social5-behance{
     @extend .social1-gh;
 }
 
+
 .google,.linkedin,.twitter,.behance{
     @extend .github;
+}
+
+.projects,.about,.contact,.blog{
+  @extend .home;
 }

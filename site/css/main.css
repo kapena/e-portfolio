@@ -53,14 +53,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 p {
   font-family: "Lato", "serif";
   color: #423F3F;
@@ -75,19 +67,12 @@ html {
 
 body {
   min-height: 100%;
-  background-color: seashell; }
+  background-color: whitesmoke; }
 
 header {
   padding-top: 30px;
   bottom: 100px;
   top: 30px; }
-
-#mixer {
-  position: absolute;
-  height: 430px;
-  width: 100%;
-  max-width: 100%;
-  mix-blend-mode: darken; }
 
 .aloha {
   font-family: "Montserrat", sans-serif;
@@ -117,25 +102,25 @@ header {
   padding-left: 2px;
   padding-right: 2px;
   padding-bottom: 1px;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 1.1em;
+  margin: 0% 15% 0%;
+  font-size: 1.21em;
   text-align: center;
-  line-height: 1.61803em;
-  font-size: 1.61803em; }
+  line-height: 1.61803em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .intro-msg {
-      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+      font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
     .intro-msg {
-      font-size: 1.333em; } }
+      font-size: 1.77689em; } }
+
+.main {
+  padding: 1rem 0rem 1rem; }
 
 .built {
   padding-left: 2px;
   padding-right: 2px;
   padding-bottom: 1px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 0% 15% 0%;
   text-align: center;
   font-size: 1em; }
   @media (min-width: 15em) and (max-width: 60em) {
@@ -145,17 +130,17 @@ header {
     .built {
       font-size: 1em; } }
 
-header #projects:hover, header #chat:hover, header #bio:hover,
-header #projects:focus, header #chat:focus, header #bio:focus {
+header #projects:hover, header #chat:hover, header #bio:hover, header #getintouch:hover,
+header #projects:focus, header #chat:focus, header #bio:focus, header #getintouch:focus {
   color: blue; }
 
-header #projects, header #chat, header #bio, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
+header #projects, header #chat, header #bio, header #getintouch, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
   color: #333333;
   padding: 2px;
   font-weight: 900;
   margin: 0 -2px; }
 
-header #projects, header #chat, header #bio, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
+header #projects, header #chat, header #bio, header #getintouch, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
   border: none;
   border-bottom: 2px solid blue;
   background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
@@ -165,166 +150,112 @@ header #projects, header #chat, header #bio, header .pre-footer #chat, .pre-foot
   transition: .2s,color .1s .1s;
   text-decoration: none; }
 
-header #projects:hover, header #chat:hover, header #bio:hover {
+header #projects:hover, header #chat:hover, header #bio:hover, header #getintouch:hover {
   background-size: 100% 100%; }
 
-circle {
-  mix-blend-mode: multiply; }
+.tools {
+  display: flex;
+  justify-content: center; }
+
+#skills-graphic {
+  height: 320px; }
+
+.graphic-text {
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F;
+  font-size: 0.90909em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .graphic-text {
+      font-size: calc( 0.90909em + -0.1589 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .graphic-text {
+      font-size: 0.75019em; } }
+
+.skill {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75131em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .skill {
+      font-size: calc( 0.75131em + -0.32912 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .skill {
+      font-size: 0.42219em; } }
+
+.under {
+  transition: transform 0.3s; }
+
+.move {
+  transition: transform 0.3s;
+  transform: translateY(-35px); }
+
+.gC, .gT {
+  transition: transform 0.3s;
+  transform: translateY(0px); }
+
+.playGc {
+  transition: transform 0.3s;
+  transform: translateY(10px); }
+
+.playGt {
+  transition: transform 0.3s;
+  transform: translateY(-10px); }
+
+.wN, .wF {
+  transition: font-size 0.5s;
+  font-size: 100px; }
+
+.playwN, .playwF {
+  transition: font-size 0.5s;
+  font-size: 60px; }
+
+.p1, .img, .p2 {
+  transition: font-size 0.5s;
+  font-size: 100px; }
+
+.playP1, .playImg, .playP2 {
+  transition: font-size 0.5s;
+  font-size: 60px; }
+
+.webD {
+  transition: transform 0.5s;
+  transform: translateX(0px); }
+
+.move-L {
+  transition: transform 0.5s;
+  transform: translateX(8px); }
+
+.play {
+  transition: transform 0.5s;
+  transform: translateX(0px); }
+
+.frame {
+  transition: transform 0.5s;
+  transform: skew(0deg, 0deg); }
+
+.skewFrame {
+  transition: transform 0.5s;
+  transform: skew(13deg, 0deg); }
+
+.movePlay {
+  transition: transform 0.5s;
+  transform: translateX(-34px); }
+
+.tools {
+  text-align: center;
+  font-size: 1.1em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .tools {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .tools {
+      font-size: 1.333em; } }
 
 @media only screen and (max-width: 1030px) {
-  #subtractive {
-    x: 7em;
-    width: 15em; } }
+  .under, .skill {
+    visibility: hidden; } }
 
-/*  mixins, extends and colors inside home_module */
-/* Here I import all my modules into the home-module */
-/* Padding mixin for links inside paragraph*/
-/* Pushing intro-msg margins in closer */
-/* Modular Scale */
-/* Colors project pages */
-/* halfCircle path colors indiv project pages */
-/* Rectangle colors for devices small and large */
-/* borders */
-/**** Google Fonts ****/
-/* Lato Variables */
-/* Base Size */
-/**** Responsive Scales ****/
-p {
-  font-family: "Lato", "serif";
-  color: #423F3F;
-  line-height: 1.5em; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  color: #423F3F; }
-
-.slide-nav-trigger {
-  position: fixed;
-  z-index: 3;
-  left: 5%;
-  top: 20px;
-  height: 64px;
-  width: 64px;
-  border-radius: 50%;
-  background-color: #51585A;
-  opacity: 0;
-  visibility: hidden; }
-
-.show {
-  opacity: 1;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out; }
-
-#one, #two, #three {
-  mix-blend-mode: screen; }
-
-/* Main Components Most of Styling*/
-/* Nest 1
-slide-nav
-slide-navigation-wrapper
-*/
-.slide-nav {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: block;
-  background: -webkit-linear-gradient(steelblue -5%, darkviolet);
-  background: linear-gradient(to   , darkviolet);
-  visibility: hidden; }
-  .slide-nav .slide-navigation-wrapper {
-    height: 100%;
-    overflow-y: auto;
-    overflow-scrolling: touch;
-    padding: 40px 5% 40px calc(10% + 80px);
-    -webkit-transition: translateZ(0);
-    -moz-transition: translateZ(0);
-    transition: translateZ(0);
-    backface-visibility: hidden;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
-    -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
-    transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78); }
-  .navigation-is-open .slide-nav {
-    visibility: visible; }
-    .navigation-is-open .slide-nav .slide-navigation-wrapper {
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      -ms-transform: translateX(0);
-      -o-transform: translateX(0);
-      transform: translateX(0);
-      -webkit-transition: 0.5s;
-      -moz-transition: 0.5s;
-      transition: 0.5s; }
-
-.slide-nav, .animate-opacity, .opcy-off {
-  opacity: 0; }
-
-.animate-opacity {
-  -webkit-transition: opacity 0.8s ease;
-  -moz-transition: opacity 0.8s ease;
-  transition: opacity 0.8s ease;
-  opacity: 1; }
-
-/* Nest 2
-#title <h2>
-slide-nav <div>
-*/
-#navTitle {
-  font-family: "Lato", "serif";
-  color: #002b36;
-  position: relative;
-  font-size: 1.61803em;
-  font-weight: bold;
-  margin-top: 2.7em;
-  padding-left: 20px;
-  margin-top: 0em; }
-  #navTitle .slide-nav::after {
-    position: absolute;
-    left: 0;
-    bottom: -20px;
-    height: 1px; }
-
-/* Nest 3
- slide-primary-nav <ul>
- links  <a>
-*/
-.slide-nav .slide-primary-nav {
-  margin-top: 5em; }
-  .slide-nav .slide-primary-nav li {
-    list-style: none;
-    margin: 1.6em 0; }
-  .slide-nav .slide-primary-nav a {
-    border: none;
-    border-bottom: 2px solid blue;
-    background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
-    background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
-    background: linear-gradient(cyan, cyan) no-repeat bottom;
-    background-size: 100% 1px;
-    transition: .2s,color .1s .1s;
-    text-decoration: none;
-    background: #1bacf1;
-    background: #1bacf1;
-    border-bottom: none;
-    padding: 5px;
-    background-size: 100% 100px;
-    font-size: 1.61803em;
-    margin-left: -20px;
-    font-family: "Lato", "serif";
-    color: #002b36;
-    display: inline-block; }
-    .slide-nav .slide-primary-nav a.selected {
-      color: cyan; }
-    .slide-nav .slide-primary-nav a:hover {
-      color: #1010EC; }
-
+/* @import "partials/home/nav"; */
 /* Projects  Pg */
 /* Here I import all my modules into the home-module */
 /* Padding mixin for links inside paragraph*/
@@ -354,8 +285,9 @@ h1, h2, h3, h4, h5, h6 {
 .project-heading {
   text-align: center;
   position: relative;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
-  color: #333333;
+  color: #423F3F;
   font-size: 1.4641em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .project-heading {
@@ -367,8 +299,9 @@ h1, h2, h3, h4, h5, h6 {
 .project-discript {
   text-align: center;
   position: relative;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
-  color: #333333;
+  color: #423F3F;
   font-size: 1.4641em;
   font-size: 1.1em; }
   @media (min-width: 15em) and (max-width: 60em) {
@@ -389,16 +322,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 410px; }
 
-.project-page {
-  height: 1389px; }
-
 .proj-container {
+  margin: 4rem 0rem 4rem;
   position: relative;
   display: flex;
   flex-direction: row;
-  top: 30em;
   justify-content: center;
-  margin: 0 auto;
   flex-wrap: wrap; }
 
 .projects {
@@ -415,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .link {
   font-family: "Montserrat", sans-serif;
-  fill: white;
+  fill: #383838;
   font-size: 1.3em;
   font-weight: 700; }
 
@@ -423,18 +352,47 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-12px); }
 
 .viewtext {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif; }
+
+#getintouch:hover,
+#getintouch:focus {
+  color: blue; }
+
+#getintouch:hover {
+  background-size: 100% 100%; }
+
+#getintouch {
   font-family: "Montserrat", sans-serif;
-  fill: black; }
-  .viewtext:hover {
-    fill: blue; }
+  border: none;
+  border-bottom: 2px solid blue;
+  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background-size: 100% 1px;
+  transition: .2s,color .1s .1s;
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #333333;
+  padding: 2px;
+  padding-left: 1rem;
+  position: relative;
+  bottom: 2rem; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    #getintouch {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    #getintouch {
+      font-size: 1.333em; } }
 
-@media only screen and (max-width: 1030px) {
-  .border {
-    visibility: hidden; } }
-
-@media only screen and (max-width: 1030px) {
-  #urban {
-    stroke: #14bdcc; } }
+.skill {
+  font-size: 0.75131em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .skill {
+      font-size: calc( 0.75131em + -0.32912 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .skill {
+      font-size: 0.42219em; } }
 
 @media only screen and (min-width: 1350px) {
   .proj-container {
@@ -446,20 +404,9 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 20em;
     padding-right: 20em; } }
 
-@media only screen and (max-width: 975px) {
-  .project-page {
-    height: 1700px; } }
-
-@media only screen and (max-width: 675px) {
-  .project-page {
-    height: 2500px; } }
-
-@media only screen and (max-width: 465px) {
-  .project-page {
-    height: 2000px; } }
-
 @media only screen and (max-width: 1030px) {
   .proj-container {
+    margin: 0%;
     flex-wrap: wrap; } }
 
 @media only screen and (max-width: 1030px) {
@@ -484,52 +431,28 @@ h1, h2, h3, h4, h5, h6 {
 /* Rectangle colors for devices small and large */
 /* borders */
 .btm-rect-dreaming {
-  fill: #FF3838;
-  opacity: 0.9; }
-
-.top-rect-dreaming {
-  fill: gold;
-  opacity: 0.9; }
+  fill: silver;
+  opacity: 0.96; }
 
 .btm-rect-point {
-  fill: #0A3DD5;
-  opacity: 0.9; }
-
-.top-rect-point {
-  fill: #0DC3CE;
-  opacity: 0.9; }
+  fill: silver;
+  opacity: 0.96; }
 
 .btm-rect-radiate {
-  fill: #00966C;
-  opacity: 0.9; }
-
-.top-rect-radiate {
-  fill: limegreen;
-  opacity: 0.9; }
+  fill: silver;
+  opacity: 0.96; }
 
 .btm-rect-urban {
-  fill: #6197C9;
-  opacity: 0.9; }
-
-.top-rect-urban {
-  fill: #0DC3CE;
-  opacity: 0.9; }
+  fill: silver;
+  opacity: 0.96; }
 
 .btm-rect-print {
-  fill: #7e7e7e;
-  opacity: 0.9; }
-
-.top-rect-print {
-  fill: gold;
-  opacity: 0.9; }
+  fill: silver;
+  opacity: 0.96; }
 
 .btm-rect-royal {
-  fill: #29a2a9;
-  opacity: 0.9; }
-
-.top-rect-royal {
-  fill: #a8f6f3;
-  opacity: 0.9; }
+  fill: silver;
+  opacity: 0.96; }
 
 /* Modular Scale */
 /* Colors project pages */
@@ -636,6 +559,9 @@ h1, h2, h3, h4, h5, h6 {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
+/* Here I import all my modules into the home-module */
+/* Padding mixin for links inside paragraph*/
+/* Pushing intro-msg margins in closer */
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */
@@ -648,293 +574,56 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
-
-.skill-spect {
-  position: absolute;
-  width: 100%;
-  height: 95%;
-  left: 0;
-  top: -100px; }
-
-#circles {
-  transform: translateX(60px);
-  opacity: 0.7; }
-
-#web-print-film {
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  opacity: 0; }
-
-#PRINT-TEXT {
-  transform: translateX(-2px); }
-
-#cyan, #yellow, #magenta {
-  mix-blend-mode: multiply; }
-
-#skilz:hover #web-print-film {
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-  opacity: 1; }
-
-#skilz:hover #icons {
-  opacity: 0; }
-
-#skilz:hover #cyan {
-  fill-opacity: 0.5;
-  stroke: red;
-  -webkit-transition: fill-opacity 0.2s ease-in;
-  -moz-transition: fill-opacity 0.2s ease-in;
-  transition: fill-opacity 0.2s ease-in;
-  -webkit-animation: stroke_line 1s ease-in-out 1;
-  -moz-animation: stroke_line 1s ease-in-out 1;
-  animation: stroke_line 1s ease-in-out 1;
-  stroke-dasharray: 170; }
-
-#skilz:hover #yellow {
-  fill-opacity: 0.5;
-  stroke: lime;
-  -webkit-transition: fill-opacity 0.2s ease-in;
-  -moz-transition: fill-opacity 0.2s ease-in;
-  transition: fill-opacity 0.2s ease-in;
-  -webkit-animation: stroke_line 1s ease-in-out 1;
-  -moz-animation: stroke_line 1s ease-in-out 1;
-  animation: stroke_line 1s ease-in-out 1;
-  stroke-dasharray: 170; }
-
-#skilz:hover #magenta {
-  fill-opacity: 0.5;
-  stroke: blue;
-  -webkit-transition: fill-opacity 0.2s ease-in;
-  -moz-transition: fill-opacity 0.2s ease-in;
-  transition: fill-opacity 0.2s ease-in;
-  -webkit-animation: stroke_line 1s ease-in-out 1;
-  -moz-animation: stroke_line 1s ease-in-out 1;
-  animation: stroke_line 1s ease-in-out 1;
-  stroke-dasharray: 170; }
-
-@keyframes stroke_line {
-  from {
-    stroke-dashoffset: 170; }
-  to {
-    stroke-dashoffset: 0; } }
-
-#skilz-main {
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-  opacity: 1; }
-
-#skilz {
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  -o-transform: translateY(-10px);
-  transform: translateY(-10px); }
-
-#skilz:hover #skilz-main {
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  opacity: 0; }
-
-#roygbiv {
-  opacity: 0;
-  -webkit-tap-highlight-color: transparent; }
-
-#roygbiv-text {
-  transform: translateY(15px); }
-
-#roygbiv-circles {
-  transform: translateY(20px);
-  opacity: 0; }
-
-#newton {
-  -webkit-tap-highlight-color: transparent;
-  transform-origin: center;
-  transform: translateY(23px); }
-
-#newtonwheel {
-  opacity: 0;
-  transform: translateY(20px); }
-
-@media only screen and (min-width: 900px) {
-  .skill-spect {
-    top: -280px;
-    height: 125%; } }
-
-@media only screen and (max-width: 780px) {
-  .skill-spect {
-    height: 125%;
-    top: -45px; } }
-
-@media only screen and (max-width: 465px) {
-  .skill-spect {
-    height: 500px; } }
-
-@media only screen and (max-width: 780px) {
-  #cyan, #yellow, #magenta {
-    stroke: none; } }
-
-/* Modular Scale */
-/* Colors project pages */
-/* halfCircle path colors indiv project pages */
-/* Rectangle colors for devices small and large */
-/* borders */
-/**** Google Fonts ****/
-/* Lato Variables */
-/* Base Size */
-/**** Responsive Scales ****/
-p {
-  font-family: "Lato", "serif";
-  color: #423F3F;
-  line-height: 1.5em; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  color: #423F3F; }
-
-.about-page {
-  margin-top: 35px;
-  height: 1300px; }
-
-.about-heading {
-  bottom: 50px;
-  text-align: center;
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-  font-size: 1.4641em; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .about-heading {
-      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .about-heading {
-      font-size: 3.15733em; } }
-
-.line_above-about, .line_under-about {
-  padding-bottom: 50px;
-  width: 100%;
-  position: relative; }
-
-.line_under-about {
-  bottom: 50px; }
 
 .about-short-disc {
-  font-size: 1.1em;
-  border-bottom: 2px solid #b871f7;
-  border-top: 2px solid #b871f7;
-  padding: 25px;
+  font-size: 1.21em;
+  margin: 0% 15% 0%;
+  line-height: 1.61803em;
+  padding: 2rem;
   position: relative;
-  width: 80%;
-  margin: 5px auto auto;
   text-align: center; }
   @media (min-width: 15em) and (max-width: 60em) {
     .about-short-disc {
-      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+      font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
     .about-short-disc {
-      font-size: 1.333em; } }
-
-.workin {
-  display: block;
-  font-weight: bold; }
-
-#aloha {
-  position: relative;
-  bottom: 5px;
-  font-weight: 600;
-  font-size: 1.1em; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    #aloha {
-      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    #aloha {
-      font-size: 1.333em; } }
+      font-size: 1.77689em; } }
 
 .disc-one {
   bottom: 50px; }
 
-.disc-two {
-  top: 50px; }
+#inspires {
+  padding: 1rem 0rem 1rem;
+  text-align: center;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F;
+  font-size: 1.4641em;
+  font-weight: 800; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    #inspires {
+      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    #inspires {
+      font-size: 3.15733em; } }
+
+.list {
+  display: block;
+  margin-bottom: 1rem; }
 
 .bio-image {
-  width: 100%;
-  margin-top: 25px; }
+  width: 100%; }
   .bio-image .my-story-seq {
     width: 100%;
     margin: auto;
     display: block;
     max-width: 1000px; }
 
-#sunset, #shillo, #rmit, #sod, #truemax, #alohameaning {
-  text-decoration: none;
-  color: #7F00FF; }
-
-.list {
-  position: relative;
-  font-weight: 600;
-  bottom: 5px;
-  border-bottom: 2px solid #b871f7; }
-
-.whatIknow {
-  border-top: 2px solid #b871f7;
-  border-bottom: 2px solid #b871f7; }
-
-#i-know {
-  display: block;
-  position: relative;
-  padding-bottom: 5px;
-  padding-top: 5px; }
-
-.skills {
-  position: relative;
-  height: 0;
-  width: 100%;
-  padding: 0 0 74%; }
-
-.tap-or-click {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-  font-size: 1.4641em;
-  font-size: 1.331em; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .tap-or-click {
-      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .tap-or-click {
-      font-size: 3.15733em; } }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .tap-or-click {
-      font-size: calc( 1.331em + 1.03759 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .tap-or-click {
-      font-size: 2.36859em; } }
-
-.why {
-  text-align: center; }
-
-@media only screen and (max-width: 780px) {
-  .tap-or-click {
-    top: 50px; } }
-
 @media only screen and (max-width: 1030px) {
-  .skills {
-    margin-top: 120px;
-    padding-bottom: 90%; } }
-
-@media only screen and (max-width: 465px) {
-  .skills {
-    margin-top: 80px; } }
-
-@media only screen and (min-width: 900px) {
-  .skills {
-    top: 150px; } }
+  .about-short-disc {
+    margin: 10% 0% 10%; } }
 
 /* Conract  Pg */
 /* Modular Scale */
@@ -957,36 +646,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-page {
   position: relative;
-  height: 1500px;
-  top: 200px; }
-
-.contact-heading {
-  text-align: center;
-  position: relative;
-  font-family: "Montserrat", sans-serif;
-  color: #333333;
-  font-size: 1.4641em; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .contact-heading {
-      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .contact-heading {
-      font-size: 3.15733em; } }
+  top: 5rem; }
 
 .say-hi {
-  border-top: 1px solid #b871f7;
+  font-size: 1.4641em;
   position: relative;
-  top: 70px;
+  padding: 1rem;
   text-align: center;
   width: 40%;
-  margin: 0 auto;
-  padding-top: 30px; }
+  margin: 0 auto; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .say-hi {
+      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .say-hi {
+      font-size: 3.15733em; } }
 
 .line_above-contact, .line_under-contact {
   top: 0px; }
 
+.message-to-user {
+  height: 0px; }
+
 .contact-form {
-  margin-top: 100px;
+  margin-top: 6rem;
   display: flex;
   height: 36em;
   -webkit-transition: height, 0.8s;
@@ -996,7 +679,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative; }
 
 #field-set {
-  border: 1px solid #b871f7;
+  border: none;
   width: 55em;
   -webkit-transition: width, 0.8s;
   -moz-transition: width, 0.8s;
@@ -1017,8 +700,8 @@ form input {
   bottom: 16px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
-  border-top: 1px solid #b871f7;
-  border-bottom: 1px solid #b871f7;
+  border-top: 1px solid #00f;
+  border-bottom: 1px solid #00f;
   margin-left: 20px;
   position: relative;
   padding-bottom: 10px;
@@ -1037,8 +720,8 @@ form input {
   padding-right: 5px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
-  border-top: 1px solid #b871f7;
-  border-bottom: 1px solid #b871f7;
+  border-top: 1px solid #00f;
+  border-bottom: 1px solid #00f;
   margin-left: 20px;
   position: relative;
   padding-bottom: 10px;
@@ -1060,8 +743,8 @@ form input {
   border-bottom: none;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
-  border-top: 1px solid #b871f7;
-  border-bottom: 1px solid #b871f7;
+  border-top: 1px solid #00f;
+  border-bottom: 1px solid #00f;
   margin-left: 20px;
   position: relative;
   padding-bottom: 10px;
@@ -1090,7 +773,7 @@ form input {
   -moz-transition: border-radius 0.8s ease;
   transition: border-radius 0.8s ease;
   background-color: #fcfcfc;
-  border: 1px solid #b871f7; }
+  border: 1px solid #00f; }
   @media (min-width: 15em) and (max-width: 60em) {
     .your-name-area, .your-email-area, .your-msg {
       font-size: calc( 1em + 0 * ( ( 100vw - 15em) / 45 )); } }
@@ -1113,7 +796,7 @@ form input {
   -moz-transition: border-radius 0.8s ease;
   transition: border-radius 0.8s ease;
   background-color: #fcfcfc;
-  border: 1px solid #b871f7; }
+  border: 1px solid #00f; }
   @media (min-width: 15em) and (max-width: 60em) {
     .your-email-area {
       font-size: calc( 1em + 0 * ( ( 100vw - 15em) / 45 )); } }
@@ -1129,29 +812,9 @@ form input {
 
 .your-msg {
   width: 100%;
+  height: 5rem;
   padding-top: 15px;
-  top: 25px;
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  height: 180px;
-  max-height: 200px;
-  font-size: 1em;
-  font-family: "Montserrat", sans-serif;
-  position: relative;
-  -webkit-transition: border-radius 0.8s ease;
-  -moz-transition: border-radius 0.8s ease;
-  transition: border-radius 0.8s ease;
-  background-color: #fcfcfc;
-  border: 1px solid #b871f7; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .your-msg {
-      font-size: calc( 1em + 0 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .your-msg {
-      font-size: 1em; } }
+  top: 25px; }
 
 .your-name-area:focus, .your-email-area:focus, .your-msg:focus {
   outline: none;
@@ -1163,7 +826,7 @@ form input {
   box-shadow: 0px 0px 4px #b871f7; }
 
 .clientMsg {
-  margin-right: 50px;
+  overflow: visible !important;
   position: relative;
   top: 80px; }
 
@@ -1173,6 +836,10 @@ form input {
   left: 20px;
   width: 150px;
   height: 40px; }
+
+@media only screen and (max-width: 1030px) {
+  .contact-form {
+    margin: 1rem, 0rem 1rem; } }
 
 @media only screen and (max-width: 780px) {
   .contact-form {
@@ -1203,18 +870,6 @@ form input {
 @media only screen and (max-width: 780px) {
   .your-msg {
     width: 80%; } }
-
-@media only screen and (min-width: 780px) {
-  .contact-page {
-    top: 0px; } }
-
-@media only screen and (min-width: 900px) {
-  .contact-form {
-    height: 36em; } }
-
-@media only screen and (max-width: 465px) {
-  .contact-form {
-    height: 48em; } }
 
 /* Modular Scale */
 /* Colors project pages */
@@ -1259,8 +914,8 @@ textarea.parsley-error {
   opacity: 0;
   left: 20px;
   font-family: "Lora", serif;
-  border-top: 1px solid #b871f7;
-  border-bottom: 1px solid #b871f7;
+  border-top: 1px solid #00f;
+  border-bottom: 1px solid #00f;
   position: relative;
   transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
@@ -1296,8 +951,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #submit-form {
   color: #fcfcfc;
-  border: 2px solid #b871f7;
-  background-color: #b871f7;
+  border: 2px solid #00f;
+  background-color: #00f;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   font-weight: bold;
@@ -1313,9 +968,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #submit-form:hover {
   color: #fcfcfc;
-  border: 2px solid magenta;
-  background-color: magenta;
-  box-shadow: 0px 5px 0 darkviolet; }
+  border: 2px solid royalblue;
+  background-color: royalblue;
+  box-shadow: 0px 5px 0 #00f; }
 
 #submit-form:active {
   box-shadow: 0px 0px 0 black;
@@ -1352,7 +1007,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: flex;
   justify-content: center;
-  top: -355px; }
+  bottom: 10rem; }
 
 .content {
   width: 100%; }
@@ -1369,14 +1024,12 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 3.15733em; } }
 
 .mesg-to-usr {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: center;
-  position: relative;
-  border-top: 1px solid #b871f7;
-  border-bottom: 1px solid #b871f7; }
+  position: relative; }
 
 #m-icon-fail {
   stroke: red;
@@ -1444,7 +1097,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   display: flex;
   justify-content: center;
-  top: 100px; }
+  bottom: 2rem;
+  height: 0; }
 
 .content {
   width: 100%; }
@@ -1461,16 +1115,12 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 3.15733em; } }
 
 .mesg-to-usr {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  padding-left: 3em;
-  padding-right: 3em;
-  margin-right: 15%;
-  margin-left: 15%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: center;
-  position: relative;
-  border-top: 1px solid #b871f7;
-  border-bottom: 1px solid #b871f7; }
+  position: relative; }
 
 #m-icon {
   fill: none;
@@ -1514,62 +1164,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
-.pre-footer {
-  position: relative;
-  bottom: 500px;
-  height: 500px; }
-
-.exit-msg {
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-bottom: 1px;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 1.1em;
-  text-align: center;
-  line-height: 1.61803em;
-  font-size: 1.61803em; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .exit-msg {
-      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .exit-msg {
-      font-size: 1.333em; } }
-
-.pre-footer #projects:hover, .pre-footer #chat:hover, .pre-footer #bio:hover,
-.pre-footer #projects:focus, .pre-footer #chat:focus, .pre-footer #bio:focus {
-  color: blue; }
-
-.pre-footer #projects, .pre-footer #chat, .pre-footer #bio {
-  color: black;
-  padding: 2px;
-  font-weight: 900;
-  margin: 0 -2px; }
-
-.pre-footer #projects, .pre-footer #chat, .pre-footer #bio {
-  border: none;
-  border-bottom: 2px solid blue;
-  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
-  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
-  background: linear-gradient(cyan, cyan) no-repeat bottom;
-  background-size: 100% 1px;
-  transition: .2s,color .1s .1s;
-  text-decoration: none; }
-
-.pre-footer #projects:hover, .pre-footer #chat:hover, .pre-footer #bio:hover {
-  background-size: 100% 100%; }
+.text-footer {
+  position: relative; }
 
 #b-w-a {
   font-weight: 600; }
-
-@media only screen and (max-width: 780px) {
-  #thank-you {
-    bottom: 15px; } }
-
-#icare {
-  font-weight: 600;
-  position: relative;
-  top: 5px; }
 
 @media only screen and (max-width: 780px) {
   .pre-footer {

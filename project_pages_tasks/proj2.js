@@ -30,7 +30,7 @@ setVars();
 
 // Watch styles_proj2 and js_proj2 for changes
 gulp.task('watch_proj2',function(){
-    gulp.watch(paths.watcher_projects.watcher_proj2.styles_proj2,['proj2_styles']);
+    gulp.watch(paths.watcher_projects.watcher_proj2.styles_proj2,['proj2_styles']).on('change', browserSync.reload);
     // gulp.watch(paths.watcher_projects.watcher_proj2.js_proj2,['proj2_js']);
 });
 
@@ -74,8 +74,8 @@ gulp.task('proj2_styles',function(){
     // destination for compiled css for project 1
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.styles_proj2))
-    .pipe(notify({ message: 'proj2_styles task finished' }))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
+    .pipe(notify({ message: 'proj2_styles task finished' }));
 });
 
 gulp.task('project2',function(){

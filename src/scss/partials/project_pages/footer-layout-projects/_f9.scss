@@ -3,6 +3,10 @@
 @import "partials/variables";
 @import "vendor/mod-scale";
 
+footer{
+  background-color: $footer-social;
+}
+
 li{
     list-style: none;
 }
@@ -12,31 +16,28 @@ li{
 }
 
 .footer-area{
-    @include display(flex);
-    width:100%;
-    height:390px;
+    display: flex;
+    width: 100%;
+    margin-top: 7rem;
     position: relative;
-    top:50px;
 }
 
 .footer-nav{
     position: relative;
-    padding-top: 40px;
-    padding-left:10px;
-    width:18.5em;
+    padding:2rem 0rem 2rem;
+    width:100%;
+    height:100%;
     background-color:$footer-nav;
-
-    @include mobile_device {
-        width: 11.5em;
-        padding-left: 0px;
-
-    }
+    flex-wrap:wrap;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .home,.projects,.about,.contact,.blog{
     font-family: $monte;
     text-decoration: none;
-    padding-top:5px;
+    //padding-top:5px;
+    @include link-hover-footer;
 }
 
 .home:hover{
@@ -45,27 +46,21 @@ li{
 
 .home{
     color:black;
-    padding-left:0;
     font-weight: 900;
-    margin-left: 40px;
-    width:50px;
-}
-
-.projects,.contact{
-    width:70px;
 }
 
 .home{
     @include link-hover-footer;
 }
 
-.home:hover{
-    background-size: 100% 100%;
-}
-
 .social{
-    background-color:$footer_social;
-    width:100%;
+    display: inline-flex;
+    background: $footer-social;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    height:5rem;
+    justify-content: center;
 }
 .smedia{
     font-family: $monte;
@@ -73,23 +68,38 @@ li{
     left:$leftside;
     top:30px;
 }
-.socialize{
-    @include social-links;
-}
 
-#s-link{
-    color:#00f;
-}
 .social1-gh{
     font-family: $monte;
     position: relative;
-    top:40px;
-    padding-left: 40px;
-
-    @include mobile_device {
-        padding-left: 20px;
-    }
+    padding-top:1rem;
 }
 .github{
     @include social-icons;
+}
+
+.bottom{
+  font-family:$monte;
+  text-align:center;
+  background-color:$footer_social;
+  position: relative;
+  height: 25px;
+  bottom: 4px;
+}
+
+.footer-nav {
+  @include mobile_device {
+    padding-top:10px;
+    align-items:center;
+    flex-direction: column;
+    height: 17rem;
+  }
+}
+
+.social {
+  @include mobile_device {
+    height:10rem;
+    align-content:center;
+    flex-direction:column;
+  }
 }

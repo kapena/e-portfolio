@@ -9,7 +9,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    top:-355px;
+    bottom:10rem;
 }
 
 .content{
@@ -24,8 +24,8 @@
 .mesg-to-usr{
     @include padding-l-r-t-b-mesg;
     @include textAlignCenter;
-    border-top: $border-top-bottom;
-    border-bottom: $border-top-bottom;
+    // border-top: $border-top-bottom;
+    // border-bottom: $border-top-bottom;
 }
 
 #m-icon-fail{

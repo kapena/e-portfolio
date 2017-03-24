@@ -14,7 +14,7 @@ html{
 
 body{
     min-height:100%;
-    background-color: seashell;
+    background-color: whitesmoke;
 }
 
 header{
@@ -23,17 +23,9 @@ header{
     top:30px;
 }
 
-#mixer{
-    position: absolute;
-    height:430px;
-    width:100%;
-    max-width: 100%;
-    mix-blend-mode:darken;
-}
-
 .aloha{
-    font-family:$monte;
-    font-weight: 700;
+  font-family:$monte;
+  font-weight: 700;
 }
 
 .titleName{
@@ -58,11 +50,13 @@ header{
     @include left-right-bottom-links;
     // left might margins pushed in closer
     @include left-right-margin;
-    // responsive scale
-    @include ms-respond(font-size, 1);
+    @include ms-respond(font-size, 2);
     text-align: center;
     line-height:ms(1);
-    font-size: ms(1);
+}
+
+.main{
+  padding:1rem 0rem 1rem;
 }
 
 .built{
@@ -94,13 +88,104 @@ header #projects:hover{
    background-size:100% 100%;
 }
 
-circle {
-  mix-blend-mode: multiply;
+.tools{
+  display: flex;
+  justify-content: center;
 }
 
-#subtractive {
-    @include tablet {
-        x:7em;
-        width:15em;
-    }
+#skills-graphic{
+  height:320px;
+}
+
+.graphic-text{
+  font-weight: 900;
+  font-family: $monte;
+  color:$typeColorB;
+  @include ms-respond(font-size,-1);
+}
+
+
+.skill{
+  font-family: $monte;
+  @include ms-respond(font-size,-3);
+}
+.under{
+  transition:transform 0.3s;
+}
+.move{
+  transition:transform 0.3s;
+  transform:translateY(-35px);
+}
+
+// circle + triangle
+.gC, .gT{
+  transition:transform 0.3s;
+  transform:translateY(0px);
+}
+
+// circle DOWN
+.playGc{
+  transition:transform 0.3s;
+  transform:translateY(10px);
+}
+//triangle UP
+.playGt{
+  transition:transform 0.3s;
+  transform:translateY(-10px);
+}
+// headerfooter
+.wN, .wF{
+  @include pWidth-desk;
+}
+// headerfooter responsive animation
+// web nav web footer
+.playwN, .playwF{
+  @include pWidth-mobile;
+}
+
+// content
+.p1, .img, .p2{
+  @include pWidth-desk;
+}
+
+.playP1, .playImg, .playP2{
+  @include pWidth-mobile;
+}
+
+.webD{
+  transition:transform 0.5s;
+  transform:translateX(0px);
+}
+
+.move-L{
+  transition:transform 0.5s;
+  transform:translateX(8px);
+}
+.play{
+  transition:transform 0.5s;
+  transform:translateX(0px);
+}
+.frame{
+  transition:transform 0.5s;
+  transform:skew(0deg, 0deg);
+}
+.skewFrame{
+  transition:transform 0.5s;
+  transform:skew(13deg, 0deg);
+}
+
+.movePlay{
+  transition:transform 0.5s;
+  transform:translateX(-34px);
+}
+
+.tools{
+  text-align:center;
+  @include ms-respond(font-size,1);
+}
+
+.under, .skill {
+  @include tablet {
+    visibility: hidden;
+  }
 }

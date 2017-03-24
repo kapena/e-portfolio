@@ -5,59 +5,15 @@
 @import "partials/typography";
 @import "modules/global-mqs/mqs";
 
-.pre-footer{
+.text-footer{
     position: relative;
-    bottom:500px;
-    height:500px;
-}
-
-.exit-msg{
-    // padding for left right and bottom links
-    @include left-right-bottom-links;
-    // left might margins pushed in closer
-    @include left-right-margin;
-    // responsive scale
-    @include ms-respond(font-size, 1);
-    text-align: center;
-    line-height:ms(1);
-    font-size: ms(1);
-}
-// link hover animation
-.pre-footer #projects:hover,
-.pre-footer #projects:focus {
-   color:blue;
-}
-
-.pre-footer #projects {
-    color:black;
-    padding: 2px;
-    font-weight: 900;
-    margin: 0 -2px;
-}
-
-.pre-footer #projects{
-    @include hover-links;
-}
-
-.pre-footer #projects:hover{
-   background-size:100% 100%;
+    // top:10rem;
 }
 
 #b-w-a{
     font-weight: 600;
 }
 
-#thank-you{
-    @include small-tablet{
-        bottom:15px;
-    }
-}
-
-#icare{
-    font-weight: 600;
-    position: relative;
-    top:5px;
-}
 
 .pre-footer{
     @include small-tablet{

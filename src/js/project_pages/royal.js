@@ -4,8 +4,8 @@ $(window).load(function(){
     var imgs = $('.img1,.img2,.img3,.img4');
     // Content
     var img1_discript = $('<div class="box_1"><p class="discript1">Business cards</p></div>');
-    var img2_discript = $('<div class="box_2"><p class="discript2">Royal Thread </p></div>');
-    var img3_discript = $('<div class="box_3"><p class="discript1">Royal Thread</p></div>');
+    var img2_discript = $('<div class="box_2"><p class="discript2">Logo Design </p></div>');
+    var img3_discript = $('<div class="box_3"><p class="discript1">Logo Design </p></div>');
     var img4_discript = $('<div class="box_4"><p class="discript2">Stationary Items</p></div>');
     var all_boxes = $(img1_discript).add(img2_discript).add(img3_discript).add(img4_discript);
     // indv img classes
