@@ -4,16 +4,18 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
+.about-page{
+  margin: 2rem 0rem;
+}
+
 .about-short-disc{
     @include ms-respond(font-size,2);
     @include left-right-margin;
+    font-weight:$montSemi;
     line-height:ms(1);
     padding: 2rem;
     position: relative;
     text-align: center;
-}
-
-.disc-one{
     bottom:50px;
 }
 
@@ -25,13 +27,14 @@
 }
 
 .list{
+  text-align: center;
   display: block;
   margin-bottom:1rem;
 }
 
 .bio-image{
     width:100%;
-    // margin-top:2rem;
+    margin-top: 4rem;
     .my-story-seq{
         width:100%;
         margin: auto;
@@ -42,6 +45,7 @@
 
 .about-short-disc {
   @include tablet {
-    margin:10% 0% 10%;
+    padding: 2rem 3rem;
+    margin:3% 0% 3%;
   }
 }

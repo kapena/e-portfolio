@@ -2,24 +2,18 @@
 @import "partials/variables";
 @import "partials/typography";
 @import "vendor/bourbon";
+.contact-p-head{
+  text-align: center;
+  margin:2rem;
+}
 
 .contact-page{
     position: relative;
     top:5rem;
 }
 
-.say-hi{
-    // border-bottom:1px solid $bluesea;
-    @include ms-respond(font-size,4);
-    position: relative;
-    padding:1rem;
-    text-align: center;
-    width: 40%;
-    margin: 0 auto;
-}
-
-.line_above-contact, .line_under-contact{
-    top:0px
+.backtop{
+  top:1rem;
 }
 
 .message-to-user{
@@ -29,7 +23,7 @@
 .contact-form{
     margin-top: 6rem;
     display: flex;
-    height:36em;
+    // height:36em;
     @include transition(height,0.8s);
     justify-content: center;
     position: relative;
@@ -57,10 +51,12 @@ form input {
 // lable name
 .your-name{
     bottom:16px;
+    font-weight: $montB;
     @include lableSpacing;
 }
 // lable email
 .your-email{
+    font-weight: $montB;
     bottom: 16px;
     padding-right:5px;
     @include lableSpacing;
@@ -74,6 +70,7 @@ form input {
 .message{
     top:16px;
     border-bottom: none;
+    font-weight: $montB;
     @include lableSpacing;
 }
 // input name
@@ -127,10 +124,11 @@ form input {
 
 .contact-form{
     @include tablet {
-      margin:1rem, 0rem 1rem;
+      margin:0rem;
     }
     @include small-tablet{
-        height:800px;
+        margin: 0rem;
+        // height:800px;
     }
 }
 

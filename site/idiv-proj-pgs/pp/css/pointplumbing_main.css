@@ -15,7 +15,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
@@ -257,6 +257,9 @@ h1, h2 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
+/* Here I import all my modules into the home-module */
+/* Padding mixin for links inside paragraph*/
+/* Pushing intro-msg margins in closer */
 /* Modular Scale */
 /* Colors project pages */
 /* halfCircle path colors indiv project pages */
@@ -270,14 +273,14 @@ body {
   -webkit-overflow-scrolling: touch;
   background-color: whitesmoke; }
 
-.proj {
+.proj-n {
   font-size: 1.4641em;
   text-align: center; }
   @media (min-width: 10em) and (max-width: 20em) {
-    .proj {
+    .proj-n {
       font-size: calc( 1.4641em + 0.7658 * ( ( 100vw - 10em) / 10 )); } }
   @media (min-width: 20em) {
-    .proj {
+    .proj-n {
       font-size: 2.2299em; } }
 
 .header-img {
@@ -286,33 +289,46 @@ body {
 
 .project-introduction {
   padding: 50px 100px 90px; }
-  @media only screen and (max-width: 465px) {
+  @media only screen and (max-width: 523px) {
     .project-introduction {
-      padding-right: 65px;
-      padding-left: 65px; } }
+      padding: 1rem; } }
 
 .media {
+  text-align: center;
   display: block;
   padding-bottom: 5px;
   bottom: 15px;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+  bottom: 30px;
+  padding: 2rem 0rem 2rem;
+  text-align: center;
   border-bottom: 2px solid cornflowerblue;
-  font-family: "Lato", "serif"; }
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.21em; }
+  @media (min-width: 10em) and (max-width: 20em) {
+    .media {
+      font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
+  @media (min-width: 20em) {
+    .media {
+      font-size: 1.49328em; } }
 
-.project-desc, .media {
+.project-desc {
   font-size: 1.21em;
   position: relative;
   width: 80%;
   margin: auto;
-  text-align: center;
   margin-top: 5px;
   bottom: 30px;
   padding: 2rem 0rem 2rem;
   border-bottom: 2px solid cornflowerblue; }
   @media (min-width: 10em) and (max-width: 20em) {
-    .project-desc, .media {
+    .project-desc {
       font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
   @media (min-width: 20em) {
-    .project-desc, .media {
+    .project-desc {
       font-size: 1.49328em; } }
 
 .more-projects {
@@ -331,39 +347,31 @@ body {
 .project-wrapper {
   height: 100%; }
   .project-wrapper .other-projects {
-    width: 300px; }
+    width: 250px; }
 
-.point-p-link {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center; }
-
-.point:hover {
+.point-p:hover,
+.point-p:focus {
   color: blue; }
 
-.point {
-  padding: 5px;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-  margin-bottom: 120px;
-  font-size: 1.61803em;
-  padding: 0rem 1rem 0rem;
+.point-p {
+  font-family: "Montserrat", sans-serif !important;
+  color: #333333;
+  padding: 2px;
+  font-weight: 900;
+  margin: 0 -2px; }
+
+.point-p {
+  border: none;
+  border-bottom: 2px solid royalblue;
+  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background-size: 100% 1px;
+  transition: .2s,color .1s .1s;
   text-decoration: none; }
-  .point:hover {
-    background-size: 100% 100%; }
+
+.point-p:hover {
+  background-size: 100% 100%; }
 
 .proj-container {
   display: -webkit-box;
@@ -383,10 +391,6 @@ body {
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
-
-.line-divider {
-  width: 100%;
-  height: 100%; }
 
 .link {
   font-family: "Montserrat", sans-serif;
@@ -417,7 +421,7 @@ footer {
 li {
   list-style: none; }
 
-#home, #projects, #about, #contact, #blog {
+#home, #projects, header .point-p, #about, #contact, #blog {
   text-decoration: none; }
 
 .footer-area {
@@ -436,20 +440,20 @@ li {
   display: inline-flex;
   justify-content: center; }
 
-.home, .projects, .about, .contact, .blog, .projects, .about, .contact, .blog {
+.home, .projects-link, .about, .contact-link, .blog, .about, .blog {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   padding: 0rem 1rem 0rem;
   text-decoration: none; }
 
-.home:hover, .projects:hover, .about:hover, .contact:hover, .blog:hover {
+.home:hover, .projects-link:hover, .about:hover, .contact-link:hover, .blog:hover {
   color: blue; }
 
-.home, .projects, .about, .contact, .blog {
+.home, .projects-link, .about, .contact-link, .blog {
   color: black;
   font-weight: 900; }
 
-.home, .projects, .about, .contact, .blog {
+.home, .projects-link, .about, .contact-link, .blog {
   padding: 0rem 1rem 0rem;
   text-decoration: none; }
 
@@ -483,22 +487,18 @@ li {
   height: 25px;
   bottom: 4px; }
 
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 425px) {
   .footer-nav {
     padding-top: 10px;
     align-items: center;
     flex-direction: column;
     height: 17rem; } }
 
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 425px) {
   .social {
     height: 10rem;
     align-content: center;
     flex-direction: column; } }
-
-@media only screen and (max-width: 465px) {
-  .rect-divide {
-    height: 1.5px; } }
 
 .other-projects:hover .link {
   fill: black; }

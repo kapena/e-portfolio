@@ -13,7 +13,7 @@ html{
     height:100%;
 }
 
-.proj{
+.proj-n{
   text-align: center;
   @include ms-respond(font-size,4);
 }
@@ -24,15 +24,19 @@ html{
 
 .project-introduction{
     padding: $proj-intro-padding;
-
-    @include mobile_device {
-        @include padding-left-right;
-    }
+      @include lrg-mobile {
+        padding:1rem;
+      }
 }
 
 .media{
+    text-align: center;
     @include media;
-    font-family: $lato;
+    @include projDscript;
+    text-align: center;
+    border-bottom: $urban_border;
+    font-family: $monte;
+    @include ms-respond(font-size,2);
 }
 
 .project-desc{
@@ -155,7 +159,7 @@ html{
     height:100%;
 
     .other-projects{
-       width:300px;
+       width:250px;
    }
 
    .project-heading{

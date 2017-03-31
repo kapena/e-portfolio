@@ -1,10 +1,13 @@
 // animation for web graphic on hover
 @mixin pWidth-desk {
-  transition:font-size 0.5s;
+  transition:all 0.5s;
+  -webkit-transition:all 0.5s;
   font-size:100px;
 }
 @mixin pWidth-mobile {
-  transition:font-size 0.5s;
+  transition: 0.5s;
+  -webkit-transition:all 0.5s;
+  transition:all 0.5s;
   font-size:60px;
 }
 

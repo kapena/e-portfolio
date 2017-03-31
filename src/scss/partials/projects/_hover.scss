@@ -3,50 +3,26 @@
 @import "partials/variables";
 $allrects:rectangle;
 
-// .#{$allrects}.display{
-//     visibility: hidden;
-// }
-
-.halfRect.halfRect1 {
-    @include tablet {
-        display:none;
-     }
-}
-// btm-rect-dreaming, .top-rect-dreaming
-.#{$allrects}.display{
-    @include tablet {
-        visibility:visible;;
-    }
-}
-.rect-divide{
-    @include mobile_device {
-        height:1.5px;
-    }
-}
-
-// translate halfCircle on y axis 400px when hovered on
-.projects:hover .halfRect{
-    @include halfCircle-animation-on-hover;
-}
-
-// translate halfCircle on y axis back to 250px
-.halfRect{
-    @include halfCircle-animation-off-hover;
-}
-
-// halfCircle2 fades in when hoverd on
-.projects:hover .halfRect1{
-    visibility: visible;
-    opacity: 0.8;
-    @include fadein-halfCircle1-on-hover;
-}
-
-// halfCircle1 fades out
+// // halfCircle1 fades out
 .halfRect1{
     visibility: hidden;
     opacity: 0;
     @include transition(visibility 1s, opacity 1s);
 }
+
+.projects:hover .fullRect{
+    visibility: visible;
+    opacity: 0.85;
+    @include fadein-halfCircle1-on-hover;
+}
+
+// halfCircle1 fades out
+.fullRect{
+    visibility: hidden;
+    opacity: 0;
+    @include transition(visibility 1s, opacity 1s);
+}
+
 // hover over projects svg and view now text slides up on y axis
 .projects:hover #view{
     @include viewNowUp;
@@ -67,4 +43,29 @@ $allrects:rectangle;
 
 .projects:hover .link{
     fill:black;
+}
+
+.link{
+  @include md-tablet {
+  visibility: hidden;
+  }
+}
+
+.halfRect1 {
+    @include md-tablet {
+        opacity: 0.9;
+        visibility: visible;
+     }
+}
+
+
+.fullRect{
+  @include md-tablet {
+    display: none;
+  }
+}
+.link-mobile {
+  @include md-tablet {
+  visibility: visible;
+  }
 }

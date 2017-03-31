@@ -8,8 +8,8 @@ body{
  @include body-mixin;
 }
 
-.proj{
-    @include ms-respond(font-size,5);
+.proj-n{
+    @include ms-respond(font-size,4);
     text-align: center;
 }
 
@@ -31,8 +31,8 @@ body{
 .project-introduction{
     padding: $proj-intro-padding;
 
-    @include mobile_device {
-        @include padding-left-right;
+    @include lrg-mobile {
+        padding:1rem;
     }
 }
 
@@ -47,14 +47,19 @@ body{
 }
 
 .media{
+    text-align: center;
     @include media;
+    @include projDscript;
+    text-align: center;
     border-bottom: $secret_border;
     font-family: $monte;
+    @include ms-respond(font-size,2);
 }
 
 .project-desc{
     @include ms-respond(font-size,2);
     @include projDscript;
+    text-align: left;
     border-bottom:$secret_border;
 }
 
@@ -163,10 +168,10 @@ body{
 
 .discript1{
     font-size: ms(1);
-    // opacity: 1;
     margin-top: 250px;
     color:white;
 }
+
 .more-projects{
     text-align: center;
     margin:0px;
@@ -178,7 +183,7 @@ body{
     height:100%;
 
     .other-projects{
-       width:300px;
+       width:250px;
   }
 }
 

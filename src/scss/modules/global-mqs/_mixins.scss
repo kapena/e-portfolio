@@ -24,11 +24,60 @@
     }
 }
 
+@mixin desktop-sm {
+    @media only screen and (max-width:#{$p920}){
+        @content;
+    }
+}
+
+@mixin desktop-md {
+    @media only screen and (max-width:#{$p980}){
+        @content;
+    }
+}
+
 @mixin small-tablet {
     @media only screen and (max-width:#{$tablet}){
         @content;
     }
 }
+
+@mixin lrg-mobile {
+    @media only screen and (max-width:#{$p523}){
+        @content;
+    }
+}
+
+@mixin md-mobile {
+    @media only screen and (max-width:#{$p425}){
+        @content;
+    }
+}
+
+@mixin sm-mobile {
+    @media only screen and (max-width:#{$p385}){
+        @content;
+    }
+}
+
+@mixin xs-mobile {
+    @media only screen and (max-width:#{$p321}){
+        @content;
+    }
+}
+
+@mixin sm-tablet {
+    @media only screen and (max-width:#{$p680}){
+        @content;
+    }
+}
+
+@mixin md-tablet {
+    @media only screen and (max-width:#{$p850}){
+        @content;
+    }
+}
+
 
 @mixin tablet {
     @media only screen and (max-width:#{$tablet-2}){
@@ -36,25 +85,6 @@
     }
 }
 
-// project-page height-tablet 975px
-@mixin proj_imgs-wrap-tablet {
-    @media only screen and (max-width:#{$proj-imgs-2sideByside-tablet}){
-        @content;
-    }
-}
-
-// project-page height sm-desktop
-@mixin proj_img-wrap_sm-deskt {
-    @media only screen and (max-width:#{$proj-imgs-2sideByside-sm-desktop}){
-        @content;
-    }
-}
-
-@mixin display-mobile-thumb {
-    @media only screen and (min-width:#{$tablet}){
-        @content;
-    }
-}
 
 @mixin desktop {
     @media only screen and (min-width:#{$desktop}){
@@ -76,6 +106,12 @@
 
 @mixin xxl-desktop {
     @media only screen and (min-width:#{$desktop-xxl}){
+        @content;
+    }
+}
+
+@mixin utra-xl-desktop {
+    @media only screen and (min-width:#{$desktop-xxxl}){
         @content;
     }
 }
