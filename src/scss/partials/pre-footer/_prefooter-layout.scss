@@ -7,7 +7,46 @@
 
 .text-footer{
     position: relative;
-    // top:10rem;
+    top:15rem;
+}
+
+.say-hi{
+    @include ms-respond(font-size,4);
+    font-weight: $montB;
+}
+.exit-msg{
+  @include ms-respond(font-size,2);
+  @include left-right-margin;
+  font-weight: $montSemi;
+  position: relative;
+  text-align: center;
+}
+
+.email:hover,
+.email:focus {
+   color:blue;
+}
+
+
+.email:hover{
+   background-size:100% 100%;
+}
+
+
+.email{
+  font-family: $monte;
+  font-weight: $montB;
+  @include hover-links;
+  color:$typeColor;
+  position:relative;
+}
+
+.list2{
+  margin-top:2rem;
+}
+
+.backtop{
+  top:1rem;
 }
 
 #b-w-a{
@@ -15,8 +54,8 @@
 }
 
 
-.pre-footer{
+.text-footer{
     @include small-tablet{
-        top:0px;
+        top:20rem;
     }
 }

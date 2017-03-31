@@ -1,7 +1,5 @@
-.media{
-    @extend .project-desc;
-}
-.projects,.about,.contact,.blog {
+
+.projects-link,.about,.contact-link,.blog {
     @extend .home;
 }
 
@@ -23,11 +21,11 @@
 }
 
 .disp2,.disp3,.disp4,.disp5,.disp6{
-    @extend .disp1;
+    @extend .disp1 !optional;
 }
 
 .caption2,.caption3,.caption4,.caption5,.caption6{
-    @extend .caption1;
+    @extend .caption1 !optional;
 }
 
 .social3-in,.social4-twitter,.social5-behance{
@@ -39,6 +37,6 @@
     @extend .github;
 }
 
-.projects,.about,.contact,.blog{
+.proj,.about,.cont,.blog{
   @extend .home;
 }

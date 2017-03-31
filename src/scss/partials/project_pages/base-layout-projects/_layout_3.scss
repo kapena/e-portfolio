@@ -8,7 +8,7 @@ body{
  @include body-mixin;
 }
 
-.proj{
+.proj-n{
     text-align: center;
     @include ms-respond(font-size,4);
 }
@@ -20,15 +20,19 @@ body{
 .project-introduction{
     padding: $proj-intro-padding;
 
-    @include mobile_device {
-        @include padding-left-right;
+    @include lrg-mobile {
+        padding:1rem;
     }
 }
 
 .media{
+    text-align: center;
     @include media;
+    @include projDscript;
+    text-align: center;
     border-bottom: $radiate_border;
-    font-family: $lato;
+    font-family: $monte;
+    @include ms-respond(font-size,2);
 }
 
 .project-desc{
@@ -40,6 +44,7 @@ body{
 #project-desc{
     border-top:$radiate_border;
     margin-top:55px;
+    width:75%;
 }
 .main-image{
     width:100%;
@@ -145,7 +150,7 @@ body{
     height:100%;
 
     .other-projects{
-       width:300px;
+       width:250px;
    }
 
    .project-heading{

@@ -10,46 +10,46 @@
 /* Rectangle colors for devices small and large */
 /* borders */
 /**** Google Fonts ****/
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 /* Lato Variables */
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 /* Base Size */
 /**** Responsive Scales ****/
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
@@ -63,7 +63,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #423F3F; }
 
 html {
-  height: 100%; }
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 body {
   min-height: 100%;
@@ -76,16 +78,22 @@ header {
 
 .aloha {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700; }
+  font-weight: 600; }
+
+.intro-block {
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
 
 .titleName {
+  margin-bottom: 2rem;
   text-align: center; }
 
 .name, .title {
   color: #333333;
-  font-weight: 400;
+  font-weight: 900;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.21em; }
+  font-size: 1.21em;
+  margin: 0rem; }
   @media (min-width: 15em) and (max-width: 60em) {
     .name, .title {
       font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
@@ -94,9 +102,8 @@ header {
       font-size: 1.77689em; } }
 
 .title {
-  padding-top: -25px;
-  padding-bottom: 25px;
-  margin-top: -25px; }
+  bottom: 2rem;
+  font-weight: 400; }
 
 .intro-msg {
   padding-left: 2px;
@@ -117,10 +124,8 @@ header {
   padding: 1rem 0rem 1rem; }
 
 .built {
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-bottom: 1px;
   margin: 0% 15% 0%;
+  padding: 1rem 0rem 1rem;
   text-align: center;
   font-size: 1em; }
   @media (min-width: 15em) and (max-width: 60em) {
@@ -130,19 +135,19 @@ header {
     .built {
       font-size: 1em; } }
 
-header #projects:hover, header #chat:hover, header #bio:hover, header #getintouch:hover,
-header #projects:focus, header #chat:focus, header #bio:focus, header #getintouch:focus {
+header #projects:hover, header #chat:hover, header #bio:hover, header #getintouch:hover, header .email:hover, header .point-p:hover,
+header #projects:focus, header #chat:focus, header #bio:focus, header #getintouch:focus, header .email:focus, header .point-p:focus {
   color: blue; }
 
-header #projects, header #chat, header #bio, header #getintouch, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
+header #projects, header #chat, header #bio, header #getintouch, header .email, header .point-p, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
   color: #333333;
   padding: 2px;
   font-weight: 900;
   margin: 0 -2px; }
 
-header #projects, header #chat, header #bio, header #getintouch, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
+header #projects, header #chat, header #bio, header #getintouch, header .email, header .point-p, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
   border: none;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid royalblue;
   background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
   background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
   background: linear-gradient(cyan, cyan) no-repeat bottom;
@@ -150,7 +155,7 @@ header #projects, header #chat, header #bio, header #getintouch, header .pre-foo
   transition: .2s,color .1s .1s;
   text-decoration: none; }
 
-header #projects:hover, header #chat:hover, header #bio:hover, header #getintouch:hover {
+header #projects:hover, header #chat:hover, header #bio:hover, header #getintouch:hover, header .email:hover, header .point-p:hover {
   background-size: 100% 100%; }
 
 .tools {
@@ -158,36 +163,36 @@ header #projects:hover, header #chat:hover, header #bio:hover, header #getintouc
   justify-content: center; }
 
 #skills-graphic {
-  height: 320px; }
+  height: 300px; }
 
 .graphic-text {
-  font-weight: 900;
   font-family: "Montserrat", sans-serif;
+  font-weight: 900;
   color: #423F3F;
-  font-size: 0.90909em; }
+  font-size: 0.82645em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .graphic-text {
-      font-size: calc( 0.90909em + -0.1589 * ( ( 100vw - 15em) / 45 )); } }
+      font-size: calc( 0.82645em + -0.26366 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
     .graphic-text {
-      font-size: 0.75019em; } }
+      font-size: 0.56278em; } }
 
-.skill {
+.graph, .web, .motion {
   font-family: "Montserrat", sans-serif;
   font-size: 0.75131em; }
   @media (min-width: 15em) and (max-width: 60em) {
-    .skill {
+    .graph, .web, .motion {
       font-size: calc( 0.75131em + -0.32912 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
-    .skill {
+    .graph, .web, .motion {
       font-size: 0.42219em; } }
 
 .under {
   transition: transform 0.3s; }
 
-.move {
+.moveUp {
   transition: transform 0.3s;
-  transform: translateY(-35px); }
+  transform: translateY(-20px); }
 
 .gC, .gT {
   transition: transform 0.3s;
@@ -202,28 +207,34 @@ header #projects:hover, header #chat:hover, header #bio:hover, header #getintouc
   transform: translateY(-10px); }
 
 .wN, .wF {
-  transition: font-size 0.5s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   font-size: 100px; }
 
 .playwN, .playwF {
-  transition: font-size 0.5s;
+  transition: 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   font-size: 60px; }
 
 .p1, .img, .p2 {
-  transition: font-size 0.5s;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   font-size: 100px; }
 
 .playP1, .playImg, .playP2 {
-  transition: font-size 0.5s;
+  transition: 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   font-size: 60px; }
 
-.webD {
+.elements {
   transition: transform 0.5s;
   transform: translateX(0px); }
 
 .move-L {
   transition: transform 0.5s;
-  transform: translateX(8px); }
+  transform: translateX(10px); }
 
 .play {
   transition: transform 0.5s;
@@ -255,6 +266,19 @@ header #projects:hover, header #chat:hover, header #bio:hover, header #getintouc
   .under, .skill {
     visibility: hidden; } }
 
+@media only screen and (max-width: 1030px) {
+  #skills-graphic {
+    height: 250px; } }
+
+@media only screen and (max-width: 425px) {
+  #skills-graphic {
+    height: 200px; } }
+
+@media only screen and (max-width: 850px) {
+  .graph, .web, .digital-d {
+    visibility: hidden;
+    font-family: "Montserrat", sans-serif; } }
+
 /* @import "partials/home/nav"; */
 /* Projects  Pg */
 /* Here I import all my modules into the home-module */
@@ -277,6 +301,9 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
+
+figure {
+  margin: -2px; }
 
 .proj-headings {
   position: relative;
@@ -322,8 +349,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   top: 410px; }
 
+.pfolio {
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F;
+  font-size: 1.4641em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .pfolio {
+      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .pfolio {
+      font-size: 3.15733em; } }
+
 .proj-container {
-  margin: 4rem 0rem 4rem;
+  margin: 4rem 1rem 4rem;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -331,22 +373,37 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
 
 .projects {
-  width: 100%;
-  height: 263px; }
-  @media only screen and (max-width: 465px) {
-    .projects {
-      height: 200px; } }
+  position: relative;
+  flex-direction: row;
+  max-height: 100%;
+  width: 314px;
+  height: 270px; }
 
 .border {
   fill: none;
   stroke: url("#spect");
   stroke-width: 11px; }
 
+.link-mobile {
+  font-family: "Montserrat", sans-serif;
+  fill: #383838;
+  font-size: 1.5em;
+  visibility: hidden;
+  font-weight: 900; }
+
+.cat {
+  font-weight: 900;
+  font-size: 1.2em; }
+
+@media only screen and (max-width: 850px) {
+  .link-mobile {
+    visibility: visible; } }
+
 .link {
   font-family: "Montserrat", sans-serif;
   fill: #383838;
   font-size: 1.3em;
-  font-weight: 700; }
+  font-weight: 900; }
 
 .s-d, .p-p, .r, .u-r, .p-d {
   transform: translateY(-12px); }
@@ -364,8 +421,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #getintouch {
   font-family: "Montserrat", sans-serif;
+  font-weight: 900;
   border: none;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px solid royalblue;
   background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
   background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
   background: linear-gradient(cyan, cyan) no-repeat bottom;
@@ -374,8 +432,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   font-size: 1.1em;
   color: #333333;
-  padding: 2px;
-  padding-left: 1rem;
+  padding: 5px 2rem 5px;
   position: relative;
   bottom: 2rem; }
   @media (min-width: 15em) and (max-width: 60em) {
@@ -394,36 +451,85 @@ h1, h2, h3, h4, h5, h6 {
     .skill {
       font-size: 0.42219em; } }
 
-@media only screen and (min-width: 1350px) {
-  .proj-container {
-    padding-left: 10em;
-    padding-right: 10em; } }
+.view-device {
+  opacity: 0; }
 
-@media only screen and (min-width: 1695px) {
-  .proj-container {
-    padding-left: 20em;
-    padding-right: 20em; } }
+@media only screen and (max-width: 850px) {
+  .view-device {
+    opacity: 1; } }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1021px) {
   .proj-container {
-    margin: 0%;
-    flex-wrap: wrap; } }
+    margin: 4rem 1rem; } }
+
+@media only screen and (max-width: 425px) {
+  .proj-container {
+    margin: 2rem 1rem; } }
 
 @media only screen and (max-width: 1030px) {
   #project-name {
     transform: translateY(-21px); } }
 
+@media only screen and (min-width: 1270px) {
+  .proj-container {
+    padding: 0rem 5rem; } }
+
+@media only screen and (min-width: 1425px) {
+  .proj-container {
+    padding: 0rem 10rem; } }
+
+@media only screen and (min-width: 1575px) {
+  .proj-container {
+    padding: 0rem 15rem; } }
+
+@media only screen and (min-width: 1756px) {
+  .proj-container {
+    padding: 0rem 20rem; } }
+
 @media only screen and (max-width: 1030px) {
-  figure {
-    margin: 15px; } }
+  .projects {
+    height: 217px;
+    width: 254px; } }
 
-@media only screen and (min-width: 900px) {
-  figure {
-    margin: 10px; } }
+@media only screen and (max-width: 980px) {
+  .projects {
+    width: 246px;
+    height: 210px; } }
 
-@media only screen and (min-width: 1280px) {
-  figure {
-    margin: 20px; } }
+@media only screen and (max-width: 850px) {
+  .projects {
+    width: 217px;
+    height: 184px; } }
+
+@media only screen and (max-width: 780px) {
+  .projects {
+    height: 169px;
+    width: 200px; } }
+
+@media only screen and (max-width: 680px) {
+  .projects {
+    height: 146px;
+    width: 174px; } }
+
+@media only screen and (max-width: 523px) {
+  .projects {
+    width: 137px;
+    height: 115px; } }
+
+@media only screen and (max-width: 425px) {
+  .projects {
+    width: 109px;
+    height: 91px; } }
+
+@media only screen and (max-width: 385px) {
+  .projects {
+    width: 109px;
+    height: 90px; } }
+
+@media only screen and (max-width: 385px) {
+  .projects {
+    width: 200px;
+    height: 200px; } }
 
 /* Modular Scale */
 /* Colors project pages */
@@ -459,47 +565,16 @@ h1, h2, h3, h4, h5, h6 {
 /* halfCircle path colors indiv project pages */
 /* Rectangle colors for devices small and large */
 /* borders */
-@media only screen and (max-width: 1030px) {
-  .halfRect.halfRect1 {
-    display: none; } }
+.halfRect1 {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 1s, opacity 1s;
+  -moz-transition: visibility 1s, opacity 1s;
+  transition: visibility 1s, opacity 1s; }
 
-@media only screen and (max-width: 1030px) {
-  .rectangle.display {
-    visibility: visible; } }
-
-@media only screen and (max-width: 465px) {
-  .rect-divide {
-    height: 1.5px; } }
-
-.projects:hover .halfRect {
-  -webkit-transform: translateY(400px);
-  -moz-transform: translateY(400px);
-  -ms-transform: translateY(400px);
-  -o-transform: translateY(400px);
-  transform: translateY(400px);
-  -webkit-transition: -webkit-transform;
-  -moz-transition: -moz-transform;
-  transition: transform;
-  -webkit-transition-duration: 0.8s;
-  -moz-transition-duration: 0.8s;
-  transition-duration: 0.8s; }
-
-.halfRect {
-  -webkit-transform: translateY(255px);
-  -moz-transform: translateY(255px);
-  -ms-transform: translateY(255px);
-  -o-transform: translateY(255px);
-  transform: translateY(255px);
-  -webkit-transition: -webkit-transform;
-  -moz-transition: -moz-transform;
-  transition: transform;
-  -webkit-transition-duration: 0.6s;
-  -moz-transition-duration: 0.6s;
-  transition-duration: 0.6s; }
-
-.projects:hover .halfRect1 {
+.projects:hover .fullRect {
   visibility: visible;
-  opacity: 0.8;
+  opacity: 0.85;
   -webkit-transition: visibility 1s, opacity 1s;
   -moz-transition: visibility 1s, opacity 1s;
   transition: visibility 1s, opacity 1s;
@@ -507,7 +582,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition-duration: 0.8s;
   transition-duration: 0.8s; }
 
-.halfRect1 {
+.fullRect {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: visibility 1s, opacity 1s;
@@ -553,6 +628,23 @@ h1, h2, h3, h4, h5, h6 {
 .projects:hover .link {
   fill: black; }
 
+@media only screen and (max-width: 850px) {
+  .link {
+    visibility: hidden; } }
+
+@media only screen and (max-width: 850px) {
+  .halfRect1 {
+    opacity: 0.9;
+    visibility: visible; } }
+
+@media only screen and (max-width: 850px) {
+  .fullRect {
+    display: none; } }
+
+@media only screen and (max-width: 850px) {
+  .link-mobile {
+    visibility: visible; } }
+
 /* Bio  Pg */
 /* Modular Scale */
 /* Colors project pages */
@@ -575,22 +667,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
+.about-page {
+  margin: 2rem 0rem; }
+
 .about-short-disc {
   font-size: 1.21em;
   margin: 0% 15% 0%;
+  font-weight: 600;
   line-height: 1.61803em;
   padding: 2rem;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  bottom: 50px; }
   @media (min-width: 15em) and (max-width: 60em) {
     .about-short-disc {
       font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
     .about-short-disc {
       font-size: 1.77689em; } }
-
-.disc-one {
-  bottom: 50px; }
 
 #inspires {
   padding: 1rem 0rem 1rem;
@@ -610,11 +704,13 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 3.15733em; } }
 
 .list {
+  text-align: center;
   display: block;
   margin-bottom: 1rem; }
 
 .bio-image {
-  width: 100%; }
+  width: 100%;
+  margin-top: 4rem; }
   .bio-image .my-story-seq {
     width: 100%;
     margin: auto;
@@ -623,7 +719,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 1030px) {
   .about-short-disc {
-    margin: 10% 0% 10%; } }
+    padding: 2rem 3rem;
+    margin: 3% 0% 3%; } }
 
 /* Conract  Pg */
 /* Modular Scale */
@@ -644,26 +741,16 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
+.contact-p-head {
+  text-align: center;
+  margin: 2rem; }
+
 .contact-page {
   position: relative;
   top: 5rem; }
 
-.say-hi {
-  font-size: 1.4641em;
-  position: relative;
-  padding: 1rem;
-  text-align: center;
-  width: 40%;
-  margin: 0 auto; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .say-hi {
-      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .say-hi {
-      font-size: 3.15733em; } }
-
-.line_above-contact, .line_under-contact {
-  top: 0px; }
+.backtop {
+  top: 1rem; }
 
 .message-to-user {
   height: 0px; }
@@ -671,7 +758,6 @@ h1, h2, h3, h4, h5, h6 {
 .contact-form {
   margin-top: 6rem;
   display: flex;
-  height: 36em;
   -webkit-transition: height, 0.8s;
   -moz-transition: height, 0.8s;
   transition: height, 0.8s;
@@ -698,6 +784,7 @@ form input {
 
 .your-name {
   bottom: 16px;
+  font-weight: 900;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   border-top: 1px solid #00f;
@@ -716,6 +803,7 @@ form input {
       font-size: 1.333em; } }
 
 .your-email {
+  font-weight: 900;
   bottom: 16px;
   padding-right: 5px;
   font-family: "Montserrat", sans-serif;
@@ -741,6 +829,7 @@ form input {
 .message {
   top: 16px;
   border-bottom: none;
+  font-weight: 900;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   border-top: 1px solid #00f;
@@ -839,11 +928,11 @@ form input {
 
 @media only screen and (max-width: 1030px) {
   .contact-form {
-    margin: 1rem, 0rem 1rem; } }
+    margin: 0rem; } }
 
 @media only screen and (max-width: 780px) {
   .contact-form {
-    height: 800px; } }
+    margin: 0rem; } }
 
 @media only screen and (max-width: 780px) {
   #field-set {
@@ -1165,16 +1254,163 @@ h1, h2, h3, h4, h5, h6 {
   color: #423F3F; }
 
 .text-footer {
+  position: relative;
+  top: 15rem; }
+
+.say-hi {
+  font-size: 1.4641em;
+  font-weight: 900; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .say-hi {
+      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .say-hi {
+      font-size: 3.15733em; } }
+
+.exit-msg {
+  font-size: 1.21em;
+  margin: 0% 15% 0%;
+  font-weight: 600;
+  position: relative;
+  text-align: center; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .exit-msg {
+      font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .exit-msg {
+      font-size: 1.77689em; } }
+
+.email:hover,
+.email:focus {
+  color: blue; }
+
+.email:hover {
+  background-size: 100% 100%; }
+
+.email {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  border: none;
+  border-bottom: 2px solid royalblue;
+  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background-size: 100% 1px;
+  transition: .2s,color .1s .1s;
+  text-decoration: none;
+  color: #333333;
   position: relative; }
+
+.list2 {
+  margin-top: 2rem; }
+
+.backtop {
+  top: 1rem; }
 
 #b-w-a {
   font-weight: 600; }
 
 @media only screen and (max-width: 780px) {
-  .pre-footer {
-    top: 0px; } }
+  .text-footer {
+    top: 20rem; } }
 
 /* Footer */
+/* Modular Scale */
+/* Colors project pages */
+/* halfCircle path colors indiv project pages */
+/* Rectangle colors for devices small and large */
+/* borders */
+footer {
+  background-color: #e0e0e0; }
+
+li {
+  list-style: none; }
+
+#home, #projects, header #chat, header #bio, header #getintouch, header .email, header .point-p, .pre-footer #chat, .pre-footer #bio, #about, #contact, #blog {
+  text-decoration: none; }
+
+.footer-area {
+  display: flex;
+  width: 100%;
+  margin-top: 7rem;
+  position: relative; }
+
+.footer-nav {
+  position: relative;
+  padding: 2rem 0rem 2rem;
+  width: 100%;
+  height: 100%;
+  background-color: silver;
+  flex-wrap: wrap;
+  display: inline-flex;
+  justify-content: center; }
+
+.home, .projects-link, .about, .contact-link, .blog, .proj, .cont, .proj, .about, .cont, .blog {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  padding: 0rem 1rem 0rem;
+  text-decoration: none; }
+
+.home:hover, .projects-link:hover, .about:hover, .contact-link:hover, .blog:hover, .proj:hover, .cont:hover {
+  color: blue; }
+
+.home, .projects-link, .about, .contact-link, .blog, .proj, .cont {
+  color: black;
+  font-weight: 900; }
+
+.home, .projects-link, .about, .contact-link, .blog, .proj, .cont {
+  padding: 0rem 1rem 0rem;
+  text-decoration: none; }
+
+.social {
+  display: inline-flex;
+  background: #e0e0e0;
+  position: relative;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 5rem;
+  justify-content: center; }
+
+.smedia {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  left: 20px;
+  top: 30px; }
+
+.social1-gh, .social3-in, .social4-twitter, .social5-behance {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  padding-top: 1rem; }
+
+.github, .google, .linkedin, .twitter, .behance {
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 45px;
+  padding: 0rem 1rem 0rem;
+  position: relative; }
+
+.bottom {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #e0e0e0;
+  position: relative;
+  height: 25px;
+  bottom: 4px; }
+
+@media only screen and (max-width: 425px) {
+  .footer-nav {
+    padding-top: 10px;
+    align-items: center;
+    flex-direction: column;
+    height: 17rem; } }
+
+@media only screen and (max-width: 425px) {
+  .social {
+    height: 10rem;
+    align-content: center;
+    flex-direction: column; } }
+
 /* Typeography */
 /**** Google Fonts ****/
 /* Lato Variables */

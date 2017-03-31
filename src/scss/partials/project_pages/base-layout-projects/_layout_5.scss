@@ -13,9 +13,9 @@ html{
     height:100%;
 }
 
-.proj{
-  @include ms-respond(font-size,4);
-  text-align: center;
+.proj-n{
+    text-align: center;
+    @include ms-respond(font-size,4);
 }
 
 .header-img{
@@ -25,25 +25,33 @@ html{
 .project-introduction{
     padding: $proj-intro-padding;
 
-    @include mobile_device {
-        @include padding-left-right;
+    @include lrg-mobile {
+      padding:1rem;
     }
 }
 
 .media{
+    text-align: center;
     @include media;
-    font-family: $lato;
+    @include projDscript;
+    text-align: center;
+    border-bottom: $print_border;
+    font-family: $monte;
+    @include ms-respond(font-size,2);
 }
+
 
 .project-desc{
     @include ms-respond(font-size,2);
     @include projDscript;
+    text-align: left;
     border-bottom:$print_border;
 }
 
 #project-desc{
     border-top:$print_border;
     margin-top: 55px;
+    width: 75%;
 }
 
 .main-image{
@@ -134,7 +142,6 @@ html{
 }
 
 .box_3,.box_4{
-    // opacity: 1;
     top:372px;
 }
 
@@ -154,7 +161,7 @@ html{
     height:100%;
 
     .other-projects{
-       width:300px;
+       width:250px;
    }
 
    .project-heading{

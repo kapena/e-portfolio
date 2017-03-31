@@ -15,7 +15,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400");
@@ -274,14 +274,14 @@ html {
   width: 100%;
   height: 100%; }
 
-.proj {
-  font-size: 1.4641em;
-  text-align: center; }
+.proj-n {
+  text-align: center;
+  font-size: 1.4641em; }
   @media (min-width: 10em) and (max-width: 20em) {
-    .proj {
+    .proj-n {
       font-size: calc( 1.4641em + 0.7658 * ( ( 100vw - 10em) / 10 )); } }
   @media (min-width: 20em) {
-    .proj {
+    .proj-n {
       font-size: 2.2299em; } }
 
 .header-img {
@@ -290,32 +290,46 @@ html {
 
 .project-introduction {
   padding: 50px 100px 90px; }
-  @media only screen and (max-width: 465px) {
+  @media only screen and (max-width: 523px) {
     .project-introduction {
-      padding-right: 65px;
-      padding-left: 65px; } }
+      padding: 1rem; } }
 
 .media {
+  text-align: center;
   display: block;
   padding-bottom: 5px;
   bottom: 15px;
-  font-family: "Lato", "serif"; }
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 5px;
+  bottom: 30px;
+  padding: 2rem 0rem 2rem;
+  text-align: center;
+  border-bottom: 2px solid #EB6A69;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.21em; }
+  @media (min-width: 10em) and (max-width: 20em) {
+    .media {
+      font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
+  @media (min-width: 20em) {
+    .media {
+      font-size: 1.49328em; } }
 
-.project-desc, .media {
+.project-desc {
   font-size: 1.21em;
   position: relative;
   width: 80%;
   margin: auto;
-  text-align: center;
   margin-top: 5px;
   bottom: 30px;
   padding: 2rem 0rem 2rem;
   border-bottom: 2px solid #EB6A69; }
   @media (min-width: 10em) and (max-width: 20em) {
-    .project-desc, .media {
+    .project-desc {
       font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
   @media (min-width: 20em) {
-    .project-desc, .media {
+    .project-desc {
       font-size: 1.49328em; } }
 
 .main-image {
@@ -371,7 +385,7 @@ html {
     -webkit-transition: blur 0.8s;
     -moz-transition: blur 0.8s;
     transition: blur 0.8s; }
-    @media only screen and (max-width: 465px) {
+    @media only screen and (max-width: 425px) {
       .images .disp1, .images .disp2, .images .disp3, .images .disp4 {
         margin: 0;
         padding-right: 0;
@@ -444,12 +458,12 @@ html {
     .more-projects {
       font-size: 1.82479em; } }
 
-@media only screen and (min-width: 1350px) {
+@media only screen and (min-width: 1425px) {
   .images {
     padding-left: 10em;
     padding-right: 10em; } }
 
-@media only screen and (min-width: 1695px) {
+@media only screen and (min-width: 1575px) {
   .images {
     padding-left: 20em;
     padding-right: 20em; } }
@@ -457,7 +471,7 @@ html {
 .project-wrapper {
   height: 100%; }
   .project-wrapper .other-projects {
-    width: 300px; }
+    width: 250px; }
 
 .proj-container {
   display: -webkit-box;
@@ -477,10 +491,6 @@ html {
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
-
-.line-divider {
-  width: 100%;
-  height: 100%; }
 
 .link {
   font-family: "Montserrat", sans-serif;
@@ -527,20 +537,20 @@ li {
   display: inline-flex;
   justify-content: center; }
 
-.home, .projects, .about, .contact, .blog, .projects, .about, .contact, .blog {
+.home, .projects-link, .about, .contact-link, .blog, .about, .blog {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   padding: 0rem 1rem 0rem;
   text-decoration: none; }
 
-.home:hover, .projects:hover, .about:hover, .contact:hover, .blog:hover {
+.home:hover, .projects-link:hover, .about:hover, .contact-link:hover, .blog:hover {
   color: blue; }
 
-.home, .projects, .about, .contact, .blog {
+.home, .projects-link, .about, .contact-link, .blog {
   color: black;
   font-weight: 900; }
 
-.home, .projects, .about, .contact, .blog {
+.home, .projects-link, .about, .contact-link, .blog {
   padding: 0rem 1rem 0rem;
   text-decoration: none; }
 
@@ -574,22 +584,18 @@ li {
   height: 25px;
   bottom: 4px; }
 
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 425px) {
   .footer-nav {
     padding-top: 10px;
     align-items: center;
     flex-direction: column;
     height: 17rem; } }
 
-@media only screen and (max-width: 465px) {
+@media only screen and (max-width: 425px) {
   .social {
     height: 10rem;
     align-content: center;
     flex-direction: column; } }
-
-@media only screen and (max-width: 465px) {
-  .rect-divide {
-    height: 1.5px; } }
 
 .other-projects:hover .link {
   fill: black; }

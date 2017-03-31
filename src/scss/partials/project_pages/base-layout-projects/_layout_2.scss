@@ -1,4 +1,5 @@
 @import "modules/projects/pages_module";
+@import "modules/home-page/home-module";
 @import "vendor/mod-scale";
 @import "partials/variables";
 @import "modules/projects-page/projects-module";
@@ -8,7 +9,7 @@ body{
  @include body-mixin;
 }
 
-.proj{
+.proj-n{
     @include ms-respond(font-size,4);
     text-align: center;
 }
@@ -20,15 +21,19 @@ body{
 .project-introduction{
     padding: $proj-intro-padding;
 
-    @include mobile_device {
-        @include padding-left-right;
+    @include lrg-mobile {
+        padding:1rem;
     }
 }
 
 .media{
+    text-align: center;
     @include media;
+    @include projDscript;
+    text-align: center;
     border-bottom: $urban_border;
-    font-family: $lato;
+    font-family: $monte;
+    @include ms-respond(font-size,2);
 }
 
 .project-desc{
@@ -109,7 +114,7 @@ body{
     height:100%;
 
     .other-projects{
-       width:300px;
+       width:250px;
    }
 
    .project-heading{
@@ -120,26 +125,26 @@ body{
    }
 }
 
-.point-p-link{
-    @include display(flex);
-    @include justify-content(center);
-}
-.point:hover{
-    color:blue;
-}
-.point{
-    padding: 5px;
-    font-family: $monte;
-    text-decoration: none;
-    margin-bottom: 120px;
-    font-size: ms(1);
-    @include link-hover-footer;
-
-    &:hover{
-        background-size:100% 100%;
-    }
+.point-p:hover,
+.point-p:focus {
+   color:blue;
 }
 
+.point-p {
+    font-family: $monte !important;
+    color:$typeColor;
+    padding: 2px;
+    font-weight: 900;
+    margin: 0 -2px;
+}
+
+.point-p {
+    @include hover-links;
+}
+
+.point-p:hover {
+   background-size:100% 100%;
+}
 .proj-container{
     @include display(flex);
     justify-content: center;

@@ -1,7 +1,12 @@
 
 // Drawing surface
 var hGraph = Snap('#skills-graphic');
-var skill = Snap.select('.skill');
+// text
+var graphicT = Snap.select('.graph');
+var webT = Snap.select('.web-d');
+var digitalT = Snap.select('.digital-d');
+
+
 // graphic circle
 var gC = Snap.select('.gC');
 // graphic triangle
@@ -13,12 +18,14 @@ var footer = Snap.select('.wF');
 var p1 = Snap.select('.p1');
 var img = Snap.select('.img');
 var p2 = Snap.select('.p2');
-var webD = Snap.select('.webD');
+var webD = Snap.select('.elements');
 //digital
 var playbtn = Snap.select('.play');
 var frame = Snap.select('.frame');
 hGraph.mousemove(function(e){
-    skill.addClass('move').removeClass('under');
+    graphicT.addClass('moveUp').removeClass('under');
+    webT.addClass('moveUp').removeClass('under');
+    digitalT.addClass('moveUp').removeClass('under');
     // circle and triangle graphic
     gC.addClass('playGc').removeClass('gC');
     gT.addClass('playGt').removeClass('gT');
@@ -36,7 +43,9 @@ hGraph.mousemove(function(e){
 });
 
 hGraph.mouseout(function(){
-  skill.addClass('under').removeClass('move');
+  graphicT.addClass('under').removeClass('moveUp');
+  webT.addClass('under').removeClass('moveUp');
+  digitalT.addClass('under').removeClass('moveUp');
   gC.addClass('gC').removeClass('playGc');
   gT.addClass('gT').removeClass('playGt');
   nav.addClass('wN').removeClass('playwN');
@@ -46,5 +55,5 @@ hGraph.mouseout(function(){
   p2.addClass('p2').removeClass('playP2');
   webD.addClass('webD').removeClass('move-L');
   playbtn.addClass('play').removeClass('movePlay');
-  frame.addClass('frame').removeClass('skewFrame');  
+  frame.addClass('frame').removeClass('skewFrame');
 });
