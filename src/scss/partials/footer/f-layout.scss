@@ -26,7 +26,7 @@ li{
     padding:2rem 0rem 2rem;
     width:100%;
     height:100%;
-    background-color:$footer-nav;
+    background-color:$footer-social;
     flex-wrap:wrap;
     display: inline-flex;
     justify-content: center;
@@ -54,7 +54,7 @@ li{
 
 .social{
     display: inline-flex;
-    background: $footer-social;
+    background:$footer-social;
     position: relative;
     width: 100%;
     flex-wrap: wrap;
@@ -80,7 +80,7 @@ li{
 .bottom{
   font-family:$monte;
   text-align:center;
-  background-color:$footer_social;
+  background-color:$footer-social;
   position: relative;
   height: 25px;
   bottom: 4px;

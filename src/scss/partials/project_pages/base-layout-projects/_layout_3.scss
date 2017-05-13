@@ -38,6 +38,7 @@ body{
 .project-desc{
     @include ms-respond(font-size,2);
     @include projDscript;
+    text-align: center;
     border-bottom:$radiate_border;
 }
 

@@ -668,12 +668,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #423F3F; }
 
 .about-page {
-  margin: 2rem 0rem; }
+  margin: 10rem 0rem 2rem; }
 
 .about-short-disc {
   font-size: 1.21em;
   margin: 0% 15% 0%;
-  font-weight: 600;
   line-height: 1.61803em;
   padding: 2rem;
   position: relative;
@@ -1340,7 +1339,7 @@ li {
   padding: 2rem 0rem 2rem;
   width: 100%;
   height: 100%;
-  background-color: silver;
+  background-color: #e0e0e0;
   flex-wrap: wrap;
   display: inline-flex;
   justify-content: center; }

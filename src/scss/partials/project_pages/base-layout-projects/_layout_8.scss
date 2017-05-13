@@ -42,6 +42,7 @@ html{
     @include ms-respond(font-size,2);
     @include projDscript;
     border-bottom:$tension_border;
+    text-align: center;
 }
 
 .main-image{

@@ -44,7 +44,7 @@ html{
 .project-desc{
     @include ms-respond(font-size,2);
     @include projDscript;
-    text-align: left;
+    text-align: center;
     border-bottom:$print_border;
 }
 

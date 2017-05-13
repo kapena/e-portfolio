@@ -1,4 +1,5 @@
 @import "modules/projects/pages_module";
+@import "modules/home-page/home-module";
 @import "vendor/mod-scale";
 @import "partials/variables";
 @import "modules/global-mqs/mqs";
@@ -43,6 +44,28 @@ html{
     @include ms-respond(font-size,2);
     @include projDscript;
     border-bottom:$vivd_border;
+    text-align: center;
+}
+
+.point-p:hover,
+.point-p:focus {
+   color:blue;
+}
+
+#hip {
+    font-family: $monte !important;
+    color:$typeColor;
+    padding: 2px;
+    font-weight: 900;
+    margin: 0 -2px;
+}
+
+#hip {
+    @include hover-links;
+}
+
+#hip:hover {
+   background-size:100% 100%;
 }
 
 .main-image{

@@ -91,24 +91,24 @@ gulp.task('proj3_styles',function(){
 });
 
 // Script task for proj3
-gulp.task('proj3_js',function(){
-    return gulp.src(paths.source.project_pgs_src.proj_3.js_proj3)
-    // find errors in stream then nofity me in terminal
-    .pipe(plumber({errorHandler:onError}))
-    .pipe(concat('proj3.js'))
-    // .pipe(concat('site.js'))
-    .pipe(gulp.dest(paths.project_pages_dest.proj3_dest.js_proj3))
-    .pipe(uglify())
-    .pipe(rename({
-        suffix:'.min'
-    }))
-    .pipe(notify({ message: 'proj3_js task finished' }))
-    .pipe(gulp.dest(paths.project_pages_dest.proj3_dest.js_proj3)),
-    browserSync.reload();
-});
+// gulp.task('proj3_js',function(){
+//     return gulp.src(paths.source.project_pgs_src.proj_3.js_proj3)
+//     // find errors in stream then nofity me in terminal
+//     .pipe(plumber({errorHandler:onError}))
+//     .pipe(concat('proj3.js'))
+//     // .pipe(concat('site.js'))
+//     .pipe(gulp.dest(paths.project_pages_dest.proj3_dest.js_proj3))
+//     .pipe(uglify())
+//     .pipe(rename({
+//         suffix:'.min'
+//     }))
+//     .pipe(notify({ message: 'proj3_js task finished' }))
+//     .pipe(gulp.dest(paths.project_pages_dest.proj3_dest.js_proj3)),
+//     browserSync.reload();
+// });
 
 gulp.task('project3',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('proj3_styles','proj3_js','sync');
+    runSequence('proj3_styles','sync');
 });
