@@ -47,10 +47,20 @@ html{
     text-align: center;
 }
 
-.point-p:hover,
-.point-p:focus {
-   color:blue;
+#sponsor{
+    text-decoration: none;
+     color:royalblue;
 }
+
+#sponsor:hover{
+    transition: color 0.5s;
+    color:#333;
+}
+
+// .point-p:hover,
+// .point-p:focus {
+//    color:blue;
+// }
 
 #hip {
     font-family: $monte !important;

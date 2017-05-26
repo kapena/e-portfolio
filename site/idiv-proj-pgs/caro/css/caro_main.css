@@ -257,6 +257,9 @@ h1, h2 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
+/* Here I import all my modules into the home-module */
+/* Padding mixin for links inside paragraph*/
+/* Pushing intro-msg margins in closer */
 /* Modular Scale */
 /* Colors project pages */
 /* halfCircle path colors indiv project pages */
@@ -344,67 +347,6 @@ body {
   margin: 50px;
   text-align: center; }
 
-#shillo {
-  text-decoration: none;
-  color: #00966C; }
-
-#shillo:hover {
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  transition: color 0.5s;
-  color: #333; }
-
-.images {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  margin-bottom: 75px; }
-  .images .disp1, .images .disp2 {
-    margin: 5px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    width: 100%;
-    max-width: 450px; }
-    @media only screen and (max-width: 425px) {
-      .images .disp1, .images .disp2 {
-        margin: 0;
-        padding-right: 0;
-        padding-left: 0; } }
-
-.caption1, .caption2 {
-  margin: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  width: 300px;
-  top: 10px;
-  text-align: center;
-  margin-top: 20px;
-  border-top: 2px solid #00966C;
-  border-bottom: 2px solid #00966C;
-  font-size: 1em; }
-
 .box_1, .box_2 {
   position: absolute;
   margin: 5px;
@@ -461,6 +403,30 @@ body {
   height: 100%; }
   .project-wrapper .other-projects {
     width: 250px; }
+
+.caro:hover,
+.caro:focus {
+  color: blue; }
+
+.caro {
+  font-family: "Montserrat", sans-serif !important;
+  color: #333333;
+  padding: 2px;
+  font-weight: 900;
+  margin: 0 -2px; }
+
+.caro {
+  border: none;
+  border-bottom: 2px solid royalblue;
+  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background-size: 100% 1px;
+  transition: .2s,color .1s .1s;
+  text-decoration: none; }
+
+.caro:hover {
+  background-size: 100% 100%; }
 
 .proj-container {
   display: -webkit-box;

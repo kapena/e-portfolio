@@ -9,7 +9,7 @@
 
 .contact-page{
     position: relative;
-    top:5rem;
+    top:2rem;
 }
 
 .backtop{
@@ -51,6 +51,7 @@ form input {
 // lable name
 .your-name{
     bottom:16px;
+    border-top:none;
     font-weight: $montB;
     @include lableSpacing;
 }

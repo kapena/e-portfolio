@@ -55,14 +55,14 @@ var onError = function(err){
 };
 
 // prefixer and sourcemaps
-gulp.task('autoprefix_proj1',['proj1_styles'],function () {
-    del(['./site/css/main.css.map']);
-    return gulp.src('./site/indiv_project_pages/proj1/css/proj2_main.css')
-        .pipe(sourcemaps.init())
-        .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.styles_proj2));
-});
+// gulp.task('autoprefix_proj1',['proj1_styles'],function () {
+//     del(['./site/css/main.css.map']);
+//     return gulp.src('./site/indiv_project_pages/proj1/css/proj2_main.css')
+//         .pipe(sourcemaps.init())
+//         .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
+//         .pipe(sourcemaps.write('.'))
+//         .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.styles_proj2));
+// });
 
 
 // Styles task for proj1
@@ -75,7 +75,7 @@ gulp.task('proj3_styles',function(){
     .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
     .pipe(uncss({
-        html:['site/idiv-proj-pgs/rad/radiate.html'],
+        html:['site/idiv-proj-pgs/caro/caro.html'],
         ignore:['.box_1','.box_2','.discript1','.discript2','.image-container','.image-container','.img1','.img2']
     }))
     .pipe(gulp.dest(paths.project_pages_dest.proj3_dest.styles_proj3))

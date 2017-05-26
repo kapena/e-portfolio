@@ -374,7 +374,7 @@ html {
   -ms-flex-pack: center;
   position: relative;
   margin-bottom: 75px; }
-  .images .disp1, .images .disp2, .images .disp3, .images .disp4 {
+  .images .disp1, .images .disp2 {
     margin: 5px;
     margin-bottom: 20px;
     padding-left: 10px;
@@ -387,7 +387,7 @@ html {
     -moz-transition: blur 0.8s;
     transition: blur 0.8s; }
     @media only screen and (max-width: 425px) {
-      .images .disp1, .images .disp2, .images .disp3, .images .disp4 {
+      .images .disp1, .images .disp2 {
         margin: 0;
         padding-right: 0;
         padding-left: 0; } }
@@ -425,7 +425,7 @@ html {
   .box_1, .box_2, .box_3, .box_4, .box_2, .box_3, .box_4 {
     width: 0px; } }
 
-.caption1, .caption2, .caption3, .caption4 {
+.caption1, .caption2 {
   margin: auto;
   padding-top: 25px;
   padding-bottom: 25px;

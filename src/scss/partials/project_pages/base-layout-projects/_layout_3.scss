@@ -1,7 +1,8 @@
 @import "modules/projects/pages_module";
+@import "modules/home-page/home-module";
 @import "vendor/mod-scale";
 @import "partials/variables";
-// @import "modules/projects-page/projects-module";
+@import "modules/projects-page/projects-module";
 @import "modules/global-mqs/mqs";
 
 body{
@@ -159,6 +160,27 @@ body{
        position: relative;
        @include ms-respond(font-size,3);
    }
+}
+
+.caro:hover,
+.caro:focus {
+   color:blue;
+}
+
+.caro {
+    font-family: $monte !important;
+    color:$typeColor;
+    padding: 2px;
+    font-weight: 900;
+    margin: 0 -2px;
+}
+
+.caro {
+    @include hover-links;
+}
+
+.caro:hover {
+   background-size:100% 100%;
 }
 
 

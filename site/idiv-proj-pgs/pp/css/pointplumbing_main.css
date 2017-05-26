@@ -332,6 +332,21 @@ body {
     .project-desc {
       font-size: 1.49328em; } }
 
+.main-image {
+  width: 100%; }
+  .main-image .story-seq {
+    width: 100%;
+    margin: auto;
+    display: block;
+    max-width: 1000px; }
+
+.break-wrapper {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
+  margin: 50px;
+  text-align: center; }
+
 .more-projects {
   font-size: 1.331em;
   text-align: center;

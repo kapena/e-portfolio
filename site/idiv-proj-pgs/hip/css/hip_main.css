@@ -309,7 +309,7 @@ html {
   bottom: 30px;
   padding: 2rem 0rem 2rem;
   text-align: center;
-  border-bottom: 2px solid #474747;
+  border-bottom: 2px solid #423F3F;
   font-family: "Montserrat", sans-serif;
   font-size: 1.21em; }
   @media (min-width: 10em) and (max-width: 20em) {
@@ -327,7 +327,7 @@ html {
   margin-top: 5px;
   bottom: 30px;
   padding: 2rem 0rem 2rem;
-  border-bottom: 2px solid #474747;
+  border-bottom: 2px solid #423F3F;
   text-align: center; }
   @media (min-width: 10em) and (max-width: 20em) {
     .project-desc {
@@ -335,6 +335,14 @@ html {
   @media (min-width: 20em) {
     .project-desc {
       font-size: 1.49328em; } }
+
+#sponsor {
+  text-decoration: none;
+  color: royalblue; }
+
+#sponsor:hover {
+  transition: color 0.5s;
+  color: #333; }
 
 #hip {
   font-family: "Montserrat", sans-serif !important;
