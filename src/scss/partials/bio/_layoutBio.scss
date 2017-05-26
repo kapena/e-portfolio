@@ -5,13 +5,13 @@
 @import "vendor/bourbon";
 
 .about-page{
-  margin: 2rem 0rem;
+  margin: 10rem 0rem 2rem;
 }
 
 .about-short-disc{
     @include ms-respond(font-size,2);
     @include left-right-margin;
-    font-weight:$montSemi;
+    // font-weight:$montSemi;
     line-height:ms(1);
     padding: 2rem;
     position: relative;

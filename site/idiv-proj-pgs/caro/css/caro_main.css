@@ -257,6 +257,9 @@ h1, h2 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
+/* Here I import all my modules into the home-module */
+/* Padding mixin for links inside paragraph*/
+/* Pushing intro-msg margins in closer */
 /* Modular Scale */
 /* Colors project pages */
 /* halfCircle path colors indiv project pages */
@@ -269,10 +272,6 @@ body {
   /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
   background-color: whitesmoke; }
-
-html {
-  width: 100%;
-  height: 100%; }
 
 .proj-n {
   text-align: center;
@@ -306,7 +305,7 @@ html {
   bottom: 30px;
   padding: 2rem 0rem 2rem;
   text-align: center;
-  border-bottom: 2px solid #FF4669;
+  border-bottom: 2px solid #00966C;
   font-family: "Montserrat", sans-serif;
   font-size: 1.21em; }
   @media (min-width: 10em) and (max-width: 20em) {
@@ -324,7 +323,8 @@ html {
   margin-top: 5px;
   bottom: 30px;
   padding: 2rem 0rem 2rem;
-  border-bottom: 2px solid #FF4669; }
+  text-align: center;
+  border-bottom: 2px solid #00966C; }
   @media (min-width: 10em) and (max-width: 20em) {
     .project-desc {
       font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
@@ -347,59 +347,6 @@ html {
   margin: 50px;
   text-align: center; }
 
-#personal {
-  text-decoration: none;
-  color: #FF4669; }
-
-#personal:hover {
-  -webkit-transition: color 0.5s;
-  -moz-transition: color 0.5s;
-  transition: color 0.5s;
-  color: #333; }
-
-.images {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  box-pack: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  position: relative;
-  margin-bottom: 75px; }
-  .images .disp1, .images .disp2 {
-    margin: 5px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    width: 100%;
-    max-width: 450px;
-    -webkit-filter: blur(0px);
-    -webkit-transition: blur 0.8s;
-    -moz-transition: blur 0.8s;
-    transition: blur 0.8s; }
-    @media only screen and (max-width: 425px) {
-      .images .disp1, .images .disp2 {
-        margin: 0;
-        padding-right: 0;
-        padding-left: 0; } }
-
 .box_1, .box_2 {
   position: absolute;
   margin: 5px;
@@ -416,35 +363,22 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(246, 51, 92, 0.8);
-  box-shadow: 0 7px 0 #F6B8C0;
+  background-color: #00966C;
+  box-shadow: 0 7px 0 #32cd32;
   -webkit-transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   transition: opacity 0.5s;
-  opacity: 0;
-  height: 325px; }
+  opacity: 0; }
 
 .box_1, .box_2, .box_2 {
   top: 0px; }
 
 :hover.box_1, .box_2:hover {
-  opacity: 0.9; }
+  opacity: 0.8; }
 
 @media only screen and (max-width: 780px) {
   .box_1, .box_2 {
     width: 0px; } }
-
-.caption1, .caption2 {
-  margin: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  width: 300px;
-  top: 10px;
-  text-align: center;
-  margin-top: 20px;
-  border-bottom: 2px solid #FF4669;
-  border-top: 2px solid #FF4669;
-  font-size: 1em; }
 
 .discript1, .discript2 {
   font-size: 1.61803em;
@@ -469,6 +403,30 @@ html {
   height: 100%; }
   .project-wrapper .other-projects {
     width: 250px; }
+
+.caro:hover,
+.caro:focus {
+  color: blue; }
+
+.caro {
+  font-family: "Montserrat", sans-serif !important;
+  color: #333333;
+  padding: 2px;
+  font-weight: 900;
+  margin: 0 -2px; }
+
+.caro {
+  border: none;
+  border-bottom: 2px solid royalblue;
+  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background-size: 100% 1px;
+  transition: .2s,color .1s .1s;
+  text-decoration: none; }
+
+.caro:hover {
+  background-size: 100% 100%; }
 
 .proj-container {
   display: -webkit-box;
@@ -504,6 +462,9 @@ html {
   -moz-transition: fill 0.2s;
   transition: fill 0.2s; }
 
+li {
+  list-style: none; }
+
 /* Modular Scale */
 /* Colors project pages */
 /* halfCircle path colors indiv project pages */
@@ -515,7 +476,7 @@ footer {
 li {
   list-style: none; }
 
-#home, #projects, #about, #contact, #blog {
+#home, #projects, #about, #contact {
   text-decoration: none; }
 
 .footer-area {
@@ -529,25 +490,25 @@ li {
   padding: 2rem 0rem 2rem;
   width: 100%;
   height: 100%;
-  background-color: silver;
+  background-color: #e0e0e0;
   flex-wrap: wrap;
   display: inline-flex;
   justify-content: center; }
 
-.home, .projects-link, .about, .contact-link, .blog, .about, .blog {
+.home, .projects-link, .about, .contact-link, .projects-link, .about, .contact-link {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   padding: 0rem 1rem 0rem;
   text-decoration: none; }
 
-.home:hover, .projects-link:hover, .about:hover, .contact-link:hover, .blog:hover {
+.home:hover, .projects-link:hover, .about:hover, .contact-link:hover {
   color: blue; }
 
-.home, .projects-link, .about, .contact-link, .blog {
+.home, .projects-link, .about, .contact-link {
   color: black;
   font-weight: 900; }
 
-.home, .projects-link, .about, .contact-link, .blog {
+.home, .projects-link, .about, .contact-link {
   padding: 0rem 1rem 0rem;
   text-decoration: none; }
 

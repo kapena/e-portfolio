@@ -44,6 +44,7 @@ html{
     @include ms-respond(font-size,2);
     @include projDscript;
     border-bottom:$royal_border;
+    text-align: center;
 }
 
 #project-desc{

@@ -55,14 +55,14 @@ var onError = function(err){
 };
 
 // prefixer and sourcemaps
-gulp.task('autoprefix_proj1',['proj1_styles'],function () {
-    del(['./site/css/main.css.map']);
-    return gulp.src('./site/indiv_project_pages/proj1/css/proj2_main.css')
-        .pipe(sourcemaps.init())
-        .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.styles_proj2));
-});
+// gulp.task('autoprefix_proj1',['proj1_styles'],function () {
+//     del(['./site/css/main.css.map']);
+//     return gulp.src('./site/indiv_project_pages/proj1/css/proj2_main.css')
+//         .pipe(sourcemaps.init())
+//         .pipe(postcss([ autoprefixer({ browsers: ['> 1%','last 2 versions'] }) ]))
+//         .pipe(sourcemaps.write('.'))
+//         .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.styles_proj2));
+// });
 
 
 // Styles task for proj1
@@ -75,7 +75,7 @@ gulp.task('proj3_styles',function(){
     .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
     .pipe(uncss({
-        html:['site/idiv-proj-pgs/rad/radiate.html'],
+        html:['site/idiv-proj-pgs/caro/caro.html'],
         ignore:['.box_1','.box_2','.discript1','.discript2','.image-container','.image-container','.img1','.img2']
     }))
     .pipe(gulp.dest(paths.project_pages_dest.proj3_dest.styles_proj3))
@@ -91,24 +91,24 @@ gulp.task('proj3_styles',function(){
 });
 
 // Script task for proj3
-gulp.task('proj3_js',function(){
-    return gulp.src(paths.source.project_pgs_src.proj_3.js_proj3)
-    // find errors in stream then nofity me in terminal
-    .pipe(plumber({errorHandler:onError}))
-    .pipe(concat('proj3.js'))
-    // .pipe(concat('site.js'))
-    .pipe(gulp.dest(paths.project_pages_dest.proj3_dest.js_proj3))
-    .pipe(uglify())
-    .pipe(rename({
-        suffix:'.min'
-    }))
-    .pipe(notify({ message: 'proj3_js task finished' }))
-    .pipe(gulp.dest(paths.project_pages_dest.proj3_dest.js_proj3)),
-    browserSync.reload();
-});
+// gulp.task('proj3_js',function(){
+//     return gulp.src(paths.source.project_pgs_src.proj_3.js_proj3)
+//     // find errors in stream then nofity me in terminal
+//     .pipe(plumber({errorHandler:onError}))
+//     .pipe(concat('proj3.js'))
+//     // .pipe(concat('site.js'))
+//     .pipe(gulp.dest(paths.project_pages_dest.proj3_dest.js_proj3))
+//     .pipe(uglify())
+//     .pipe(rename({
+//         suffix:'.min'
+//     }))
+//     .pipe(notify({ message: 'proj3_js task finished' }))
+//     .pipe(gulp.dest(paths.project_pages_dest.proj3_dest.js_proj3)),
+//     browserSync.reload();
+// });
 
 gulp.task('project3',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('proj3_styles','proj3_js','sync');
+    runSequence('proj3_styles','sync');
 });

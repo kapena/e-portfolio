@@ -668,12 +668,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #423F3F; }
 
 .about-page {
-  margin: 2rem 0rem; }
+  margin: 10rem 0rem 2rem; }
 
 .about-short-disc {
   font-size: 1.21em;
   margin: 0% 15% 0%;
-  font-weight: 600;
   line-height: 1.61803em;
   padding: 2rem;
   position: relative;
@@ -747,7 +746,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-page {
   position: relative;
-  top: 5rem; }
+  top: 2rem; }
 
 .backtop {
   top: 1rem; }
@@ -784,10 +783,10 @@ form input {
 
 .your-name {
   bottom: 16px;
+  border-top: none;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
-  border-top: 1px solid #00f;
   border-bottom: 1px solid #00f;
   margin-left: 20px;
   position: relative;
@@ -808,7 +807,6 @@ form input {
   padding-right: 5px;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
-  border-top: 1px solid #00f;
   border-bottom: 1px solid #00f;
   margin-left: 20px;
   position: relative;
@@ -832,7 +830,6 @@ form input {
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
-  border-top: 1px solid #00f;
   border-bottom: 1px solid #00f;
   margin-left: 20px;
   position: relative;
@@ -1003,7 +1000,6 @@ textarea.parsley-error {
   opacity: 0;
   left: 20px;
   font-family: "Lora", serif;
-  border-top: 1px solid #00f;
   border-bottom: 1px solid #00f;
   position: relative;
   transition: all .3s ease-in;
@@ -1270,7 +1266,7 @@ h1, h2, h3, h4, h5, h6 {
 .exit-msg {
   font-size: 1.21em;
   margin: 0% 15% 0%;
-  font-weight: 600;
+  font-weight: "Montserrat", sans-serif;
   position: relative;
   text-align: center; }
   @media (min-width: 15em) and (max-width: 60em) {
@@ -1340,7 +1336,7 @@ li {
   padding: 2rem 0rem 2rem;
   width: 100%;
   height: 100%;
-  background-color: silver;
+  background-color: #e0e0e0;
   flex-wrap: wrap;
   display: inline-flex;
   justify-content: center; }

@@ -20,8 +20,7 @@
                     "styles_proj2":"./src/scss/pointplumbing_main.scss"
                 },
                 "proj_3":{
-                    "styles_proj3":"./src/scss/radiate_main.scss",
-                    "js_proj3":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/radiate.js"]
+                    "styles_proj3":"./src/scss/caro_main.scss"
                 },
                 "proj_4":{
                     "styles_proj4":"./src/scss/urban_main.scss",
@@ -44,8 +43,8 @@
                     "js_proj8":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/tension.js"]
                 },
                 "proj_9":{
-                    "styles_proj9":"./src/scss/vivid_main.scss",
-                    "js_proj9":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/vivd.js"]
+                    "styles_proj9":"./src/scss/hip_main.scss",
+                    "js_proj9":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/hip.js"]
                     }
                 }
             },
@@ -67,9 +66,8 @@
                 "html":"site/idiv-proj-pgs/pp"
             },
             "proj3_dest":{
-                "styles_proj3":"site/idiv-proj-pgs/rad/css",
-                "js_proj3":"site/idiv-proj-pgs/rad/js",
-                "html":"site/idiv-proj-pgs/rad"
+                "styles_proj3":"site/idiv-proj-pgs/caro/css",
+                "html":"site/idiv-proj-pgs/caro"
             },
             "proj4_dest":{
                 "styles_proj4":"site/idiv-proj-pgs/urb/css",
@@ -97,9 +95,9 @@
                 "html":"site/idiv-proj-pgs/ten"
             },
             "proj9_dest":{
-                "styles_proj9":"site/idiv-proj-pgs/vl/css",
-                "js_proj9":"site/idiv-proj-pgs/vl/js",
-                "html":"site/idiv-proj-pgs/vl"
+                "styles_proj9":"site/idiv-proj-pgs/hip/css",
+                "js_proj9":"site/idiv-proj-pgs/hip/js",
+                "html":"site/idiv-proj-pgs/hip"
             }
         },
 
