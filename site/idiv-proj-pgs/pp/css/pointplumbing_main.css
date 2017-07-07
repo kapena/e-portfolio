@@ -332,6 +332,10 @@ body {
     .project-desc {
       font-size: 1.49328em; } }
 
+.tools {
+  text-align: center;
+  font-weight: 600; }
+
 .main-image {
   width: 100%; }
   .main-image .story-seq {

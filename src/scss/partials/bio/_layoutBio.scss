@@ -4,48 +4,131 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
-.about-page{
-  margin: 10rem 0rem 2rem;
-}
-
 .about-short-disc{
-    @include ms-respond(font-size,2);
+    @include ms-respond(font-size,1);
     @include left-right-margin;
     // font-weight:$montSemi;
     line-height:ms(1);
-    padding: 2rem;
+    // padding: 2rem;
     position: relative;
     text-align: center;
-    bottom:50px;
+    // bottom:50px;
+}
+
+.about-info{
+  display:flex;
+  margin:3em 4em 4em;
+  flex-direction:row;
+}
+
+.simple{
+  position: relative;
+  top: 3em;
+}
+
+.col-left, .col-right{
+  flex-grow:1;
+  width:10em;
+  height:100%;
+}
+
+.process{
+  margin-top:2em;
+}
+.graph-serv{
+  display: flex;
+  justify-content: center;
+}
+
+.service{
+  width: 600px;
+  height: 200px;
+  margin: 3em 0em 3em;
+}
+
+.graphic-text2{
+  font-family: $monte;
+}
+
+.slideDown{
+  transition: transform 0.8s;
+  transform: translateY(8px);
+}
+
+.slideUp{
+  transition: transform 0.4s;
+  // transition: fill 0.8s;
+  fill:royalblue;
+  transform: translateY(-81px);
 }
 
 #inspires{
-  padding:1rem 0rem 1rem;
+  // padding:1rem 0rem 1rem;
   text-align: center;
-  @include page-headings;
+  // @include page-headings;
+  @include ms-respond(font-size,3);
   font-weight:800;
 }
 
-.list{
-  text-align: center;
-  display: block;
-  margin-bottom:1rem;
+.proj-enq{
+  margin-top: 7em;
+  margin-bottom: 4em;
 }
 
-.bio-image{
-    width:100%;
-    margin-top: 4rem;
-    .my-story-seq{
-        width:100%;
-        margin: auto;
-        display: block;
-        max-width: 1000px;
-    }
+.idea{
+  display: flex;
+  margin:3em 0em;
+  justify-content: center;
+}
+.tell:hover,
+.tell:focus {
+   color:blue;
+}
+
+.tell {
+    font-family: $monte !important;
+    color:$typeColor;
+    padding: 2px;
+    font-weight: 900;
+    margin: 0 -2px;
+}
+
+.tell {
+    @include hover-links;
+}
+
+.tell:hover {
+   background-size:100% 100%;
 }
 
 .about-short-disc {
   @include tablet {
-    padding: 2rem 3rem;
+    padding: 1rem 1rem;
     margin:3% 0% 3%;
+  }
+}
+
+.proj-enq{
+  @include tablet {
+    margin:0;
+  }
+}
+
+.about-info{
+  @include sm-tablet{
+    flex-direction: column;
+  }
+}
+
+.service{
+  @include sm-tablet{
+    height: 150px;
+    margin: 2em 0em;
+  }
+}
+
+.col-left, .col-right{
+  @include sm-tablet{
+    width:100%;
   }
 }

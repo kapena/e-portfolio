@@ -90,7 +90,7 @@ header {
 
 .name, .title {
   color: #333333;
-  font-weight: 900;
+  font-weight: "" 800;
   font-family: "Montserrat", sans-serif;
   font-size: 1.21em;
   margin: 0rem; }
@@ -109,7 +109,7 @@ header {
   padding-left: 2px;
   padding-right: 2px;
   padding-bottom: 1px;
-  margin: 0% 15% 0%;
+  margin: 0% 8% 0%;
   font-size: 1.21em;
   text-align: center;
   line-height: 1.61803em; }
@@ -124,7 +124,7 @@ header {
   padding: 1rem 0rem 1rem; }
 
 .built {
-  margin: 0% 15% 0%;
+  margin: 0% 8% 0%;
   padding: 1rem 0rem 1rem;
   text-align: center;
   font-size: 1em; }
@@ -158,6 +158,10 @@ header #projects, header #chat, header #bio, header #getintouch, header .email, 
 header #projects:hover, header #chat:hover, header #bio:hover, header #getintouch:hover, header .email:hover, header .point-p:hover {
   background-size: 100% 100%; }
 
+.skills {
+  position: relative;
+  bottom: 2em; }
+
 .tools {
   display: flex;
   justify-content: center; }
@@ -167,7 +171,7 @@ header #projects:hover, header #chat:hover, header #bio:hover, header #getintouc
 
 .graphic-text {
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-weight: "" 800;
   color: #423F3F;
   font-size: 0.82645em; }
   @media (min-width: 15em) and (max-width: 60em) {
@@ -312,7 +316,7 @@ figure {
 .project-heading {
   text-align: center;
   position: relative;
-  font-weight: 500;
+  font-weight: "" 800;
   font-family: "Montserrat", sans-serif;
   color: #423F3F;
   font-size: 1.4641em; }
@@ -326,7 +330,7 @@ figure {
 .project-discript {
   text-align: center;
   position: relative;
-  font-weight: 500;
+  font-weight: "" 800;
   font-family: "Montserrat", sans-serif;
   color: #423F3F;
   font-size: 1.4641em;
@@ -350,10 +354,10 @@ figure {
   top: 410px; }
 
 .pfolio {
-  font-weight: 600;
+  letter-spacing: 1px;
   text-align: center;
   position: relative;
-  font-weight: 500;
+  font-weight: "" 800;
   font-family: "Montserrat", sans-serif;
   color: #423F3F;
   font-size: 1.4641em; }
@@ -392,7 +396,7 @@ figure {
   font-weight: 900; }
 
 .cat {
-  font-weight: 900;
+  font-weight: "" 800;
   font-size: 1.2em; }
 
 @media only screen and (max-width: 850px) {
@@ -421,7 +425,7 @@ figure {
 
 #getintouch {
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-weight: "" 800;
   border: none;
   border-bottom: 2px solid royalblue;
   background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
@@ -667,59 +671,122 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
-.about-page {
-  margin: 10rem 0rem 2rem; }
-
 .about-short-disc {
-  font-size: 1.21em;
-  margin: 0% 15% 0%;
+  font-size: 1.1em;
+  margin: 0% 8% 0%;
   line-height: 1.61803em;
-  padding: 2rem;
   position: relative;
-  text-align: center;
-  bottom: 50px; }
+  text-align: center; }
   @media (min-width: 15em) and (max-width: 60em) {
     .about-short-disc {
-      font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
     .about-short-disc {
-      font-size: 1.77689em; } }
+      font-size: 1.333em; } }
+
+.about-info {
+  display: flex;
+  margin: 3em 4em 4em;
+  flex-direction: row; }
+
+.simple {
+  position: relative;
+  top: 3em; }
+
+.col-left, .col-right {
+  flex-grow: 1;
+  width: 10em;
+  height: 100%; }
+
+.process {
+  margin-top: 2em; }
+
+.graph-serv {
+  display: flex;
+  justify-content: center; }
+
+.service {
+  width: 600px;
+  height: 200px;
+  margin: 3em 0em 3em; }
+
+.graphic-text2 {
+  font-family: "Montserrat", sans-serif; }
+
+.slideDown {
+  transition: transform 0.8s;
+  transform: translateY(8px); }
+
+.slideUp {
+  transition: transform 0.4s;
+  fill: royalblue;
+  transform: translateY(-81px); }
 
 #inspires {
-  padding: 1rem 0rem 1rem;
   text-align: center;
-  text-align: center;
-  position: relative;
-  font-weight: 500;
-  font-family: "Montserrat", sans-serif;
-  color: #423F3F;
-  font-size: 1.4641em;
+  font-size: 1.331em;
   font-weight: 800; }
   @media (min-width: 15em) and (max-width: 60em) {
     #inspires {
-      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
+      font-size: calc( 1.331em + 1.03759 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
     #inspires {
-      font-size: 3.15733em; } }
+      font-size: 2.36859em; } }
 
-.list {
-  text-align: center;
-  display: block;
-  margin-bottom: 1rem; }
+.proj-enq {
+  margin-top: 7em;
+  margin-bottom: 4em; }
 
-.bio-image {
-  width: 100%;
-  margin-top: 4rem; }
-  .bio-image .my-story-seq {
-    width: 100%;
-    margin: auto;
-    display: block;
-    max-width: 1000px; }
+.idea {
+  display: flex;
+  margin: 3em 0em;
+  justify-content: center; }
+
+.tell:hover,
+.tell:focus {
+  color: blue; }
+
+.tell {
+  font-family: "Montserrat", sans-serif !important;
+  color: #333333;
+  padding: 2px;
+  font-weight: 900;
+  margin: 0 -2px; }
+
+.tell {
+  border: none;
+  border-bottom: 2px solid royalblue;
+  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
+  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background-size: 100% 1px;
+  transition: .2s,color .1s .1s;
+  text-decoration: none; }
+
+.tell:hover {
+  background-size: 100% 100%; }
 
 @media only screen and (max-width: 1030px) {
   .about-short-disc {
-    padding: 2rem 3rem;
+    padding: 1rem 1rem;
     margin: 3% 0% 3%; } }
+
+@media only screen and (max-width: 1030px) {
+  .proj-enq {
+    margin: 0; } }
+
+@media only screen and (max-width: 680px) {
+  .about-info {
+    flex-direction: column; } }
+
+@media only screen and (max-width: 680px) {
+  .service {
+    height: 150px;
+    margin: 2em 0em; } }
+
+@media only screen and (max-width: 680px) {
+  .col-left, .col-right {
+    width: 100%; } }
 
 /* Conract  Pg */
 /* Modular Scale */
@@ -784,7 +851,7 @@ form input {
 .your-name {
   bottom: 16px;
   border-top: none;
-  font-weight: 900;
+  font-weight: "" 800;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   border-bottom: 1px solid #00f;
@@ -802,7 +869,7 @@ form input {
       font-size: 1.333em; } }
 
 .your-email {
-  font-weight: 900;
+  font-weight: "" 800;
   bottom: 16px;
   padding-right: 5px;
   font-family: "Montserrat", sans-serif;
@@ -827,7 +894,7 @@ form input {
 .message {
   top: 16px;
   border-bottom: none;
-  font-weight: 900;
+  font-weight: "" 800;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   border-bottom: 1px solid #00f;
@@ -1249,13 +1316,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
+.contact-p-head {
+  text-align: center;
+  margin: 2rem; }
+
+.contact-page {
+  position: relative;
+  top: 5rem; }
+
 .text-footer {
   position: relative;
   top: 15rem; }
 
 .say-hi {
   font-size: 1.4641em;
-  font-weight: 900; }
+  font-weight: "" 800; }
   @media (min-width: 15em) and (max-width: 60em) {
     .say-hi {
       font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
@@ -1265,7 +1340,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .exit-msg {
   font-size: 1.21em;
-  margin: 0% 15% 0%;
+  margin: 0% 8% 0%;
   font-weight: "Montserrat", sans-serif;
   position: relative;
   text-align: center; }
@@ -1285,7 +1360,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .email {
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-weight: "" 800;
   border: none;
   border-bottom: 2px solid royalblue;
   background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
@@ -1328,7 +1403,6 @@ li {
 .footer-area {
   display: flex;
   width: 100%;
-  margin-top: 7rem;
   position: relative; }
 
 .footer-nav {

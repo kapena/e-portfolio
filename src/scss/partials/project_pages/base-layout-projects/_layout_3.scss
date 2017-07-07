@@ -48,6 +48,11 @@ body{
     margin-top:55px;
     width:75%;
 }
+
+.tools{
+  text-align: center;
+  font-weight: 600;
+}
 .main-image{
     width:100%;
 
@@ -59,13 +64,9 @@ body{
     }
 }
 
-.line-1{
-    transform: translateY(-40px);
-}
-
-#line1,#line2{
-    fill:url('#australia');
-}
+// .line-1{
+//     transform: translateY(-40px);
+// }
 
 .break-wrapper{
     padding-bottom: 10px;
@@ -75,73 +76,63 @@ body{
     text-align: center;
 }
 
-#shillo{
-    text-decoration: none;
-    color:#00966C;
-}
-
-#shillo:hover{
-    @include transition(color 0.5s);
-    color:#333;
-}
-
 .proj_images{
     @include display(flex);
 }
 
-.images{
-    @include display(flex);
-    position: relative;
-    @include flex-wrap(wrap);
-    @include justify-content(center);
-    margin-bottom:$m-b-under-imgs;
-
-    .disp1{
-        margin:$img-spaceing;
-        @include padding-left-right-bottom;
-        width: 100%;
-        max-width: 450px;
-
-        @include mobile_device {
-            margin:0;
-            padding-right:0;
-            padding-left: 0;
-        }
-    }
-}
-.caption1{
-    @include caption;
-    border-top:$radiate_border;
-    border-bottom:$radiate_border;
-    font-size: ms(0);
-}
-
-.box_1{
-    @include display_box;
-    @include boxColor_radiate;
-    @include transition(opacity 0.5s);
-    opacity: 0;
-}
-.box_1,.box_2{top:0px;}
-
-:hover.box_1{
-    opacity: 0.8;
-}
-
-// removing width from boxes at tablet_device size
-// having the width set to its original size of 450px adds a scroll bar on small screens to right of page
-@include tablet_device{
-    .box_1{
-        width: 0px;
-    }
-}
-
-.discript1{
-    font-size: ms(1);
-    opacity: 1;
-    margin-top: 250px;
-    color:white;
-}
+// .images{
+//     @include display(flex);
+//     position: relative;
+//     @include flex-wrap(wrap);
+//     @include justify-content(center);
+//     margin-bottom:$m-b-under-imgs;
+//
+//     .disp1{
+//         margin:$img-spaceing;
+//         @include padding-left-right-bottom;
+//         width: 100%;
+//         max-width: 450px;
+//
+//         @include mobile_device {
+//             margin:0;
+//             padding-right:0;
+//             padding-left: 0;
+//         }
+//     }
+// }
+// .caption1{
+//     @include caption;
+//     border-top:$radiate_border;
+//     border-bottom:$radiate_border;
+//     font-size: ms(0);
+// }
+//
+// .box_1{
+//     @include display_box;
+//     @include boxColor_radiate;
+//     @include transition(opacity 0.5s);
+//     opacity: 0;
+// }
+// .box_1,.box_2{top:0px;}
+//
+// :hover.box_1{
+//     opacity: 0.8;
+// }
+//
+// // removing width from boxes at tablet_device size
+// // having the width set to its original size of 450px adds a scroll bar on small screens to right of page
+// @include tablet_device{
+//     .box_1{
+//         width: 0px;
+//     }
+// }
+//
+// .discript1{
+//     font-size: ms(1);
+//     opacity: 1;
+//     margin-top: 250px;
+//     color:white;
+// }
 
 .more-projects{
   @include ms-respond(font-size,3);
@@ -177,6 +168,7 @@ body{
 
 .caro {
     @include hover-links;
+    border-bottom: 2px solid #00966c;
 }
 
 .caro:hover {

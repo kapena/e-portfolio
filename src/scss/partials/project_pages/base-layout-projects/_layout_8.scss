@@ -1,5 +1,6 @@
 @import "modules/projects/pages_module";
 @import "vendor/mod-scale";
+@import "modules/home-page/home-module";
 @import "partials/variables";
 @import "modules/global-mqs/mqs";
 
@@ -45,6 +46,11 @@ html{
     text-align: center;
 }
 
+.tools{
+  text-align: center;
+  font-weight: 600;
+}
+
 .main-image{
     width:100%;
 
@@ -70,16 +76,6 @@ html{
     position: relative;
     margin: 50px;
     text-align: center;
-}
-
-#shillo{
-    text-decoration: none;
-    color:#DD76E5;
-}
-
-#shillo:hover{
-    @include transition(color 0.5s);
-    color:#333;
 }
 
 .images{
@@ -159,6 +155,28 @@ html{
    }
 }
 
+.owl:hover,
+.owl:focus {
+   color:blue;
+}
+
+.owl {
+    font-family: $monte !important;
+    color:$typeColor;
+    padding: 2px;
+    font-weight: 900;
+    margin: 0 -2px;
+}
+
+.owl {
+    @include hover-links;
+    background-size:100% 0px;
+    border-bottom: 2px solid red;
+}
+
+.owl:hover {
+   background-size:100% 100%;
+}
 
 .proj-container{
     @include display(flex);

@@ -7,7 +7,7 @@
 }
 
 /* Pushing intro-msg margins in closer */
-@mixin left-right-margin($margins:0% 15% 0%){
+@mixin left-right-margin($margins:0% 8% 0%){
     margin:$margins;
 }
 
@@ -19,7 +19,7 @@
 @mixin page-headings{
     text-align: center;
     position: relative;
-    font-weight:$headingWeight;
+    font-weight:$montB;
     font-family: $monte;
     color:$typeColorB;
     @include ms-respond(font-size,4);

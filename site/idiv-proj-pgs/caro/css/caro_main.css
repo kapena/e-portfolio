@@ -332,6 +332,10 @@ body {
     .project-desc {
       font-size: 1.49328em; } }
 
+.tools {
+  text-align: center;
+  font-weight: 600; }
+
 .main-image {
   width: 100%; }
   .main-image .story-seq {
@@ -346,45 +350,6 @@ body {
   position: relative;
   margin: 50px;
   text-align: center; }
-
-.box_1, .box_2 {
-  position: absolute;
-  margin: 5px;
-  margin-left: 15px;
-  width: 450px;
-  height: 350px;
-  background-color: red;
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #00966C;
-  box-shadow: 0 7px 0 #32cd32;
-  -webkit-transition: opacity 0.5s;
-  -moz-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-  opacity: 0; }
-
-.box_1, .box_2, .box_2 {
-  top: 0px; }
-
-:hover.box_1, .box_2:hover {
-  opacity: 0.8; }
-
-@media only screen and (max-width: 780px) {
-  .box_1, .box_2 {
-    width: 0px; } }
-
-.discript1, .discript2 {
-  font-size: 1.61803em;
-  opacity: 1;
-  margin-top: 250px;
-  color: white; }
 
 .more-projects {
   font-size: 1.331em;
@@ -423,7 +388,8 @@ body {
   background: linear-gradient(cyan, cyan) no-repeat bottom;
   background-size: 100% 1px;
   transition: .2s,color .1s .1s;
-  text-decoration: none; }
+  text-decoration: none;
+  border-bottom: 2px solid #00966c; }
 
 .caro:hover {
   background-size: 100% 100%; }
