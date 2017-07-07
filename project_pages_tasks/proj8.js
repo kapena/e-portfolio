@@ -64,7 +64,7 @@ gulp.task('proj8_styles',function(){
     .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
     .pipe(uncss({
-        html:['site/idiv-proj-pgs/ten/tension.html'],
+        html:['site/idiv-proj-pgs/bcs/bcs.html'],
         ignore:['.box_1','.box_2','.discript1','.discript2','.image-container','.img1','.img2']
     }))
     .pipe(gulp.dest(paths.project_pages_dest.proj8_dest.styles_proj8))

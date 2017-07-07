@@ -131,6 +131,13 @@ var webD = Snap.select('.elements');
 //digital
 var playbtn = Snap.select('.play');
 var frame = Snap.select('.frame');
+// about graphics
+var servicesGraphic = Snap.select('.service');
+var three = Snap.select('.three');
+var two = Snap.select('.two');
+var one = Snap.select('.one');
+
+
 hGraph.mousemove(function(e){
     graphicT.addClass('moveUp').removeClass('under');
     webT.addClass('moveUp').removeClass('under');

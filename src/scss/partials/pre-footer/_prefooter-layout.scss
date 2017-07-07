@@ -5,6 +5,16 @@
 @import "partials/typography";
 @import "modules/global-mqs/mqs";
 
+.contact-p-head{
+  text-align: center;
+  margin:2rem;
+}
+
+.contact-page{
+    position: relative;
+    top:5rem;
+}
+
 .text-footer{
     position: relative;
     top:15rem;

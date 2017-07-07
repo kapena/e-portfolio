@@ -39,8 +39,8 @@
                     "js_proj7":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/eerie.js"]
                 },
                 "proj_8":{
-                    "styles_proj8":"./src/scss/tension_main.scss",
-                    "js_proj8":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/tension.js"]
+                    "styles_proj8":"./src/scss/bcs_main.scss",
+                    "js_proj8":["bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/project_pages/bcs.js"]
                 },
                 "proj_9":{
                     "styles_proj9":"./src/scss/hip_main.scss",
@@ -90,9 +90,9 @@
                 "html":"site/idiv-proj-pgs/e8"
             },
             "proj8_dest":{
-                "styles_proj8":"site/idiv-proj-pgs/ten/css",
-                "js_proj8":"site/idiv-proj-pgs/ten/js",
-                "html":"site/idiv-proj-pgs/ten"
+                "styles_proj8":"site/idiv-proj-pgs/bcs/css",
+                "js_proj8":"site/idiv-proj-pgs/bcs/js",
+                "html":"site/idiv-proj-pgs/bcs"
             },
             "proj9_dest":{
                 "styles_proj9":"site/idiv-proj-pgs/hip/css",
