@@ -119,8 +119,13 @@ body{
         }
     }
 }
+.lrg{
+  font-family: $monte;
+  text-decoration-color:red;
+}
 .caption1{
     @include caption;
+    // color:$secret_capt_box;
     border-top: $secret_border;
     border-bottom: $secret_border;
     font-size: ms(0);
@@ -135,7 +140,7 @@ body{
 .box_1,.box_2{top:0px;}
 
 :hover.box_1{
-    opacity: 0.9;
+    opacity: 0.6;
 }
 
 .box_3,.box_4{

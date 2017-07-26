@@ -32,9 +32,8 @@ $(window).load(function(){
     var imgContainers = $('.image-container');
     var imgs = $('.img1,.img2,.img3,.img4');
     // Content
-    var img1_discript = $('<div class="box_1"><p class="discript1">Hero Spread</p></div>');
-    var img2_discript = $('<div class="box_2"><p class="discript2">Layout & Typesetting</p></div>');
-
+    var img1_discript = $('<a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/eerie/large/box_1.jpg"><div class="box_1"></div></a>');
+    var img2_discript = $('<a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/eerie/large/box_2.jpg"><div class="box_2"></div></a>');
     var all_boxes = $(img1_discript).add(img2_discript);
     // indv img classes
     var img1 = $('.img1');

@@ -1,6 +1,6 @@
 
 .projects-link,.about,.contact-link,.blog {
-    @extend .home;
+    @extend .home !optional;
 }
 
 
@@ -29,14 +29,14 @@
 }
 
 .social3-in,.social4-twitter,.social5-behance{
-    @extend .social1-gh;
+    @extend .social1-gh !optional;
 }
 
 
 .google,.linkedin,.twitter,.behance{
-    @extend .github;
+    @extend .github !optional;
 }
 
 .proj,.about,.cont,.blog{
-  @extend .home;
+  @extend .home !optional;
 }

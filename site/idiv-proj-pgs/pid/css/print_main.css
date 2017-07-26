@@ -433,11 +433,14 @@ html {
   top: 0px; }
 
 :hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover {
-  opacity: 0.9; }
+  opacity: 0.6; }
 
 @media only screen and (max-width: 780px) {
   .box_1, .box_2, .box_3, .box_4 {
     width: 0px; } }
+
+.lrg {
+  text-decoration-color: grey; }
 
 .caption1, .caption2, .caption3, .caption4 {
   margin: auto;

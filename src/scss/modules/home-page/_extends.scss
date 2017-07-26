@@ -1,21 +1,21 @@
 header #chat{
-    @extend #projects;
+    @extend #projects !optional;
 }
 
 header #bio{
-    @extend #projects;
+    @extend #projects !optional;
 }
 
 header #getintouch{
-  @extend #projects;
+  @extend #projects !optional;
 }
 
 header .email{
-  @extend #projects;
+  @extend #projects !optional;
 }
 
 header .point-p{
-  @extend #projects;
+  @extend #projects !optional;
 }
 
 

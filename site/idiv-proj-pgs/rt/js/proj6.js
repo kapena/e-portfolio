@@ -32,10 +32,9 @@ $(window).load(function(){
     var imgContainers = $('.image-container');
     var imgs = $('.img1,.img2');
     // Content
-    var img1_discript = $('<div class="box_1"><p class="discript1">White Background</p></div>');
-    var img2_discript = $('<div class="box_2"><p class="discript2">Black Background</p></div>');
-    // var img3_discript = $('<div class="box_3"><p class="discript1">Logo Design </p></div>');
-    // var img4_discript = $('<div class="box_4"><p class="discript2">Stationary Items</p></div>');
+    var img1_discript = $('<a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/royal/large/box_1.jpg"><div class="box_1"></div></a>');
+    var img2_discript = $('<a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/royal/large/box_2.jpg"><div class="box_2"></div></a>');
+
     var all_boxes = $(img1_discript).add(img2_discript);
     // indv img classes
     var img1 = $('.img1');

@@ -1,4 +1,4 @@
- @import "modules/projects/pages_module";
+@import "modules/projects/pages_module";
 @import "vendor/mod-scale";
 @import "partials/variables";
 @import "modules/global-mqs/mqs";
@@ -122,7 +122,7 @@ html{
 .box_1,.box_2{top:0px;}
 
 :hover.box_1{
-    opacity: 0.9;
+    opacity: 0.7;
 }
 
 // removing width from boxes at tablet_device size
@@ -131,6 +131,10 @@ html{
     .box_1,.box_2,.box_3,.box_4{
         width: 0px;
     }
+}
+
+.lrg{
+  text-decoration-color:#EB6A6;
 }
 .caption1{
     @include caption;

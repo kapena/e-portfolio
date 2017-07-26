@@ -1,6 +1,16 @@
 {
     "paths": {
         "source":{
+
+          "blog_src":{
+            "blog_home":{
+              "blog_style":"./src/scss/blog_main.scss"
+            },
+            "blog_post":{
+              "blog_post_style":"./src/scss/blog_post_main.scss"
+            }
+          },
+
             "main_page_source":{
                 "styles_main":"./src/scss/main.scss",
 
@@ -48,11 +58,22 @@
                     }
                 }
             },
+
         "main_dest":{
             "styles_main":"site/css",
             "js_main":"site/js",
             "html":"site"
         },
+
+        "blog_dest":{
+          "blog_home":{
+            "blog_main_styles":"site/blog/css",
+            "html":"site/blog"
+          },
+            "blog_post":{
+              "blog_post_styles":"site/blog/css"
+            }
+          },
 
         "project_pages_dest":{
             "proj1_dest":{
@@ -99,6 +120,11 @@
                 "js_proj9":"site/idiv-proj-pgs/hip/js",
                 "html":"site/idiv-proj-pgs/hip"
             }
+        },
+
+        "watcher_blog":{
+            "styles_main_blog":"src/scss/**/*.scss",
+            "html":"site/**/*.html"
         },
 
         "watcher_main":{

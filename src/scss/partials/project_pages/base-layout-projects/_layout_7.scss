@@ -115,7 +115,7 @@ html{
 .box_1,.box_2{top:0px;}
 
 :hover.box_1{
-    opacity: 0.9;
+    opacity: 0.6;
 }
 // removing width from boxes at tablet_device size
 // having the width set to its original size of 450px adds a scroll bar on small screens to right of page
@@ -124,6 +124,10 @@ html{
         width: 0px;
     }
 };
+
+.lrg{
+  text-decoration-color:#039CD8;
+}
 
 .caption1{
     @include caption;
