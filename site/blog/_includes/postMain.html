@@ -1,0 +1,25 @@
+<article>
+<header>
+    <picture>
+        <source srcset="https://s3-us-west-2.amazonaws.com/efolio/all-headers_%402x/sm-header_point.jpg" media="(max-width:450px)">
+        <img class="header-img" srcset="https://s3-us-west-2.amazonaws.com/efolio/pplumb/header.jpg 1x, https://s3-us-west-2.amazonaws.com/efolio/all-headers_%402x/pointp-header%402x.jpg 2x" alt="Point Plumbing">
+    </picture>
+    <div class="media project-introduction">
+      <h1 class="proj-n post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+      <div class="timePosted">
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          {{ page.date | date: date_format }}
+        </time>
+      </div>
+      <div class="cat">
+      <span class="proj-n post-cat" itemprop="name headline">{{ page.categories | join: ' ' escape }}</span>
+      </div>
+      <p>
+        {% if page.author %}
+          • <span class="media" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span>{% endif %}</span>
+            <p class="project-desc" itemprop="articleBody">{{ content }}</p>
+        </p>
+          </div>
+</header>
+</article>

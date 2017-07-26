@@ -1,0 +1,27 @@
+<section class="posts">
+  <h1 class="article">Articles</h1>
+  <div class="posted-articles">
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+      <div class="a1">
+
+        <h3><a class="post-link a-name" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+
+        <div class="cat">
+          <span class="proj-n post-cat" itemprop="name headline">{{ post.categories | join: ' ' escape }}</span>
+        </div>
+
+        <div class="post">
+          <span class="post-meta date-posted">Posted: </span><span class="post-meta date-posted">{{ post.date | date: '%B %d %Y' }}</span>
+
+          <p class="rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
+        </div>
+
+      </div>
+    </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>

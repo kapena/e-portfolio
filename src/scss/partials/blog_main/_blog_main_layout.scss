@@ -1,0 +1,174 @@
+/*  Home-Page Module Mixins and Extends */
+@import "modules/home-page/home-module";
+@import "modules/projects-page/mixins";
+// /* Gobal Variables */
+@import "partials/variables";
+@import "partials/typography";
+@import "vendor/bourbon";
+// // Media Q
+@import "modules/global-mqs/mqs";
+
+html{
+  height:100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body{
+    min-height:100%;
+    background-color: whitesmoke;
+}
+
+header{
+    padding-top: 30px;
+    bottom:100px;
+    top:30px;
+}
+
+.aloha{
+  font-family:$monte;
+  font-weight:$montSemi;
+}
+
+.intro-block{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.titleName{
+  margin-bottom:2rem;
+  text-align: center;
+}
+
+.name, .title{
+    color:$typeColor;
+    font-weight: $montB;
+    font-family: $monte;
+    @include ms-respond(font-size, 2);
+    margin:0rem;
+}
+
+.title{
+    bottom: 2rem;
+    font-weight: 400;
+}
+
+.intro-msg{
+    // padding for left right and bottom links
+    @include left-right-bottom-links;
+    // left might margins pushed in closer
+    @include left-right-margin;
+    @include ms-respond(font-size, 2);
+    text-align: center;
+    line-height:ms(1);
+}
+
+.main{
+  padding:1rem 0rem 1rem;
+}
+
+.built{
+    // @include left-right-bottom-links;
+    // left might margins pushed in closer
+    @include left-right-margin;
+    padding:1rem 0rem 1rem;
+    text-align: center;
+    @include ms-respond(font-size, -0);
+}
+
+header #projects:hover,
+header #projects:focus {
+   color:blue;
+}
+
+header #projects {
+    color:$typeColor;
+    padding: 2px;
+    font-weight: 900;
+    margin: 0 -2px;
+}
+
+header #projects{
+    @include hover-links;
+}
+
+header #projects:hover{
+   background-size:100% 100%;
+}
+
+.a-name:hover,
+.a-name:focus {
+   color:blue;
+}
+.a-name {
+    color:$typeColor;
+    padding: 2px;
+    border-bottom:3px solid royalblue;
+    font-weight: 900;
+    margin: 0 -2px;
+}
+
+.a-name{
+    margin:0;
+    border-bottom:3px solid royalblue;
+    @include hover-links;
+}
+
+.a-name:hover{
+   background-size:100% 100%;
+}
+
+.article{
+  padding:0em 2em 0em;
+  font-weight: 500;
+  background:royalblue;
+  color:white;
+  // letter-spacing: 0.1em;
+  background-size: 0 10px;
+  width:26%;
+  @include ms-respond(font-size, 4);
+}
+.post-cat{
+  background:royalblue;
+  background-size: auto auto;
+  // font-family:'PressStart2PRegular';
+  font-family:$monte;
+  background-size: 0 15px;
+  padding: 5px;
+  color:#fff;
+  @include ms-respond(font-size,-2);
+}
+
+.cat, .post{
+  margin:2rem 0rem;
+}
+// .post-cat-intro{
+//   background:#333333;
+//   background-size: auto auto;
+//   // font-family:'PressStart2PRegular';
+//   font-family:$monte;
+//   background-size: 0 15px;
+//   padding:5px 10px;
+//   margin-right:10px;
+//   color:#fff;
+//   @include ms-respond(font-size,-2);
+// }
+
+.posted-articles{
+  @include ms-respond(font-size, 4);
+}
+.article,.posted-articles{
+  display: flex;
+  justify-content: left;
+}
+.post-list{
+  list-style: none;
+  padding: 0;
+}
+.a1{
+  margin:1em 2em;
+}
+.date-posted,.rss-subscribe{
+  font-family:'PressStart2PRegular';
+  @include ms-respond(font-size, -3);
+}

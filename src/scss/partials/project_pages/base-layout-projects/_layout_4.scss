@@ -121,7 +121,7 @@ html{
 .box_1,.box_2{top:0px;}
 
 :hover.box_1{
-    opacity: 0.9;
+    opacity: 0.6;
 }
 
 // removing width from boxes at tablet_device size
@@ -130,6 +130,10 @@ html{
     .box_1{
         width: 0px;
     }
+}
+
+.lrg{
+  text-decoration-color: $urban_capt_box;
 }
 
 .caption1{

@@ -32,10 +32,10 @@ $(window).load(function(){
     var imgContainers = $('.image-container');
     var imgs = $('.img1,.img2,.img3,.img4');
     // Content
-    var img1_discript = $('<div class="box_1"><p class="discript1">Hero Illustration</p></div>');
-    var img2_discript = $('<div class="box_2"><p class="discript2">Layout</p></div>');
-    var img3_discript = $('<div class="box_3"><p class="discript1">Infographic</p></div>');
-    var img4_discript = $('<div class="box_4"><p class="discript2">Icons for Infographic</p></div>');
+    var img1_discript = $('<a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/print/large/box_1.jpg"><div class="box_1"></div></a>');
+    var img2_discript = $('<a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/print/large/box_2.jpg"><div class="box_2"></div></a>');
+    var img3_discript = $('<a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/print/large/box_3.jpg"><div class="box_3"></div></a>');
+    var img4_discript = $('<a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/print/large/box_4.jpg"><div class="box_4"></div></a>');
     var all_boxes = $(img1_discript).add(img2_discript).add(img3_discript).add(img4_discript);
     // indv img classes
     var img1 = $('.img1');

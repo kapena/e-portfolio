@@ -546,6 +546,10 @@ body {
         padding-right: 0;
         padding-left: 0; } }
 
+.lrg {
+  font-family: "Montserrat", sans-serif;
+  text-decoration-color: red; }
+
 .caption1, .caption2, .caption3, .caption4, .caption5, .caption6 {
   margin: auto;
   padding-top: 25px;
@@ -585,7 +589,7 @@ body {
   top: 0px; }
 
 :hover.box_1, .box_2:hover, .box_3:hover, .box_4:hover, .box_5:hover, .box_6:hover {
-  opacity: 0.9; }
+  opacity: 0.6; }
 
 .box_3, .box_4 {
   top: 376px; }
