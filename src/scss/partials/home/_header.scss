@@ -30,6 +30,22 @@ header{
   font-weight:$montSemi;
 }
 
+.slide-nav-trigger{
+  opacity: 0;
+  // transition: opacity 0.2s; 
+  visibility: hidden;
+}
+
+.hide{
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.show{
+  opacity: 1;
+  transition:opacity 0.2s;
+}
+
 .intro-block{
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -45,7 +61,7 @@ header{
     font-weight: $montB;
     font-family: $monte;
     @include ms-respond(font-size, 2);
-    margin:0rem;
+    margin:5px 0 5px;
 }
 
 .title{
@@ -118,22 +134,15 @@ header #projects:hover{
 }
 
 
-.graph, .web, .motion{
+.graph, .front-end, .visual-d{
   font-family: $monte;
   @include ms-respond(font-size,-3);
-}
-.under{
-  transition:transform 0.3s;
-}
-.moveUp{
-  transition:transform 0.3s;
-  transform:translateY(-20px);
 }
 
 // circle + triangle
 .gC, .gT{
   transition:transform 0.3s;
-  transform:translateY(0px);
+  transform:translateY(3px);
 }
 
 // circle DOWN
@@ -147,55 +156,56 @@ header #projects:hover{
   transform:translateY(-10px);
 }
 // headerfooter
-.wN, .wF{
-  @include pWidth-desk;
-}
+// .wN, .wF{
+//   @include pWidth-desk;
+// }
 
 
 // headerfooter responsive animation
 // web nav web footer
-.playwN, .playwF{
-  @include pWidth-mobile;
-}
+// .playwN, .playwF{
+//   @include pWidth-mobile;
+// }
 
 // content
-.p1, .img, .p2{
-  @include pWidth-desk;
-}
+// .p1, .img, .p2{
+//   @include pWidth-desk;
+// }
 
-.playP1, .playImg, .playP2{
-  @include pWidth-mobile;
-}
+// .playP1, .playImg, .playP2{
+//   @include pWidth-mobile;
+// }
 
-.elements{
-  transition:transform 0.5s;
-  transform:translateX(0px);
-}
+// .elements{
+//   transition:transform 0.5s;
+//   transform:translateX(0px);
+// }
+//
+// .move-L{
+//   transition:transform 0.5s;
+//   transform:translateX(10px);
+// }
+// .play{
+//   transition:transform 0.5s;
+//   transform:translateX(0px);
+// }
+// .frame{
+//   transition:transform 0.5s;
+//   transform:skew(0deg, 0deg);
+// }
+// .skewFrame{
+//   transition:transform 0.5s;
+//   transform:skew(13deg, 0deg);
+// }
 
-.move-L{
-  transition:transform 0.5s;
-  transform:translateX(10px);
-}
-.play{
-  transition:transform 0.5s;
-  transform:translateX(0px);
-}
-.frame{
-  transition:transform 0.5s;
-  transform:skew(0deg, 0deg);
-}
-.skewFrame{
-  transition:transform 0.5s;
-  transform:skew(13deg, 0deg);
-}
-
-.movePlay{
-  transition:transform 0.5s;
-  transform:translateX(-34px);
-}
+// .movePlay{
+//   transition:transform 0.5s;
+//   transform:translateX(-34px);
+// }
 
 .tools{
   text-align:center;
+  margin:5em 0em 1em;
   @include ms-respond(font-size,1);
 }
 
@@ -203,6 +213,49 @@ header #projects:hover{
   @include tablet {
     visibility: hidden;
   }
+}
+
+// Visual Graphic
+.btn-slide-right{
+  transition: transform 0.5s;
+  transform: translateX(20px);
+}
+.btn-off {
+  transition: transform 0.5s;
+  transform: translateX(0px)
+}
+.area-fill{
+  transition:opacity 0.5s;
+  opacity:1;
+}
+.area-empty{
+  transition:opacity 0.7s;
+  opacity: 0;
+}
+
+// Front-End Graphic
+
+.frame{
+  transition: opacity 0.2s;
+  opacity: 1;
+}
+
+.frame-off{
+  transition: opacity 0.2s;
+  opacity: 0;
+}
+
+.invis{
+  transition: opacity 0.5s;
+}
+
+.inspect{
+  opacity: 0;
+}
+
+.target{
+  transition:opacity 0.5s;
+  opacity: 1;
 }
 
 #skills-graphic{

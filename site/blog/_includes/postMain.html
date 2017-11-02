@@ -12,6 +12,10 @@
           {{ page.date | date: date_format }}
         </time>
       </div>
+
+      <!-- Facebook Share -->
+      <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large" data-mobile-iframe="true"> <a class="post-cat" href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook" target="_blank">Share on Facebook</a></div>
+
       <div class="cat">
       <span class="proj-n post-cat" itemprop="name headline">{{ page.categories | join: ' ' escape }}</span>
       </div>

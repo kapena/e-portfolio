@@ -19,6 +19,16 @@
 
 
   <body>
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
     <a name="home-spectrum"></a>
   <main class="welcome">
       <header>
@@ -29,12 +39,12 @@
           </svg>
           <div class="intro-block">
           <div class="titleName">
-              <h3 class="name">A Webzine By</h3>
+              <h3 class="name">A blog by</h3>
               <h3 class="title">Brent White</h3>
           </div>
               <a name="home-spectrum"></a>
               <nav class="main" role="navigation">
-                  <p class="intro-msg">You've reached my digital story collection of linkable assets. I'll do my best to release 1 quartlery post per month. In between posts have a look at some of my <a id="projects" href="#project-spectrum">projects</a>, read about my <a id="bio" href="#about-spectrum">mission </a> and get in <a id="chat" href="#contact-spectrum">touch</a>  regarding design, or anything of interest.</p></nav>
+                  <p class="intro-msg">You've reached my digital story collection. I'll do my best to release one quartlery post per month. In between posts have a look at some of <a id="projects" href="#project-spectrum">my work.</a></nav>
               <!-- <a id="projects" href="#project-spectrum">projects</a>, read about my <a id="bio" href="#about-spectrum">mission </a> and get in <a id="chat" href="#contact-spectrum">touch</a>  regarding design, or anything of interest.</p> -->
             </div>
               <svg viewBox='0 0 400 20'>
@@ -60,6 +70,27 @@
       <li>
       <div class="a1">
 
+        <h3><a class="post-link a-name" href="/web/design/2017/07/27/a-test.html">My First Post!</a></h3>
+
+        <div class="cat">
+          <span class="proj-n post-cat" itemprop="name headline">Web Design</span>
+        </div>
+
+        <div class="post">
+          <span class="post-meta date-posted">Posted: </span><span class="post-meta date-posted">July 27 2017</span>
+
+          <p class="rss-subscribe"><a href="/feed.xml">RSS</a></p>
+
+                <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large" data-mobile-iframe="true"> <a class="date-posted" href="https://www.facebook.com/sharer.php?u=http://localhost:4000/" title="Share on Facebook" target="_blank">Share on Facebook</a></div>
+
+        </div>
+
+      </div>
+    </li>
+    
+      <li>
+      <div class="a1">
+
         <h3><a class="post-link a-name" href="/web/design/2017/07/24/welcome-to-jekyll.html">Welcome to Jekyll!</a></h3>
 
         <div class="cat">
@@ -70,6 +101,9 @@
           <span class="post-meta date-posted">Posted: </span><span class="post-meta date-posted">July 24 2017</span>
 
           <p class="rss-subscribe"><a href="/feed.xml">RSS</a></p>
+
+                <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="large" data-mobile-iframe="true"> <a class="date-posted" href="https://www.facebook.com/sharer.php?u=http://localhost:4000/" title="Share on Facebook" target="_blank">Share on Facebook</a></div>
+
         </div>
 
       </div>
@@ -109,9 +143,9 @@
       </a>
     </li>
     <li>
-      <!-- <a target="_blank" id="blog" href="http://roygbivspectrum.xyz/">
+      <a target="_blank" id="blog" href="http://127.0.0.1:4000/">
         <ul class="blog">Blog</ul>
-      </a> -->
+      </a>
     </li>
   </nav>
 </div>

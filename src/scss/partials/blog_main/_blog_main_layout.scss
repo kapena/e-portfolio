@@ -169,6 +169,6 @@ header #projects:hover{
   margin:1em 2em;
 }
 .date-posted,.rss-subscribe{
-  font-family:'PressStart2PRegular';
+  font-family:$monte;
   @include ms-respond(font-size, -3);
 }

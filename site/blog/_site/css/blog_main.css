@@ -584,7 +584,7 @@ header #projects:hover, header #chat:hover, header #bio:hover, header #getintouc
   margin: 1em 2em; }
 
 .date-posted, .rss-subscribe {
-  font-family: 'PressStart2PRegular';
+  font-family: "Montserrat", sans-serif;
   font-size: 0.75131em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .date-posted, .rss-subscribe {

@@ -15,16 +15,16 @@
                 "styles_main":"./src/scss/main.scss",
 
                 "js_main":["bower_components/jquery/dist/jquery.min.js","src/js/modernizr.min.js",
+                "bower_components/responsive-nav/responsive-nav.min.js",
+                "src/js/slidenav.js",
                 "bower_components/Snap.svg/dist/snap.svg-min.js",
-                "bower_components/parsleyjs/dist/parsley.min.js",
-                "src/js/pages/*.js",
-                "src/js/slidenav.js"]
+                "src/js/pages/*.js"]
             },
 
             "project_pgs_src":{
                 "proj_1":{
                     "styles_proj1":"./src/scss/sod_main.scss",
-                    "js_proj1":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/secretofdreaming.js"]
+                    "js_proj1":["bower_components/jquery/dist/jquery.min.js","src/js/responsive-nav.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/secretofdreaming.js"]
                 },
                 "proj_2":{
                     "styles_proj2":"./src/scss/pointplumbing_main.scss"
