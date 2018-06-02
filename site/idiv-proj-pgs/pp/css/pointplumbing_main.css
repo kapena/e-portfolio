@@ -160,6 +160,13 @@ svg:not(:root) {
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  * 4. Improves appearance and consistency in all browsers.
  */
+input {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
@@ -189,17 +196,27 @@ svg:not(:root) {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+input {
+  line-height: normal; }
 
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  *  Known issue: excess padding remains in IE 6.
  */
+input[type="checkbox"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
@@ -244,6 +261,144 @@ svg:not(:root) {
  * Remove most spacing between table cells.
  */
 
+.luxbar-fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.luxbar-hamburger span, .luxbar-hamburger span::before, .luxbar-hamburger span::after {
+  display: block;
+  height: 2px;
+  width: 26px;
+  transition: 0.6s ease; }
+
+.luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span {
+  background-color: transparent; }
+
+.luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::before, .luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::after {
+  margin-top: 0; }
+
+.luxbar-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px; }
+
+.luxbar-menu-right .luxbar-hamburger {
+  margin-left: auto; }
+
+.luxbar-brand {
+  font-size: 1.6em;
+  padding: 18px 24px 18px 24px; }
+
+.luxbar-menu {
+  min-height: 58px;
+  transition: 0.6s ease;
+  width: 100%; }
+
+.luxbar-navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  margin: 0; }
+
+.luxbar-menu a,
+.luxbar-item a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+
+.luxbar-item {
+  height: 58px; }
+
+.luxbar-item a {
+  padding: 18px 24px 18px 24px;
+  display: block; }
+
+.luxbar-hamburger {
+  padding: 18px 24px 18px 24px;
+  position: relative;
+  cursor: pointer; }
+
+.luxbar-hamburger span::before, .luxbar-hamburger span::after {
+  content: '';
+  position: absolute; }
+
+.luxbar-hamburger span::before {
+  margin-top: -8px; }
+
+.luxbar-hamburger span::after {
+  margin-top: 8px; }
+
+.luxbar-checkbox {
+  display: none; }
+
+.luxbar-checkbox:not(:checked) ~ .luxbar-menu {
+  overflow: hidden;
+  height: 58px; }
+
+.luxbar-checkbox:checked ~ .luxbar-menu {
+  transition: height 0.6s ease;
+  height: 100vh;
+  overflow: auto; }
+
+@media screen and (min-width: 768px) {
+  .luxbar-navigation {
+    flex-flow: row;
+    justify-content: flex-end; }
+  .luxbar-hamburger {
+    display: none; }
+  .luxbar-checkbox:not(:checked) ~ .luxbar-menu {
+    overflow: visible; }
+  .luxbar-checkbox:checked ~ .luxbar-menu {
+    height: 58px; }
+  .luxbar-menu .luxbar-item {
+    border-top: 0; }
+  .luxbar-menu-right .luxbar-header {
+    margin-right: auto; } }
+
+.luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-spin span::before {
+  transform: rotate(45deg); }
+
+.luxbar-checkbox:checked + .luxbar-menu .luxbar-hamburger-spin span::after {
+  transform: rotate(-45deg); }
+
+/******* color variables *******/
+/******* default dark *******/
+
+/******* default light *******/
+.luxbar-menu-light {
+  background-color: #e0e0e0;
+  color: #212121; }
+
+.luxbar-menu-light .luxbar-item:hover {
+  background-color: #bdbdbd; }
+
+.luxbar-menu-light .luxbar-hamburger span,
+.luxbar-menu-light .luxbar-hamburger span::before,
+.luxbar-menu-light .luxbar-hamburger span::after {
+  background-color: #212121; }
+
+/******* default material-red *******/
+
+/******* default material-indigo *******/
+
+/******* default material-green *******/
+
+/******* default material-amber *******/
+
+/******* default material-brown *******/
+
+/******* default material-bluegrey *******/
+
+/******* default material-cyan *******/
+
+/*# sourceMappingURL=luxbar.css.map */
 /**** Google Fonts ****/
 /* Lato Variables */
 /* Base Size */

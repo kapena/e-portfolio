@@ -5,7 +5,7 @@
 @import "vendor/bourbon";
 
 .about-short-disc{
-    @include ms-respond(font-size,1);
+    @include ms-respond(font-size,2);
     @include left-right-margin;
     // font-weight:$montSemi;
     line-height:ms(1);
@@ -15,15 +15,10 @@
     // bottom:50px;
 }
 
-.about-info{
+.about-info-1,.about-info-2{
   display:flex;
   margin:3em 4em 4em;
   flex-direction:row;
-}
-
-.simple{
-  position: relative;
-  top: 3em;
 }
 
 .col-left, .col-right{
@@ -32,9 +27,6 @@
   height:100%;
 }
 
-.process{
-  margin-top:2em;
-}
 .graph-serv{
   display: flex;
   justify-content: center;
@@ -43,7 +35,7 @@
 .service{
   width: 600px;
   height: 200px;
-  margin: 3em 0em 3em;
+  // margin: 3em 0em 3em;
 }
 
 .graphic-text2{
@@ -60,14 +52,6 @@
   // transition: fill 0.8s;
   fill:royalblue;
   transform: translateY(-81px);
-}
-
-#inspires{
-  // padding:1rem 0rem 1rem;
-  text-align: center;
-  // @include page-headings;
-  @include ms-respond(font-size,3);
-  font-weight:800;
 }
 
 .proj-enq{

@@ -19,39 +19,39 @@ body{
     background-color: whitesmoke;
 }
 
-header{
-    padding-top: 30px;
-    bottom:100px;
-    top:30px;
-}
+// header{
+//     padding-top: 30px;
+//     bottom:100px;
+//     top:30px;
+// }
 
 .aloha{
   font-family:$monte;
   font-weight:$montSemi;
 }
-
-.intro-block{
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
+//
+// .intro-block{
+//   margin-bottom: 2rem;
+//   margin-top: 2rem;
+// }
 
 .titleName{
   margin-bottom:2rem;
   text-align: center;
 }
+//
+// .name, .title{
+//     color:$typeColor;
+//     font-weight: $montB;
+//     font-family: $monte;
+//     @include ms-respond(font-size, 2);
+//     margin:0rem;
+// }
 
-.name, .title{
-    color:$typeColor;
-    font-weight: $montB;
-    font-family: $monte;
-    @include ms-respond(font-size, 2);
-    margin:0rem;
-}
-
-.title{
-    bottom: 2rem;
-    font-weight: 400;
-}
+// .title{
+//     bottom: 2rem;
+//     font-weight: 400;
+// }
 
 .intro-msg{
     // padding for left right and bottom links
@@ -64,7 +64,7 @@ header{
 }
 
 .main{
-  padding:1rem 0rem 1rem;
+  padding:20px 0px 20px;
 }
 
 .built{
@@ -98,7 +98,6 @@ header #projects:hover{
 
 .skills{
   position: relative;
-  bottom: 2em;
 }
 
 .tools{
@@ -107,7 +106,7 @@ header #projects:hover{
 }
 
 #skills-graphic{
-  height:300px;
+  height:250px;
 }
 
 .graphic-text{
@@ -119,13 +118,18 @@ header #projects:hover{
 
 
 .graph, .web, .motion{
+  // opacity: 0;
+  // transition: opacity 0.3s;
   font-family: $monte;
   @include ms-respond(font-size,-3);
 }
 .under{
-  transition:transform 0.3s;
+  opacity: 0;
+  transition:transform 0.3s, opacity 0.2s;
 }
 .moveUp{
+  opacity: 1;
+  transition: opacity 0.3s;
   transition:transform 0.3s;
   transform:translateY(-20px);
 }
@@ -218,5 +222,11 @@ header #projects:hover{
   @include md-tablet {
   visibility: hidden;
   font-family: $monte;
+  }
+}
+
+.graphic-text{
+  @include md-tablet {
+      @include ms-respond(font-size,-8);
   }
 }

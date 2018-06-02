@@ -78,8 +78,26 @@ gulp.task('proj2_styles',function(){
     .pipe(notify({ message: 'proj2_styles task finished' }));
 });
 
+
+// Script task for proj1
+gulp.task('proj2_js',function(){
+    return gulp.src(paths.source.project_pgs_src.proj_2.js_proj2)
+    // find errors in stream then nofity me in terminal
+    .pipe(plumber({errorHandler:onError}))
+    .pipe(concat('proj2.js'))
+    // .pipe(concat('site.js'))
+    .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.js_proj2))
+    .pipe(uglify())
+    .pipe(rename({
+        suffix:'.min'
+    }))
+    .pipe(notify({ message: 'proj2_js task finished' }))
+    .pipe(gulp.dest(paths.project_pages_dest.proj2_dest.js_proj2)),
+    browserSync.reload();
+});
+
 gulp.task('project2',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('proj2_styles','sync');
+    runSequence('proj2_styles','proj2_js','sync');
 });
