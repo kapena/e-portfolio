@@ -1,71 +1,20 @@
 @import "modules/projects-page/projects-module"; // animation
 @import "modules/global-mqs/mqs"; // media q
 @import "partials/variables";
-$allrects:rectangle;
-
-// // halfCircle1 fades out
-.halfRect1{
-    visibility: hidden;
-    opacity: 0;
-    @include transition(visibility 1s, opacity 1s);
-}
 
 .projects:hover .fullRect{
     visibility: visible;
-    opacity: 0.85;
+    opacity: 0.7;
     @include fadein-halfCircle1-on-hover;
 }
 
-// halfCircle1 fades out
-.fullRect{
-    visibility: hidden;
-    opacity: 0;
-    @include transition(visibility 1s, opacity 1s);
+.projects:hover .view-icon{
+  opacity:1;
+   @include fadein-halfCircle1-on-hover;
 }
 
-// hover over projects svg and view now text slides up on y axis
-.projects:hover #view{
-    @include viewNowUp;
-}
-
-// when user hovers off projects view now slides down
-#view{
-    @include viewNowUnder;
-}
-
-#project-name{
-    @include projectName-slideUp;
-}
-
-.projects:hover #project-name{
-    @include projectName-slideUnder;
-}
-
-.projects:hover .link{
-    fill:black;
-}
-
-.link{
-  @include md-tablet {
-  visibility: hidden;
-  }
-}
-
-.halfRect1 {
-    @include md-tablet {
-        opacity: 0.9;
-        visibility: visible;
-     }
-}
-
-
-.fullRect{
-  @include md-tablet {
-    display: none;
-  }
-}
-.link-mobile {
-  @include md-tablet {
-  visibility: visible;
-  }
+.card, .p-card:hover{
+  // background-color:#c9c9c9;
+  transition:box-shadow 0.4s;
+  box-shadow:0px 10px 10px 0px rgba(0,0,0,.12);
 }

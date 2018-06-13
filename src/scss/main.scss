@@ -1,10 +1,11 @@
 /* Home  Pg*/
+@import "vendor/foundation";
 @import "partials/home/header";
 /* @import "partials/home/nav"; */
 /* Projects  Pg */
-@import "partials/projects/layout";
-@import "partials/projects/rects_on_device";
 @import "partials/projects/hover";
+@import "partials/projects/layout";
+
 /* Bio  Pg */
 @import "partials/bio/skilzAni";
 @import "partials/bio/layoutBio";

@@ -119,7 +119,8 @@ gulp.task('styles_main_task',function(){
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(paths.main_dest.styles_main))
         .pipe(notify({ message: 'styles_main_task finished' }))
-        .pipe(browserSync.stream({match:'**/*.css'}));
+        // .pipe(browserSync.stream({match:'**/*.css'}));
+        .pipe(browserSync.stream());
 });
 
 //default task

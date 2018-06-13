@@ -16,7 +16,6 @@
 
                 "js_main":["bower_components/jquery/dist/jquery.min.js","src/js/modernizr.min.js",
                 "bower_components/Snap.svg/dist/snap.svg-min.js",
-                "bower_components/parsleyjs/dist/parsley.min.js",
                 "src/js/pages/*.js",
                 "src/js/slidenav.js"]
             },
@@ -56,7 +55,19 @@
                 "proj_9":{
                     "styles_proj9":"./src/scss/hip_main.scss",
                     "js_proj9":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/hip.js"]
-                    }
+                  },
+                  "proj_10":{
+                      "styles_proj10":"./src/scss/pure_main.scss",
+                      "js_proj10":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/pure.js"]
+                    },
+                  "proj_11":{
+                      "styles_proj11":"./src/scss/360_main.scss",
+                      "js_proj11":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/360.js"]
+                    },
+                    "proj_12":{
+                        "styles_proj12":"./src/scss/msm_main.scss",
+                        "js_proj12":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/msm.js"]
+                      }
                 }
             },
 
@@ -120,6 +131,21 @@
                 "styles_proj9":"site/idiv-proj-pgs/hip/css",
                 "js_proj9":"site/idiv-proj-pgs/hip/js",
                 "html":"site/idiv-proj-pgs/hip"
+            },
+            "proj10_dest":{
+                "styles_proj10":"site/idiv-proj-pgs/pure/css",
+                "js_proj10":"site/idiv-proj-pgs/pure/js",
+                "html":"site/idiv-proj-pgs/pure"
+            },
+            "proj11_dest":{
+              "styles_proj11":"site/idiv-proj-pgs/360/css",
+              "js_proj11":"site/idiv-proj-pgs/360/js",
+              "html":"site/idiv-proj-pgs/360"
+            },
+            "proj12_dest":{
+              "styles_proj12":"site/idiv-proj-pgs/msm/css",
+              "js_proj12":"site/idiv-proj-pgs/msm/js",
+              "html":"site/idiv-proj-pgs/msm"
             }
         },
 
@@ -178,6 +204,21 @@
             "watcher_proj9":{
                 "styles_proj9":"src/scss/**/*.scss",
                 "js_proj9":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
+            },
+            "watcher_proj10":{
+                "styles_proj10":"src/scss/**/*.scss",
+                "js_proj10":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
+            },
+            "watcher_proj11":{
+                "styles_proj11":"src/scss/**/*.scss",
+                "js_proj11":"src/js/project_pages/**/*.js",
+                "html":"site/**/*.html"
+            },
+            "watcher_proj12":{
+                "styles_proj12":"src/scss/**/*.scss",
+                "js_proj12":"src/js/project_pages/**/*.js",
                 "html":"site/**/*.html"
             }
         }

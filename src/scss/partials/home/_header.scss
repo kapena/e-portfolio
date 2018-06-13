@@ -16,51 +16,48 @@ html{
 
 body{
     min-height:100%;
-    background-color: whitesmoke;
+    background-color:#f4f4f4;
 }
 
-// header{
-//     padding-top: 30px;
-//     bottom:100px;
-//     top:30px;
-// }
+.welcome{
+  padding-top:30px;
+}
 
 .aloha{
   font-family:$monte;
   font-weight:$montSemi;
 }
-//
-// .intro-block{
-//   margin-bottom: 2rem;
-//   margin-top: 2rem;
-// }
 
-.titleName{
-  margin-bottom:2rem;
-  text-align: center;
+.company, .title{
+    color:$typeColor;
+    font-weight: $montB;
+    font-family: $monte;
+    @include ms-respond(font-size, 2);
+    margin:0rem;
+    text-align: center;
 }
-//
-// .name, .title{
-//     color:$typeColor;
-//     font-weight: $montB;
-//     font-family: $monte;
-//     @include ms-respond(font-size, 2);
-//     margin:0rem;
-// }
-
-// .title{
-//     bottom: 2rem;
-//     font-weight: 400;
-// }
 
 .intro-msg{
     // padding for left right and bottom links
     @include left-right-bottom-links;
     // left might margins pushed in closer
-    @include left-right-margin;
+    // @include left-right-margin;
+    margin: 0% 10% 0%;
     @include ms-respond(font-size, 2);
     text-align: center;
     line-height:ms(1);
+}
+
+.cta-msg{
+  text-align: center;
+  margin: 0% 10% 0%;
+  padding-top:20px;
+  padding-bottom: 30px;
+  @include ms-respond(font-size, 2);
+}
+
+.cta-intro{
+  @include ms-respond(font-size,1);
 }
 
 .main{
@@ -100,7 +97,9 @@ header #projects:hover{
   position: relative;
 }
 
-.tools{
+.desktop_graphic{
+  text-align:center;
+  @include ms-respond(font-size,1);
   display: flex;
   justify-content: center;
 }
@@ -198,11 +197,6 @@ header #projects:hover{
   transform:translateX(-34px);
 }
 
-.tools{
-  text-align:center;
-  @include ms-respond(font-size,1);
-}
-
 .under, .skill {
   @include tablet {
     visibility: hidden;
@@ -211,11 +205,12 @@ header #projects:hover{
 
 #skills-graphic{
   @include tablet{
-    height:250px;
+    height:150px;
+    // width:500px;
   }
-  @include mobile_device{
-    height:200px;
-  }
+  // @include mobile_device{
+  //   height:100px;
+  // }
 }
 
 .graph, .web, .digital-d{
@@ -226,7 +221,20 @@ header #projects:hover{
 }
 
 .graphic-text{
-  @include md-tablet {
-      @include ms-respond(font-size,-8);
+  @include tablet {
+      @include ms-respond(font-size,-5);
+  }
+}
+
+// hide skills-graphic
+.desktop_graphic{
+  @include tablet {
+    display: none;
+  }
+}
+
+header{
+  @include tablet {
+    padding-top: 50px;
   }
 }

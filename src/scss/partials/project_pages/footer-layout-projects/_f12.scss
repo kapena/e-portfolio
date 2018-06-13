@@ -1,0 +1,105 @@
+@import "modules/projects/pages_module";
+@import "modules/global-mqs/mqs";
+@import "partials/variables";
+@import "vendor/mod-scale";
+
+footer{
+  background-color: $footer-social;
+}
+
+li{
+    list-style: none;
+}
+
+#home,#projects,#about,#contact,#blog{
+    text-decoration: none;
+}
+
+.footer-area{
+    display: flex;
+    width: 100%;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.footer-nav{
+    position: relative;
+    padding:2rem 0rem 2rem;
+    width:100%;
+    height:100%;
+    background-color:$footer-social;
+    flex-wrap:wrap;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.home,.projects,.about,.contact,.blog{
+    font-family: $monte;
+    text-decoration: none;
+    //padding-top:5px;
+    @include link-hover-footer;
+}
+
+.home:hover{
+    color:blue;
+}
+
+.home{
+    color:black;
+    font-weight: 900;
+}
+
+.home{
+    @include link-hover-footer;
+}
+
+.social{
+    display: inline-flex;
+    background: $footer-social;
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    height:5rem;
+    justify-content: center;
+}
+.smedia{
+    font-family: $monte;
+    position: relative;
+    left:$leftside;
+    top:30px;
+}
+
+.social1-gh{
+    font-family: $monte;
+    position: relative;
+    padding-top:1rem;
+}
+.github{
+    @include social-icons;
+}
+
+.bottom{
+  font-family:$monte;
+  text-align:center;
+  background-color:$footer-social;
+  position: relative;
+  height: 25px;
+  bottom: 4px;
+}
+
+.footer-nav {
+  @include mobile_device {
+    padding-top:10px;
+    align-items:center;
+    flex-direction: column;
+    height: 17rem;
+  }
+}
+
+.social {
+  @include mobile_device {
+    height:10rem;
+    align-content:center;
+    flex-direction:column;
+  }
+}

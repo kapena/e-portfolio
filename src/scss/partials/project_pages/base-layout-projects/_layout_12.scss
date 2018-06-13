@@ -1,0 +1,220 @@
+@import "modules/projects/pages_module";
+@import "modules/home-page/home-module";
+@import "vendor/mod-scale";
+@import "partials/variables";
+@import "modules/global-mqs/mqs";
+
+body{
+    @include body-mixin;
+}
+
+html{
+    width: 100%;
+    height:100%;
+}
+
+.proj-n{
+    text-align: center;
+    @include ms-respond(font-size,4);
+}
+
+.header-img{
+    @include width-height-100percent;
+}
+
+.project-introduction{
+    padding: $proj-intro-padding;
+
+    @include lrg-mobile {
+      padding:1rem;
+    }
+}
+
+.media{
+    text-align: center;
+    @include media;
+    @include projDscript;
+    text-align: center;
+    border-bottom: $vivd_border;
+    font-family: $monte;
+    @include ms-respond(font-size,2);
+}
+
+.project-desc{
+    @include ms-respond(font-size,2);
+    @include projDscript;
+    border-bottom:$vivd_border;
+    text-align: center;
+}
+
+#sponsor{
+    text-decoration: none;
+     color:royalblue;
+}
+
+#sponsor:hover{
+    transition: color 0.5s;
+    color:#333;
+}
+
+// .point-p:hover,
+// .point-p:focus {
+//    color:blue;
+// }
+
+#hip {
+    font-family: $monte !important;
+    color:$typeColor;
+    padding: 2px;
+    font-weight: 900;
+    margin: 0 -2px;
+}
+
+#hip {
+    @include hover-links;
+}
+
+#hip:hover {
+   background-size:100% 100%;
+}
+
+.main-image{
+    width:100%;
+
+    .story-seq{
+        width: 100%;
+        margin:auto;
+        display:block;
+        max-width:1000px;
+    }
+}
+
+.line-1{
+    transform: translateY(-40px);
+}
+
+#line1,#line2{
+    fill:url('#australia');
+}
+
+.break-wrapper{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+    margin: 50px;
+    text-align: center;
+}
+
+#personal{
+    text-decoration: none;
+    color:#FF4669;
+}
+
+#personal:hover{
+    @include transition(color 0.5s);
+    color:#333;
+}
+
+.images{
+    @include display(flex);
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    position: relative;
+    margin-bottom:$m-b-under-imgs;
+
+    .disp1{
+        margin:$img-spaceing;
+        @include padding-left-right-bottom;
+        width: 100%;
+        max-width: 450px;
+        -webkit-filter: blur(0px);
+        @include transition(blur 0.8s);
+
+        @include mobile_device {
+            margin:0;
+            padding-right:0;
+            padding-left:0;
+        }
+    }
+}
+
+.box_1{
+    @include display_box;
+    @include boxColor_vivd;
+    @include transition(opacity 0.5s);
+    opacity: 0;
+    height:325px;
+}
+.box_1,.box_2{top:0px;}
+
+:hover.box_1{
+    opacity: 0.9;
+}
+// removing width from boxes at tablet_device size
+// having the width set to its original size of 450px adds a scroll bar on small screens to right of page
+@include tablet_device{
+    .box_1{
+        width: 0px;
+    }
+};
+
+.caption1{
+    @include caption;
+    border-bottom:$vivd_border;
+    border-top:$vivd_border;
+    font-size: ms(0);
+}
+
+.discript1{
+    font-size: ms(1);
+    opacity: 1;
+    margin-top: 250px;
+    color:white;
+}
+
+.more-projects{
+  @include ms-respond(font-size,3);
+  @include more-proj;
+}
+
+.project-wrapper{
+    height:100%;
+
+    .other-projects{
+       width:250px;
+   }
+
+   .project-heading{
+       text-align: center;
+       position: relative;
+       font-family: $lato;
+       @include ms-respond(font-size,2);
+   }
+}
+
+
+.proj-container{
+    @include display(flex);
+    justify-content: center;
+
+    @include tablet_device {
+        // media q for f-w
+        @include flex-wrap(wrap);
+    }
+}
+
+.line-divider{
+    @include width-height-100percent;
+}
+.link{
+    font-family: $monte;
+    fill:$typeColor;
+    @include transition(fill 0.2s);
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.other-projects:hover .halfRect1{
+    fill:whitesmoke;
+    @include transition(fill 0.2s);
+}
