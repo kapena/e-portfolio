@@ -14,7 +14,6 @@ html{
 }
 
 .proj-n{
-    text-align: center;
     @include ms-respond(font-size,4);
 }
 
@@ -23,44 +22,30 @@ html{
 }
 
 .project-introduction{
+    position: relative;
+    top: 40px;
     padding: $proj-intro-padding;
+    background-color: #ebebeb;;
 
     @include lrg-mobile {
       padding:1rem;
     }
 }
 
-.media{
-    text-align: center;
-    @include media;
-    @include projDscript;
-    text-align: center;
-    border-bottom: $vivd_border;
-    font-family: $monte;
-    @include ms-respond(font-size,2);
-}
-
 .project-desc{
-    @include ms-respond(font-size,2);
-    @include projDscript;
-    border-bottom:$vivd_border;
-    text-align: center;
+  font-family: $monte;
+  @include ms-respond(font-size,2);
 }
 
-#sponsor{
-    text-decoration: none;
-     color:royalblue;
+.info{
+  font-weight:600;
+  font-family:$monte;
 }
 
 #sponsor:hover{
     transition: color 0.5s;
     color:#333;
 }
-
-// .point-p:hover,
-// .point-p:focus {
-//    color:blue;
-// }
 
 #hip {
     font-family: $monte !important;

@@ -10,8 +10,13 @@ body{
 
 .proj-n{
     @include ms-respond(font-size,4);
-    text-align: center;
+    // text-align: center;
 }
+
+.header-img{
+    @include width-height-100percent;
+}
+
 
 .hero-video-wrapper{
     padding-top: 25px;
@@ -46,27 +51,13 @@ body{
     color:#333;
 }
 
-.media{
-    text-align: center;
-    @include media;
-    @include projDscript;
-    text-align: center;
-    border-bottom: $secret_border;
-    font-family: $monte;
-    @include ms-respond(font-size,2);
-}
-
 .project-desc{
     @include ms-respond(font-size,2);
-    @include projDscript;
-    text-align: center;
-    border-bottom:$secret_border;
+    // @include projDscript;
+    text-align: left;
 }
 
-#project-desc{
-    border-top:$secret_border;
-    margin-top:55px;
-}
+
 .main-image{
     width:100%;
 

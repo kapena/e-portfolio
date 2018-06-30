@@ -2780,7 +2780,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.21em;
   margin: 0rem;
-  text-align: center; }
+  text-align: right; }
   @media (min-width: 15em) and (max-width: 60em) {
     .company, .title {
       font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
@@ -2789,12 +2789,9 @@ body {
       font-size: 1.77689em; } }
 
 .intro-msg {
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-bottom: 1px;
-  margin: 0% 10% 0%;
+  margin: 0 150px;
   font-size: 1.21em;
-  text-align: center;
+  text-align: left;
   line-height: 1.61803em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .intro-msg {
@@ -3075,8 +3072,7 @@ h1, h2, h3, h4, h5, h6 {
 .tag {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  padding: 3px;
-  background-color: #f2f2f2; }
+  display: block; }
 
 .prj-head, .prj-info {
   text-align: center;
@@ -3095,17 +3091,20 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1.333em; } }
 
 .info {
-  font-size: 1.1em; }
+  font-size: 1em; }
   @media (min-width: 15em) and (max-width: 60em) {
     .info {
-      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+      font-size: calc( 1em + 0 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
     .info {
-      font-size: 1.333em; } }
+      font-size: 1em; } }
 
 .info {
   text-align: center;
-  margin: 0px;
+  background-color: #4169e1;
+  color: #f6f6f6;
+  opacity: 0.8;
+  padding: 0 10px 0px;
   font-weight: 600;
   font-family: "Montserrat", sans-serif; }
 
@@ -3158,12 +3157,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
+.skills, .mission {
+  padding: 50px 0px 50px; }
+
 .about-short-disc {
   font-size: 1.21em;
-  margin: 0% 8% 0%;
   line-height: 1.61803em;
   position: relative;
-  text-align: center; }
+  text-align: left; }
   @media (min-width: 15em) and (max-width: 60em) {
     .about-short-disc {
       font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
@@ -3173,13 +3174,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-info-1, .about-info-2 {
   display: flex;
-  margin: 3em 4em 4em;
+  margin: 0 150px;
   flex-direction: row; }
 
 .col-left, .col-right {
   flex-grow: 1;
   width: 10em;
   height: 100%; }
+
+.why-wiki-process {
+  margin: 0 150px; }
 
 .desktop_graphic {
   display: flex;
@@ -3224,6 +3228,14 @@ h1, h2, h3, h4, h5, h6 {
 #chat:hover {
   background-size: 100% 100%; }
 
+.img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.svg-process {
+  height: 80px; }
+
 .device_graphic {
   display: none; }
 
@@ -3243,21 +3255,9 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1em;
     flex-direction: row; } }
 
-@media only screen and (max-width: 1030px) {
-  .proj-enq {
-    margin: 0; } }
-
 @media only screen and (max-width: 680px) {
   .about-info {
     flex-direction: column; } }
-
-@media only screen and (max-width: 1030px) {
-  .service {
-    height: 150px; } }
-
-@media only screen and (max-width: 680px) {
-  .service {
-    height: 100px; } }
 
 @media only screen and (max-width: 680px) {
   .col-left, .col-right {

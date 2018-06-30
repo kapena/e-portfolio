@@ -23,8 +23,9 @@
 .tag{
   font-family:$monte;
   font-weight:400;
-  padding:3px;
-  background-color:#f2f2f2;
+  display: block;
+  // padding:3px;
+  // background-color:#f2f2f2;
   // color:rgb(51, 51, 51);
 }
 .prj-head, .prj-info {
@@ -41,13 +42,15 @@
 }
 
 .info {
-  @include ms-respond(font-size,1);
+  @include ms-respond(font-size,0);
 }
 
 .info{
   text-align:center;
-  // fill:#44444;
-  margin: 0px;
+  background-color: #4169e1;
+  color: #f6f6f6;
+  opacity: 0.8;
+  padding: 0 10px 0px;
   font-weight:600;
   font-family:$monte;
 }

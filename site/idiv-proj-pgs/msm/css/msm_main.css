@@ -727,7 +727,6 @@ html {
   height: 100%; }
 
 .proj-n {
-  text-align: center;
   font-size: 1.4641em; }
   @media (min-width: 10em) and (max-width: 20em) {
     .proj-n {
@@ -741,53 +740,27 @@ html {
   height: 100%; }
 
 .project-introduction {
-  padding: 50px 100px 90px; }
+  position: relative;
+  top: 40px;
+  padding: 50px 100px 90px;
+  background-color: #ebebeb; }
   @media only screen and (max-width: 523px) {
     .project-introduction {
       padding: 1rem; } }
 
-.media {
-  text-align: center;
-  display: block;
-  padding-bottom: 5px;
-  bottom: 15px;
-  position: relative;
-  width: 80%;
-  margin: auto;
-  margin-top: 5px;
-  bottom: 30px;
-  padding: 2rem 0rem 2rem;
-  text-align: center;
-  border-bottom: 2px solid #423F3F;
+.project-desc {
   font-family: "Montserrat", sans-serif;
   font-size: 1.21em; }
   @media (min-width: 10em) and (max-width: 20em) {
-    .media {
-      font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
-  @media (min-width: 20em) {
-    .media {
-      font-size: 1.49328em; } }
-
-.project-desc {
-  font-size: 1.21em;
-  position: relative;
-  width: 80%;
-  margin: auto;
-  margin-top: 5px;
-  bottom: 30px;
-  padding: 2rem 0rem 2rem;
-  border-bottom: 2px solid #423F3F;
-  text-align: center; }
-  @media (min-width: 10em) and (max-width: 20em) {
     .project-desc {
       font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
   @media (min-width: 20em) {
     .project-desc {
       font-size: 1.49328em; } }
 
-#sponsor {
-  text-decoration: none;
-  color: royalblue; }
+.info {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif; }
 
 #sponsor:hover {
   transition: color 0.5s;
