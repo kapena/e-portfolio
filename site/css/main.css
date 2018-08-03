@@ -2767,29 +2767,27 @@ body {
   min-height: 100%;
   background-color: #f4f4f4; }
 
-.welcome {
-  padding-top: 30px; }
+header {
+  padding-top: 45px; }
+
+.slide-nav-trigger {
+  visibility: hidden; }
+
+.show {
+  transition: opacity 0.2s;
+  opacity: 1;
+  visibility: visible; }
+
+.hide {
+  transition: opacity 0.2s;
+  opacity: 0;
+  visibility: hidden; }
 
 .aloha {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600; }
-
-.company, .title {
-  color: #333333;
-  font-weight: "" 800;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.21em;
-  margin: 0rem;
-  text-align: right; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .company, .title {
-      font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .company, .title {
-      font-size: 1.77689em; } }
+  font-weight: 800; }
 
 .intro-msg {
-  margin: 0 150px;
   font-size: 1.21em;
   text-align: left;
   line-height: 1.61803em; }
@@ -2798,19 +2796,6 @@ body {
       font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
   @media (min-width: 60em) {
     .intro-msg {
-      font-size: 1.77689em; } }
-
-.cta-msg {
-  text-align: center;
-  margin: 0% 10% 0%;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-size: 1.21em; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .cta-msg {
-      font-size: calc( 1.21em + 0.56689 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .cta-msg {
       font-size: 1.77689em; } }
 
 .cta-intro {
@@ -2822,24 +2807,9 @@ body {
     .cta-intro {
       font-size: 1.333em; } }
 
-.main {
-  padding: 20px 0px 20px; }
-
-.built {
-  margin: 0% 8% 0%;
-  padding: 1rem 0rem 1rem;
-  text-align: center;
-  font-size: 1em; }
-  @media (min-width: 15em) and (max-width: 60em) {
-    .built {
-      font-size: calc( 1em + 0 * ( ( 100vw - 15em) / 45 )); } }
-  @media (min-width: 60em) {
-    .built {
-      font-size: 1em; } }
-
 header #projects:hover, header #chat:hover, header #bio:hover, header #getintouch:hover, header .email:hover, header .point-p:hover,
 header #projects:focus, header #chat:focus, header #bio:focus, header #getintouch:focus, header .email:focus, header .point-p:focus {
-  color: blue; }
+  color: #f5f5f5; }
 
 header #projects, header #chat, header #bio, header #getintouch, header .email, header .point-p, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
   color: #333333;
@@ -2850,9 +2820,9 @@ header #projects, header #chat, header #bio, header #getintouch, header .email, 
 header #projects, header #chat, header #bio, header #getintouch, header .email, header .point-p, header .pre-footer #chat, .pre-footer header #chat, header .pre-footer #bio, .pre-footer header #bio {
   border: none;
   border-bottom: 2px solid royalblue;
-  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
-  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
-  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -webkit-linear-gradient(royalblue, royalblue) no-repeat bottom;
+  background: -o-linear-gradient(royalblue, royalblue) no-repeat bottom;
+  background: linear-gradient(royalblue, royalblue) no-repeat bottom;
   background-size: 100% 1px;
   transition: .2s,color .1s .1s;
   text-decoration: none; }
@@ -2880,7 +2850,7 @@ header #projects:hover, header #chat:hover, header #bio:hover, header #getintouc
 
 .graphic-text {
   font-family: "Montserrat", sans-serif;
-  font-weight: "" 800;
+  font-weight: 800;
   color: #423F3F;
   font-size: 0.82645em; }
   @media (min-width: 15em) and (max-width: 60em) {
@@ -2995,10 +2965,6 @@ header #projects:hover, header #chat:hover, header #bio:hover, header #getintouc
   .desktop_graphic {
     display: none; } }
 
-@media only screen and (max-width: 1030px) {
-  header {
-    padding-top: 50px; } }
-
 /* @import "partials/home/nav"; */
 /* Projects  Pg */
 /* Modular Scale */
@@ -3060,9 +3026,6 @@ h1, h2, h3, h4, h5, h6 {
     .pfolio {
       font-size: 3.15733em; } }
 
-.proj-container {
-  margin: 0px 150px; }
-
 .card-section {
   text-align: center; }
 
@@ -3074,12 +3037,13 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   display: block; }
 
-.prj-head, .prj-info {
+.prj-head {
   text-align: center;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  padding: 20px 10px 20px;
   margin: 0px; }
+  .prj-head .prj-info {
+    padding: 20px 10px 20px; }
 
 .prj-head {
   font-size: 1.1em; }
@@ -3127,14 +3091,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 20px; }
 
-@media only screen and (max-width: 1180px) {
-  .proj-container {
-    margin: 0 100px; } }
-
-@media only screen and (max-width: 980px) {
-  .proj-container {
-    margin: 0px; } }
-
 /* Bio  Pg */
 /* Modular Scale */
 /* Colors project pages */
@@ -3157,8 +3113,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
-.skills, .mission {
-  padding: 50px 0px 50px; }
+.skills {
+  padding: 20px 0px 20px; }
 
 .about-short-disc {
   font-size: 1.21em;
@@ -3171,19 +3127,6 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 60em) {
     .about-short-disc {
       font-size: 1.77689em; } }
-
-.about-info-1, .about-info-2 {
-  display: flex;
-  margin: 0 150px;
-  flex-direction: row; }
-
-.col-left, .col-right {
-  flex-grow: 1;
-  width: 10em;
-  height: 100%; }
-
-.why-wiki-process {
-  margin: 0 150px; }
 
 .desktop_graphic {
   display: flex;
@@ -3218,9 +3161,9 @@ h1, h2, h3, h4, h5, h6 {
 #chat {
   border: none;
   border-bottom: 2px solid royalblue;
-  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
-  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
-  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -webkit-linear-gradient(royalblue, royalblue) no-repeat bottom;
+  background: -o-linear-gradient(royalblue, royalblue) no-repeat bottom;
+  background: linear-gradient(royalblue, royalblue) no-repeat bottom;
   background-size: 100% 1px;
   transition: .2s,color .1s .1s;
   text-decoration: none; }
@@ -3230,11 +3173,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .img-center {
   display: flex;
-  justify-content: center;
   align-items: center; }
 
 .svg-process {
-  height: 80px; }
+  height: 50px;
+  margin: 10px; }
 
 .device_graphic {
   display: none; }
@@ -3242,8 +3185,7 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 1030px) {
   .device_graphic {
     display: flex;
-    justify-content: center;
-    padding: 30px; } }
+    justify-content: center; } }
 
 @media only screen and (max-width: 1030px) {
   .desktop_graphic {
@@ -3322,7 +3264,7 @@ form input {
 .your-name {
   bottom: 16px;
   border-top: none;
-  font-weight: "" 800;
+  font-weight: 800;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   border-bottom: 1px solid #00f;
@@ -3340,7 +3282,7 @@ form input {
       font-size: 1.333em; } }
 
 .your-email {
-  font-weight: "" 800;
+  font-weight: 800;
   bottom: 16px;
   padding-right: 5px;
   font-family: "Montserrat", sans-serif;
@@ -3365,7 +3307,7 @@ form input {
 .message {
   top: 16px;
   border-bottom: none;
-  font-weight: "" 800;
+  font-weight: 800;
   font-family: "Montserrat", sans-serif;
   font-size: 1.1em;
   border-bottom: 1px solid #00f;
@@ -3796,7 +3738,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .say-hi {
   font-size: 1.4641em;
-  font-weight: "" 800; }
+  font-weight: 800; }
   @media (min-width: 15em) and (max-width: 60em) {
     .say-hi {
       font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
@@ -3826,12 +3768,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .email {
   font-family: "Montserrat", sans-serif;
-  font-weight: "" 800;
+  font-weight: 800;
   border: none;
   border-bottom: 2px solid royalblue;
-  background: -webkit-linear-gradient(cyan, cyan) no-repeat bottom;
-  background: -o-linear-gradient(cyan, cyan) no-repeat bottom;
-  background: linear-gradient(cyan, cyan) no-repeat bottom;
+  background: -webkit-linear-gradient(royalblue, royalblue) no-repeat bottom;
+  background: -o-linear-gradient(royalblue, royalblue) no-repeat bottom;
+  background: linear-gradient(royalblue, royalblue) no-repeat bottom;
   background-size: 100% 1px;
   transition: .2s,color .1s .1s;
   text-decoration: none;
@@ -3916,8 +3858,8 @@ li {
   overflow: hidden;
   border-radius: 50%;
   width: 45px;
-  padding: 0rem 1rem 0rem;
-  position: relative; }
+  position: relative;
+  margin: 10px; }
 
 .bottom {
   font-family: "Montserrat", sans-serif;

@@ -23,7 +23,7 @@
             "project_pgs_src":{
                 "proj_1":{
                     "styles_proj1":"./src/scss/sod_main.scss",
-                    "js_proj1":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/secretofdreaming.js","./js/nav.js"]
+                    "js_proj1":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","bower_components/fancybox/dist/jquery.fancybox.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/secretofdreaming.js","./js/nav.js"]
                 },
                 "proj_2":{
                     "styles_proj2":"./src/scss/pointplumbing_main.scss",
@@ -38,7 +38,7 @@
                 },
                 "proj_5":{
                     "styles_proj5":"./src/scss/print_main.scss",
-                    "js_proj5":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/print.js"]
+                    "js_proj5":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","bower_components/fancybox/dist/jquery.fancybox.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/print.js"]
                 },
                 "proj_6":{
                     "styles_proj6":"./src/scss/royalthread_main.scss",

@@ -2,9 +2,11 @@
 @import "vendor/bourbon";
 @import "vendor/lux";
 @import "partials/typography";
+@import "vendor/foundation";
+@import "vendor/buttons";
 // Layout
 @import "partials/project_pages/base-layout-projects/layout_4";
 // Footer
 @import "partials/project_pages/footer-layout-projects/f4";
 // Animation
-@import "partials/project_pages/interactive/ani4";
+// @import "partials/project_pages/interactive/ani4";

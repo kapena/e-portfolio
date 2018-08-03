@@ -1,58 +1,81 @@
 @import "modules/projects/pages_module";
 @import "vendor/mod-scale";
-@import "modules/home-page/home-module";
+@import "partials/projects/hover";
+@import "partials/projects/layout";
 @import "partials/variables";
+// @import "modules/projects-page/projects-module";
 @import "modules/global-mqs/mqs";
 
 body{
-    @include body-mixin;
-}
-
-html{
-    width: 100%;
-    height:100%;
+ @include body-mixin;
 }
 
 .proj-n{
-    text-align: center;
     @include ms-respond(font-size,4);
+    // text-align: center;
 }
 
 .header-img{
+  padding-top:59px;
     @include width-height-100percent;
 }
 
-.project-introduction{
-    padding: $proj-intro-padding;
+.tell{
+  padding:5px;
+  // bottom:5px;
+  @include ms-respond(font-size,2);
+}
 
+
+.project-introduction{
     @include lrg-mobile {
-      padding:1rem;
+        padding:1rem;
     }
 }
 
-.media{
-    text-align: center;
-    @include media;
-    @include projDscript;
-    text-align: center;
-    border-bottom: $tension_border;
-    font-family: $monte;
-    @include ms-respond(font-size,2);
-}
-.project-desc{
-    @include ms-respond(font-size,2);
-    @include projDscript;
-    border-bottom:$tension_border;
-    text-align: center;
+.cta{
+  padding: 50px 0px 50px;
 }
 
-.tools{
-  text-align: center;
-  font-weight: 600;
+.ctalink{
+   @include ms-respond(font-size,1);
+   text-decoration: none;
+   font-family: $monte;
+   color:#f5f5f5;
 }
+
+
+.ctalink:hover{
+  transition: background 0.5s;
+  background:darkviolet;
+  border-bottom: 0px;
+}
+
+#RMIT{
+    text-decoration: none;
+     color:royalblue;
+}
+
+#RMIT:hover{
+    @include transition(color 0.5s);
+    color:#333;
+}
+
+.project-desc-main{
+    @include ms-respond(font-size,2);
+    text-align: left;
+}
+
+.project-desc{
+    @include ms-respond(font-size,1);
+    text-align: left;
+}
+
 
 .main-image{
     width:100%;
+    padding:50px 0 50px;
+    background-color:#f5f5f5;
 
     .story-seq{
         width: 100%;
@@ -62,144 +85,72 @@ html{
     }
 }
 
-.line-1{
-    transform: translateY(-40px);
+.image-container{
+  padding:5px;
 }
 
-#line1,#line2{
-    fill:url('#australia');
+li{
+    list-style: none;
 }
 
-.break-wrapper{
-    padding-bottom: 10px;
-    padding-top: 10px;
+.contact-p-head{
+  text-align: center;
+}
+
+.text-footer{
     position: relative;
-    margin: 50px;
-    text-align: center;
+    margin-top:150px;
 }
 
-.images{
-    @include display(flex);
-    @include flex-wrap(wrap);
-    @include justify-content(center);
-    position: relative;
-    margin-bottom:$m-b-under-imgs;
-
-    .disp1{
-        margin:$img-spaceing;
-        @include padding-left-right-bottom;
-        width: 100%;
-        max-width: 450px;
-        -webkit-filter: blur(0px);
-        @include transition(blur 0.8s);
-
-        @include mobile_device {
-            margin:0;
-            padding-right:0;
-            padding-left:0;
-        }
-    }
+.say-hi{
+    @include ms-respond(font-size,4);
+    font-weight: $montB;
+}
+.exit-msg{
+  @include ms-respond(font-size,2);
+  // @include left-right-margin;
+  font-weight: $monte;
+  position: relative;
+  text-align:left;
 }
 
-.box_1{
-    @include display_box;
-    @include boxColor_tension;
-    @include transition(opacity 0.5s);
-    opacity: 0;
-}
-.box_1,.box_2{top:0px;}
-
-:hover.box_1{
-    opacity: 0.9;
-}
-// removing width from boxes at tablet_device size
-// having the width set to its original size of 450px adds a scroll bar on small screens to right of page
-@include tablet_device{
-    .box_1{
-        width: 0px;
-    }
-};
-
-.caption1{
-    @include caption;
-    border-bottom:$tension_border;
-    border-top:$tension_border;
-    font-size: ms(0);
+.email:hover,
+.email:focus {
+   color:$typeColor;
 }
 
-.discript1{
-    font-size: ms(1);
-    opacity: 1;
-    margin-top: 250px;
-    color:white;
-}
-
-.more-projects{
-  @include ms-respond(font-size,3);
-  @include more-proj;
+.tell:hover, .tell:focus {
+  color:#f5f5f5;
 }
 
 
-.project-wrapper{
-    height:100%;
-
-    .other-projects{
-       width:250px;
-   }
-
-   .project-heading{
-       text-align: center;
-       position: relative;
-       font-family: $lato;
-       @include ms-respond(font-size,2);
-   }
-}
-
-.owl:hover,
-.owl:focus {
-   color:blue;
-}
-
-.owl {
-    font-family: $monte !important;
-    color:$typeColor;
-    padding: 2px;
-    font-weight: 900;
-    margin: 0 -2px;
-}
-
-.owl {
-    @include hover-links;
-    background-size:100% 0px;
-    border-bottom: 2px solid red;
-}
-
-.owl:hover {
+.email:hover, .tell:hover{
    background-size:100% 100%;
 }
 
-.proj-container{
-    @include display(flex);
-    justify-content: center;
 
-    @include tablet_device {
-        // media q for f-w
-        @include flex-wrap(wrap);
-    }
+.email, .tell{
+  font-family: $monte;
+  font-weight: $montB;
+  @include hover-links;
+  color:$typeColor;
+  position:relative;
 }
 
-.line-divider{
-    @include width-height-100percent;
+.list2{
+  margin-top:2rem;
 }
-.link{
-    font-family: $monte;
-    fill:$typeColor;
-    @include transition(fill 0.2s);
-    font-size: 1.2em;
-    font-weight: 700;
+.touch{
+  padding:0px 0px 50px;
 }
-
-.other-projects:hover .halfRect1{
-    fill:whitesmoke;
-    @include transition(fill 0.2s);
+.center{
+  @include ms-respond(font-size,2);
+}
+.more-work{
+  @include ms-respond(font-size,3);
+  text-align: center;
+}
+ .next-prev {
+  padding:20px;
+  text-align: center;
 }

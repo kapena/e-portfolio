@@ -5,7 +5,7 @@
     <title>Print Is Dead</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/print_main.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="https://s3-us-west-2.amazonaws.com/efolio/favs/pid/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/efolio/favs/pid/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/efolio/favs/pid/favicon-16x16.png" sizes="16x16">
@@ -14,19 +14,74 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+  <nav id="luxbar" class="luxbar-fixed slide-nav-trigger">
+      <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/>
+      <div class="luxbar-menu luxbar-menu-right luxbar-menu-light">
+          <ul class="luxbar-navigation">
+              <li class="luxbar-header">
+                  <a href="#" class="luxbar-brand"><svg version="1.1" id="bw-lgo" x="0px" y="0px" height="50px" viewBox="0 0 122.8 126" enable-background="new 0 0 122.8 126" xml:space="preserve"><g>
+                    <path fill="#000033" d="M59.7,4.3c-25.6,0-47.4,15.6-55.6,38.4c-0.3,0.9-0.5,2-0.4,2.9c0,0,0,0,0,0.1l5.7,23.5   c0.4,1.9,3.2,1.9,3.6-0.1l4.7-23.9c0.2-0.9,0.9-1.5,1.8-1.5h10.3c0.9,0,1.6,0.6,1.8,1.5l5.1,24.2c0.4,1.9,3.1,2,3.6,0l5.7-24.2   c0.2-0.8,0.9-1.4,1.8-1.4h8.7c1.2,0,2.1,1.2,1.8,2.3L45.8,91.1c-0.2,0.8-1,1.4-1.8,1.4H33.9c-0.9,0-1.6-0.6-1.8-1.4l-5.6-25.2   c-0.4-1.9-3.2-1.9-3.6,0l-5.3,24.5c-0.2,1.2-1.3,2-2.5,2H9.7c-0.6,0-1,0.6-0.6,1.1c10.3,17.3,29.2,29,50.9,29   c33.7,0,60.9-28.2,59.1-62.3C117.3,28.9,91.1,4.3,59.7,4.3z"/>
+                  </g>
+                  </svg></a>
+                  <label class="luxbar-hamburger luxbar-hamburger-spin"
+                  id="luxbar-hamburger" for="luxbar-checkbox"> <span></span> </label>
+              </li>
+              <li class="luxbar-item"><a class="projects-link" href="/#projects-spectrum">Work</a></li>
+
+              <li class="luxbar-item"><a class="about" href="/#about-spectrum">About</a></li>
+
+              <li class="luxbar-item"><a class="contact-link" href="/#contact-spectrum">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
     <header>
         <picture>
     <!-- header_p served for smaller devices. 2x for ret-->
         <source srcset="https://s3-us-west-2.amazonaws.com/efolio/all-headers_%402x/sm-header_print.jpg" media="(max-width:680px)">
 
-        <img class="header-img" srcset="https://s3-us-west-2.amazonaws.com/efolio/print/header.jpg 1x, https://s3-us-west-2.amazonaws.com/efolio/all-headers_%402x/print-header%402x.jpg 2x" alt="Print Is Dead">
+        <img class="header-img" srcset="https://s3-us-west-2.amazonaws.com/efolio/print/header-pid.jpg 1x, https://s3-us-west-2.amazonaws.com/efolio/print/header-pid.jpg2x" alt="Print Is Dead">
 
         </picture>
-        <div class="project-introduction">
-            <h1 class="proj-n">Print Is Dead</h1>
-                <span class='media'>Graphic Design</span>
-                <p class="project-desc">Print Is Dead was a feature article in <a id="abstract" target="_blank" href="http://www.abstracthawaii.com/"> Abstract Magazine</a>. As a design intern for Abstract Magazine, I was given the opportunity to have full control over all aspects of the design for the Print Is Dead article. This article responds to the rise of digital media, at the expense of printed material. I designed the hero illustration, layout, and infographic.</p>
+
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell large-12">
+        <h1>Print Is Dead</h1>
+        <h3>Digital Illustration & Graphic Design</h3>
+            <p class="project-desc-main">Print Is Dead is was graphic design job to create an engaging digital illustration and a article layout for <a id="RMIT" target="_blank" href="http://www.abstracthawaii.com/"> Abstract Magazine's</a> "Printricacies" article. The story of Print Is Dead explains how digital printing is taking over the art of conventional printing methods today. Making it harder to find traditional printed material. </p>
+      </div>
+    </div>
+  </div>
+  <div class="grid-container">
+      <div class="grid-x grid-margin-x">
+        <div class="cell large-6">
+          <h1>Concept</h1>
+            <p class="project-desc">In producing the hero illustration, I focused on a specific focal point of the article that talked about how digital printing tools are becoming the norm in publishing. This lead to the concept of the pixels resembling the "digital" transformation out of my fingerprint which is a symbolic message resembling the traditional method of using conventional tools.</p>
         </div>
+        <div class="cell large-6">
+          <h1>Design</h1>
+            <p class="project-desc">The hero illustration of the fingerprint brings into view the nature of how printing works with the CMYK color process, whether it be digital printing or conventional printing the four color process is the ink which creates the print you read. The fingerprint represents the method of traditional printing while the pixels represent the new technology of printing. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell large-6">
+              <img src="   https://s3-us-west-2.amazonaws.com/efolio/print/concept/concept.jpg" alt="">
+          </div>
+          <div class="cell large-6">
+              <img src="   https://s3-us-west-2.amazonaws.com/efolio/print/design/design.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-x"></div>
+        <div class="cell large-12">
+          <h1>Result</h1>
+            <p class="project-desc-main">The moral of the story is that conventional methods of printing (fingerprint) eventually give birth (the pixels) to new digital  tools. However it's still "Print" at the end of the day, and it's a living process that will never disappear, no matter what method of printing you choose to use for the job. Print is dead, long live print.</p>
+          </div>
+      </div>
     </header>
 <!-- Main Image-->
     <div class="main-image">
@@ -35,73 +90,90 @@
             <img class="story-seq" srcset="https://s3-us-west-2.amazonaws.com/efolio/print/seq/seq_print.jpg 1x, https://s3-us-west-2.amazonaws.com/efolio/all-seq_%402x/seq_print%402x.jpg 2x" alt="This article responds to the rise of digital media, at the expense of printed material. I designed the hero illustration, layout, and infographics.">
         </picture>
     </div>
-    <div class="break-wrapper">
-        <p id="project-desc" class="project-desc">As an intern at Abstract Magazine, I worked under the mentorship of <a id="abstract" target="_blank" href="http://aigahonolulu.org/members/cliff.html">Clifford Cheng</a>  who is co-owner and designer for the internationally acclaimed Hawaii Skin Diver Magazine. Thank you <a target="_blank" id="abstract" href="https://vimeo.com/42701217">Cliff for inspring and mentoring me.</a> Karen Shishido provided the beautifully written article. A big thank you to publisher Matthew A. Heim for generiously giving everyone who contribited to Abstract Magaize a voice.</p>
-    </div>
-    <!-- Indiv-->
-    <div class="images">
-                <div class="image-container img1" >
-                    <img class="disp1" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/lay1.jpg" alt="Hero illustration of finger print and bleeding pixels">
 
-                    <a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/print/large/box_1.jpg"><p class="caption1">Hero Illustration</p></a>
-                </div>
-                <div class="image-container img2" >
-                    <img class="disp2" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/lay2.jpg" alt="Mockup of Print is Dead article layout">
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+          <div class="cell large-6">
+            <a data-fancybox href=" https://s3-us-west-2.amazonaws.com/efolio/print/Herospread.jpg">
+                  <svg class="projects" viewBox="0 0 382 300">
+                      <defs>
+                      <linearGradient id="tropics">
+                          <stop stop-color="royalblue" offset="0%"></stop>
+                          <stop stop-color="steelblue" offset="45%"></stop>
+                      </linearGradient>
+                      </defs>
 
-                    <a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/print/large/box_2.jpg"><p class="caption2">Layout Design</p></a>
-                </div>
-                <div class="image-container img3" >
-                    <img class="disp3" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/info.jpg" alt="Hawaii Graphic Design">
+                      <image xlink:href="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/lay1.jpg" alt="" height="100%" width="100%">
+                    </image><rect class="fullRect" fill="url(#tropics)" width="100%" x="" height="100%" y=""></rect>
+                  </svg>
+              <!-- <img src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/lay1.jpg" alt="">
+              </div> -->
+            </a>
+          </div>
+          <div class="cell large-6">
+            <a data-fancybox href="https://s3-us-west-2.amazonaws.com//efolio/print/spread.jpg">
+              <svg class="projects" viewBox="0 0 382 300">
+                  <defs>
+                  <linearGradient id="tropics">
+                      <stop stop-color="royalblue" offset="0%"></stop>
+                      <stop stop-color="steelblue" offset="45%"></stop>
+                  </linearGradient>
+                  </defs>
 
-                    <a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/print/large/box_3.jpg"><p class="caption3">Infographic</p></a>
-                </div>
-                <div class="image-container img4" >
-                    <img class="disp4" src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/icons.jpg" alt="Infographic Design Hawaii">
-
-                    <a class="lrg" data-fancybox href="https://s3-us-west-2.amazonaws.com/efolio/print/large/box_4.jpg"><p class="caption4">Infographic Icons</p></a>
-                </div>
-        </div>
-        <!--Projects-->
-        <section class="project-wrapper">
-
-        <h2 class="more-projects">More Projects</h2>
-            <div class="proj-container">
-            <!--HIP-->
-            <figure>
-              <svg class="other-projects"  viewBox="-11 30 350 305">
-                  <a xlink:href="/idiv-proj-pgs/hip/hip.html"><image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/hip_blank.jpg" x="-11" y='25' height="310px" width="350px"/>
-
-                  <rect class="halfRect1" fill="silver" opacity="0.95" height="100px" width="350px" x="-11" y="236" />
-
-                  <g id="proj-name">
-                      <a xlink:href="/idiv-proj-pgs/hip/hip.html">
-                        <text class="link" x="55" y="285">HI Invitational of Polo</text>
-
-                         <text class="link s-d" y="310" style="font-size: 1.1em; font-weight:900;" x="119">GRAPHIC</text>
-
-                      </a>
-                  </g>
-                </a>
+                  <image xlink:href="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/lay2.jpg" alt="" height="100%" width="100%">
+                </image><rect class="fullRect" fill="url(#tropics)" width="100%" x="" height="100%" y=""></rect>
               </svg>
-              </figure>
-                </figure>
-                <!--Caroline Rideout-->
-                <figure>
-                <svg class="other-projects"  viewBox="-11 30 350 305">
-                    <a xlink:href="/idiv-proj-pgs/caro/caro.html"><image xlink:href="https://efolio.s3.amazonaws.com/project_preview_imgs/caro.jpg" x="-11" y='27' height="310px" width="350px"/>
+              <!-- <img src="https://s3-us-west-2.amazonaws.com/efolio/print/bottom_4/lay2.jpg" alt=""> -->
+            </a>
+          </div>
+        </div>
+      </div>
+    <section class="touch">
+         <a name="contact-spectrum"></a>
+         <div class="grid-container">
+           <div class="grid-x">
+             <div class="cell">
+               <h1 class="say-hi">Get In Touch</h1>
+               <h2 class="exit-msg">So you have an idea that you want to bring to life? Aloha Pixel is looking forward to having a conversation with you about your objectives.</h2><a class="ctalink button large" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeXF3l7xNuzam7jbgf3Cbz4OEiEtOB7qLxA01BAEyXsagSSsA/viewform">Tell us about your idea!</a>
+             </div>
+           </div>
+         </div>
+      </section>
+      <section class="project-wrapper">
+          <div class="grid-container">
+            <div class="grid-x">
+              <div class="cell large-6 next-prev">
+                  <p class="center"><a id="RMIT" href="/idiv-proj-pgs/sod/secretofdreaming.html">Previous Project</a></p>
+                <svg class="next-proj" height="110px"
+                   viewBox="0 0 99.1 99.1" enable-background="new 0 0 99.1 99.1" xml:space="preserve">
+              <a xlink:href="/idiv-proj-pgs/sod/secretofdreaming.html">
+                <circle fill="#26A9E0" cx="49.5" cy="49.5" r="49.5"/>
+                <g>
+                    <polyline fill="none" stroke="#F2F2F2" stroke-width="3.8803" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    39.2,63.8 23.5,49.5 39.2,35.2 	"/>
 
-                    <rect class="halfRect1" fill="silver" opacity="0.91" height="100px" width="350px" x="-11" y="236" />
-
-                    <g id="proj-name">
-                            <a xlink:href="/idiv-proj-pgs/caro/caro.html">
-                                <text class="link" y="285" x="85">Caroline Rideout</text>
-                                <text class="link s-d" y="310" style="font-size: 1.1em; font-weight:900;" x="140">WEB</text>
-                            </a>
-                        </g>
-                    </a>
+                    <line fill="none" stroke="#F2F2F2" stroke-width="3.8803" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="75.6" y1="49.5" x2="24.9" y2="49.5"/>
+                </g>
+              </a>
                 </svg>
-                </figure>
+              </div>
+              <div class="cell large-6 next-prev">
+                  <p class="center"><a id="RMIT" href="/idiv-proj-pgs/hip/hip.html">Next Project</a></p>
+                <svg class="next-proj" height="110px"
+                   viewBox="0 0 99.1 99.1" enable-background="new 0 0 99.1 99.1" xml:space="preserve">
+              <a xlink:href="/idiv-proj-pgs/hip/hip.html">
+                <circle fill="#4169E1" cx="49.5" cy="49.5" r="49.5"/>
+                <g class="next-icon">
+                    <polyline fill="none" stroke="#F2F2F2" stroke-width="3.8803" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    59.9,35.2 75.6,49.5 59.9,63.8 	"/>
+
+                    <line fill="none" stroke="#F2F2F2" stroke-width="3.8803" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="23.5" y1="49.5" x2="74.2" y2="49.5"/>
+                </g>
+              </a>
+                </svg>
+              </div>
             </div>
+        </div>
         </section>
     <footer>
           <div class="footer-area">
@@ -166,7 +238,7 @@
             </div>
       </footer>
     </body>
-<script src="js/pid.min.js"></script>
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+<script src="js/proj5.min.js"></script>
+<!-- <script
+src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script> -->
 </html>

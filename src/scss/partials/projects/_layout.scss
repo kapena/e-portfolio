@@ -8,10 +8,6 @@
   @include ms-respond(font-size,4);
 }
 
-.proj-container{
-    margin:0px 150px;
-  }
-
 .card-section{
   text-align:center;
 }
@@ -28,13 +24,15 @@
   // background-color:#f2f2f2;
   // color:rgb(51, 51, 51);
 }
-.prj-head, .prj-info {
+.prj-head {
   text-align:center;
   // fill:#44444;
   font-weight:600;
   font-family:$monte;
-  padding:20px 10px 20px;
   margin:0px;
+  .prj-info{
+    padding:20px 10px 20px;
+  }
 }
 
 .prj-head{
@@ -66,7 +64,6 @@
   transition: opacity 0.3s;
 }
 .fullRect{
-    //visibility: hidden;
     opacity: 0;
     transition: opacity 1s;
 }
@@ -76,15 +73,4 @@
   font-weight:bold;
   font-family:$monte;
   font-size:20px;
-}
-
-.proj-container{
-
-  @include desktop-md {
-    margin:0 100px;
-  }
-
-  @include desktop-sm {
-    margin: 0px;
-  }
 }

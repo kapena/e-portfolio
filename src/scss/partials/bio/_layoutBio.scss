@@ -4,8 +4,8 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
-.skills, .mission{
-  padding: 50px 0px 50px;
+.skills{
+  padding: 20px 0px 20px;
 }
 
 .about-short-disc{
@@ -17,22 +17,6 @@
     position: relative;
     text-align: left;
     // bottom:50px;
-}
-
-.about-info-1,.about-info-2{
-  display:flex;
-  margin:0 150px;;
-  flex-direction:row;
-}
-
-.col-left, .col-right{
-  flex-grow:1;
-  width:10em;
-  height:100%;
-}
-
-.why-wiki-process{
-  margin:0 150px;
 }
 
 .desktop_graphic{
@@ -84,12 +68,13 @@
 
 .img-center{
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
 }
 
 .svg-process{
-  height:80px;
+  height: 50px;
+  margin: 10px;
 }
 
 
@@ -101,7 +86,6 @@
   @include tablet {
     display: flex;
     justify-content: center;
-    padding:30px;
   }
 }
 .desktop_graphic{

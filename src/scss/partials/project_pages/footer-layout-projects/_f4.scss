@@ -70,9 +70,10 @@ li{
 .social1-gh{
     font-family: $monte;
     position: relative;
-    padding-top:1rem;
+    // padding-top:1rem;
 }
 .github{
+  padding:0px !important;
     @include social-icons;
 }
 

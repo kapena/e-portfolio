@@ -18,7 +18,7 @@ var gulp = require('gulp'),
  del= require ('del'); // delete
 
 // Using project_pages_tasks to store seperate tasks that are apart of my build out
-// requireDir('./project_pages_tasks', {recurese:true});
+requireDir('./project_pages_tasks', {recurese:true});
 
 // Accessing config.json to get paths to files
 function setVars () {
@@ -76,10 +76,10 @@ gulp.watch(paths.watcher_main.js_main,['js_main_task']);
 
 // watch main page scss file
 // comment out when not running main
-gulp.watch(paths.watcher_main.styles_main,['styles_main_task']);
+// gulp.watch(paths.watcher_main.styles_main,['styles_main_task']);
 
 // project 12 styles
-gulp.watch(paths.watcher_projects.watcher_proj1.styles_proj1,['proj1_styles']);
+gulp.watch(paths.watcher_projects.watcher_proj5.styles_proj5,['proj5_styles']);
 
 
 // watch main page html
@@ -132,22 +132,23 @@ gulp.task('styles_main_task',function(){
 // Project Styles Task Injection
 // Change paths to desired project when working on css for that project
 // paths.source.project_pgs_src.proj_#.styles_proj#
-gulp.task('proj1_styles',function(){
+gulp.task('proj5_styles',function(){
     // source to project 2 scss
-    return gulp.src(paths.source.project_pgs_src.proj_1.styles_proj1)
+    return gulp.src(paths.source.project_pgs_src.proj_5.styles_proj5)
     .pipe(plumber({
         // plumber finds errors in stream
         errorHandler: onError}))
+    .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
-    .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
+    .pipe(gulp.dest(paths.project_pages_dest.proj5_dest.styles_proj5))
     .pipe(cssmin()) // min css
     .pipe(rename({ // rename file to site.min.css
         suffix:'.min'
     }))
-    // destination for compiled css for project 1
+    // destination for compiled css for project 5
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
-    .pipe(notify({ message: 'proj12_styles task finished' }))
+    .pipe(gulp.dest(paths.project_pages_dest.proj5_dest.styles_proj5))
+    .pipe(notify({ message: 'proj5_styles task finished' }))
     .pipe(browserSync.stream());
 });
 
@@ -162,5 +163,5 @@ gulp.task('main',function(){
 gulp.task('project_styles',function(){
     // call runSequence to make sure our tasks are
     // assign project page #
-    runSequence('proj1_styles','sync');
+    runSequence('proj5_styles','sync');
 });

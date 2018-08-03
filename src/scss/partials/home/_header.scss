@@ -19,67 +19,61 @@ body{
     background-color:#f4f4f4;
 }
 
-.welcome{
-  padding-top:30px;
+header{
+  padding-top:40px;
+}
+
+// .welcome{
+//   padding-top:30px;
+// }
+
+.slide-nav-trigger{
+  visibility: hidden;
+}
+
+.show{
+  transition: opacity 0.2s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide{
+  transition: opacity 0.2s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .aloha{
   font-family:$monte;
-  font-weight:$montSemi;
+  font-weight:$montB;
 }
 
-.company, .title{
-    color:$typeColor;
-    font-weight: $montB;
-    font-family: $monte;
-    @include ms-respond(font-size, 2);
-    margin:0rem;
-    text-align: right;
-}
 
 .intro-msg{
     // padding for left right and bottom links
     // @include left-right-bottom-links;
     // left might margins pushed in closer
-    // @include left-right-margin;
-    margin: 0 150px;
     @include ms-respond(font-size, 2);
     text-align: left;
     line-height:ms(1);
-}
-
-.cta-msg{
-  text-align: center;
-  margin: 0% 10% 0%;
-  padding-top:20px;
-  padding-bottom: 30px;
-  @include ms-respond(font-size, 2);
 }
 
 .cta-intro{
   @include ms-respond(font-size,1);
 }
 
-.main{
-  padding:20px 0px 20px;
-}
-
-.built{
-    // @include left-right-bottom-links;
-    // left might margins pushed in closer
-    @include left-right-margin;
-    padding:1rem 0rem 1rem;
-    text-align: center;
-    @include ms-respond(font-size, -0);
-}
+// .main{
+//   padding:20px 0px 0px;
+// }
 
 header #projects:hover,
 header #projects:focus {
-   color:blue;
+    color:#f5f5f5;
 }
 
 header #projects {
     color:$typeColor;
+    // $typeColor
     padding: 2px;
     font-weight: 900;
     margin: 0 -2px;
@@ -89,7 +83,8 @@ header #projects{
     @include hover-links;
 }
 
-header #projects:hover{
+header #projects:hover,
+header #projects:focus{
    background-size:100% 100%;
 }
 
@@ -230,11 +225,5 @@ header #projects:hover{
 .desktop_graphic{
   @include tablet {
     display: none;
-  }
-}
-
-header{
-  @include tablet {
-    padding-top: 50px;
   }
 }
