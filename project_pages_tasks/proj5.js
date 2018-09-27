@@ -30,7 +30,7 @@ setVars();
 
 // Watch styles_proj2 and js_proj2 for changes
 gulp.task('watch_proj5',function(){
-    gulp.watch(paths.watcher_projects.watcher_proj5.styles_proj5,['proj5_styles']);
+    // gulp.watch(paths.watcher_projects.watcher_proj5.styles_proj5,['proj5_styles']);
     gulp.watch(paths.watcher_projects.watcher_proj5.js_proj5,['proj5_js']);
 });
 
@@ -109,5 +109,5 @@ gulp.task('proj5_js',function(){
 gulp.task('project5',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('proj5_styles','proj5_js','sync');
+    runSequence('proj5_js','sync');
 });

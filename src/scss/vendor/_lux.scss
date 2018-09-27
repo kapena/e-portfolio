@@ -54,7 +54,8 @@
 
 .luxbar-brand {
   font-size: 1.6em;
-  padding: 18px 24px 18px 24px; }
+  // padding: 18px 24px 18px 24px; 
+}
 
 .luxbar-menu {
   min-height: 58px;
@@ -196,7 +197,8 @@
 
 .luxbar-menu-light .active,
 .luxbar-menu-light .luxbar-item:hover {
-  background-color: #bdbdbd; }
+  background-color: #6686e6;
+}
 .luxbar-menu-light .luxbar-hamburger span,
 .luxbar-menu-light .luxbar-hamburger span::before,
 .luxbar-menu-light .luxbar-hamburger span::after {

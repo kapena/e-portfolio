@@ -18,7 +18,7 @@ var gulp = require('gulp'),
  del= require ('del'); // delete
 
 // Using project_pages_tasks to store seperate tasks that are apart of my build out
-// requireDir('./project_pages_tasks', {recurese:true});
+requireDir('./project_pages_tasks', {recurese:true});
 
 // Accessing config.json to get paths to files
 function setVars () {
@@ -78,8 +78,8 @@ gulp.watch(paths.watcher_main.js_main,['js_main_task']);
 // comment out when not running main
 gulp.watch(paths.watcher_main.styles_main,['styles_main_task']);
 
-// project 12 styles
-gulp.watch(paths.watcher_projects.watcher_proj1.styles_proj1,['proj1_styles']);
+// project 2 styles
+gulp.watch(paths.watcher_projects.watcher_proj9.styles_proj9,['proj9_styles']);
 
 
 // watch main page html
@@ -107,6 +107,22 @@ gulp.task('js_main_task',function(){
     browserSync.reload();
 });
 
+// Particle
+gulp.task('particles_task', function(){
+  return gulp.src(paths.source.particles.js)
+  .pipe(plumber({errorHandler: onError}))
+      // plumber finds errors in stream and
+      // notifys me in terminal
+  .pipe(gulp.dest(paths.particles_dest.js_particles)) // save in dest
+  .pipe(uglify()) // minify js
+  .pipe(rename({ // rename with file with .min
+      suffix:'.min'
+  }))
+  .pipe(gulp.dest(paths.main_dest.js_main))
+  .pipe(notify({ message: 'particle task finished'})),
+  browserSync.reload();
+});
+
 // Styles Main
 gulp.task('styles_main_task',function(){
     return gulp.src(paths.source.main_page_source.styles_main)
@@ -132,22 +148,23 @@ gulp.task('styles_main_task',function(){
 // Project Styles Task Injection
 // Change paths to desired project when working on css for that project
 // paths.source.project_pgs_src.proj_#.styles_proj#
-gulp.task('proj1_styles',function(){
-    // source to project 2 scss
-    return gulp.src(paths.source.project_pgs_src.proj_1.styles_proj1)
+gulp.task('proj8_styles',function(){
+    // source to project 8 scss
+    return gulp.src(paths.source.project_pgs_src.proj_8.styles_proj8)
     .pipe(plumber({
         // plumber finds errors in stream
         errorHandler: onError}))
+    .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
-    .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
+    .pipe(gulp.dest(paths.project_pages_dest.proj8_dest.styles_proj8))
     .pipe(cssmin()) // min css
     .pipe(rename({ // rename file to site.min.css
         suffix:'.min'
     }))
-    // destination for compiled css for project 1
+    // destination for compiled css for project 8
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
-    .pipe(notify({ message: 'proj12_styles task finished' }))
+    .pipe(gulp.dest(paths.project_pages_dest.proj8_dest.styles_proj8))
+    .pipe(notify({ message: 'proj8_styles task finished' }))
     .pipe(browserSync.stream());
 });
 
@@ -162,5 +179,5 @@ gulp.task('main',function(){
 gulp.task('project_styles',function(){
     // call runSequence to make sure our tasks are
     // assign project page #
-    runSequence('proj1_styles','sync');
+    runSequence('proj8_styles','sync');
 });

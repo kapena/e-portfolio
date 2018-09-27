@@ -1,70 +1,91 @@
 @import "modules/projects/pages_module";
-@import "modules/home-page/home-module";
 @import "vendor/mod-scale";
+@import "partials/projects/hover";
+@import "partials/projects/layout";
 @import "partials/variables";
+// @import "modules/projects-page/projects-module";
 @import "modules/global-mqs/mqs";
 
 body{
-    @include body-mixin;
+ @include body-mixin;
 }
 
-html{
-    width: 100%;
-    height:100%;
+h1{
+    @include ms-respond(font-size,4);
+    // text-align: center;
+}
+
+h2 {
+  @include ms-respond(font-size,2);
 }
 
 .proj-n{
     @include ms-respond(font-size,4);
+    // text-align: center;
 }
 
 .header-img{
+  padding-top:59px;
     @include width-height-100percent;
 }
 
-.project-introduction{
-    position: relative;
-    top: 40px;
-    padding: $proj-intro-padding;
-    background-color: #ebebeb;;
-
-    @include lrg-mobile {
-      padding:1rem;
-    }
-}
-
-.project-desc{
-  font-family: $monte;
+.tell{
+  padding:5px;
+  // bottom:5px;
   @include ms-respond(font-size,2);
 }
 
-.info{
-  font-weight:600;
-  font-family:$monte;
+
+.project-introduction{
+    @include lrg-mobile {
+        padding:1rem;
+    }
 }
 
-#sponsor:hover{
-    transition: color 0.5s;
+.cta{
+  padding: 50px 0px 50px;
+}
+
+.ctalink{
+   @include ms-respond(font-size,1);
+   text-decoration: none;
+   font-family: $monte;
+   color:#f5f5f5;
+}
+
+
+.ctalink:hover{
+  transition: background 0.5s;
+  background:darkviolet;
+  border-bottom: 0px;
+}
+
+#RMIT{
+    text-decoration: none;
+     color:royalblue;
+}
+
+#RMIT:hover{
+    @include transition(color 0.5s);
     color:#333;
 }
 
-#hip {
-    font-family: $monte !important;
-    color:$typeColor;
-    padding: 2px;
-    font-weight: 900;
-    margin: 0 -2px;
+.project-desc-main{
+    @include ms-respond(font-size,2);
+    text-align: left;
 }
 
-#hip {
-    @include hover-links;
+.project-desc{
+    @include ms-respond(font-size,1);
+    text-align: left;
 }
 
-#hip:hover {
-   background-size:100% 100%;
-}
 
 .main-image{
     width:100%;
+    padding:50px 0 50px
+    ;
+    background-color:#f5f5f5;
 
     .story-seq{
         width: 100%;
@@ -74,132 +95,80 @@ html{
     }
 }
 
-.line-1{
-    transform: translateY(-40px);
+.image-container{
+  padding:5px;
 }
 
-#line1,#line2{
-    fill:url('#australia');
+li{
+    list-style: none;
 }
 
-.break-wrapper{
-    padding-bottom: 10px;
-    padding-top: 10px;
+.text-footer{
     position: relative;
-    margin: 50px;
-    text-align: center;
+    margin-top:150px;
 }
 
-#personal{
-    text-decoration: none;
-    color:#FF4669;
+.say-hi{
+    @include ms-respond(font-size,4);
+    font-weight: $montB;
+}
+.exit-msg{
+  @include ms-respond(font-size,2);
+  // @include left-right-margin;
+  font-weight: $monte;
+  position: relative;
+  text-align:left;
 }
 
-#personal:hover{
-    @include transition(color 0.5s);
-    color:#333;
+.email:hover,
+.email:focus {
+   color:$typeColor;
 }
 
-.images{
-    @include display(flex);
-    @include flex-wrap(wrap);
-    @include justify-content(center);
-    position: relative;
-    margin-bottom:$m-b-under-imgs;
-
-    .disp1{
-        margin:$img-spaceing;
-        @include padding-left-right-bottom;
-        width: 100%;
-        max-width: 450px;
-        -webkit-filter: blur(0px);
-        @include transition(blur 0.8s);
-
-        @include mobile_device {
-            margin:0;
-            padding-right:0;
-            padding-left:0;
-        }
-    }
+.tell:hover, .tell:focus {
+  color:#f5f5f5;
 }
 
-.box_1{
-    @include display_box;
-    @include boxColor_vivd;
-    @include transition(opacity 0.5s);
-    opacity: 0;
-    height:325px;
-}
-.box_1,.box_2{top:0px;}
 
-:hover.box_1{
-    opacity: 0.9;
-}
-// removing width from boxes at tablet_device size
-// having the width set to its original size of 450px adds a scroll bar on small screens to right of page
-@include tablet_device{
-    .box_1{
-        width: 0px;
-    }
-};
-
-.caption1{
-    @include caption;
-    border-bottom:$vivd_border;
-    border-top:$vivd_border;
-    font-size: ms(0);
+.email:hover, .tell:hover{
+   background-size:100% 100%;
 }
 
-.discript1{
-    font-size: ms(1);
-    opacity: 1;
-    margin-top: 250px;
-    color:white;
+.email, .tell{
+  font-family: $monte;
+  font-weight: $montB;
+  @include hover-links;
+  color:$typeColor;
+  position:relative;
 }
 
-.more-projects{
+.list2{
+  margin-top:2rem;
+}
+.touch{
+  padding:0px 0px 50px;
+}
+.center{
+  @include ms-respond(font-size,2);
+}
+.more-work{
   @include ms-respond(font-size,3);
-  @include more-proj;
+  text-align: center;
 }
 
-.project-wrapper{
-    height:100%;
-
-    .other-projects{
-       width:250px;
-   }
-
-   .project-heading{
-       text-align: center;
-       position: relative;
-       font-family: $lato;
-       @include ms-respond(font-size,2);
-   }
+.card-action{
+  display:flex;
 }
 
-
-.proj-container{
-    @include display(flex);
-    justify-content: center;
-
-    @include tablet_device {
-        // media q for f-w
-        @include flex-wrap(wrap);
-    }
+.next-proj{
+  height:60px;
 }
 
-.line-divider{
-    @include width-height-100percent;
-}
-.link{
-    font-family: $monte;
-    fill:$typeColor;
-    @include transition(fill 0.2s);
-    font-size: 1.2em;
-    font-weight: 700;
+.next-link {
+  font-weight: 800;
+  @extend .blue-text;
 }
 
-.other-projects:hover .halfRect1{
-    fill:whitesmoke;
-    @include transition(fill 0.2s);
+.prev, .next{
+  margin:10px;
 }

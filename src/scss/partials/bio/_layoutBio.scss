@@ -4,8 +4,8 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
-.skills, .mission{
-  padding: 50px 0px 50px;
+.skills{
+  padding: 20px 0px 20px;
 }
 
 .about-short-disc{
@@ -16,24 +16,31 @@
     // padding: 2rem;
     position: relative;
     text-align: left;
+    padding:0px 0px 20px;
     // bottom:50px;
 }
 
-.about-info-1,.about-info-2{
-  display:flex;
-  margin:0 150px;;
-  flex-direction:row;
+.first-imp{
+  @include ms-respond(font-size,2);
 }
 
-.col-left, .col-right{
-  flex-grow:1;
-  width:10em;
-  height:100%;
+.services-info{
+  @include ms-respond(font-size,1);
 }
 
-.why-wiki-process{
-  margin:0 150px;
+ul{
+  padding: 0;
 }
+
+.graphic-d, .web-d{
+  padding-bottom: 20px;
+}
+
+
+.services-h1{
+  @include ms-respond(font-size,2);
+}
+
 
 .desktop_graphic{
   display: flex;
@@ -44,8 +51,9 @@
   width: 600px;
 }
 
-.graphic-text2{
+.graphic-text{
   font-family: $monte;
+  font-weight: 400;
 }
 
 .slideDown{
@@ -84,14 +92,21 @@
 
 .img-center{
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
 }
 
 .svg-process{
-  height:80px;
+  height: 50px;
+  margin: 10px;
 }
 
+
+.lead{
+  font-family: $lato;
+  font-weight: 400;
+  font-style: italic;
+}
 
 .device_graphic{
   display: none;
@@ -101,7 +116,6 @@
   @include tablet {
     display: flex;
     justify-content: center;
-    padding:30px;
   }
 }
 .desktop_graphic{

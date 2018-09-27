@@ -1,14 +1,15 @@
 {
   "name": "e-portfolio",
-  "ignore":"",
-  "main":"",
+  "ignore": "",
+  "main": "",
   "private": true,
   "dependencies": {
     "jquery": "~2.1.4",
     "normalize-scss": "~3.0.3",
     "modular-scale": "~2.1.1",
     "Snap.svg": "~0.4.1",
-    "bourbon":"~4.2.6",
-    "hisrc":"~2.0.0"
+    "bourbon": "~4.2.6",
+    "fancybox": "^3.3.5",
+    "particles.js": "^2.0.0"
   }
 }
