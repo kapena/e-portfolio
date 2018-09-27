@@ -1,10 +1,12 @@
 /* Home  Pg*/
+@import "vendor/foundation";
+@import "vendor/buttons";
 @import "partials/home/header";
 /* @import "partials/home/nav"; */
 /* Projects  Pg */
-@import "partials/projects/layout";
-@import "partials/projects/rects_on_device";
 @import "partials/projects/hover";
+@import "partials/projects/layout";
+
 /* Bio  Pg */
 @import "partials/bio/skilzAni";
 @import "partials/bio/layoutBio";
@@ -21,5 +23,6 @@
 /* Typeography */
 @import"partials/typography";
 /* Vendors */
+@import "vendor/lux";
 @import "vendor/normalize";
 @import "vendor/bourbon";

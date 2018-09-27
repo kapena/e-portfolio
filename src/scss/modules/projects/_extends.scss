@@ -36,7 +36,3 @@
 .google,.linkedin,.twitter,.behance{
     @extend .github !optional;
 }
-
-.proj,.about,.cont,.blog{
-  @extend .home !optional;
-}

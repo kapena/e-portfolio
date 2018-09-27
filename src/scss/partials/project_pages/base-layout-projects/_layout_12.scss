@@ -1,0 +1,174 @@
+@import "modules/projects/pages_module";
+@import "vendor/mod-scale";
+@import "partials/projects/hover";
+@import "partials/projects/layout";
+@import "partials/variables";
+// @import "modules/projects-page/projects-module";
+@import "modules/global-mqs/mqs";
+
+body{
+ @include body-mixin;
+}
+
+h1{
+    @include ms-respond(font-size,4);
+    // text-align: center;
+}
+
+h2 {
+  @include ms-respond(font-size,2);
+}
+
+.proj-n{
+    @include ms-respond(font-size,4);
+    // text-align: center;
+}
+
+.header-img{
+  padding-top:59px;
+    @include width-height-100percent;
+}
+
+.tell{
+  padding:5px;
+  // bottom:5px;
+  @include ms-respond(font-size,2);
+}
+
+
+.project-introduction{
+    @include lrg-mobile {
+        padding:1rem;
+    }
+}
+
+.cta{
+  padding: 50px 0px 50px;
+}
+
+.ctalink{
+   @include ms-respond(font-size,1);
+   text-decoration: none;
+   font-family: $monte;
+   color:#f5f5f5;
+}
+
+
+.ctalink:hover{
+  transition: background 0.5s;
+  background:darkviolet;
+  border-bottom: 0px;
+}
+
+#RMIT{
+    text-decoration: none;
+     color:royalblue;
+}
+
+#RMIT:hover{
+    @include transition(color 0.5s);
+    color:#333;
+}
+
+.project-desc-main{
+    @include ms-respond(font-size,2);
+    text-align: left;
+}
+
+.project-desc{
+    @include ms-respond(font-size,1);
+    text-align: left;
+}
+
+
+.main-image{
+    width:100%;
+    padding:50px 0 50px
+    ;
+    background-color:#f5f5f5;
+
+    .story-seq{
+        width: 100%;
+        margin:auto;
+        display:block;
+        max-width:1000px;
+    }
+}
+
+.image-container{
+  padding:5px;
+}
+
+li{
+    list-style: none;
+}
+
+.text-footer{
+    position: relative;
+    margin-top:150px;
+}
+
+.say-hi{
+    @include ms-respond(font-size,4);
+    font-weight: $montB;
+}
+.exit-msg{
+  @include ms-respond(font-size,2);
+  // @include left-right-margin;
+  font-weight: $monte;
+  position: relative;
+  text-align:left;
+}
+
+.email:hover,
+.email:focus {
+   color:$typeColor;
+}
+
+.tell:hover, .tell:focus {
+  color:#f5f5f5;
+}
+
+
+.email:hover, .tell:hover{
+   background-size:100% 100%;
+}
+
+.email, .tell{
+  font-family: $monte;
+  font-weight: $montB;
+  @include hover-links;
+  color:$typeColor;
+  position:relative;
+}
+
+.list2{
+  margin-top:2rem;
+}
+.touch{
+  padding:0px 0px 50px;
+}
+.center{
+  @include ms-respond(font-size,2);
+}
+.more-work{
+  @include ms-respond(font-size,3);
+  text-align: center;
+}
+
+.card-action{
+  display:flex;
+}
+
+.next-proj{
+  height:60px;
+}
+
+.next-link {
+  font-weight: 800;
+  @extend .blue-text;
+}
+
+.prev, .next{
+  margin:10px;
+}

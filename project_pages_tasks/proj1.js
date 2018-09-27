@@ -30,7 +30,7 @@ setVars();
 
 // Watch styles_proj1 and js_proj1 for changes
 gulp.task('watch_proj1',function(){
-    gulp.watch(paths.watcher_projects.watcher_proj1.styles_proj1,['proj1_styles']);
+    // gulp.watch(paths.watcher_projects.watcher_proj1.styles_proj1,['proj1_styles']);
     gulp.watch(paths.watcher_projects.watcher_proj1.js_proj1,['proj1_js']);
 });
 
@@ -53,32 +53,6 @@ var onError = function(err){
     this.emit('end');
 };
 
-
-// Styles task for proj1
-gulp.task('proj1_styles',function(){
-    // source to project 1 scss
-    return gulp.src(paths.source.project_pgs_src.proj_1.styles_proj1)
-    .pipe(plumber({
-        // plumber finds errors in stream
-        errorHandler: onError}))
-    .pipe(sourcemaps.init()) // source maps
-    .pipe(sass())
-    // .pipe(uncss({
-    //     html:['site/idiv-proj-pgs/sod/secretofdreaming.html'],
-    //     ignore:['.box_1','.box_2','.box_3','.box_4','.box_5','.box_6','.discript1','.discript2','.discript3','.discript4','.discript5','.discript6','.image-container','.img1','.img2']
-    // }))
-    .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
-    .pipe(cssmin()) // min css
-    .pipe(rename({ // rename file to site.min.css
-        suffix:'.min'
-    }))
-    // destination for compiled css for project 1
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
-    .pipe(notify({ message: 'proj1_styles task finished' }))
-    .pipe(browserSync.stream());
-});
-
 // Script task for proj1
 gulp.task('proj1_js',function(){
     return gulp.src(paths.source.project_pgs_src.proj_1.js_proj1)
@@ -99,5 +73,5 @@ gulp.task('proj1_js',function(){
 gulp.task('project1',function(){
     // call runSequence to make sure our tasks are
     // perfromed in the correct order
-    runSequence('proj1_styles','proj1_js','sync');
+    runSequence('proj1_js','sync');
 });

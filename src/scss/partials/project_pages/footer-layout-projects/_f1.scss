@@ -35,12 +35,11 @@ li{
 .home,.projects-link,.about,.contact-link,.blog{
     font-family: $monte;
     text-decoration: none;
-    //padding-top:5px;
     @include link-hover-footer;
 }
 
 .home:hover{
-    color:blue;
+    color:#fff;
 }
 
 .home{
@@ -71,9 +70,10 @@ li{
 .social1-gh{
     font-family: $monte;
     position: relative;
-    padding-top:1rem;
+    // padding-top:1rem;
 }
 .github{
+  padding:0px !important;
     @include social-icons;
 }
 

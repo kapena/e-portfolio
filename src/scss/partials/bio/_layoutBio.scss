@@ -4,50 +4,56 @@
 @import "partials/typography";
 @import "vendor/bourbon";
 
+.skills{
+  padding: 20px 0px 20px;
+}
+
 .about-short-disc{
-    @include ms-respond(font-size,1);
-    @include left-right-margin;
+    @include ms-respond(font-size,2);
+    // @include left-right-margin;
     // font-weight:$montSemi;
     line-height:ms(1);
     // padding: 2rem;
     position: relative;
-    text-align: center;
+    text-align: left;
+    padding:0px 0px 20px;
     // bottom:50px;
 }
 
-.about-info{
-  display:flex;
-  margin:3em 4em 4em;
-  flex-direction:row;
+.first-imp{
+  @include ms-respond(font-size,2);
 }
 
-.simple{
-  position: relative;
-  top: 3em;
+.services-info{
+  @include ms-respond(font-size,1);
 }
 
-.col-left, .col-right{
-  flex-grow:1;
-  width:10em;
-  height:100%;
+ul{
+  padding: 0;
 }
 
-.process{
-  margin-top:2em;
+.graphic-d, .web-d{
+  padding-bottom: 20px;
 }
-.graph-serv{
+
+
+.services-h1{
+  @include ms-respond(font-size,2);
+}
+
+
+.desktop_graphic{
   display: flex;
   justify-content: center;
 }
 
 .service{
   width: 600px;
-  height: 200px;
-  margin: 3em 0em 3em;
 }
 
-.graphic-text2{
+.graphic-text{
   font-family: $monte;
+  font-weight: 400;
 }
 
 .slideDown{
@@ -62,30 +68,13 @@
   transform: translateY(-81px);
 }
 
-#inspires{
-  // padding:1rem 0rem 1rem;
-  text-align: center;
-  // @include page-headings;
-  @include ms-respond(font-size,3);
-  font-weight:800;
-}
 
-.proj-enq{
-  margin-top: 7em;
-  margin-bottom: 4em;
-}
-
-.idea{
-  display: flex;
-  margin:3em 0em;
-  justify-content: center;
-}
-.tell:hover,
-.tell:focus {
+#chat:hover,
+#chat:focus {
    color:blue;
 }
 
-.tell {
+#chat {
     font-family: $monte !important;
     color:$typeColor;
     padding: 2px;
@@ -93,26 +82,56 @@
     margin: 0 -2px;
 }
 
-.tell {
+#chat {
     @include hover-links;
 }
 
-.tell:hover {
+#chat:hover {
    background-size:100% 100%;
 }
 
-.about-short-disc {
+.img-center{
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.svg-process{
+  height: 50px;
+  margin: 10px;
+}
+
+
+.lead{
+  font-family: $lato;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.device_graphic{
+  display: none;
+}
+
+.device_graphic{
   @include tablet {
-    padding: 1rem 1rem;
-    margin:3% 0% 3%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.desktop_graphic{
+  @include tablet {
+    display: none;
   }
 }
 
-.proj-enq{
-  @include tablet {
-    margin:0;
+.about-info-1,.about-info-2{
+  @include tablet{
+    display:flex;
+    margin:1em;
+    flex-direction:row;
   }
 }
+
 
 .about-info{
   @include sm-tablet{
@@ -120,12 +139,6 @@
   }
 }
 
-.service{
-  @include sm-tablet{
-    height: 150px;
-    margin: 2em 0em;
-  }
-}
 
 .col-left, .col-right{
   @include sm-tablet{

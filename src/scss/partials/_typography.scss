@@ -3,9 +3,9 @@ $browser-context:16px;
 
 /**** Google Fonts ****/
 // Montserrat
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,900i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,600,900i');
 $monte:'Montserrat',sans-serif;
-$montB:''800;
+$montB: 800;
 $montSemi:600;
 // Lato
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
@@ -25,7 +25,7 @@ $lora:'Lora',serif;
 
 
 // lato
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400i');
 $lato:'Lato','serif';
 
 /* Base Size */
@@ -45,4 +45,10 @@ p{
 h1, h2, h3, h4, h5, h6{
     font-family: $monte;
     color:$typeColorB;
+}
+
+
+h2{
+  font-weight: 400;
+  font-style: italic;
 }

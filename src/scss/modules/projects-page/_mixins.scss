@@ -11,48 +11,8 @@
   font-size:60px;
 }
 
-// translat halfCircle on the Y axis 400px
-@mixin halfCircle-animation-on-hover {
-    @include transform(translateY(400px));
-    @include transition(transform);
-    @include transition-duration(0.8s);
-}
-
-// translate halfCircle back to original position
-@mixin halfCircle-animation-off-hover {
-    @include transform(translateY(255px));
-    @include transition(transform);
-    @include transition-duration(0.6s);
-}
-
 // fade in halfCircle1
 @mixin fadein-halfCircle1-on-hover {
-    @include transition(visibility 1s, opacity 1s);
+    @include transition(opacity 1s);
     @include transition-duration(0.8s);
-}
-// view now link appears over project
-@mixin viewNowUp {
-    @include transition(transform);
-    @include transition-duration(0.5s);
-    transform: translateY(-135px);
-}
-
-// view now link slides down
-@mixin viewNowUnder {
-    @include transition(transform);
-    @include transition-duration(0.7s);
-    transform:translateY(100px);
-}
-
-// Project text translates on y axis when view now slides up
-@mixin projectName-slideUnder {
-    @include transition(transform);
-    @include transition-duration(0.5s);
-    transform: translateY(35px);
-}
-
-@mixin projectName-slideUp {
-    @include transition(transform);
-    @include transition-duration(0.5s);
-    transform: translateY(-1px);
 }

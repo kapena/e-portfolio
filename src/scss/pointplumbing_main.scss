@@ -1,9 +1,13 @@
 @import "vendor/normalize";
 @import "vendor/bourbon";
+@import "vendor/lux";
+@import "vendor/foundation";
+@import "vendor/buttons";
+@import "vendor/materialize";
 @import "partials/typography";
 // Layout
 @import "partials/project_pages/base-layout-projects/layout_2";
 // Footer
 @import "partials/project_pages/footer-layout-projects/f2";
 // Animation
-@import "partials/project_pages/interactive/ani2";
+// @import "partials/project_pages/interactive/ani2";

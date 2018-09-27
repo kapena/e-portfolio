@@ -16,73 +16,106 @@ html{
 
 body{
     min-height:100%;
-    background-color: whitesmoke;
+    background-color:#f4f4f4;
 }
 
 header{
-    padding-top: 30px;
-    bottom:100px;
-    top:30px;
+  // overflow: hidden;
+  // padding-top:40px;
+  padding:50px 0px 50px;
+}
+
+.welcome{
+position: relative;
+}
+
+.particles-js-canvas-el{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.aloha-pixel-logo{
+  display: flex;
+  // padding:0 50px 0px;
+  // margin: 0 auto;
+  // height:300px;
+  width:400px;
+  top: 60px;
+  position: relative;
+}
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  // background-color: #b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.ctalink{
+   @include ms-respond(font-size,1);
+   text-decoration: none;
+   font-family: $monte;
+   color:#f5f5f5;
+   text-align: left;
+}
+
+.project-desc-main{
+    @include ms-respond(font-size,1);
+    text-align: left;
+}
+
+.slide-nav-trigger{
+  visibility: hidden;
+}
+
+.show{
+  transition: opacity 0.2s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide{
+  transition: opacity 0.2s;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .aloha{
   font-family:$monte;
-  font-weight:$montSemi;
+  font-weight:$montB;
 }
 
-.intro-block{
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.titleName{
-  margin-bottom:2rem;
-  text-align: center;
-}
-
-.name, .title{
-    color:$typeColor;
-    font-weight: $montB;
-    font-family: $monte;
-    @include ms-respond(font-size, 2);
-    margin:0rem;
-}
-
-.title{
-    bottom: 2rem;
-    font-weight: 400;
-}
 
 .intro-msg{
     // padding for left right and bottom links
-    @include left-right-bottom-links;
+    // @include left-right-bottom-links;
     // left might margins pushed in closer
-    @include left-right-margin;
     @include ms-respond(font-size, 2);
-    text-align: center;
+    text-align: left;
     line-height:ms(1);
 }
 
-.main{
-  padding:1rem 0rem 1rem;
+.cta-intro{
+  @include ms-respond(font-size,1);
 }
 
-.built{
-    // @include left-right-bottom-links;
-    // left might margins pushed in closer
-    @include left-right-margin;
-    padding:1rem 0rem 1rem;
-    text-align: center;
-    @include ms-respond(font-size, -0);
-}
+// .main{
+//   padding:20px 0px 0px;
+// }
 
 header #projects:hover,
 header #projects:focus {
-   color:blue;
+    color:#f5f5f5;
 }
 
 header #projects {
     color:$typeColor;
+    // $typeColor
     padding: 2px;
     font-weight: 900;
     margin: 0 -2px;
@@ -92,22 +125,24 @@ header #projects{
     @include hover-links;
 }
 
-header #projects:hover{
+header #projects:hover,
+header #projects:focus{
    background-size:100% 100%;
 }
 
 .skills{
   position: relative;
-  bottom: 2em;
 }
 
-.tools{
+.desktop_graphic{
+  text-align:center;
+  @include ms-respond(font-size,1);
   display: flex;
   justify-content: center;
 }
 
 #skills-graphic{
-  height:300px;
+  height:250px;
 }
 
 .graphic-text{
@@ -119,15 +154,42 @@ header #projects:hover{
 
 
 .graph, .web, .motion{
+  // opacity: 0;
+  // transition: opacity 0.3s;
   font-family: $monte;
   @include ms-respond(font-size,-3);
 }
+.visable{
+	transition:opacity 0.2s ease;
+	opacity:1;
+}
+
+.hide{
+	opacity:0;
+	transition: opacity 0.3s;
+}
 .under{
-  transition:transform 0.3s;
+  opacity: 0;
+  transition:transform 0.3s, opacity 0.2s;
 }
 .moveUp{
+  opacity: 1;
+  transition: opacity 0.3s;
   transition:transform 0.3s;
-  transform:translateY(-20px);
+  transform:translateY(-40px);
+}
+
+.under{
+  opacity: 0;
+  transition:transform 0.3s, opacity 0.2s;
+}
+
+#info-tag{
+  background-color: #4169e1;
+  color: #f6f6f6;
+  font-weight:600;
+  font-family:$monte;
+  padding:2px;
 }
 
 // circle + triangle
@@ -194,9 +256,23 @@ header #projects:hover{
   transform:translateX(-34px);
 }
 
-.tools{
-  text-align:center;
-  @include ms-respond(font-size,1);
+.aloha-pixel-logo{
+  @include tablet{
+    // height: 200px;
+    width: 300px;
+  }
+
+  @include sm-mobile{
+    // height: 200px;
+    width: 200px;
+  }
+}
+
+header{
+  @include sm-mobile{
+    // height: 200px;
+    padding:0px;
+  }
 }
 
 .under, .skill {
@@ -207,16 +283,30 @@ header #projects:hover{
 
 #skills-graphic{
   @include tablet{
-    height:250px;
+    height:150px;
+    // width:500px;
   }
-  @include mobile_device{
-    height:200px;
-  }
+  // @include mobile_device{
+  //   height:100px;
+  // }
 }
 
 .graph, .web, .digital-d{
   @include md-tablet {
   visibility: hidden;
   font-family: $monte;
+  }
+}
+
+.graphic-text{
+  @include tablet {
+      @include ms-respond(font-size,-5);
+  }
+}
+
+// hide skills-graphic
+.desktop_graphic{
+  @include tablet {
+    display: none;
   }
 }
