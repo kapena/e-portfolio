@@ -31,7 +31,11 @@
             "project_pgs_src":{
                 "proj_1":{
                     "styles_proj1":"./src/scss/sod_main.scss",
+<<<<<<< HEAD
                     "js_proj1":["bower_components/jquery/dist/jquery.min.js","bower_components/smoothstate/src/jquery.smoothState.js","src/js/project_pages/secretofdreaming.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","bower_components/fancybox/dist/jquery.fancybox.min.js","src/js/modernizr.min.js"]
+=======
+                    "js_proj1":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","bower_components/fancybox/dist/jquery.fancybox.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/secretofdreaming.js","./js/nav.js"]
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
                 },
                 "proj_2":{
                     "styles_proj2":"./src/scss/pointplumbing_main.scss",
@@ -46,7 +50,11 @@
                 },
                 "proj_5":{
                     "styles_proj5":"./src/scss/print_main.scss",
+<<<<<<< HEAD
                     "js_proj5":["bower_components/jquery/dist/jquery.min.js","bower_components/smoothstate/src/jquery.smoothState.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","bower_components/fancybox/dist/jquery.fancybox.min.js","src/js/modernizr.min.js","src/js/project_pages/print.js"]
+=======
+                    "js_proj5":["bower_components/jquery/dist/jquery.min.js","bower_components/picturefill/dist/picturefill.min.js","bower_components/picturefill/dist/plugins/intrinsic-dimension/pf.intrinsic.min.js","bower_components/fancybox/dist/jquery.fancybox.min.js","src/js/modernizr.min.js","src/js/jquery-throttle-debounce.min.js","src/js/project_pages/print.js"]
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
                 },
                 "proj_6":{
                     "styles_proj6":"./src/scss/royalthread_main.scss",

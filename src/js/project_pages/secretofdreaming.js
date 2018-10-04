@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(function(){
   'use strict';
   var $page = $('#main','head','body'),
@@ -26,3 +27,5 @@ $(function(){
       },
       smoothState = $page.smoothState(options).data('smoothState');
 });
+=======
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4

@@ -76,10 +76,15 @@ gulp.watch(paths.watcher_main.js_main,['js_main_task']);
 
 // watch main page scss file
 // comment out when not running main
-gulp.watch(paths.watcher_main.styles_main,['styles_main_task']);
+// gulp.watch(paths.watcher_main.styles_main,['styles_main_task']);
 
+<<<<<<< HEAD
 // project 2 styles
 gulp.watch(paths.watcher_projects.watcher_proj11.styles_proj11,['proj11_styles']);
+=======
+// project 12 styles
+gulp.watch(paths.watcher_projects.watcher_proj5.styles_proj5,['proj5_styles']);
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 
 
 // watch main page html
@@ -148,23 +153,40 @@ gulp.task('styles_main_task',function(){
 // Project Styles Task Injection
 // Change paths to desired project when working on css for that project
 // paths.source.project_pgs_src.proj_#.styles_proj#
+<<<<<<< HEAD
 gulp.task('proj11_styles',function(){
     // source to project 11 scss
     return gulp.src(paths.source.project_pgs_src.proj_11.styles_proj11)
+=======
+gulp.task('proj5_styles',function(){
+    // source to project 2 scss
+    return gulp.src(paths.source.project_pgs_src.proj_5.styles_proj5)
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
     .pipe(plumber({
         // plumber finds errors in stream
         errorHandler: onError}))
     .pipe(sourcemaps.init()) // source maps
     .pipe(sass())
+<<<<<<< HEAD
     .pipe(gulp.dest(paths.project_pages_dest.proj11_dest.styles_proj11))
+=======
+    .pipe(gulp.dest(paths.project_pages_dest.proj5_dest.styles_proj5))
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
     .pipe(cssmin()) // min css
     .pipe(rename({ // rename file to site.min.css
         suffix:'.min'
     }))
+<<<<<<< HEAD
     // destination for compiled css for project 11
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.project_pages_dest.proj11_dest.styles_proj11))
     .pipe(notify({ message: 'proj11_styles task finished' }))
+=======
+    // destination for compiled css for project 5
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(paths.project_pages_dest.proj5_dest.styles_proj5))
+    .pipe(notify({ message: 'proj5_styles task finished' }))
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
     .pipe(browserSync.stream());
 });
 
@@ -179,5 +201,9 @@ gulp.task('main',function(){
 gulp.task('project_styles',function(){
     // call runSequence to make sure our tasks are
     // assign project page #
+<<<<<<< HEAD
     runSequence('proj11_styles','sync');
+=======
+    runSequence('proj5_styles','sync');
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 });

@@ -18,11 +18,19 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400i");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,600,900i");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lora:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400i");
+=======
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,900i");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 html {
   font-family: sans-serif;
   /* 1 */
@@ -746,6 +754,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
+<<<<<<< HEAD
 h2 {
   font-weight: 400;
   font-style: italic; }
@@ -1040,6 +1049,298 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText; }
 
+=======
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.4.2
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+/* Document
+       ========================================================================== */
+/**
+     * 1. Change the default font family in all browsers (opinionated).
+     * 2. Correct the line height in all browsers.
+     * 3. Prevent adjustments of font size after orientation changes in
+     *    IE on Windows Phone and in iOS.
+     */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+       ========================================================================== */
+/**
+     * Remove the margin in all browsers (opinionated).
+     */
+body {
+  margin: 0; }
+
+/**
+     * Add the correct display in IE 9-.
+     */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+     * Correct the font size and margin on `h1` elements within `section` and
+     * `article` contexts in Chrome, Firefox, and Safari.
+     */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+       ========================================================================== */
+/**
+     * Add the correct display in IE 9-.
+     */
+figcaption,
+figure {
+  display: block; }
+
+/**
+     * Add the correct margin in IE 8.
+     */
+figure {
+  margin: 1em 40px; }
+
+/**
+     * 1. Add the correct box sizing in Firefox.
+     * 2. Show the overflow in Edge and IE.
+     */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+     * Add the correct display in IE.
+     */
+main {
+  display: block; }
+
+/**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Links
+       ========================================================================== */
+/**
+     * 1. Remove the gray background on active links in IE 10.
+     * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+     */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+     * Remove the outline on focused links when they are also active or hovered
+     * in all browsers (opinionated).
+     */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+       ========================================================================== */
+/**
+     * 1. Remove the bottom border in Firefox 39-.
+     * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+     */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+     * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+     */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+     * Add the correct font weight in Chrome, Edge, and Safari.
+     */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+     * 1. Correct the inheritance and scaling of font size in all browsers.
+     * 2. Correct the odd `em` font sizing in all browsers.
+     */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+     * Add the correct font style in Android 4.3-.
+     */
+dfn {
+  font-style: italic; }
+
+/**
+     * Add the correct background and color in IE 9-.
+     */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+     * Add the correct font size in all browsers.
+     */
+small {
+  font-size: 80%; }
+
+/**
+     * Prevent `sub` and `sup` elements from affecting the line height in
+     * all browsers.
+     */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+       ========================================================================== */
+/**
+     * Add the correct display in IE 9-.
+     */
+audio,
+video {
+  display: inline-block; }
+
+/**
+     * Add the correct display in iOS 4-7.
+     */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+     * Remove the border on images inside links in IE 10-.
+     */
+img {
+  border-style: none; }
+
+/**
+     * Hide the overflow in IE.
+     */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+       ========================================================================== */
+/**
+     * 1. Change the font styles in all browsers (opinionated).
+     * 2. Remove the margin in Firefox and Safari.
+     */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+     * Show the overflow in IE.
+     */
+button {
+  overflow: visible; }
+
+/**
+     * Remove the inheritance of text transform in Edge, Firefox, and IE.
+     * 1. Remove the inheritance of text transform in Firefox.
+     */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+     * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+     *    controls in Android 4.
+     * 2. Correct the inability to style clickable types in iOS and Safari.
+     */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  /**
+       * Remove the inner border and padding in Firefox.
+       */
+  /**
+       * Restore the focus styles unset by the previous rule.
+       */ }
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 /**
      * Show the overflow in Edge.
      */
@@ -3490,7 +3791,11 @@ textarea {
   color: #fefefe; }
 
 .button.primary:hover, .button.primary:focus {
+<<<<<<< HEAD
   background-color: #6843ca;
+=======
+  background-color: #483d8b;
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
   color: #fefefe; }
 
 .button.secondary {
@@ -3574,8 +3879,13 @@ textarea {
   color: #fefefe; }
 
 .button.hollow {
+<<<<<<< HEAD
   border: 1px solid #446adb;
   color: #446adb; }
+=======
+  border: 1px solid #1779ba;
+  color: #1779ba; }
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 
 .button.hollow, .button.hollow:hover, .button.hollow:focus {
   background-color: transparent; }
@@ -3835,6 +4145,7 @@ a.button:hover, a.button:focus {
   padding-bottom: 3rem;
   padding-left: 3rem; }
 
+<<<<<<< HEAD
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -9043,6 +9354,306 @@ li {
   @media (min-width: 20em) {
     .center {
       font-size: 1.49328em; } }
+=======
+/* Modular Scale */
+/* Colors project pages */
+/* halfCircle path colors indiv project pages */
+/* Rectangle colors for devices small and large */
+/* borders */
+.projects:hover .fullRect {
+  visibility: visible;
+  opacity: 0.7;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  transition: opacity 1s;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.projects:hover .view-icon {
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  transition: opacity 1s;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+
+.card, .p-card:hover {
+  transition: box-shadow 0.4s;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.12); }
+
+/* Here I import all my modules into the home-module */
+/* Padding mixin for links inside paragraph*/
+/* Pushing intro-msg margins in closer */
+/* Modular Scale */
+/* Colors project pages */
+/* halfCircle path colors indiv project pages */
+/* Rectangle colors for devices small and large */
+/* borders */
+/**** Google Fonts ****/
+/* Lato Variables */
+/* Base Size */
+/**** Responsive Scales ****/
+p {
+  font-family: "Lato", "serif";
+  color: #423F3F;
+  line-height: 1.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #423F3F; }
+
+.pfolio {
+  text-align: center;
+  font-size: 1.4641em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .pfolio {
+      font-size: calc( 1.4641em + 1.69323 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .pfolio {
+      font-size: 3.15733em; } }
+
+.card-section {
+  text-align: center; }
+
+.link {
+  text-decoration: none; }
+
+.tag {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  display: block; }
+
+.prj-head {
+  text-align: center;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px; }
+  .prj-head .prj-info {
+    padding: 20px 10px 20px; }
+
+.prj-head {
+  font-size: 1.1em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .prj-head {
+      font-size: calc( 1.1em + 0.233 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .prj-head {
+      font-size: 1.333em; } }
+
+.info {
+  font-size: 1em; }
+  @media (min-width: 15em) and (max-width: 60em) {
+    .info {
+      font-size: calc( 1em + 0 * ( ( 100vw - 15em) / 45 )); } }
+  @media (min-width: 60em) {
+    .info {
+      font-size: 1em; } }
+
+.info {
+  text-align: center;
+  background-color: #4169e1;
+  color: #f6f6f6;
+  opacity: 0.8;
+  padding: 0 10px 0px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif; }
+
+.p-card {
+  margin: 10px;
+  transition: box-shadow 0.4s;
+  box-shadow: 0px 10px 10px 0px transparent; }
+
+.view-icon {
+  opacity: 0;
+  transition: opacity 0.3s; }
+
+.fullRect {
+  opacity: 0;
+  transition: opacity 1s; }
+
+.view {
+  fill: whitesmoke;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px; }
+
+/* Modular Scale */
+/* Colors project pages */
+/* halfCircle path colors indiv project pages */
+/* Rectangle colors for devices small and large */
+/* borders */
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+  background-color: whitesmoke; }
+
+.proj-n {
+  font-size: 1.4641em; }
+  @media (min-width: 10em) and (max-width: 20em) {
+    .proj-n {
+      font-size: calc( 1.4641em + 0.7658 * ( ( 100vw - 10em) / 10 )); } }
+  @media (min-width: 20em) {
+    .proj-n {
+      font-size: 2.2299em; } }
+
+.header-img {
+  padding-top: 59px;
+  width: 100%;
+  height: 100%; }
+
+.tell {
+  padding: 5px;
+  font-size: 1.21em; }
+  @media (min-width: 10em) and (max-width: 20em) {
+    .tell {
+      font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
+  @media (min-width: 20em) {
+    .tell {
+      font-size: 1.49328em; } }
+
+@media only screen and (max-width: 523px) {
+  .project-introduction {
+    padding: 1rem; } }
+
+.cta {
+  padding: 50px 0px 50px; }
+
+.ctalink {
+  font-size: 1.1em;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #f5f5f5; }
+  @media (min-width: 10em) and (max-width: 20em) {
+    .ctalink {
+      font-size: calc( 1.1em + 0.122 * ( ( 100vw - 10em) / 10 )); } }
+  @media (min-width: 20em) {
+    .ctalink {
+      font-size: 1.222em; } }
+
+.ctalink:hover {
+  transition: background 0.5s;
+  background: darkviolet;
+  border-bottom: 0px; }
+
+#RMIT {
+  text-decoration: none;
+  color: royalblue; }
+
+#RMIT:hover {
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  transition: color 0.5s;
+  color: #333; }
+
+.project-desc-main {
+  font-size: 1.21em;
+  text-align: left; }
+  @media (min-width: 10em) and (max-width: 20em) {
+    .project-desc-main {
+      font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
+  @media (min-width: 20em) {
+    .project-desc-main {
+      font-size: 1.49328em; } }
+
+.project-desc {
+  font-size: 1.1em;
+  text-align: left; }
+  @media (min-width: 10em) and (max-width: 20em) {
+    .project-desc {
+      font-size: calc( 1.1em + 0.122 * ( ( 100vw - 10em) / 10 )); } }
+  @media (min-width: 20em) {
+    .project-desc {
+      font-size: 1.222em; } }
+
+.main-image {
+  width: 100%;
+  padding: 50px 0 50px;
+  background-color: #f5f5f5; }
+  .main-image .story-seq {
+    width: 100%;
+    margin: auto;
+    display: block;
+    max-width: 1000px; }
+
+.image-container {
+  padding: 5px; }
+
+li {
+  list-style: none; }
+
+.contact-p-head {
+  text-align: center; }
+
+.text-footer {
+  position: relative;
+  margin-top: 150px; }
+
+.say-hi {
+  font-size: 1.4641em;
+  font-weight: 800; }
+  @media (min-width: 10em) and (max-width: 20em) {
+    .say-hi {
+      font-size: calc( 1.4641em + 0.7658 * ( ( 100vw - 10em) / 10 )); } }
+  @media (min-width: 20em) {
+    .say-hi {
+      font-size: 2.2299em; } }
+
+.exit-msg {
+  font-size: 1.21em;
+  font-weight: "Montserrat", sans-serif;
+  position: relative;
+  text-align: left; }
+  @media (min-width: 10em) and (max-width: 20em) {
+    .exit-msg {
+      font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
+  @media (min-width: 20em) {
+    .exit-msg {
+      font-size: 1.49328em; } }
+
+.email:hover,
+.email:focus {
+  color: #333333; }
+
+.tell:hover, .tell:focus {
+  color: #f5f5f5; }
+
+.email:hover, .tell:hover {
+  background-size: 100% 100%; }
+
+.email, .tell {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  border: none;
+  border-bottom: 2px solid royalblue;
+  background: -webkit-linear-gradient(royalblue, royalblue) no-repeat bottom;
+  background: -o-linear-gradient(royalblue, royalblue) no-repeat bottom;
+  background: linear-gradient(royalblue, royalblue) no-repeat bottom;
+  background-size: 100% 1px;
+  transition: .2s,color .1s .1s;
+  text-decoration: none;
+  color: #333333;
+  position: relative; }
+
+.list2 {
+  margin-top: 2rem; }
+
+.touch {
+  padding: 0px 0px 50px; }
+
+.center {
+  font-size: 1.21em; }
+  @media (min-width: 10em) and (max-width: 20em) {
+    .center {
+      font-size: calc( 1.21em + 0.28328 * ( ( 100vw - 10em) / 10 )); } }
+  @media (min-width: 20em) {
+    .center {
+      font-size: 1.49328em; } }
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 
 .more-work {
   font-size: 1.331em;
@@ -9054,6 +9665,7 @@ li {
     .more-work {
       font-size: 1.82479em; } }
 
+<<<<<<< HEAD
 .card-action {
   display: flex; }
 
@@ -9065,6 +9677,11 @@ li {
 
 .prev, .next {
   margin: 10px; }
+=======
+.next-prev {
+  padding: 20px;
+  text-align: center; }
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 
 /* Modular Scale */
 /* Colors project pages */
@@ -9096,7 +9713,11 @@ li {
   display: inline-flex;
   justify-content: center; }
 
+<<<<<<< HEAD
 .home, .projects-link, .about, .contact-link, .blog, .projects, .about, .contact, .blog {
+=======
+.home, .projects-link, .about, .contact-link, .blog, .proj, .cont, .projects, .about, .contact, .blog {
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   padding: 0rem 1rem 0rem;

@@ -3161,6 +3161,7 @@ body {
   background-color: #f4f4f4; }
 
 header {
+<<<<<<< HEAD
   padding: 80px 0px 80px; }
 
 .welcome {
@@ -3224,6 +3225,25 @@ header {
 
 .aloha {
   font-family: "Montserrat", sans-serif;
+=======
+  padding-top: 45px; }
+
+.slide-nav-trigger {
+  visibility: hidden; }
+
+.show {
+  transition: opacity 0.2s;
+  opacity: 1;
+  visibility: visible; }
+
+.hide {
+  transition: opacity 0.2s;
+  opacity: 0;
+  visibility: hidden; }
+
+.aloha {
+  font-family: "Montserrat", sans-serif;
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
   font-weight: 800; }
 
 .intro-msg {
@@ -3436,6 +3456,7 @@ header #projects:focus, header #chat:focus, header #bio:focus, header #getintouc
   .desktop_graphic {
     display: none; } }
 
+<<<<<<< HEAD
 @keyframes fadeout {
   0% {
     opacity: 1; }
@@ -3473,6 +3494,8 @@ header #projects:focus, header #chat:focus, header #bio:focus, header #getintouc
   .main-scene.is-exiting .scene_element {
     animation-direction: alternate-reverse; }
 
+=======
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 /* @import "partials/home/nav"; */
 /* Projects  Pg */
 /* Modular Scale */
@@ -3626,10 +3649,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #423F3F; }
 
+<<<<<<< HEAD
 h2 {
   font-weight: 400;
   font-style: italic; }
 
+=======
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 .skills {
   padding: 20px 0px 20px; }
 
@@ -3646,6 +3672,7 @@ h2 {
     .about-short-disc {
       font-size: 1.77689em; } }
 
+<<<<<<< HEAD
 .first-imp {
   font-size: 1.21em; }
   @media (min-width: 15em) and (max-width: 60em) {
@@ -3679,6 +3706,8 @@ ul {
     .services-h1 {
       font-size: 1.77689em; } }
 
+=======
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 .desktop_graphic {
   display: flex;
   justify-content: center; }
@@ -3730,11 +3759,14 @@ ul {
 .svg-process {
   height: 50px;
   margin: 10px; }
+<<<<<<< HEAD
 
 .lead {
   font-family: "Lato", "serif";
   font-weight: 400;
   font-style: italic; }
+=======
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 
 .device_graphic {
   display: none; }

@@ -9,9 +9,13 @@
     "modular-scale": "~2.1.1",
     "Snap.svg": "~0.4.1",
     "bourbon": "~4.2.6",
+<<<<<<< HEAD
     "fancybox": "^3.3.5",
     "particles.js": "^2.0.0",
     "motion-ui": "^2.0.3",
     "smoothstate": "^0.7.2"
+=======
+    "fancybox": "^3.3.5"
+>>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
   }
 }
