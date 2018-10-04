@@ -1,3 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,600,900i");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400i");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,600,900i");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400i");
+@keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100; } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; } }
+
+.main-scene {
+  /** Basic styles for an animated element */ }
+  .main-scene .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both; }
+  .main-scene .scene_element--fadeinup {
+    animation-name: fadeInUp; }
+  .main-scene .scene_element--fadein {
+    animation-name: fadein; }
+  .main-scene.is-exiting .scene_element {
+    animation-direction: alternate-reverse; }
+
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -15,14 +60,6 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,600,900i");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400i");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300i,400,400i,600,900i");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Lora:400,700");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400i");
 html {
   font-family: sans-serif;
   /* 1 */

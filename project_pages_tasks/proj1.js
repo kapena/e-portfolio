@@ -53,6 +53,27 @@ var onError = function(err){
     this.emit('end');
 };
 
+gulp.task('proj1_styles',function(){
+    // source to project 1 scss
+    return gulp.src(paths.source.project_pgs_src.proj_1.styles_proj1)
+    .pipe(plumber({
+        // plumber finds errors in stream
+        errorHandler: onError}))
+    .pipe(sourcemaps.init()) // source maps
+    .pipe(sass())
+    .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
+    .pipe(cssmin()) // min css
+    .pipe(rename({ // rename file to site.min.css
+        suffix:'.min'
+    }))
+    // destination for compiled css for project 1
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(paths.project_pages_dest.proj1_dest.styles_proj1))
+    .pipe(notify({ message: 'proj1_styles task finished' }))
+    .pipe(browserSync.stream());
+});
+
+
 // Script task for proj1
 gulp.task('proj1_js',function(){
     return gulp.src(paths.source.project_pgs_src.proj_1.js_proj1)

@@ -264,6 +264,21 @@ input[type="checkbox"] {
  * Remove most spacing between table cells.
  */
 
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100; } }
+
+.main-scene {
+  /** Basic styles for an animated element */ }
+  .main-scene .scene_element {
+    animation-duration: 0.25s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both; }
+  .main-scene .scene_element--fadein {
+    animation-name: fadein; }
+
 .luxbar-fixed {
   width: 100%;
   position: fixed;
