@@ -78,18 +78,18 @@ gulp.task('proj12_styles',function(){
 });
 
 // // Script task for proj12
-// gulp.task('proj12_js',function(){
-//     return gulp.src(paths.source.project_pgs_src.proj_12.js_proj12)
-//     // find errors in stream then nofity me in terminal
-//     .pipe(plumber({errorHandler:onError}))
-//     .pipe(concat('proj12.js'))
-//     // .pipe(concat('site.js'))
-//     .pipe(gulp.dest(paths.project_pages_dest.proj12_dest.js_proj12))
-//     .pipe(uglify())
-//     .pipe(rename({
-//         suffix:'.min'
-//     }))
-//     .pipe(notify({ message: 'proj12_js task finished' }))
-//     .pipe(gulp.dest(paths.project_pages_dest.proj12_dest.js_proj12));
-//     // browserSync.reload();
-// });
+gulp.task('proj12_js',function(){
+    return gulp.src(paths.source.project_pgs_src.proj_12.js_proj12)
+    // find errors in stream then nofity me in terminal
+    .pipe(plumber({errorHandler:onError}))
+    .pipe(concat('proj12.js'))
+    // .pipe(concat('site.js'))
+    .pipe(gulp.dest(paths.project_pages_dest.proj12_dest.js_proj12))
+    .pipe(uglify())
+    .pipe(rename({
+        suffix:'.min'
+    }))
+    .pipe(notify({ message: 'proj12_js task finished' }))
+    .pipe(gulp.dest(paths.project_pages_dest.proj12_dest.js_proj12));
+    // browserSync.reload();
+});
