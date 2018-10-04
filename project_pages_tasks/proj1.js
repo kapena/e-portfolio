@@ -53,7 +53,6 @@ var onError = function(err){
     this.emit('end');
 };
 
-<<<<<<< HEAD
 gulp.task('proj1_styles',function(){
     // source to project 1 scss
     return gulp.src(paths.source.project_pgs_src.proj_1.styles_proj1)
@@ -75,8 +74,6 @@ gulp.task('proj1_styles',function(){
 });
 
 
-=======
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 // Script task for proj1
 gulp.task('proj1_js',function(){
     return gulp.src(paths.source.project_pgs_src.proj_1.js_proj1)

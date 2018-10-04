@@ -8,7 +8,6 @@
 
 body{
  @include body-mixin;
-
 }
 
 body{
@@ -22,7 +21,6 @@ h1{
 
 h2 {
   @include ms-respond(font-size,2);
-
 }
 
 .proj-n{
@@ -187,140 +185,4 @@ li{
 
 .prev, .next{
   margin:10px;
-=======
-}
-
-
-.project-introduction{
-    @include lrg-mobile {
-        padding:1rem;
-    }
-}
-
-.cta{
-  padding: 50px 0px 50px;
-}
-
-.ctalink{
-  // padding:10px;
-  // @include hover-links;
-  //  background-size:100% 100%;
-   @include ms-respond(font-size,1);
-   text-decoration: none;
-   font-family: $monte;
-  //  background: royalblue;
-   color:#f5f5f5;
-  //  border-bottom: 0px;
-}
-
-.ctalink:hover{
-  transition: background 0.5s;
-  background:darkviolet;
-  border-bottom: 0px;
-}
-
-#RMIT{
-    text-decoration: none;
-     color:royalblue;
-}
-
-#RMIT:hover{
-    @include transition(color 0.5s);
-    color:#333;
-}
-
-.project-desc-main{
-    @include ms-respond(font-size,2);
-    text-align: left;
-}
-
-.project-desc{
-    @include ms-respond(font-size,1);
-    text-align: left;
-}
-
-
-.main-image{
-    width:100%;
-    padding:50px 0 50px;
-    background-color:#f5f5f5;
-
-    .story-seq{
-        width: 100%;
-        margin:auto;
-        display:block;
-        max-width:1000px;
-    }
-}
-
-.image-container{
-  padding:5px;
-}
-
-li{
-    list-style: none;
-}
-
-.contact-p-head{
-  text-align: center;
-}
-
-.text-footer{
-    position: relative;
-    margin-top:150px;
-}
-
-.say-hi{
-    @include ms-respond(font-size,4);
-    font-weight: $montB;
-}
-.exit-msg{
-  @include ms-respond(font-size,2);
-  // @include left-right-margin;
-  font-weight: $monte;
-  position: relative;
-  text-align:left;
-}
-
-.email:hover,
-.email:focus {
-   color:$typeColor;
-}
-
-.tell:hover, .tell:focus {
-  color:#f5f5f5;
-}
-
-
-.email:hover, .tell:hover{
-   background-size:100% 100%;
-}
-
-
-.email, .tell{
-  font-family: $monte;
-  font-weight: $montB;
-  @include hover-links;
-  color:$typeColor;
-  position:relative;
-}
-
-.list2{
-  margin-top:2rem;
-}
-
-.touch{
-  padding:0px 0px 50px;
-}
-
-.more-work{
-  @include ms-respond(font-size,3);
-  text-align: center;
-}
-.center{
-  @include ms-respond(font-size,2);
-}
- .next-prev {
-   padding:20px;
-    text-align: center;
 }

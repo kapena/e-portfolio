@@ -20,11 +20,6 @@ h2 {
   @include ms-respond(font-size,2);
 }
 
-.proj-n{
-    @include ms-respond(font-size,4);
-    // text-align: center;
-}
-
 
 .header-img{
   padding-top:59px;
@@ -58,18 +53,7 @@ h2 {
   //  background: royalblue;
    color:#f5f5f5;
   //  border-bottom: 0px;
-   @include ms-respond(font-size,1);
-   text-decoration: none;
-   font-family: $monte;
-   color:#f5f5f5;
 }
-
-.ctalink:hover{
-  transition: background 0.5s;
-  background:darkviolet;
-  border-bottom: 0px;
-}
-
 
 .ctalink:hover{
   transition: background 0.5s;
@@ -100,11 +84,7 @@ h2 {
 
 .main-image{
     width:100%;
-
     padding:50px 0 50px;
-
-    padding:50px 0 50px;
-
     background-color:#f5f5f5;
 
     .story-seq{
@@ -117,7 +97,6 @@ h2 {
 
 .image-container{
   padding:5px;
-<<<<<<< HEAD
 }
 
 li{
@@ -199,70 +178,4 @@ li{
 
 .prev, .next{
   margin:10px;
-}
-
-li{
-    list-style: none;
-}
-
-.contact-p-head{
-  text-align: center;
-}
-
-.text-footer{
-    position: relative;
-    margin-top:150px;
-}
-
-.say-hi{
-    @include ms-respond(font-size,4);
-    font-weight: $montB;
-}
-.exit-msg{
-  @include ms-respond(font-size,2);
-  // @include left-right-margin;
-  font-weight: $monte;
-  position: relative;
-  text-align:left;
-}
-
-.email:hover,
-.email:focus {
-   color:$typeColor;
-}
-
-.tell:hover, .tell:focus {
-  color:#f5f5f5;
-}
-
-
-.email:hover, .tell:hover{
-   background-size:100% 100%;
-}
-
-
-.email, .tell{
-  font-family: $monte;
-  font-weight: $montB;
-  @include hover-links;
-  color:$typeColor;
-  position:relative;
-}
-
-.list2{
-  margin-top:2rem;
-}
-.touch{
-  padding:0px 0px 50px;
-}
-.center{
-  @include ms-respond(font-size,2);
-}
-.more-work{
-  @include ms-respond(font-size,3);
-  text-align: center;
-}
- .next-prev {
-  padding:20px;
-  text-align: center;
 }

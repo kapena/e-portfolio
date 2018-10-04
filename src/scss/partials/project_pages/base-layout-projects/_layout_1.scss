@@ -96,7 +96,6 @@ h2 {
 #RMIT{
     text-decoration: none;
      color:royalblue;
-
 }
 
 #RMIT:hover{
@@ -161,63 +160,6 @@ li{
   @include hover-links;
   color:$typeColor;
   position:relative;
-=======
-}
-
-#RMIT:hover{
-    @include transition(color 0.5s);
-    color:#333;
-}
-
-.image-container{
-  padding:5px;
-}
-
-
-.more-work{
-    @include ms-respond(font-size,5);
-}
-
-li{
-    list-style: none;
-}
-
-.contact-p-head{
-  text-align: center;
-}
-
-.text-footer{
-    position: relative;
-    margin-top:150px;
-}
-
-.say-hi{
-    @include ms-respond(font-size,5);
-    font-weight: $montB;
-}
-
-
-.exit-msg{
-  @include ms-respond(font-size,2);
-  // @include left-right-margin;
-  font-weight: $monte;
-  position: relative;
-  text-align:left;
-}
-
-.email:hover,
-.email:focus {
-   color:$typeColor;
-}
-
-.tell:hover, .tell:focus {
-  color:#f5f5f5;
-}
-
-
-.email:hover, .tell:hover{
-   background-size:100% 100%;
-
 }
 
 .list2{
@@ -226,7 +168,6 @@ li{
 .touch{
   padding:0px 0px 50px;
 }
-
 
 .card-action{
   display:flex;
@@ -243,29 +184,4 @@ li{
 
 .prev, .next{
   margin:10px;
-}
-.email, .tell{
-  font-family: $monte;
-  font-weight: $montB;
-  @include hover-links;
-  color:$typeColor;
-  position:relative;
-}
-
-.list2{
-  margin-top:2rem;
-}
-.touch{
-  padding:0px 0px 50px;
-}
-.center{
-  @include ms-respond(font-size,2);
-}
-.more-work{
-  @include ms-respond(font-size,3);
-  text-align: center;
-}
- .next-prev {
-  padding:20px;
-  text-align: center;
 }
