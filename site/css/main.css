@@ -2779,7 +2779,7 @@ textarea {
   color: #fefefe; }
 
 .button.primary:hover, .button.primary:focus {
-  background-color: #483d8b;
+  background-color: #6843ca;
   color: #fefefe; }
 
 .button.secondary {
@@ -2863,8 +2863,8 @@ textarea {
   color: #fefefe; }
 
 .button.hollow {
-  border: 1px solid #1779ba;
-  color: #1779ba; }
+  border: 1px solid #446adb;
+  color: #446adb; }
 
 .button.hollow, .button.hollow:hover, .button.hollow:focus {
   background-color: transparent; }
@@ -3161,7 +3161,7 @@ body {
   background-color: #f4f4f4; }
 
 header {
-  padding: 50px 0px 50px; }
+  padding: 80px 0px 80px; }
 
 .welcome {
   position: relative; }
