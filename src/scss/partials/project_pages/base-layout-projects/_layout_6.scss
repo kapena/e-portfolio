@@ -8,7 +8,6 @@
 
 body{
  @include body-mixin;
-<<<<<<< HEAD
 }
 
 
@@ -19,13 +18,11 @@ h1{
 
 h2 {
   @include ms-respond(font-size,2);
-=======
 }
 
 .proj-n{
     @include ms-respond(font-size,4);
     // text-align: center;
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 }
 
 
@@ -52,7 +49,6 @@ h2 {
 }
 
 .ctalink{
-<<<<<<< HEAD
   // padding:10px;
   // @include hover-links;
   //  background-size:100% 100%;
@@ -62,12 +58,10 @@ h2 {
   //  background: royalblue;
    color:#f5f5f5;
   //  border-bottom: 0px;
-=======
    @include ms-respond(font-size,1);
    text-decoration: none;
    font-family: $monte;
    color:#f5f5f5;
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 }
 
 .ctalink:hover{
@@ -76,15 +70,13 @@ h2 {
   border-bottom: 0px;
 }
 
-<<<<<<< HEAD
-=======
+
 .ctalink:hover{
   transition: background 0.5s;
   background:darkviolet;
   border-bottom: 0px;
 }
 
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 #RMIT{
     text-decoration: none;
      color:royalblue;
@@ -108,12 +100,11 @@ h2 {
 
 .main-image{
     width:100%;
-<<<<<<< HEAD
+
     padding:50px 0 50px;
-=======
-    padding:50px 0 50px
-    ;
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
+
+    padding:50px 0 50px;
+
     background-color:#f5f5f5;
 
     .story-seq{
@@ -208,7 +199,6 @@ li{
 
 .prev, .next{
   margin:10px;
-=======
 }
 
 li{
@@ -275,5 +265,4 @@ li{
  .next-prev {
   padding:20px;
   text-align: center;
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 }

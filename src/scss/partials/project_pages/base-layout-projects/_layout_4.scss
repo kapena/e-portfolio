@@ -8,7 +8,7 @@
 
 body{
  @include body-mixin;
-<<<<<<< HEAD
+
 }
 
 body{
@@ -22,8 +22,7 @@ h1{
 
 h2 {
   @include ms-respond(font-size,2);
-=======
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
+
 }
 
 .proj-n{
@@ -40,7 +39,6 @@ h2 {
   padding:5px;
   // bottom:5px;
   @include ms-respond(font-size,2);
-<<<<<<< HEAD
 }
 
 
@@ -325,5 +323,4 @@ li{
  .next-prev {
    padding:20px;
     text-align: center;
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 }

@@ -8,14 +8,13 @@
 
 body{
  @include body-mixin;
-<<<<<<< HEAD
+
 }
 
 h1{
     @include ms-respond(font-size,4);
     // text-align: center;
-=======
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
+
 }
 
 h2 {
@@ -113,7 +112,7 @@ li{
 .text-footer{
     position: relative;
     margin-top:150px;
-<<<<<<< HEAD
+
 }
 
 .say-hi{
@@ -180,7 +179,7 @@ li{
 
 .prev, .next{
   margin:10px;
-=======
+
 }
 
 .say-hi{
@@ -234,5 +233,4 @@ li{
  .next-prev {
   padding:20px;
   text-align: center;
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
 }

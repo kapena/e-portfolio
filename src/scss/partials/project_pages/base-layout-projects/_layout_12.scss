@@ -8,7 +8,7 @@
 
 body{
  @include body-mixin;
-<<<<<<< HEAD
+
 }
 
 h1{
@@ -18,8 +18,7 @@ h1{
 
 h2 {
   @include ms-respond(font-size,2);
-=======
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
+
 }
 
 .proj-n{
@@ -61,7 +60,7 @@ h2 {
   transition: background 0.5s;
   background:darkviolet;
   border-bottom: 0px;
-<<<<<<< HEAD
+
 }
 
 #RMIT{
@@ -69,15 +68,13 @@ h2 {
      color:royalblue;
 }
 
-=======
-}
 
 #RMIT{
     text-decoration: none;
      color:royalblue;
 }
 
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
+
 #RMIT:hover{
     @include transition(color 0.5s);
     color:#333;
@@ -116,7 +113,7 @@ li{
     list-style: none;
 }
 
-<<<<<<< HEAD
+
 .text-footer{
     position: relative;
     margin-top:150px;
@@ -185,7 +182,7 @@ li{
 
 .prev, .next{
   margin:10px;
-=======
+
 .contact-p-head{
   text-align: center;
 }
@@ -245,5 +242,5 @@ li{
  .next-prev {
   padding:20px;
   text-align: center;
->>>>>>> 173cdd864ccf4ca0ebcf1ffbdcff58ac68bd22e4
+
 }
